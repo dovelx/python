@@ -69,7 +69,7 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 #获取接口返回状态
 sta= data['status']
-print (sta)
+print ("获取列表成功",sta)
 #获取列表最大work_appoint_id
 data = data['data']['voset']['voList']
 b = []
@@ -78,14 +78,14 @@ for a in data:
 c = b[0]
 #当前最大work_appoint_id加1
 c =c+1
-print (c)
+print ("work_appoint_id:",c)
 
 #拼写预约URL
 
 num = c
 url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
 #作业预约作业任务名称随机数生成函数
-print ("预约url\n",url2)
+#print ("预约url\n",url2)
 
 #作业预约请求头
 headers={
@@ -152,8 +152,46 @@ formdatanew ={
 rs=requests.post(url2, json = formdatanew, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 rsp = str(rs.content, 'utf8')
-print(rsp)
+#if rsp['status'] == 3200:
+#	print("预约接口访问成功:")
 
+#送交接口地址
+url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(num,num)
+print("送交请求url",url3)
+#请求头
+formdata2={
+	"opinion": "申请审批",
+	"nodeStr": "2000000009070",
+	"2000000009070": "测试用户",
+	"2000000009070_id": 1000
+}
+time.sleep(15)
+#请求送交接口
+rs=requests.post(url3, json = formdata2, headers = headers,cookies=cookies)
+#rs.encoding='utf-8'
+rsp = str(rs.content, 'utf8')
+#if rsp['status'] == 3200:
+#	print("预约接口访问成功:")
+#rsp = str(rs.content, 'utf8')
+#print('送交接口反馈:',rsp)
+
+
+#审批接口地址
+url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(num)
+#参数
+formdata ={
+	"opinion": "同意",
+	"cC": "1000",
+	"cCName": "测试用户",
+	"nickName": "用户",
+	"is_normal_finish": "true",
+	"nodeStr": ""
+}
+#请求接口
+rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
+rs.encoding='utf-8'
+cc = str(rs.content, 'utf8')
+#print(cc)
 time.sleep(2)
 driver.close()
 driver.quit()

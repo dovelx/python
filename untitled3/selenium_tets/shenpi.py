@@ -37,9 +37,9 @@ for a in c:
 cookies={'JSESSIONID': b['value']}
 #cookies={'JSESSIONID': '59E80FDA10220D88AB9A643E9CC4F314TcoeKm'}
 print(cookies)
-
-#送交接口地址
-url1='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=2000000001765&0.027850408425730055&contentType=json&ajax=true&tid=1'
+num = 2000000001774
+#接口地址
+url1='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(num)
 #请求头
 headers={
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -67,6 +67,6 @@ print(cc)
 #开始编写送交接口
 pass
 
-time.sleep(5)
+time.sleep(2)
 driver.close()
 driver.quit()

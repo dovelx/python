@@ -37,10 +37,11 @@ for a in c:
 cookies={'JSESSIONID': b['value']}
 #cookies={'JSESSIONID': '59E80FDA10220D88AB9A643E9CC4F314TcoeKm'}
 print(cookies)
-
+num = 2000000001774
 #送交接口地址
-url1='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=2000000001765&topFuncCode=HSE_WORK_APPOINT&dataId=2000000001765&0.6691804891667137&contentType=json&ajax=true&tid=1'
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=2000000001766&topFuncCode=HSE_WORK_APPOINT&dataId=2000000001766&0.30092471197648707&contentType=json&ajax=true&tid=1'
+url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(num,num)
+print("送交请求url",url3)
+
 #请求头
 headers={
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -59,7 +60,7 @@ formdata2={
 	"2000000009070_id": 1000
 }
 #请求接口
-rs=requests.post(url1, json = formdata, headers = headers,cookies=cookies)
+rs=requests.post(url3, json = formdata, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 rsp = str(rs.content, 'utf8')
 print(rsp)
