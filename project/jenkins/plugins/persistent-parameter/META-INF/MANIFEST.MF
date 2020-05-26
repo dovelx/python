@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: gregory
+Build-Jdk: 1.8.0_102
+Extension-Name: persistent-parameter
+Specification-Title: String, text, boolean and choice parameters with 
+ default values taken from the previous build (if any).
+Implementation-Title: persistent-parameter
+Implementation-Version: 1.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: persistent-parameter
+Long-Name: Persistent Parameter Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Persistent+Parameter+P
+ lugin
+Plugin-Version: 1.2
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Developers: Gregory E. Moltchadski:greg2001:gregory@atcsim.de
+
