@@ -13,6 +13,7 @@ import random
 import string
 import datetime
 
+#预约到安全分析
 
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
@@ -191,9 +192,54 @@ rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
 #print(cc)
+#安全分析第一个保存
+urlfenxi ='http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.6529845051499572&contentType=json&ajax=true&tid=1'
+formdatafenxi ={
+	"tableName": "hse_safety_task",
+	"wf_create_user": 1000,
+	"iscontractor": "0",
+	"analyze_type": "jsa,aqjd",
+	"work_appoint_name": "create_by_python_JOUsxk",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"workstatus": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": "2020-05-27 17:32:05",
+	"updated_by": 1000,
+	"updated_dt": "2020-05-27 17:32:05",
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"projecttype": "rcjx",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
 
-
-
+	"work_appoint_id": num,
+	"workcontent": "作业内容123",
+	"workname": name,
+	"worktickettype": "xkz,dh",
+	"worktickettype_name": "作业许可证,动火作业",
+	"workunitname": "长庆石化分公司",
+	"workunit": 1688712,
+	"planstarttime": "2020-05-26 18:47:50",
+	"planendtime": "2020-05-26 18:52:50",
+	"site": "作业地点123",
+	"equipmentname": "",
+	"work_position_name": "制氢北区",
+	"work_position_id": 2000000002019,
+	"equipmentnumber": "",
+	"equipmentcode": "",
+	"constructionscheme": "",
+	"standardmaintenance": ""
+}
+time.sleep(5)
+#请求接口
+rs=requests.post(urlfenxi, json = formdatafenxi, headers = headers,cookies=cookies)
+rs.encoding='utf-8'
+cc = str(rs.content, 'utf8')
+print(cc)
 time.sleep(2)
 driver.close()
 driver.quit()
