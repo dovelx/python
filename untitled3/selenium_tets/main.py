@@ -192,6 +192,9 @@ rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
 #print(cc)
+
+
+
 time.sleep(2)
 driver.close()
 driver.quit()
