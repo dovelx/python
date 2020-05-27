@@ -8548,7 +8548,7 @@ data={
 	}
 }
 import json
-
+#获取作业许可预约列表
 data = data['data']['voset']['voList']
 
 for a in data:

@@ -18,7 +18,7 @@ import datetime
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
     return  salt
-name = "create_by_python_"+ranstr(6)
+name = "Created_by_Python_"+ranstr(6)
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
 now1 = now + datetime.timedelta(minutes=5)
@@ -29,8 +29,7 @@ now =now.strftime("%Y-%m-%d %H:%M:%S")
 
 #selenium登录测试长庆
 driver = webdriver.Firefox()
-driver.get(
-            "http://192.168.6.27:6030/passports/login?service=http%3A%2F%2F192.168.6.27%3A6030%2Fportals%2Fcas&tenantCode=cqsh&trial=false")
+driver.get("http://192.168.6.27:6030/passports/login?service=http%3A%2F%2F192.168.6.27%3A6030%2Fportals%2Fcas&tenantCode=cqsh&trial=false")
 
 driver.find_element(By.ID, "username").send_keys("test")
 driver.find_element(By.ID, "pwd1").send_keys("1")
