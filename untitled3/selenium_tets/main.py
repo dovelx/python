@@ -82,7 +82,7 @@ for a in data:
 c = b[0]
 #当前最大work_appoint_id加1
 c =c+1
-print ("work_appoint_id:",c)
+#print ("work_appoint_id:",c)
 
 #拼写预约URL
 
@@ -244,7 +244,7 @@ formdatafenxi ={
 rs=requests.post(urlfenxi, json = formdatafenxi, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
 #预约安全分析接口地址
 url11 = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/getMetaData?0.26386458099914045&contentType=json&ajax=true&tid=1'
 
@@ -257,7 +257,7 @@ data = json.loads(data)
 #获取接口返回状态
 sta= data['status']
 
-print (sta)
+#print (sta)
 a = data['data']["voset"]["voList"]
 b =[]
 for i in range(len(a)):
@@ -367,7 +367,7 @@ data ={
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
 #安全交底
 num1 = num+20
 print ("送交ID:",num1)
@@ -405,7 +405,7 @@ data = {
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
 
 #安全送交
 url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(num,num)
@@ -414,7 +414,7 @@ data = {}
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
 
 #作业任务添加
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
@@ -470,7 +470,7 @@ data  = {
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
 #请求作业任务列表
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/getMetaData?0.8715056152376748&contentType=json&ajax=true&tid=1'
 headers = {
@@ -489,20 +489,21 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 #获取接口返回状态
 sta= data['status']
-print (data['status'])
-print (data['data']["voset"]["voList"])
+#print (data['status'])
+#print (data['data']["voset"]["voList"])
 a = data['data']["voset"]["voList"]
 b =[]
 for i in range(len(a)):
 
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
-print (b)
-print (max(b))
+#print (b)
+#print (max(b))
 num2 = max(b)
-print("作业任务列表ID:",num2)
+print("作业任务列表ID-num2==:",num2)
 #作业任务提交
 url =  'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(num2,num2)
+#url1= 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=2000000004176&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004176&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005557&ts=1590655157270&0.9150744998075542&contentType=json&ajax=true&tid=1'
 data ={
 	"tableName": "hse_work_task",
 	"task_worktype_code": "",
@@ -571,8 +572,8 @@ data ={
 	"workunitname": "长庆石化分公司",
 	"projecttype": "rcjx",
 	"iscontractor": "0",
-	"planstarttime": "2020-05-28 14:07:05",
-	"planendtime": "2020-05-28 14:12:05",
+	"planstarttime": fnow1,
+	"planendtime": fnow2,
 	"worktickettype": "xkz,dh",
 	"workstatus": "draft",
 	"applyunitid": 1688712,
@@ -628,6 +629,321 @@ data ={
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-print(cc)
+#print(cc)
+
+#作业许可证保存
+#作业票ID
+num3 = 2000000005571+2
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005573&ts=1590656443277&0.7178753893110355&contentType=json&ajax=true&tid=1'%(num2,num2)
+print(url)
+data = {
+	"tableName": "hse_work_ticket",
+	"clause": "",
+	"tasktype": "",
+	"radiosourcenum": "",
+	"relevantdoc": "",
+	"safedistance": "",
+	"issjtssxzy": "",
+	"isupgradedh": "",
+	"isdzdh": "",
+	"isrecord": "",
+	"excavation_eqp": "",
+	"territorialunitcode": "CS8082020",
+	"worker": "9",
+	"pipeline_level": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": 1590656443277,
+	"istaskpause": 0,
+	"classgroup": "",
+	"isend": "",
+	"end_reason": "",
+	"end_dt": "",
+	"groundwire_num": "",
+	"groupknife_num": "",
+	"groundwire_code": "",
+	"othercontent": "",
+	"sent_overdueclose_message": 0,
+	"isupgrade": "0",
+	"isfireday": "0",
+	"isdue": "0",
+	"operator": "",
+	"worktimeconsum": "",
+	"task_pause": "0",
+	"projecttype": "",
+	"is_pause": 0,
+	"workticketid": 2000000005573,
+	"worktaskid": num2,
+	"equipmentnumber": "",
+	"worktype": "xkz",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"applyunitid": 1688712,
+	"applyunitname": "长庆石化分公司",
+	"worknumber": "",
+	"worklevel": "",
+	"site": "作业地点123",
+	"workway": "",
+	"planstarttime": fnow1,
+	"planendtime": fnow2,
+	"actualstarttime": "",
+	"actualendtime": "",
+	"otherwork": "",
+	"workname": name,
+	"workcontent": "作业内容123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"workstatus": "draft",
+	"equipmentpipename": "",
+	"medium": "",
+	"temperature": "",
+	"pressure": "",
+	"blindplate_material": "",
+	"blindplate_spec": "",
+	"blindplate_code": "",
+	"blindplate_mapandcode": "",
+	"workhighly": "",
+	"objectmass": "",
+	"poweraccesspoint": "",
+	"workvoltage": "",
+	"equipmentandpower": "",
+	"otherunit": "",
+	"workreason": "",
+	"isharmconfirm": "",
+	"ismeasureconfirm": "",
+	"isgascomplate": "",
+	"issigncomplate": "",
+	"created_by_name": "测试用户",
+	"updated_by_name": "测试用户",
+	"closereason": "",
+	"gastestaging": "",
+	"blindplate_worktype": "",
+	"gasket_material": "",
+	"gasket_spec": "",
+	"close_type": "",
+	"delaynum": 0,
+	"beendelaynum": 0,
+	"isppeconfirm": "",
+	"invalidreason": "",
+	"hassafetyplan": "0",
+	"hashseplan": "",
+	"hasemergencyplan": "",
+	"hasdrawpaper": "0",
+	"haschecklist": "",
+	"hasrescueplan": "",
+	"loadradius": "",
+	"loaddegree": "",
+	"loadrate": "",
+	"objectnorm": "",
+	"loadmass": "",
+	"haslineopensitemap": "",
+	"radiosourcetype": "",
+	"sourcecode": "",
+	"sourcestrength": "",
+	"suprange": "",
+	"controlrange": "",
+	"drawshow": "",
+	"hashookcheck": "",
+	"hasfacadecheck": "",
+	"hasdrivermedical": "",
+	"objectname": "",
+	"cancelreason": "",
+	"hidesituation": "",
+	"work_position_id": 2000000002019,
+	"isgas_detection": "1",
+	"gas_aging": "1",
+	"isqualgasdetection": "",
+	"dig_size_l": "",
+	"dig_size_w": "",
+	"dig_size_h": "",
+	"attaches": "",
+	"lock_status": 0,
+	"lock_equipment_id": "",
+	"dl_uuid": "",
+	"dl_time": "",
+	"level_upgrade": 0,
+	"loadgoodsname": "",
+	"loadhigh": "",
+	"worktask_name": name,
+	"worktype_name": "作业许可证",
+	"dz_craneno": "",
+	"gas_standard_type": "",
+	"isproprietor": "",
+	"worksite": "",
+	"workticketmbcdid": "",
+	"isstoppower": "",
+	"work_position_name": "制氢北区",
+	"gas_detector_no": "",
+	"additional_requirements": "",
+	"worklevel_org": ""
+}
+#请求接口
+#rs=requests.post(url, json = data, headers = headers,cookies=cookies)
+#rs.encoding='utf-8'
+#cc = str(rs.content, 'utf8')
+#print (cc)
+#作业许可证提交
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590653538571&0.23372369575241692&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
+#print(url)
+data ={
+	"tableName": "hse_work_ticket",
+	"clause": "",
+	"tasktype": "",
+	"radiosourcenum": "",
+	"relevantdoc": "",
+	"safedistance": "",
+	"issjtssxzy": "",
+	"isupgradedh": "",
+	"isdzdh": "",
+	"isrecord": "",
+	"excavation_eqp": "",
+	"territorialunitcode": "CS8082020",
+	"worker": "无",
+	"pipeline_level": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": 1590653538571,
+	"istaskpause": 0,
+	"classgroup": "",
+	"isend": "",
+	"end_reason": "",
+	"end_dt": "",
+	"groundwire_num": "",
+	"groupknife_num": "",
+	"groundwire_code": "",
+	"othercontent": "",
+	"sent_overdueclose_message": 0,
+	"isupgrade": "0",
+	"isfireday": "0",
+	"isdue": "0",
+	"operator": "",
+	"worktimeconsum": "",
+	"task_pause": "0",
+	"projecttype": "",
+	"is_pause": 0,
+	"workticketid": num3,
+	"worktaskid": num2,
+	"equipmentnumber": "",
+	"worktype": "xkz",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"applyunitid": 1688712,
+	"applyunitname": "长庆石化分公司",
+	"worknumber": "",
+	"worklevel": "",
+	"site": "作业地点123",
+	"workway": "",
+	"planstarttime": fnow1,
+	"planendtime": fnow2,
+	"actualstarttime": "",
+	"actualendtime": "",
+	"otherwork": "",
+	"workname": name,
+	"workcontent": "作业内容123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"workstatus": "draft",
+	"equipmentpipename": "",
+	"medium": "",
+	"temperature": "",
+	"pressure": "",
+	"blindplate_material": "",
+	"blindplate_spec": "",
+	"blindplate_code": "",
+	"blindplate_mapandcode": "",
+	"workhighly": "",
+	"objectmass": "",
+	"poweraccesspoint": "",
+	"workvoltage": "",
+	"equipmentandpower": "",
+	"otherunit": "",
+	"workreason": "",
+	"isharmconfirm": "",
+	"ismeasureconfirm": "",
+	"isgascomplate": "",
+	"issigncomplate": "",
+	"created_by_name": "测试用户",
+	"updated_by_name": "测试用户",
+	"closereason": "",
+	"gastestaging": "",
+	"blindplate_worktype": "",
+	"gasket_material": "",
+	"gasket_spec": "",
+	"close_type": "",
+	"delaynum": 0,
+	"beendelaynum": 0,
+	"isppeconfirm": "",
+	"invalidreason": "",
+	"hassafetyplan": "0",
+	"hashseplan": "",
+	"hasemergencyplan": "",
+	"hasdrawpaper": "0",
+	"haschecklist": "",
+	"hasrescueplan": "",
+	"loadradius": "",
+	"loaddegree": "",
+	"loadrate": "",
+	"objectnorm": "",
+	"loadmass": "",
+	"haslineopensitemap": "",
+	"radiosourcetype": "",
+	"sourcecode": "",
+	"sourcestrength": "",
+	"suprange": "",
+	"controlrange": "",
+	"drawshow": "",
+	"hashookcheck": "",
+	"hasfacadecheck": "",
+	"hasdrivermedical": "",
+	"objectname": "",
+	"cancelreason": "",
+	"hidesituation": "",
+	"work_position_id": 2000000002019,
+	"isgas_detection": "0",
+	"gas_aging": "",
+	"isqualgasdetection": "",
+	"dig_size_l": "",
+	"dig_size_w": "",
+	"dig_size_h": "",
+	"attaches": "",
+	"lock_status": 0,
+	"lock_equipment_id": "",
+	"dl_uuid": "",
+	"dl_time": "",
+	"level_upgrade": 0,
+	"loadgoodsname": "",
+	"loadhigh": "",
+	"worktask_name": name,
+	"worktype_name": "作业许可证",
+	"dz_craneno": "",
+	"gas_standard_type": "",
+	"isproprietor": "",
+	"worksite": "",
+	"workticketmbcdid": "",
+	"isstoppower": "",
+	"work_position_name": "制氢北区",
+	"gas_detector_no": "",
+	"additional_requirements": "",
+	"worklevel_org": ""
+}
+print( data)
+#请求接口
+#rs=requests.post(url, json = data, headers = headers,cookies=cookies)
+#rs.encoding='utf-8'
+#cc = str(rs.content, 'utf8')
+#print (cc)
 #driver.close()
 #driver.quit()

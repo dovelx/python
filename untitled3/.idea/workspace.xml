@@ -15,14 +15,15 @@
     <SUITE FILE_PATH="coverage/untitled3$shenpi.coverage" NAME="shenpi Coverage Results" MODIFIED="1590477011993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$dre1.coverage" NAME="dre1 Coverage Results" MODIFIED="1590550317564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$yuyue_chanpin.coverage" NAME="yuyue_chanpin Coverage Results" MODIFIED="1590119036703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1590651140409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
+    <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1590656959072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$test.coverage" NAME="test Coverage Results" MODIFIED="1590577017136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$1.coverage" NAME="获取安全分析列表1 Coverage Results" MODIFIED="1590649756460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$m.coverage" NAME="m Coverage Results" MODIFIED="1590651387723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$m.coverage" NAME="m Coverage Results" MODIFIED="1590651566837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$yuyue_with_num.coverage" NAME="yuyue_with_num Coverage Results" MODIFIED="1590577543931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$b.coverage" NAME="b Coverage Results" MODIFIED="1590116026704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="获取作业列表 Coverage Results" MODIFIED="1590649771677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
+    <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="作业票提交 Coverage Results" MODIFIED="1590655308284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$yuyueliebiao.coverage" NAME="yuyueliebiao Coverage Results" MODIFIED="1590568607522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$pc.coverage" NAME="pc Coverage Results" MODIFIED="1590662036099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$a.coverage" NAME="a Coverage Results" MODIFIED="1590115306769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$anquanfenxi.coverage" NAME="anquanfenxi Coverage Results" MODIFIED="1590566126174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$der2.coverage" NAME="der2 Coverage Results" MODIFIED="1590463344018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
@@ -31,136 +32,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="yuyue_with_num.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/yuyue_with_num.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yuyueliebiao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yuyueliebiao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="8551" column="38" lean-forward="false" selection-start-line="8551" selection-start-column="38" selection-end-line="8551" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getnum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/getnum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="70" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="获取安全分析列表.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/获取安全分析列表.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="der2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/der2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/m.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/selenium_tets/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="633" column="0" lean-forward="true" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
+            <state relative-caret-position="-3186">
+              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#17940#21081#0" expanded="false" />
+                <element signature="e#21522#24653#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="获取作业列表.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/获取作业列表.py">
+      <file leaf-file-name="pc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/selenium_tets/pc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="93515" column="1" lean-forward="true" selection-start-line="93515" selection-start-column="1" selection-end-line="93515" selection-end-column="1" />
+            <state relative-caret-position="108">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
-                <element signature="e#222#1558#0" expanded="false" />
-                <element signature="e#2990743#3060875#0" expanded="false" />
-                <element signature="e#3057013#3060699#0" expanded="false" />
-                <element signature="e#3060718#3060869#0" expanded="false" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="获取安全分析列表1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/获取安全分析列表1.py">
+      <file leaf-file-name="作业票提交.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selenium_tets/作业票提交.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="13255" column="38" lean-forward="false" selection-start-line="13255" selection-start-column="23" selection-end-line="13255" selection-end-column="38" />
+            <state relative-caret-position="141">
+              <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="306" selection-end-column="5" />
               <folding>
-                <element signature="e#98#1402#0" expanded="false" />
-                <element signature="e#1418#2610#0" expanded="false" />
-                <element signature="e#2631#64626#0" expanded="false" />
-                <element signature="e#64648#77618#0" expanded="false" />
-                <element signature="e#77635#97155#0" expanded="false" />
-                <element signature="e#77643#78589#0" expanded="false" />
-                <element signature="e#78597#79549#0" expanded="false" />
-                <element signature="e#97172#100080#0" expanded="false" />
-                <element signature="e#100132#103483#0" expanded="false" />
-                <element signature="e#103505#104143#0" expanded="false" />
-                <element signature="e#104161#401068#0" expanded="false" />
-                <element signature="e#104169#328179#0" expanded="false" />
-                <element signature="e#328187#401062#0" expanded="false" />
-                <element signature="e#401180#401235#0" expanded="false" />
-                <element signature="e#461760#463405#0" expanded="false" />
-                <element signature="e#463415#465163#0" expanded="false" />
-                <element signature="e#465173#466923#0" expanded="false" />
-                <element signature="e#466933#468685#0" expanded="false" />
-                <element signature="e#468695#470458#0" expanded="false" />
-                <element signature="e#470468#472247#0" expanded="false" />
-                <element signature="e#472257#473822#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="获取作业任务列表1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selenium_tets/获取作业任务列表1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="28" column="14" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,8 +94,10 @@
       <find>worktaskid</find>
       <find>false</find>
       <find>2000000001835</find>
-      <find>null</find>
       <find>random</find>
+      <find>作业任务列表ID</find>
+      <find>print</find>
+      <find>null</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;false&quot;</replace>
@@ -219,8 +125,10 @@
         <option value="$PROJECT_DIR$/selenium_tets/获取作业列表.py" />
         <option value="$PROJECT_DIR$/selenium_tets/获取作业任务列表1.py" />
         <option value="$PROJECT_DIR$/selenium_tets/获取安全分析列表1.py" />
-        <option value="$PROJECT_DIR$/selenium_tets/main.py" />
         <option value="$PROJECT_DIR$/m.py" />
+        <option value="$PROJECT_DIR$/selenium_tets/作业票提交.py" />
+        <option value="$PROJECT_DIR$/selenium_tets/main.py" />
+        <option value="$PROJECT_DIR$/selenium_tets/pc.py" />
       </list>
     </option>
   </component>
@@ -284,6 +192,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pro\untitled3\selenium_tets" />
       <recent name="C:\Users\Administrator\PycharmProjects\untitled3\selenium_tets" />
     </key>
   </component>
@@ -299,8 +208,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.m">
-    <configuration name="获取安全分析列表1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pc">
+    <configuration name="作业票提交" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -313,26 +222,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled3" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_tets/获取安全分析列表1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="获取作业任务列表1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/selenium_tets" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled3" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_tets/获取作业任务列表1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_tets/作业票提交.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -395,20 +285,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="pc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/selenium_tets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_tets/pc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.获取安全分析列表1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.获取作业列表" />
-      <item index="3" class="java.lang.String" itemvalue="Python.获取作业任务列表1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.m" />
+      <item index="1" class="java.lang.String" itemvalue="Python.获取作业列表" />
+      <item index="2" class="java.lang.String" itemvalue="Python.m" />
+      <item index="3" class="java.lang.String" itemvalue="Python.作业票提交" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pc" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.m" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pc" />
         <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.获取作业列表" />
-        <item index="3" class="java.lang.String" itemvalue="Python.获取安全分析列表1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.获取作业任务列表1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.作业票提交" />
+        <item index="3" class="java.lang.String" itemvalue="Python.m" />
+        <item index="4" class="java.lang.String" itemvalue="Python.获取作业列表" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +345,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -473,23 +382,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selenium_tets/songjiao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium_tets/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selenium_tets/yuyue.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3762">
@@ -530,6 +422,8 @@
           <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#17940#21081#0" expanded="false" />
+            <element signature="e#21522#24653#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -858,16 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selenium_tets/yuyue_with_num.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selenium_tets/获取安全分析列表.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -908,10 +792,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/selenium_tets/der2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium_tets/获取作业任务列表1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#16#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/selenium_tets/获取作业列表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="93515" column="1" lean-forward="true" selection-start-line="93515" selection-start-column="1" selection-end-line="93515" selection-end-column="1" />
+        <state relative-caret-position="125">
+          <caret line="93513" column="5" lean-forward="true" selection-start-line="93513" selection-start-column="5" selection-end-line="93513" selection-end-column="5" />
           <folding>
             <element signature="e#222#1558#0" expanded="false" />
             <element signature="e#2990743#3060875#0" expanded="false" />
@@ -921,39 +831,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selenium_tets/获取作业任务列表1.py">
+    <entry file="file://$PROJECT_DIR$/selenium_tets/yuyue_with_num.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium_tets/der2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selenium_tets/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="633" column="0" lean-forward="true" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
+        <state relative-caret-position="317">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="95" selection-end-column="5" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m.py">
+    <entry file="file://$PROJECT_DIR$/selenium_tets/作业票提交.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="306" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium_tets/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3186">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#17940#21081#0" expanded="false" />
+            <element signature="e#21522#24653#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium_tets/pc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
