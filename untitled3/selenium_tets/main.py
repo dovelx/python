@@ -20,6 +20,7 @@ def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
     return  salt
 name = "Created_by_Python_"+ranstr(6)
+print(name)
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
 now1 = now + datetime.timedelta(minutes=5)
@@ -27,7 +28,10 @@ now2 = now + datetime.timedelta(minutes=10)
 fnow1 = now1.strftime("%Y-%m-%d %H:%M:%S")
 fnow2 = now2.strftime("%Y-%m-%d %H:%M:%S")
 now =now.strftime("%Y-%m-%d %H:%M:%S")
-
+#临时cookies
+cookies={'JSESSIONID': '01EE9349AA260D5644A2E3C5C4112E6EVCQUVw'}
+#暂时关闭登录
+'''
 #selenium登录测试长庆
 driver = webdriver.Firefox()
 driver.get("http://192.168.6.27:6030/passports/login?service=http%3A%2F%2F192.168.6.27%3A6030%2Fportals%2Fcas&tenantCode=cqsh&trial=false")
@@ -36,18 +40,18 @@ driver.find_element(By.ID, "username").send_keys("test")
 driver.find_element(By.ID, "pwd1").send_keys("1")
 driver.find_element(By.CSS_SELECTOR, ".justUse").click()
 
-
 #获取JSESSIONID
 c= driver.get_cookies()
 #print (c)
-print (c[0])
+#print (c[0])
 for a in c:
     #print (a)
     if a['name'] == 'JSESSIONID':
         b=a
         #print (b)
 cookies={'JSESSIONID': b['value']}
-#cookies={'JSESSIONID': '59E80FDA10220D88AB9A643E9CC4F314TcoeKm'}
+
+'''
 print(cookies)
 
 #预约列表接口地址
@@ -83,6 +87,7 @@ print ("work_appoint_id:",c)
 #拼写预约URL
 
 num = c
+print("作业预约列表NEW ID:",num)
 url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
 #作业预约作业任务名称随机数生成函数
 #print ("预约url\n",url2)
@@ -157,7 +162,7 @@ rsp = str(rs.content, 'utf8')
 
 #送交接口地址
 url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(num,num)
-print("送交请求url",url3)
+#print("送交请求url",url3)
 #请求头
 formdata2={
 	"opinion": "申请审批",
@@ -165,7 +170,7 @@ formdata2={
 	"2000000009070": "测试用户",
 	"2000000009070_id": 1000
 }
-time.sleep(15)
+#time.sleep(15)
 #请求送交接口
 rs=requests.post(url3, json = formdata2, headers = headers,cookies=cookies)
 #rs.encoding='utf-8'
@@ -234,7 +239,7 @@ formdatafenxi ={
 	"constructionscheme": "",
 	"standardmaintenance": ""
 }
-time.sleep(5)
+#time.sleep(5)
 #请求接口
 rs=requests.post(urlfenxi, json = formdatafenxi, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
@@ -261,7 +266,7 @@ for i in range(len(a)):
         b.append(a[i]['worktaskid'])
 #print (b)
 num1 = num
-print (num1)
+print ("安全分析列表使用ID:",num1)
 #print (max(b))
 #安全分析步骤添加
 url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.5426692795870303&contentType=json&ajax=true&tid=1'%(num1,num1)
@@ -298,7 +303,7 @@ cc = str(rs.content, 'utf8')
 #time.sleep(5)
 #安全分析保存
 #num1 = num1
-print(num1)
+#print("num1:",num1)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
 data ={
 	"tableName": "hse_safety_analysis",
@@ -365,6 +370,7 @@ cc = str(rs.content, 'utf8')
 print(cc)
 #安全交底
 num1 = num+20
+print ("送交ID:",num1)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num,num,num1)
 data = {
 	"tableName": "hse_safety_disclosure",
@@ -465,8 +471,163 @@ rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
 print(cc)
+#请求作业任务列表
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/getMetaData?0.8715056152376748&contentType=json&ajax=true&tid=1'
+headers = {
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'csrf': '6363382b59f6435eb243fab57ea5a5e0',
+    'X-Requested-With': 'XMLHttpRequest',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+    'Content-Type': 'text/plain',
+    }
+
+#请求接口
+rs=requests.get(url, headers = headers,cookies=cookies)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json化
+data = json.loads(data)
+#获取接口返回状态
+sta= data['status']
+print (data['status'])
+print (data['data']["voset"]["voList"])
+a = data['data']["voset"]["voList"]
+b =[]
+for i in range(len(a)):
+
+    if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
+        b.append(a[i]['worktaskid'])
+print (b)
+print (max(b))
+num2 = max(b)
+print("作业任务列表ID:",num2)
 #作业任务提交
-url =  'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=2000000004152&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000004152&0.7819922897402813&contentType=json&ajax=true&tid=1'
-time.sleep(2)
-driver.close()
-driver.quit()
+url =  'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(num2,num2)
+data ={
+	"tableName": "hse_work_task",
+	"task_worktype_code": "",
+	"hasrescueplan": "",
+	"territorialdeviceid": 2000000003454,
+	"drawshow": "",
+	"cywlqfyxzz": "",
+	"autorisklevel": 1,
+	"worktools": "",
+	"othercontent": "",
+	"equipmentcode": "",
+	"ishasworker": "",
+	"territorialdevicename": "制氢装置",
+	"hasdrawpaper": "",
+	"hassafetyplan": "",
+	"worker": "",
+	"card_code": "",
+	"reminder": "",
+	"constructionscheme": 0,
+	"reminderid": "",
+	"worktickettype_name": "作业许可证,动火作业",
+	"task_worktype_name": "",
+	"standardmaintenance": "",
+	"attaches": "",
+	"material_medium": "",
+	"risksmeasures": "",
+	"isrecord": "",
+	"persistent_type": "",
+	"flights": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"worktaskid": num2,
+	"workname": name,
+	"work_position_name": "制氢北区",
+	"work_appoint_name": name,
+	"actualstarttime": "",
+	"actualendtime": "",
+	"isgas_detection": "",
+	"delayreason": "",
+	"cancelreason": "",
+	"pause": 0,
+	"isupgrade": "0",
+	"sourcetaskid": "",
+	"nlglnumber": "",
+	"isreport": "",
+	"iswfnotreport": 0,
+	"gas_standard_type": "",
+	"parentid": "",
+	"lsydticketid": "",
+	"dqyzticketid": "",
+	"dqezticketid": "",
+	"task_pause": "0",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"site": "作业地点123",
+	"work_property": "bespeak",
+	"equipmentnumber": "",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"projecttype": "rcjx",
+	"iscontractor": "0",
+	"planstarttime": "2020-05-28 14:07:05",
+	"planendtime": "2020-05-28 14:12:05",
+	"worktickettype": "xkz,dh",
+	"workstatus": "draft",
+	"applyunitid": 1688712,
+	"applyunitname": "长庆石化分公司",
+	"created_by_name": "测试用户",
+	"updated_by_name": "测试用户",
+	"workcontent": "作业内容123",
+	"woid": "",
+	"wo_code": "",
+	"territorialunitcode": "CS8082020",
+	"equt_position": "",
+	"position_name": "",
+	"equipmentname": "",
+	"safeclar": "",
+	"safecode": "",
+	"work_position_id": 2000000002019,
+	"jsa_code": name,
+	"jsaid": num,
+	"work_appoint_id": num,
+	"wf_current_nodeid": "",
+	"wf_audit_time": "",
+	"task_risklevel": "",
+	"task_closereason": "",
+	"task_closetype": "",
+	"wf_current_user": "",
+	"wf_audit_state": "0",
+	"wf_create_user": 1000,
+	"wf_instance": "",
+	"wf_type": "",
+	"delaynum": 0,
+	"beendelaynum": 0,
+	"jobstatus": "",
+	"weekplanid": "",
+	"plan_type": 3,
+	"gasdetecttype": "",
+	"close_type": "",
+	"closereason": "",
+	"jsa_code2": "",
+	"jsaid2": "",
+	"isproprietor": "",
+	"planendtime_org": "",
+	"specialenvironment": "",
+	"gas_aging": "",
+	"safetyanalysisid": "",
+	"safetyanalysiscode": "",
+	"isspecialcondition": "",
+	"specialcondition": "",
+	"task_risklevel_org": "",
+	"eq_position": ""
+}
+#time.sleep(3)
+#请求接口
+rs=requests.post(url, json = data, headers = headers,cookies=cookies)
+rs.encoding='utf-8'
+cc = str(rs.content, 'utf8')
+print(cc)
+#driver.close()
+#driver.quit()
