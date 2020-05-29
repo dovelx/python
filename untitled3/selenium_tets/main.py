@@ -13,8 +13,7 @@ import random
 import string
 import datetime
 
-#预约到安全分析
-
+#预约-安全分析-作业任务
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -29,7 +28,7 @@ fnow1 = now1.strftime("%Y-%m-%d %H:%M:%S")
 fnow2 = now2.strftime("%Y-%m-%d %H:%M:%S")
 now =now.strftime("%Y-%m-%d %H:%M:%S")
 #临时cookies
-cookies={'JSESSIONID': '01EE9349AA260D5644A2E3C5C4112E6EVCQUVw'}
+cookies={'JSESSIONID': '8043FA701F61F7520C4BD7EC8B87230BUrtbnR'}
 #暂时关闭登录
 '''
 #selenium登录测试长庆
