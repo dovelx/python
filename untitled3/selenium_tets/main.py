@@ -266,8 +266,23 @@ formdata ={
 }
 #请求接口
 rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
+#rs.encoding='utf-8'
+#cc = str(rs.content, 'utf8')
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #print(cc)
 #安全分析第一个保存用例信息
 #caseid = 5
@@ -323,11 +338,23 @@ formdatafenxi ={
 rs=requests.post(urlfenxi, json = formdatafenxi, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
+
 print("安全分析及交底保存",cc)
 data = rs.content.decode('utf-8')
 #json化
 data = json.loads(data)
 
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #获取worktaskid
 data = data['data']['data']['worktaskid']
 print("worktaskid",data)
@@ -349,9 +376,18 @@ rs=requests.get(url11, headers = headers,cookies=cookies)
 data = rs.content.decode('utf-8')
 #json化
 data = json.loads(data)
-#获取接口返回状态
-sta= data['status']
 
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #print (sta)
 a = data['data']["voset"]["voList"]
 b =[]
@@ -400,9 +436,21 @@ data = {
 }
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-print("安全分析步骤添加",cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #time.sleep(5)
 #安全分析保存
 #安全分析步保存加接口用例信息
@@ -475,9 +523,21 @@ data = {
 #time.sleep(5)
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-print("安全分析保存",cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #安全交底
 #安全交底接口用例信息
 
@@ -520,9 +580,21 @@ data = {
 }
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-print("安全交底提交",cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 
 #安全送交
 #安全送交接口用例信息
@@ -536,10 +608,21 @@ url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&
 data = {}
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-print("安全送交:",cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
 
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #作业任务添加
 #作业任务添加接口用例信息
 
@@ -600,9 +683,21 @@ data  = {
 }
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-print("作业任务添加",cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #请求作业任务列表
 #请求作业任务列表添加接口用例信息
 
@@ -624,10 +719,19 @@ headers = {
 rs=requests.get(url, headers = headers,cookies=cookies)
 #返回值转码
 data = rs.content.decode('utf-8')
-#json化
+#json格式化
 data = json.loads(data)
 #获取接口返回状态
-sta= data['status']
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #print (data['status'])
 #print (data['data']["voset"]["voList"])
 a = data['data']["voset"]["voList"]
@@ -773,9 +877,21 @@ data ={
 #time.sleep(3)
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-rs.encoding='utf-8'
-cc = str(rs.content, 'utf8')
-#print(cc)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 
 #作业许可证保存
 #作业票ID
