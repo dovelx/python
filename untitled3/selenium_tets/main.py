@@ -13,13 +13,14 @@ import random
 import string
 import datetime
 
-#预约-安全分析-作业任务
+
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
     return  salt
 name = "Created_by_Python_"+ranstr(6)
-print(name)
+print("作业预约名称",name)
+
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
 now1 = now + datetime.timedelta(minutes=5)
@@ -28,7 +29,7 @@ fnow1 = now1.strftime("%Y-%m-%d %H:%M:%S")
 fnow2 = now2.strftime("%Y-%m-%d %H:%M:%S")
 now =now.strftime("%Y-%m-%d %H:%M:%S")
 #临时cookies
-cookies={'JSESSIONID': '8043FA701F61F7520C4BD7EC8B87230BUrtbnR'}
+cookies={'JSESSIONID': '791A7FCEA8DEFC195BDE3FE0D3C7B910op9T31'}
 #暂时关闭登录
 '''
 #selenium登录测试长庆
@@ -52,6 +53,22 @@ cookies={'JSESSIONID': b['value']}
 
 '''
 print(cookies)
+#用例信息变量定义
+testsuit = []
+caseinfo = {}
+
+caseinfo['id'] = 1
+caseinfo['name'] = ''
+caseinfo['result'] = 0
+
+
+#预约列表用例信息
+caseid = 1
+casename = '预约列表接口获取'
+count =1
+
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 
 #预约列表接口地址
 url1 = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/getMetaData?0.3897117454385264&contentType=json&ajax=true&tid=1'
@@ -68,21 +85,39 @@ headers={
 rs=requests.get(url1, headers = headers,cookies=cookies)
 #返回值转码
 data = rs.content.decode('utf-8')
-#json化
+#json格式化
 data = json.loads(data)
 #获取接口返回状态
-sta= data['status']
-print ("获取列表成功",sta)
+status= data['status']
+
+if status == 3200:
+
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 #获取列表最大work_appoint_id
 data = data['data']['voset']['voList']
-b = []
+temp = []
 for a in data:
-    b.append(a['work_appoint_id'])
-c = b[0]
+    temp.append(a['work_appoint_id'])
+work_appoint_id = temp[0]
 #当前最大work_appoint_id加1
-c =c+1
-#print ("work_appoint_id:",c)
+c =work_appoint_id+1
 
+
+
+
+#=====================开始作业预约
+#用例信息
+
+casename = '作业预约'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 #拼写预约URL
 
 num = c
@@ -94,7 +129,7 @@ url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&par
 #作业预约请求头
 headers={
     'Accept': 'application/json, text/javascript, */*; q=0.01',
-    'csrf': '45c959581a024e6e9607752a6664a313',
+    'csrf': 'bd95a01c276341b89715228e81d0ca3f',
     'X-Requested-With': 'XMLHttpRequest',
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
     'Content-Type': 'text/plain',
@@ -154,15 +189,37 @@ formdatanew ={
 
 #请求作业预约保存接口
 rs=requests.post(url2, json = formdatanew, headers = headers,cookies=cookies)
+'''
 rs.encoding='utf-8'
 rsp = str(rs.content, 'utf8')
 #if rsp['status'] == 3200:
 #	print("预约接口访问成功:")
+print ("作业预约保存返回:",rsp)
+'''
+#返回值转码
+data = rs.content.decode('utf-8')
+#json化
+data = json.loads(data)
+#获取接口返回状态
+sta= data['status']
+if sta == 3200:
+    print("作业预约成功", sta)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
 
+#送交用例信息
+
+casename = '作业预约送交'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 #送交接口地址
 url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(num,num)
-#print("送交请求url",url3)
-#请求头
+
 formdata2={
 	"opinion": "申请审批",
 	"nodeStr": "2000000009070",
@@ -173,13 +230,29 @@ formdata2={
 #请求送交接口
 rs=requests.post(url3, json = formdata2, headers = headers,cookies=cookies)
 #rs.encoding='utf-8'
-rsp = str(rs.content, 'utf8')
-#if rsp['status'] == 3200:
-#	print("预约接口访问成功:")
 #rsp = str(rs.content, 'utf8')
-#print('送交接口反馈:',rsp)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+#获取接口返回状态
+status= data['status']
 
+if status == 3200:
 
+    print("获取列表成功", status)
+    caseinfo['result'] = 1
+else:
+    caseinfo['result'] = 0
+#收集用例执行信息
+testsuit.append(caseinfo.copy())
+#作业预约审批用例信息
+
+casename = '作业预约审批'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 #审批接口地址
 url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(num)
 #参数
@@ -196,7 +269,14 @@ rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
 #print(cc)
-#安全分析第一个保存
+#安全分析第一个保存用例信息
+#caseid = 5
+casename = '安全分析及交底保存'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+
 urlfenxi ='http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.6529845051499572&contentType=json&ajax=true&tid=1'
 formdatafenxi ={
 	"tableName": "hse_safety_task",
@@ -243,7 +323,23 @@ formdatafenxi ={
 rs=requests.post(urlfenxi, json = formdatafenxi, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("安全分析及交底保存",cc)
+data = rs.content.decode('utf-8')
+#json化
+data = json.loads(data)
+
+#获取worktaskid
+data = data['data']['data']['worktaskid']
+print("worktaskid",data)
+worktaskid = data
+#获取安全分析接口用例信息
+#caseid = 6
+casename = '获取安全分析列表'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+
 #预约安全分析接口地址
 url11 = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/getMetaData?0.26386458099914045&contentType=json&ajax=true&tid=1'
 
@@ -264,11 +360,19 @@ for i in range(len(a)):
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
 #print (b)
-num1 = num
+num1 = worktaskid
 print ("安全分析列表使用ID:",num1)
-#print (max(b))
+
 #安全分析步骤添加
-url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.5426692795870303&contentType=json&ajax=true&tid=1'%(num1,num1)
+#安全分析步骤添加接口用例信息
+#caseid = 7
+casename = '安全分析步骤添加'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+#url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.5426692795870303&contentType=json&ajax=true&tid=1'%(num1,num1)
+url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(num1,num1)
 data = {
 	"tableName": "hse_safety_analysis_step",
 	"qualify_level": "no_qualify",
@@ -283,53 +387,60 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"step_type": "01",
+	"step_type": "02",
 	"evaluate_type": "",
 	"risk_level": "02",
 	"remain_risk_accept": "",
 	"risk_value": 0,
 	"risk_harm": "风险及危害123",
-	"consequence": "后果123",
 	"gravity": "1",
-	"accident_possibility": "1",
+	"consequence": "后果123",
+	"accident_possibility": "2",
 	"step_name": "步骤活动123"
 }
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("安全分析步骤添加",cc)
 #time.sleep(5)
 #安全分析保存
+#安全分析步保存加接口用例信息
+
+casename = '安全分析保存'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 #num1 = num1
-#print("num1:",num1)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
-data ={
+print("num1:",num1)
+#url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
+data = {
 	"tableName": "hse_safety_analysis",
-	"updated_by_name": "测试用户",
-	"create": "",
+
 	"dataStatus": 0,
 	"ver": 1,
 	"created_by": 1000,
-	"created_dt": now,
+	"created_dt": "2020-06-01 13:50:32",
 	"updated_by": 1000,
-	"updated_dt": now,
+	"updated_dt": "2020-06-01 13:50:32",
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
 	"jsaid": num1,
-	"jsa_templete_name": "安全分析模板",
-	"jsa_templete_id": num1,
+	"jsa_templete_name": "",
+	"jsa_templete_id": "",
 	"temp_type": "newWorkTask",
 	"jsa_monitor_userid": 1000,
 	"jsa_monitor_name": "测试用户",
 	"jsa_menber_userids": "1000",
 	"jsa_menber_username": "测试用户",
-	"analyze_time": "2020-05-29 13:04:16",
+	"analyze_time": "2020-06-03 13:51:20",
 	"worktickettype": "",
 	"equip_stuff": "",
 	"worktaskid": num1,
-	"workstatus": "draft",
+	"workstatus": "",
 	"worktype": "jsa",
 	"revampandadvide": "",
 	"inspection_name": "",
@@ -361,16 +472,23 @@ data ={
 	"remainsrisk_level": "",
 	"risk_level": "04"
 }
-
+#time.sleep(5)
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("安全分析保存",cc)
 #安全交底
-num1 = num+20
+#安全交底接口用例信息
+
+casename = '安全交底'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+num2 = num1+18
 print ("送交ID:",num1)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num,num,num1)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
 data = {
 	"tableName": "hse_safety_disclosure",
 	"additional_content": "",
@@ -384,7 +502,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"safeclarid": num1,
+	"safeclarid": num2,
 	"projecttype": "",
 	"safe_name": "长庆石化安全交底",
 	"worktype": "aqjd",
@@ -397,25 +515,40 @@ data = {
 	"safe_content": "长庆石化安全交底",
 	"safe_clar_temp_id": 2000000001040,
 	"safe_clar_temp_name": "",
-	"worktaskid": num,
+	"worktaskid": num1,
 	"work_position_id": 2000000002019
 }
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("安全交底提交",cc)
 
 #安全送交
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(num,num)
+#安全送交接口用例信息
+
+casename = '安全送交'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(num1,num1)
 data = {}
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("安全送交:",cc)
 
 #作业任务添加
+#作业任务添加接口用例信息
+
+casename = '作业任务添加'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
+
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
 data  = {
 	"tableName": "hse_work_task",
@@ -469,8 +602,15 @@ data  = {
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
-#print(cc)
+print("作业任务添加",cc)
 #请求作业任务列表
+#请求作业任务列表添加接口用例信息
+
+casename = '请求作业任务列表'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/getMetaData?0.8715056152376748&contentType=json&ajax=true&tid=1'
 headers = {
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -501,6 +641,13 @@ for i in range(len(a)):
 num2 = max(b)
 print("作业任务列表ID-num2==:",num2)
 #作业任务提交
+#作业任务提交接口用例信息
+
+casename = '作业任务提交'
+count =count+1
+caseid = count
+caseinfo['id'] = caseid
+caseinfo['name'] = casename
 url =  'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(num2,num2)
 #url1= 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=2000000004176&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004176&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005557&ts=1590655157270&0.9150744998075542&contentType=json&ajax=true&tid=1'
 data ={
@@ -632,10 +779,10 @@ cc = str(rs.content, 'utf8')
 
 #作业许可证保存
 #作业票ID
-num3 = 2000000005571+2
+num3 = 2000000005657+2
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005573&ts=1590656443277&0.7178753893110355&contentType=json&ajax=true&tid=1'%(num2,num2)
-print(url)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005573&ts=1590656443277&0.7178753893110355&contentType=json&ajax=true&tid=1'%(num2,num2)
+#print(url)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -678,7 +825,7 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": 2000000005573,
+	"workticketid": num3,
 	"worktaskid": num2,
 	"equipmentnumber": "",
 	"worktype": "xkz",
@@ -784,10 +931,12 @@ data = {
 	"worklevel_org": ""
 }
 #请求接口
-#rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-#rs.encoding='utf-8'
-#cc = str(rs.content, 'utf8')
-#print (cc)
+'''
+rs=requests.post(url, json = data, headers = headers,cookies=cookies)
+rs.encoding='utf-8'
+cc = str(rs.content, 'utf8')
+print ("作业许可证保存",cc)
+'''
 #作业许可证提交
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590653538571&0.23372369575241692&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
 #print(url)
@@ -938,7 +1087,7 @@ data ={
 	"additional_requirements": "",
 	"worklevel_org": ""
 }
-print( data)
+#print("last::", data)
 #请求接口
 #rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 #rs.encoding='utf-8'
@@ -946,3 +1095,6 @@ print( data)
 #print (cc)
 #driver.close()
 #driver.quit()
+
+for i in range(len(testsuit)):
+    print(testsuit[i])
