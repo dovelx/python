@@ -31,14 +31,20 @@ from htmlreporter import HtmlReport
 from globalpkg.global_var import executed_history_id
 from sendmail import MyMail
 
-
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
+logger.info("-----------------------------------------------auto_run_start----------------------------------------------------------------------")
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
+logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
     return  salt
 name = "Created_by_Python_"+ranstr(6)
 print("作业预约名称",name)
-
+logger.info("作业预约名称%s",name)
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
 now1 = now + datetime.timedelta(minutes=5)
@@ -159,6 +165,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename,data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #获取列表最大work_appoint_id
@@ -185,6 +192,7 @@ caseinfo['name'] = casename
 
 num = c
 print("作业预约新增ID:",num)
+logger.info("作业预约新增ID:%s",num)
 url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
 #作业预约作业任务名称随机数生成函数
 #print ("预约url\n",url2)
@@ -266,10 +274,11 @@ data = json.loads(data)
 #获取接口返回状态
 sta= data['status']
 if sta == 3200:
-    print("作业预约成功", sta)
+    #print("作业预约成功", sta)
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 
@@ -298,16 +307,17 @@ rs=requests.post(url3, json = formdata2, headers = headers,cookies=cookies)
 data = rs.content.decode('utf-8')
 #json格式化
 data = json.loads(data)
-logger.info("送交结果",data)
+
 #获取接口返回状态
 status= data['status']
-logger.info("送交结果,运行状态%s",data)
+
 if status == 3200:
 
     #print("获取列表成功", status)
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("送交结果,运行状态%s", data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #作业预约审批用例信息
@@ -336,7 +346,7 @@ rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
 data = rs.content.decode('utf-8')
 #json格式化
 data = json.loads(data)
-logger.info("审批结果%s",data)
+
 #获取接口返回状态
 status= data['status']
 
@@ -346,6 +356,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("审批结果%s", data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #print(cc)
@@ -414,16 +425,20 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    #print("获取列表成功", status)
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #获取worktaskid
 data = data['data']['data']['worktaskid']
-print("worktaskid",data)
+print("安全分析和交底_worktaskid",data)
+logger.info("安全分析和交底_worktaskid:%ss",data)
 worktaskid = data
+#安全步骤URL请求ID
+num1 = worktaskid
 #获取安全分析接口用例信息
 #caseid = 6
 casename = '获取安全分析列表'
@@ -447,10 +462,11 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    #print("获取列表成功", status)
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #print (sta)
@@ -461,7 +477,7 @@ for i in range(len(a)):
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
 #print (b)
-num1 = worktaskid
+
 #print ("安全分析列表使用ID:",num1)
 
 #安全分析步骤添加
@@ -514,6 +530,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #time.sleep(5)
@@ -526,7 +543,7 @@ caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
 #num1 = num1
-print("num1:",num1)
+#print("num1:",num1)
 #url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
 data = {
@@ -601,6 +618,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #安全交底
@@ -613,6 +631,7 @@ caseinfo['id'] = caseid
 caseinfo['name'] = casename
 num2 = num1+17
 print ("送交ID:",num1)
+logger.info("送交ID:%s",num1)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
 data = {
 	"tableName": "hse_safety_disclosure",
@@ -794,6 +813,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #请求作业任务列表
@@ -828,6 +848,7 @@ if status == 3200:
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 #print (data['status'])
@@ -841,7 +862,8 @@ for i in range(len(a)):
 #print (b)
 #print (max(b))
 num2 = max(b)
-print("作业任务列表ID-num2==:",num2)
+print("作业任务列表ID:",num2)
+logger.info("作业任务列表ID:%s",num2)
 #作业任务提交
 #作业任务提交接口用例信息
 
@@ -850,6 +872,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
+##作业任务提交URL,使用作业任务列表IDnum2
 url =  'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(num2,num2)
 #url1= 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=2000000004176&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004176&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005557&ts=1590655157270&0.9150744998075542&contentType=json&ajax=true&tid=1'
 data ={
@@ -984,10 +1007,11 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    #print("获取列表成功", status)
     caseinfo['result'] = "Pass"
 else:
     caseinfo['result'] = "Fail"
+    logger.info("%s错误结果%s", casename, data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 
@@ -1444,3 +1468,4 @@ mymail.send_mail(mail_tiltle, mail_content, attachments)
 mymail.quit()
 
 logger.info('发送邮件成功')
+logger.info("-----------------------------------------------END----------------------------------------------------------------------")
