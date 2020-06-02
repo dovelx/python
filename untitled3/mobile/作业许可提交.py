@@ -1,14 +1,14 @@
 import requests
-
-cookies={'JSESSIONID': '39E91345598C4568E44C7CB78E850C1COKQ4Sx'}
+import json
+#cookies={'JSESSIONID': 'F7E11C4CE46832CDEF4179716BE15E9DzU3Qu2'}
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/cardSave.json?level=1"
 headers = {
             "Accept":"application/json",
-"Accept-Encoding": "gzip",
-"user-agent":"ONEPLUS A6010(Android/10) (com.hayden.hap.fv/1.0.2) Weex/0.16.0 1080x2134",
-"Content-Type": "application/json;charset=UTF-8",
-    "st":"m_login_user_stoken_1d826d0ab6ed4d1fa6794652c4f4ef53",
-    "tid":"1"
+            "Accept-Encoding": "gzip",
+            "user-agent":"ONEPLUS A6010(Android/10) (com.hayden.hap.fv/1.0.2) Weex/0.16.0 1080x2134",
+            "Content-Type": "application/json;charset=UTF-8",
+            "st":"m_login_user_stoken_aa16ed77d7d94d8589a861062c341e3b",
+            "tid":"1"
 
 }
 data = {
@@ -1670,5 +1670,12 @@ data = {
 		"ts": 1591065322626
 	}
 }
-rsp = requests.post(url = url,json=data,headers=headers,cookies =cookies)
-print(rsp.content)
+rs = requests.post(url = url,json=data,headers=headers)
+#返回值转码
+data = rs.content.decode('utf-8')
+#json格式化
+data = json.loads(data)
+
+print(data)
+#获取接口返回状态
+status= data['status']
