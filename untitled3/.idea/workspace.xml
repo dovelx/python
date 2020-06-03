@@ -10,7 +10,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/untitled3$songjiao.coverage" NAME="songjiao Coverage Results" MODIFIED="1590476934383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$getnum.coverage" NAME="getnum Coverage Results" MODIFIED="1590568633983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$shenpi.coverage" NAME="shenpi Coverage Results" MODIFIED="1590477011993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$dre1.coverage" NAME="dre1 Coverage Results" MODIFIED="1590550317564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -18,19 +17,21 @@
     <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1591173887199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$test.coverage" NAME="test Coverage Results" MODIFIED="1590577017136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$1.coverage" NAME="获取安全分析列表1 Coverage Results" MODIFIED="1590649756460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
+    <SUITE FILE_PATH="coverage/untitled3$mainxx.coverage" NAME="mainxx Coverage Results" MODIFIED="1591178333243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="作业许可票保存 Coverage Results" MODIFIED="1591086124214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
+    <SUITE FILE_PATH="coverage/untitled3$yuyueliebiao.coverage" NAME="yuyueliebiao Coverage Results" MODIFIED="1590568607522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$debug5.coverage" NAME="debug5 Coverage Results" MODIFIED="1591146134798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$a.coverage" NAME="a Coverage Results" MODIFIED="1590115306769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
+    <SUITE FILE_PATH="coverage/untitled3$der2.coverage" NAME="der2 Coverage Results" MODIFIED="1590463344018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
+    <SUITE FILE_PATH="coverage/untitled3$songjiao.coverage" NAME="songjiao Coverage Results" MODIFIED="1590476934383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$m.coverage" NAME="m Coverage Results" MODIFIED="1591080333192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$yuyue_with_num.coverage" NAME="yuyue_with_num Coverage Results" MODIFIED="1591169281368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$b.coverage" NAME="b Coverage Results" MODIFIED="1590116026704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="作业许可票保存 Coverage Results" MODIFIED="1591086124214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
-    <SUITE FILE_PATH="coverage/untitled3$yuyueliebiao.coverage" NAME="yuyueliebiao Coverage Results" MODIFIED="1590568607522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$pc.coverage" NAME="pc Coverage Results" MODIFIED="1590975032199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$debug5.coverage" NAME="debug5 Coverage Results" MODIFIED="1591146134798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$debbug1.coverage" NAME="debbug1 Coverage Results" MODIFIED="1591080241616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1591087376615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1590998558375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$a.coverage" NAME="a Coverage Results" MODIFIED="1590115306769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$anquanfenxi.coverage" NAME="anquanfenxi Coverage Results" MODIFIED="1590566126174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$der2.coverage" NAME="der2 Coverage Results" MODIFIED="1590463344018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$yuyue.coverage" NAME="yuyue Coverage Results" MODIFIED="1590463869141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$main_auto.coverage" NAME="main_auto Coverage Results" MODIFIED="1590476837496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$debug4.coverage" NAME="debug4 Coverage Results" MODIFIED="1591090408771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
@@ -40,16 +41,18 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="-14577">
+              <caret line="1376" column="3" lean-forward="false" selection-start-line="1376" selection-start-column="3" selection-end-line="1376" selection-end-column="3" />
               <folding>
+                <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#2725#3274#1" expanded="false" />
                 <element signature="e#3643#3974#0" expanded="false" />
                 <element signature="e#4171#4221#0" expanded="false" />
                 <element signature="e#4497#4525#0" expanded="false" />
-                <element signature="e#4888#4906#0" expanded="false" />
                 <element signature="e#4949#5280#0" expanded="false" />
+                <element signature="e#5298#6557#0" expanded="false" />
                 <element signature="e#6569#7813#0" expanded="false" />
+                <element signature="e#7827#9044#0" expanded="false" />
                 <element signature="e#9128#9257#1" expanded="false" />
                 <element signature="e#9844#9948#0" expanded="false" />
                 <element signature="e#9949#9964#0" expanded="false" />
@@ -66,42 +69,44 @@
                 <element signature="e#20842#21985#0" expanded="false" />
                 <element signature="e#21997#23113#0" expanded="false" />
                 <element signature="e#23711#24042#0" expanded="false" />
-                <element signature="e#27890#30536#0" expanded="false" />
-                <element signature="e#33870#34134#0" expanded="false" />
-                <element signature="e#34154#37289#0" expanded="false" />
-                <element signature="e#37298#40453#0" expanded="false" />
-                <element signature="e#40901#44021#0" expanded="false" />
-                <element signature="e#44519#47721#0" expanded="false" />
-                <element signature="e#48139#51330#0" expanded="false" />
-                <element signature="e#51638#51956#0" expanded="false" />
-                <element signature="e#52105#52209#0" expanded="false" />
-                <element signature="e#52540#52551#0" expanded="false" />
-                <element signature="e#52666#52846#0" expanded="false" />
-                <element signature="e#53519#53767#0" expanded="false" />
-                <element signature="e#53775#91113#0" expanded="false" />
-                <element signature="e#53790#89506#0" expanded="false" />
-                <element signature="e#53823#54314#0" expanded="false" />
-                <element signature="e#53834#54310#0" expanded="false" />
-                <element signature="e#54327#54803#0" expanded="false" />
-                <element signature="e#68071#68548#0" expanded="false" />
-                <element signature="e#91449#93050#0" expanded="false" />
-                <element signature="e#93389#94974#0" expanded="false" />
-                <element signature="e#95399#95936#0" expanded="false" />
-                <element signature="e#96311#104692#0" expanded="false" />
-                <element signature="e#105114#106763#0" expanded="false" />
-                <element signature="e#107222#109262#0" expanded="false" />
-                <element signature="e#107244#107660#0" expanded="false" />
-                <element signature="e#107686#108574#0" expanded="false" />
-                <element signature="e#107776#108210#0" expanded="false" />
-                <element signature="e#109727#121109#0" expanded="false" />
-                <element signature="e#121566#123616#0" expanded="false" />
-                <element signature="e#124439#133510#0" expanded="false" />
-                <element signature="e#134156#144663#0" expanded="false" />
-                <element signature="e#232200#245864#0" expanded="false" />
-                <marker date="1591174538955" expanded="true" signature="1663:1738" ph="select workt... hse_work_ticket" />
-                <marker date="1591174538955" expanded="true" signature="1756:1811" ph="select ts fr... hse_work_ticket" />
-                <marker date="1591174538955" expanded="true" signature="1837:1908" ph="select workt... hse_work_ticket" />
-                <marker date="1591174538955" expanded="true" signature="1938:2020" ph="SELECT work_... hse_safety_task" />
+                <element signature="e#25258#27886#0" expanded="false" />
+                <element signature="e#27894#30540#0" expanded="false" />
+                <element signature="e#30548#33186#0" expanded="false" />
+                <element signature="e#33874#34138#0" expanded="false" />
+                <element signature="e#34162#37297#0" expanded="false" />
+                <element signature="e#37306#40461#0" expanded="false" />
+                <element signature="e#40909#44029#0" expanded="false" />
+                <element signature="e#44527#47729#0" expanded="false" />
+                <element signature="e#48147#51338#0" expanded="false" />
+                <element signature="e#51646#51964#0" expanded="false" />
+                <element signature="e#52113#52217#0" expanded="false" />
+                <element signature="e#52548#52559#0" expanded="false" />
+                <element signature="e#52674#52854#0" expanded="false" />
+                <element signature="e#53527#53775#0" expanded="false" />
+                <element signature="e#53783#91121#0" expanded="false" />
+                <element signature="e#53798#89514#0" expanded="false" />
+                <element signature="e#53831#54322#0" expanded="false" />
+                <element signature="e#53842#54318#0" expanded="false" />
+                <element signature="e#54335#54811#0" expanded="false" />
+                <element signature="e#68079#68556#0" expanded="false" />
+                <element signature="e#91457#93058#0" expanded="false" />
+                <element signature="e#93397#94982#0" expanded="false" />
+                <element signature="e#95407#95944#0" expanded="false" />
+                <element signature="e#96319#104700#0" expanded="false" />
+                <element signature="e#105122#106771#0" expanded="false" />
+                <element signature="e#107230#109270#0" expanded="false" />
+                <element signature="e#107252#107668#0" expanded="false" />
+                <element signature="e#107694#108582#0" expanded="false" />
+                <element signature="e#107784#108218#0" expanded="false" />
+                <element signature="e#109735#121117#0" expanded="false" />
+                <element signature="e#121574#123624#0" expanded="false" />
+                <element signature="e#124447#133518#0" expanded="false" />
+                <element signature="e#134164#144671#0" expanded="false" />
+                <element signature="e#232208#245872#0" expanded="false" />
+                <marker date="1591175073224" expanded="true" signature="1663:1738" ph="select workt... hse_work_ticket" />
+                <marker date="1591175073224" expanded="true" signature="1756:1811" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591175073224" expanded="true" signature="1837:1908" ph="select workt... hse_work_ticket" />
+                <marker date="1591175073224" expanded="true" signature="1938:2020" ph="SELECT work_... hse_safety_task" />
               </folding>
             </state>
           </provider>
@@ -110,18 +115,31 @@
       <file leaf-file-name="mainxx.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainxx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="820" column="0" lean-forward="false" selection-start-line="820" selection-start-column="0" selection-end-line="820" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="4267" column="33" lean-forward="true" selection-start-line="4267" selection-start-column="33" selection-end-line="4267" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#3638#3969#0" expanded="false" />
                 <element signature="e#5272#6489#0" expanded="false" />
                 <element signature="e#18076#19192#0" expanded="false" />
                 <element signature="e#19790#20121#0" expanded="false" />
-                <marker date="1591174831846" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
-                <marker date="1591174831846" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
-                <marker date="1591174831846" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
-                <marker date="1591174831846" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
+                <element signature="e#21108#23746#0" expanded="false" />
+                <element signature="e#24428#27583#0" expanded="false" />
+                <element signature="e#28031#31151#0" expanded="false" />
+                <element signature="e#33110#33358#0" expanded="false" />
+                <element signature="e#33366#70704#0" expanded="false" />
+                <element signature="e#71009#72610#0" expanded="false" />
+                <element signature="e#72952#84226#0" expanded="false" />
+                <element signature="e#84574#98740#0" expanded="false" />
+                <element signature="e#99086#114797#0" expanded="false" />
+                <element signature="e#115110#123441#0" expanded="false" />
+                <element signature="e#124065#132662#0" expanded="false" />
+                <element signature="e#133006#143459#0" expanded="false" />
+                <element signature="e#143636#305800#1" expanded="false" />
+                <marker date="1591178329922" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
+                <marker date="1591178329922" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591178329922" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
+                <marker date="1591178329922" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
               </folding>
             </state>
           </provider>
@@ -164,7 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
       <find>2000000001723</find>
       <find>worktaskid</find>
       <find>2000000001835</find>
@@ -194,6 +211,7 @@
       <find>作业许可证</find>
       <find>作业预约</find>
       <find>作业任务添加</find>
+      <find>num3</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;false&quot;</replace>
@@ -320,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.mainxx">
     <configuration name="作业许可提交" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,25 +434,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mobile" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled3" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mobile/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,6 +448,25 @@
       <module name="untitled3" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mainxx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainxx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -474,19 +492,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.main (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.debug4" />
-      <item index="2" class="java.lang.String" itemvalue="Python.debug5" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main" />
-      <item index="4" class="java.lang.String" itemvalue="Python.yuyue_with_num" />
+      <item index="0" class="java.lang.String" itemvalue="Python.debug4" />
+      <item index="1" class="java.lang.String" itemvalue="Python.debug5" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.yuyue_with_num" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mainxx" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.yuyue_with_num" />
-        <item index="2" class="java.lang.String" itemvalue="Python.debug5" />
-        <item index="3" class="java.lang.String" itemvalue="Python.debug4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.main (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mainxx" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.yuyue_with_num" />
+        <item index="3" class="java.lang.String" itemvalue="Python.debug5" />
+        <item index="4" class="java.lang.String" itemvalue="Python.debug4" />
       </list>
     </recent_temporary>
   </component>
@@ -579,11 +597,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>2280</line>
+          <line>2282</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1018,16 +1036,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="-14577">
+          <caret line="1376" column="3" lean-forward="false" selection-start-line="1376" selection-start-column="3" selection-end-line="1376" selection-end-column="3" />
           <folding>
+            <element signature="e#0#13#0" expanded="true" />
             <element signature="e#2725#3274#1" expanded="false" />
             <element signature="e#3643#3974#0" expanded="false" />
             <element signature="e#4171#4221#0" expanded="false" />
             <element signature="e#4497#4525#0" expanded="false" />
-            <element signature="e#4888#4906#0" expanded="false" />
             <element signature="e#4949#5280#0" expanded="false" />
+            <element signature="e#5298#6557#0" expanded="false" />
             <element signature="e#6569#7813#0" expanded="false" />
+            <element signature="e#7827#9044#0" expanded="false" />
             <element signature="e#9128#9257#1" expanded="false" />
             <element signature="e#9844#9948#0" expanded="false" />
             <element signature="e#9949#9964#0" expanded="false" />
@@ -1044,60 +1064,75 @@
             <element signature="e#20842#21985#0" expanded="false" />
             <element signature="e#21997#23113#0" expanded="false" />
             <element signature="e#23711#24042#0" expanded="false" />
-            <element signature="e#27890#30536#0" expanded="false" />
-            <element signature="e#33870#34134#0" expanded="false" />
-            <element signature="e#34154#37289#0" expanded="false" />
-            <element signature="e#37298#40453#0" expanded="false" />
-            <element signature="e#40901#44021#0" expanded="false" />
-            <element signature="e#44519#47721#0" expanded="false" />
-            <element signature="e#48139#51330#0" expanded="false" />
-            <element signature="e#51638#51956#0" expanded="false" />
-            <element signature="e#52105#52209#0" expanded="false" />
-            <element signature="e#52540#52551#0" expanded="false" />
-            <element signature="e#52666#52846#0" expanded="false" />
-            <element signature="e#53519#53767#0" expanded="false" />
-            <element signature="e#53775#91113#0" expanded="false" />
-            <element signature="e#53790#89506#0" expanded="false" />
-            <element signature="e#53823#54314#0" expanded="false" />
-            <element signature="e#53834#54310#0" expanded="false" />
-            <element signature="e#54327#54803#0" expanded="false" />
-            <element signature="e#68071#68548#0" expanded="false" />
-            <element signature="e#91449#93050#0" expanded="false" />
-            <element signature="e#93389#94974#0" expanded="false" />
-            <element signature="e#95399#95936#0" expanded="false" />
-            <element signature="e#96311#104692#0" expanded="false" />
-            <element signature="e#105114#106763#0" expanded="false" />
-            <element signature="e#107222#109262#0" expanded="false" />
-            <element signature="e#107244#107660#0" expanded="false" />
-            <element signature="e#107686#108574#0" expanded="false" />
-            <element signature="e#107776#108210#0" expanded="false" />
-            <element signature="e#109727#121109#0" expanded="false" />
-            <element signature="e#121566#123616#0" expanded="false" />
-            <element signature="e#124439#133510#0" expanded="false" />
-            <element signature="e#134156#144663#0" expanded="false" />
-            <element signature="e#232200#245864#0" expanded="false" />
-            <marker date="1591174538955" expanded="true" signature="1663:1738" ph="select workt... hse_work_ticket" />
-            <marker date="1591174538955" expanded="true" signature="1756:1811" ph="select ts fr... hse_work_ticket" />
-            <marker date="1591174538955" expanded="true" signature="1837:1908" ph="select workt... hse_work_ticket" />
-            <marker date="1591174538955" expanded="true" signature="1938:2020" ph="SELECT work_... hse_safety_task" />
+            <element signature="e#25258#27886#0" expanded="false" />
+            <element signature="e#27894#30540#0" expanded="false" />
+            <element signature="e#30548#33186#0" expanded="false" />
+            <element signature="e#33874#34138#0" expanded="false" />
+            <element signature="e#34162#37297#0" expanded="false" />
+            <element signature="e#37306#40461#0" expanded="false" />
+            <element signature="e#40909#44029#0" expanded="false" />
+            <element signature="e#44527#47729#0" expanded="false" />
+            <element signature="e#48147#51338#0" expanded="false" />
+            <element signature="e#51646#51964#0" expanded="false" />
+            <element signature="e#52113#52217#0" expanded="false" />
+            <element signature="e#52548#52559#0" expanded="false" />
+            <element signature="e#52674#52854#0" expanded="false" />
+            <element signature="e#53527#53775#0" expanded="false" />
+            <element signature="e#53783#91121#0" expanded="false" />
+            <element signature="e#53798#89514#0" expanded="false" />
+            <element signature="e#53831#54322#0" expanded="false" />
+            <element signature="e#53842#54318#0" expanded="false" />
+            <element signature="e#54335#54811#0" expanded="false" />
+            <element signature="e#68079#68556#0" expanded="false" />
+            <element signature="e#91457#93058#0" expanded="false" />
+            <element signature="e#93397#94982#0" expanded="false" />
+            <element signature="e#95407#95944#0" expanded="false" />
+            <element signature="e#96319#104700#0" expanded="false" />
+            <element signature="e#105122#106771#0" expanded="false" />
+            <element signature="e#107230#109270#0" expanded="false" />
+            <element signature="e#107252#107668#0" expanded="false" />
+            <element signature="e#107694#108582#0" expanded="false" />
+            <element signature="e#107784#108218#0" expanded="false" />
+            <element signature="e#109735#121117#0" expanded="false" />
+            <element signature="e#121574#123624#0" expanded="false" />
+            <element signature="e#124447#133518#0" expanded="false" />
+            <element signature="e#134164#144671#0" expanded="false" />
+            <element signature="e#232208#245872#0" expanded="false" />
+            <marker date="1591175073224" expanded="true" signature="1663:1738" ph="select workt... hse_work_ticket" />
+            <marker date="1591175073224" expanded="true" signature="1756:1811" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591175073224" expanded="true" signature="1837:1908" ph="select workt... hse_work_ticket" />
+            <marker date="1591175073224" expanded="true" signature="1938:2020" ph="SELECT work_... hse_safety_task" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainxx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="820" column="0" lean-forward="false" selection-start-line="820" selection-start-column="0" selection-end-line="820" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="4267" column="33" lean-forward="true" selection-start-line="4267" selection-start-column="33" selection-end-line="4267" selection-end-column="33" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#3638#3969#0" expanded="false" />
             <element signature="e#5272#6489#0" expanded="false" />
             <element signature="e#18076#19192#0" expanded="false" />
             <element signature="e#19790#20121#0" expanded="false" />
-            <marker date="1591174831846" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
-            <marker date="1591174831846" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
-            <marker date="1591174831846" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
-            <marker date="1591174831846" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
+            <element signature="e#21108#23746#0" expanded="false" />
+            <element signature="e#24428#27583#0" expanded="false" />
+            <element signature="e#28031#31151#0" expanded="false" />
+            <element signature="e#33110#33358#0" expanded="false" />
+            <element signature="e#33366#70704#0" expanded="false" />
+            <element signature="e#71009#72610#0" expanded="false" />
+            <element signature="e#72952#84226#0" expanded="false" />
+            <element signature="e#84574#98740#0" expanded="false" />
+            <element signature="e#99086#114797#0" expanded="false" />
+            <element signature="e#115110#123441#0" expanded="false" />
+            <element signature="e#124065#132662#0" expanded="false" />
+            <element signature="e#133006#143459#0" expanded="false" />
+            <element signature="e#143636#305800#1" expanded="false" />
+            <marker date="1591178329922" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
+            <marker date="1591178329922" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591178329922" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
+            <marker date="1591178329922" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
           </folding>
         </state>
       </provider>
