@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/untitled3$shenpi.coverage" NAME="shenpi Coverage Results" MODIFIED="1590477011993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$dre1.coverage" NAME="dre1 Coverage Results" MODIFIED="1590550317564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$yuyue_chanpin.coverage" NAME="yuyue_chanpin Coverage Results" MODIFIED="1590119036703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1591096430307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1591150243207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$test.coverage" NAME="test Coverage Results" MODIFIED="1590577017136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$1.coverage" NAME="获取安全分析列表1 Coverage Results" MODIFIED="1590649756460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$m.coverage" NAME="m Coverage Results" MODIFIED="1591080333192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
@@ -24,7 +24,7 @@
     <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="作业许可票保存 Coverage Results" MODIFIED="1591086124214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$yuyueliebiao.coverage" NAME="yuyueliebiao Coverage Results" MODIFIED="1590568607522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$pc.coverage" NAME="pc Coverage Results" MODIFIED="1590975032199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$debug5.coverage" NAME="debug5 Coverage Results" MODIFIED="1591092024969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$debug5.coverage" NAME="debug5 Coverage Results" MODIFIED="1591146134798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$debbug1.coverage" NAME="debbug1 Coverage Results" MODIFIED="1591080241616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1591087376615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1590998558375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
@@ -40,45 +40,49 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="3394" column="0" lean-forward="true" selection-start-line="3394" selection-start-column="0" selection-end-line="3394" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="3544" column="22" lean-forward="true" selection-start-line="3544" selection-start-column="22" selection-end-line="3544" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#2180#2729#1" expanded="false" />
-                <element signature="e#3098#3429#0" expanded="false" />
-                <element signature="e#3626#3676#0" expanded="false" />
-                <element signature="e#3952#3980#0" expanded="false" />
-                <element signature="e#4343#4361#0" expanded="false" />
-                <element signature="e#4404#4735#0" expanded="false" />
-                <element signature="e#4749#6008#0" expanded="false" />
-                <element signature="e#6100#6229#1" expanded="false" />
-                <element signature="e#6816#6920#0" expanded="false" />
-                <element signature="e#6921#6936#0" expanded="false" />
-                <element signature="e#7021#7041#0" expanded="false" />
-                <element signature="e#7205#7255#0" expanded="false" />
-                <element signature="e#7676#7794#0" expanded="false" />
-                <element signature="e#8533#9456#0" expanded="false" />
-                <element signature="e#10449#10499#0" expanded="false" />
-                <element signature="e#11454#11939#0" expanded="false" />
-                <element signature="e#12148#12198#0" expanded="false" />
-                <element signature="e#12959#14161#0" expanded="false" />
-                <element signature="e#14921#15694#0" expanded="false" />
-                <element signature="e#17026#18187#0" expanded="false" />
-                <element signature="e#18785#19116#0" expanded="false" />
-                <element signature="e#20378#23006#0" expanded="false" />
-                <element signature="e#23962#27097#0" expanded="false" />
-                <element signature="e#27546#30666#0" expanded="false" />
-                <element signature="e#31165#34367#0" expanded="false" />
-                <element signature="e#34785#37976#0" expanded="false" />
-                <element signature="e#38283#38601#0" expanded="false" />
-                <element signature="e#38750#38854#0" expanded="false" />
-                <element signature="e#39185#39196#0" expanded="false" />
-                <element signature="e#39311#39491#0" expanded="false" />
-                <element signature="e#40420#77758#0" expanded="false" />
-                <element signature="e#54716#55193#0" expanded="false" />
-                <element signature="e#78093#79694#0" expanded="false" />
-                <marker date="1591096463369" expanded="true" signature="1653:1728" ph="select workt... hse_work_ticket" />
-                <marker date="1591096463369" expanded="true" signature="1746:1801" ph="select ts fr... hse_work_ticket" />
+                <element signature="e#2715#3264#1" expanded="false" />
+                <element signature="e#3633#3964#0" expanded="false" />
+                <element signature="e#4161#4211#0" expanded="false" />
+                <element signature="e#4487#4515#0" expanded="false" />
+                <element signature="e#4878#4896#0" expanded="false" />
+                <element signature="e#4939#5270#0" expanded="false" />
+                <element signature="e#5284#6543#0" expanded="false" />
+                <element signature="e#6635#6764#1" expanded="false" />
+                <element signature="e#7351#7455#0" expanded="false" />
+                <element signature="e#7456#7471#0" expanded="false" />
+                <element signature="e#7556#7576#0" expanded="false" />
+                <element signature="e#7740#7790#0" expanded="false" />
+                <element signature="e#8211#8329#0" expanded="false" />
+                <element signature="e#9068#9991#0" expanded="false" />
+                <element signature="e#10984#11034#0" expanded="false" />
+                <element signature="e#11989#12474#0" expanded="false" />
+                <element signature="e#12683#12733#0" expanded="false" />
+                <element signature="e#13494#14696#0" expanded="false" />
+                <element signature="e#15456#16229#0" expanded="false" />
+                <element signature="e#17561#18704#0" expanded="false" />
+                <element signature="e#19302#19633#0" expanded="false" />
+                <element signature="e#20895#23523#0" expanded="false" />
+                <element signature="e#24479#27614#0" expanded="false" />
+                <element signature="e#28063#31183#0" expanded="false" />
+                <element signature="e#31682#34884#0" expanded="false" />
+                <element signature="e#35302#38493#0" expanded="false" />
+                <element signature="e#38801#39119#0" expanded="false" />
+                <element signature="e#39268#39372#0" expanded="false" />
+                <element signature="e#39703#39714#0" expanded="false" />
+                <element signature="e#39829#40009#0" expanded="false" />
+                <element signature="e#40938#78276#0" expanded="false" />
+                <element signature="e#55234#55711#0" expanded="false" />
+                <element signature="e#78611#80212#0" expanded="false" />
+                <element signature="e#80550#82135#0" expanded="false" />
+                <element signature="e#82559#83096#0" expanded="false" />
+                <marker date="1591150681176" expanded="true" signature="1653:1728" ph="select workt... hse_work_ticket" />
+                <marker date="1591150681176" expanded="true" signature="1746:1801" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591150681176" expanded="true" signature="1827:1898" ph="select workt... hse_work_ticket" />
+                <marker date="1591150681176" expanded="true" signature="1928:2010" ph="SELECT work_... hse_safety_task" />
               </folding>
             </state>
           </provider>
@@ -87,13 +91,14 @@
       <file leaf-file-name="debug5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debug5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="426">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1591092024897" expanded="true" signature="636:711" ph="select workt... hse_work_ticket" />
-                <marker date="1591092024897" expanded="true" signature="637:711" ph="select * fro... hse_work_ticket" />
-                <marker date="1591092024897" expanded="true" signature="729:784" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591145560424" expanded="true" signature="636:711" ph="select workt... hse_work_ticket" />
+                <marker date="1591145560424" expanded="true" signature="637:711" ph="select * fro... hse_work_ticket" />
+                <marker date="1591145560424" expanded="true" signature="729:784" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591145560424" expanded="true" signature="810:881" ph="select workt... hse_work_ticket" />
               </folding>
             </state>
           </provider>
@@ -110,9 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zuoyerenwumingcheng</find>
-      <find>2000000001731</find>
-      <find>beijing</find>
       <find>2000000001765</find>
       <find>20000000017</find>
       <find>topEntityId</find>
@@ -140,6 +142,9 @@
       <find>作业许可证保存</find>
       <find>动火</find>
       <find>ts</find>
+      <find>num2</find>
+      <find>安全分析列表使用ID</find>
+      <find>17</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;false&quot;</replace>
@@ -219,7 +224,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,13 +245,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/project/interface_project_for_dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -458,12 +463,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -776,9 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="64" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="1" />
-          <folding>
-            <element signature="e#1#16#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,10 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="1672" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-            <element signature="e#544#41578#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
           <caret line="1215" column="22" lean-forward="true" selection-start-line="1215" selection-start-column="22" selection-end-line="1215" selection-end-column="22" />
-          <folding>
-            <element signature="e#1017#1566#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="1132" column="49" lean-forward="true" selection-start-line="1132" selection-start-column="49" selection-end-line="1132" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-485">
           <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,46 +929,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/debug4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/debug4.py" />
     <entry file="file://$PROJECT_DIR$/mobile/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="893" column="32" lean-forward="false" selection-start-line="893" selection-start-column="32" selection-end-line="893" selection-end-column="32" />
-          <folding>
-            <element signature="e#1017#1566#1" expanded="false" />
-            <element signature="e#6042#6092#0" expanded="false" />
-            <element signature="e#6513#6631#0" expanded="false" />
-            <element signature="e#6713#6733#0" expanded="false" />
-            <element signature="e#6896#6946#0" expanded="false" />
-            <element signature="e#7023#7033#0" expanded="false" />
-            <element signature="e#7370#8293#0" expanded="false" />
-            <element signature="e#8294#8308#0" expanded="false" />
-            <element signature="e#8596#8646#0" expanded="false" />
-            <element signature="e#8822#8835#0" expanded="false" />
-            <element signature="e#9286#9336#0" expanded="false" />
-            <element signature="e#9497#9593#0" expanded="false" />
-            <element signature="e#9651#9660#0" expanded="false" />
-            <element signature="e#10291#10776#0" expanded="false" />
-            <element signature="e#10985#11035#0" expanded="false" />
-            <element signature="e#11796#12998#0" expanded="false" />
-            <element signature="e#13758#14531#0" expanded="false" />
-            <element signature="e#19215#21843#0" expanded="false" />
-            <element signature="e#22820#25955#0" expanded="false" />
-            <element signature="e#26403#29523#0" expanded="false" />
-            <element signature="e#30005#33158#0" expanded="false" />
-            <element signature="e#33466#33784#0" expanded="false" />
-            <element signature="e#33933#34037#0" expanded="false" />
-            <element signature="e#34494#34674#0" expanded="false" />
-            <element signature="e#35570#72919#0" expanded="false" />
-            <element signature="e#68117#68735#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,9 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#63#82#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,64 +955,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/debug5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="426">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1591092024897" expanded="true" signature="636:711" ph="select workt... hse_work_ticket" />
-            <marker date="1591092024897" expanded="true" signature="637:711" ph="select * fro... hse_work_ticket" />
-            <marker date="1591092024897" expanded="true" signature="729:784" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591145560424" expanded="true" signature="636:711" ph="select workt... hse_work_ticket" />
+            <marker date="1591145560424" expanded="true" signature="637:711" ph="select * fro... hse_work_ticket" />
+            <marker date="1591145560424" expanded="true" signature="729:784" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591145560424" expanded="true" signature="810:881" ph="select workt... hse_work_ticket" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="3394" column="0" lean-forward="true" selection-start-line="3394" selection-start-column="0" selection-end-line="3394" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="3544" column="22" lean-forward="true" selection-start-line="3544" selection-start-column="22" selection-end-line="3544" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#2180#2729#1" expanded="false" />
-            <element signature="e#3098#3429#0" expanded="false" />
-            <element signature="e#3626#3676#0" expanded="false" />
-            <element signature="e#3952#3980#0" expanded="false" />
-            <element signature="e#4343#4361#0" expanded="false" />
-            <element signature="e#4404#4735#0" expanded="false" />
-            <element signature="e#4749#6008#0" expanded="false" />
-            <element signature="e#6100#6229#1" expanded="false" />
-            <element signature="e#6816#6920#0" expanded="false" />
-            <element signature="e#6921#6936#0" expanded="false" />
-            <element signature="e#7021#7041#0" expanded="false" />
-            <element signature="e#7205#7255#0" expanded="false" />
-            <element signature="e#7676#7794#0" expanded="false" />
-            <element signature="e#8533#9456#0" expanded="false" />
-            <element signature="e#10449#10499#0" expanded="false" />
-            <element signature="e#11454#11939#0" expanded="false" />
-            <element signature="e#12148#12198#0" expanded="false" />
-            <element signature="e#12959#14161#0" expanded="false" />
-            <element signature="e#14921#15694#0" expanded="false" />
-            <element signature="e#17026#18187#0" expanded="false" />
-            <element signature="e#18785#19116#0" expanded="false" />
-            <element signature="e#20378#23006#0" expanded="false" />
-            <element signature="e#23962#27097#0" expanded="false" />
-            <element signature="e#27546#30666#0" expanded="false" />
-            <element signature="e#31165#34367#0" expanded="false" />
-            <element signature="e#34785#37976#0" expanded="false" />
-            <element signature="e#38283#38601#0" expanded="false" />
-            <element signature="e#38750#38854#0" expanded="false" />
-            <element signature="e#39185#39196#0" expanded="false" />
-            <element signature="e#39311#39491#0" expanded="false" />
-            <element signature="e#40420#77758#0" expanded="false" />
-            <element signature="e#54716#55193#0" expanded="false" />
-            <element signature="e#78093#79694#0" expanded="false" />
-            <marker date="1591096463369" expanded="true" signature="1653:1728" ph="select workt... hse_work_ticket" />
-            <marker date="1591096463369" expanded="true" signature="1746:1801" ph="select ts fr... hse_work_ticket" />
+            <element signature="e#2715#3264#1" expanded="false" />
+            <element signature="e#3633#3964#0" expanded="false" />
+            <element signature="e#4161#4211#0" expanded="false" />
+            <element signature="e#4487#4515#0" expanded="false" />
+            <element signature="e#4878#4896#0" expanded="false" />
+            <element signature="e#4939#5270#0" expanded="false" />
+            <element signature="e#5284#6543#0" expanded="false" />
+            <element signature="e#6635#6764#1" expanded="false" />
+            <element signature="e#7351#7455#0" expanded="false" />
+            <element signature="e#7456#7471#0" expanded="false" />
+            <element signature="e#7556#7576#0" expanded="false" />
+            <element signature="e#7740#7790#0" expanded="false" />
+            <element signature="e#8211#8329#0" expanded="false" />
+            <element signature="e#9068#9991#0" expanded="false" />
+            <element signature="e#10984#11034#0" expanded="false" />
+            <element signature="e#11989#12474#0" expanded="false" />
+            <element signature="e#12683#12733#0" expanded="false" />
+            <element signature="e#13494#14696#0" expanded="false" />
+            <element signature="e#15456#16229#0" expanded="false" />
+            <element signature="e#17561#18704#0" expanded="false" />
+            <element signature="e#19302#19633#0" expanded="false" />
+            <element signature="e#20895#23523#0" expanded="false" />
+            <element signature="e#24479#27614#0" expanded="false" />
+            <element signature="e#28063#31183#0" expanded="false" />
+            <element signature="e#31682#34884#0" expanded="false" />
+            <element signature="e#35302#38493#0" expanded="false" />
+            <element signature="e#38801#39119#0" expanded="false" />
+            <element signature="e#39268#39372#0" expanded="false" />
+            <element signature="e#39703#39714#0" expanded="false" />
+            <element signature="e#39829#40009#0" expanded="false" />
+            <element signature="e#40938#78276#0" expanded="false" />
+            <element signature="e#55234#55711#0" expanded="false" />
+            <element signature="e#78611#80212#0" expanded="false" />
+            <element signature="e#80550#82135#0" expanded="false" />
+            <element signature="e#82559#83096#0" expanded="false" />
+            <marker date="1591150681176" expanded="true" signature="1653:1728" ph="select workt... hse_work_ticket" />
+            <marker date="1591150681176" expanded="true" signature="1746:1801" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591150681176" expanded="true" signature="1827:1898" ph="select workt... hse_work_ticket" />
+            <marker date="1591150681176" expanded="true" signature="1928:2010" ph="SELECT work_... hse_safety_task" />
           </folding>
         </state>
       </provider>
