@@ -52,13 +52,13 @@ sql_query_worktaskid = 'select worktaskid from hse_work_ticket ORDER BY worktask
 sql_query_work_appoint_id ='SELECT work_appoint_id from hse_safety_task ORDER BY  work_appoint_id desc LIMIT 1'
 logger.info('正在更新步骤执行结果')
 #testdb.execute_update(sql_update, data)
-temp = testdb1.select_one_record(sql_query_ticket)
+temp = testdb_changqing.select_one_record(sql_query_ticket)
 #temp = temp.decode('utf-8')
 workticketid = temp[0]
 #作业票数据库当前ID
 workticketid = workticketid[0]
 print(workticketid)
-temp = testdb1.select_one_record(sql_query_ts)
+temp = testdb_changqing.select_one_record(sql_query_ts)
 
 print(temp)
 ts = temp[0][0]
@@ -67,18 +67,18 @@ ts = ts.decode('utf-8')
 #TS ID
 tsi = int(ts)
 print(ts)
-temp = testdb1.select_one_record(sql_query_worktaskid)
+temp = testdb_changqing.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
 print(worktaskid)
 
-temp = testdb1.select_one_record(sql_query_work_appoint_id)
+temp = testdb_changqing.select_one_record(sql_query_work_appoint_id)
 work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = work_appoint_id[0]
 print("work_appoint_id",work_appoint_id)
-testdb1.close()
+testdb_changqing.close()
 #暂时关闭登录
 '''
 #selenium登录测试长庆

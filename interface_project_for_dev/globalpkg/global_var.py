@@ -13,6 +13,8 @@ from globalpkg.log import logger
 from globalpkg.mydb import MyDB
 from globalpkg.mytestlink import TestLink
 from globalpkg.othertools import OtherTools
+from tools import sqls
+
 '''
 __all__=['global_headers', 'global_name','global_time', 'global_ctime',
          'global_dtime','saofudb','testdb','mytestlink',
@@ -47,7 +49,42 @@ logger.info('正在初始化数据库[名称：TESTDB]对象')
 testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
 
 logger.info('正在初始化数据库[名称：CHANGQING]对象')
-testdb1 = MyDB('./config/dbconfig.conf', 'CHANGQING')
+testdb_changqing = MyDB('./config/dbconfig.conf', 'CHANGQING')
+
+#操作hse_work_ticket表，获取workticketid获取
+
+sql_query_ticket = sqls.ticket
+sql_query_ts = sqls.ts
+sql_query_worktaskid = sqls.worktaskid
+sql_query_work_appoint_id =sqls.appoint_id
+
+logger.info('正在更新步骤执行结果')
+temp = testdb_changqing.select_one_record(sql_query_ticket)
+
+workticketid = temp[0]
+#作业票数据库当前ID-workticketid
+workticketid = workticketid[0]
+print("workticketid",workticketid)
+temp = testdb_changqing.select_one_record(sql_query_ts)
+#获取TS
+ts = temp[0][0]
+#print(ts)
+ts = ts.decode('utf-8')
+#TS ID
+tsi = int(ts)
+print("TS",ts)
+temp = testdb_changqing.select_one_record(sql_query_worktaskid)
+worktaskid = temp[0]
+#worktaskid
+worktaskid = worktaskid[0]
+print("worktaskid",worktaskid)
+
+temp = testdb_changqing.select_one_record(sql_query_work_appoint_id)
+work_appoint_id = temp[0]
+#worktaskid
+work_appoint_id = work_appoint_id[0]
+print("work_appoint_id",work_appoint_id)
+testdb_changqing.close()
 '''
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()
