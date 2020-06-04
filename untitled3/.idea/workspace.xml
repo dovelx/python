@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/untitled3$main.coverage" NAME="main Coverage Results" MODIFIED="1591173887199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$test.coverage" NAME="test Coverage Results" MODIFIED="1590577017136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
     <SUITE FILE_PATH="coverage/untitled3$1.coverage" NAME="获取安全分析列表1 Coverage Results" MODIFIED="1590649756460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium_tets" />
-    <SUITE FILE_PATH="coverage/untitled3$mainxx.coverage" NAME="mainxx Coverage Results" MODIFIED="1591178333243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled3$mainxx.coverage" NAME="mainxx Coverage Results" MODIFIED="1591231739034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$.coverage" NAME="作业许可票保存 Coverage Results" MODIFIED="1591086124214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mobile" />
     <SUITE FILE_PATH="coverage/untitled3$yuyueliebiao.coverage" NAME="yuyueliebiao Coverage Results" MODIFIED="1590568607522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled3$debug5.coverage" NAME="debug5 Coverage Results" MODIFIED="1591146134798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -115,8 +115,8 @@
       <file leaf-file-name="mainxx.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainxx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="4267" column="33" lean-forward="true" selection-start-line="4267" selection-start-column="33" selection-end-line="4267" selection-end-column="33" />
+            <state relative-caret-position="132">
+              <caret line="4402" column="33" lean-forward="true" selection-start-line="4402" selection-start-column="33" selection-end-line="4402" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#3638#3969#0" expanded="false" />
@@ -135,11 +135,13 @@
                 <element signature="e#115110#123441#0" expanded="false" />
                 <element signature="e#124065#132662#0" expanded="false" />
                 <element signature="e#133006#143459#0" expanded="false" />
-                <element signature="e#143636#305800#1" expanded="false" />
-                <marker date="1591178329922" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
-                <marker date="1591178329922" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
-                <marker date="1591178329922" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
-                <marker date="1591178329922" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
+                <element signature="e#143783#152710#0" expanded="false" />
+                <element signature="e#153034#162668#0" expanded="false" />
+                <element signature="e#162845#325009#1" expanded="false" />
+                <marker date="1591231736717" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
+                <marker date="1591231736717" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591231736717" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
+                <marker date="1591231736717" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
               </folding>
             </state>
           </provider>
@@ -600,8 +602,13 @@
           <line>2282</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mainxx.py</url>
+          <line>4278</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1108,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainxx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="4267" column="33" lean-forward="true" selection-start-line="4267" selection-start-column="33" selection-end-line="4267" selection-end-column="33" />
+        <state relative-caret-position="132">
+          <caret line="4402" column="33" lean-forward="true" selection-start-line="4402" selection-start-column="33" selection-end-line="4402" selection-end-column="33" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#3638#3969#0" expanded="false" />
@@ -1128,11 +1135,13 @@
             <element signature="e#115110#123441#0" expanded="false" />
             <element signature="e#124065#132662#0" expanded="false" />
             <element signature="e#133006#143459#0" expanded="false" />
-            <element signature="e#143636#305800#1" expanded="false" />
-            <marker date="1591178329922" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
-            <marker date="1591178329922" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
-            <marker date="1591178329922" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
-            <marker date="1591178329922" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
+            <element signature="e#143783#152710#0" expanded="false" />
+            <element signature="e#153034#162668#0" expanded="false" />
+            <element signature="e#162845#325009#1" expanded="false" />
+            <marker date="1591231736717" expanded="true" signature="1658:1733" ph="select workt... hse_work_ticket" />
+            <marker date="1591231736717" expanded="true" signature="1751:1806" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591231736717" expanded="true" signature="1832:1903" ph="select workt... hse_work_ticket" />
+            <marker date="1591231736717" expanded="true" signature="1933:2015" ph="SELECT work_... hse_safety_task" />
           </folding>
         </state>
       </provider>
