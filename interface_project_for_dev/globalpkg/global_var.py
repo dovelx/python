@@ -58,7 +58,7 @@ sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
 sql_query_work_appoint_id =sqls.appoint_id
 
-logger.info('正在更新步骤执行结果')
+logger.info('开始数据库查询')
 temp = testdb_changqing.select_one_record(sql_query_ticket)
 
 workticketid = temp[0]
@@ -84,6 +84,7 @@ work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = work_appoint_id[0]
 print("work_appoint_id",work_appoint_id)
+logger.info("===关闭数据库=============")
 testdb_changqing.close()
 '''
 logger.info('正在获取testlink')

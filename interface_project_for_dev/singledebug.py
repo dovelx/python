@@ -20,7 +20,7 @@ from globalpkg.global_var import logger
 
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': 'D7032D29FE8DF9C25AE83C0ED4745132D1ayKL'}
+cookies={'JSESSIONID': 'DB7520665A4F144E5FE0AFE8A3DBEF19Xrovjn'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -170,7 +170,7 @@ caseinfo['name'] = casename
 #拼写预约URL
 
 num = c
-print("作业预约列表NEW ID:",num)
+print("作业预约列表NEW ID-num:",num)
 url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
 #作业预约作业任务名称随机数生成函数
 #print ("预约url\n",url2)
@@ -397,7 +397,7 @@ else:
 testsuit.append(caseinfo.copy())
 #获取worktaskid
 data = data['data']['data']['worktaskid']
-print("worktaskid",data)
+print("安全分析及交底保存worktaskid========",data)
 worktaskid = data
 #获取安全分析接口用例信息
 #caseid = 6
@@ -763,7 +763,7 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    print("作业任务提交成功", data)
     caseinfo['result'] = 1
 else:
     caseinfo['result'] = 0
