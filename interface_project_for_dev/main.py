@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
     logger.info('接口测试已执行完成，正在关闭数据库连接')
     testdb.close()
-    saofudb.close()
+    #saofudb.close()
 
     
     if 4 != run_mode:

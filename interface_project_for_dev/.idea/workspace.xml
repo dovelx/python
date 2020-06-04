@@ -13,18 +13,63 @@
     <SUITE FILE_PATH="coverage/interface_project_for_dev$global_var.coverage" NAME="global_var Coverage Results" MODIFIED="1591003268683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/globalpkg" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$init.coverage" NAME="init Coverage Results" MODIFIED="1590745413686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1590739790987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$cmain.coverage" NAME="cmain Coverage Results" MODIFIED="1591065458088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$mainxx.coverage" NAME="mainxx Coverage Results" MODIFIED="1591233899494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$tetz.coverage" NAME="tetz Coverage Results" MODIFIED="1591233197911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$cmain.coverage" NAME="cmain Coverage Results" MODIFIED="1591234281784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cmain.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmain.py">
+      <file leaf-file-name="pcdouble.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pcdouble.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="192">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1476" selection-end-column="135" />
               <folding>
-                <element signature="e#42#55#0" expanded="true" />
+                <element signature="e#52#65#0" expanded="true" />
+                <element signature="e#2912#3704#0" expanded="false" />
+                <element signature="e#3794#4975#0" expanded="false" />
+                <element signature="e#5155#5704#1" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="singledebug.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/singledebug.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <marker date="1591234396103" expanded="true" signature="1731:1806" ph="select workt... hse_work_ticket" />
+                <marker date="1591234396103" expanded="true" signature="1824:1879" ph="select ts fr... hse_work_ticket" />
+                <marker date="1591234396103" expanded="true" signature="1905:1976" ph="select workt... hse_work_ticket" />
+                <marker date="1591234396103" expanded="true" signature="2006:2088" ph="SELECT work_... hse_safety_task" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="singleticket.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/singleticket.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2392">
+              <caret line="1476" column="135" lean-forward="false" selection-start-line="1476" selection-start-column="135" selection-end-line="1476" selection-end-column="135" />
+              <folding>
+                <element signature="e#52#65#0" expanded="true" />
+                <element signature="e#2912#3704#0" expanded="false" />
+                <element signature="e#3794#4975#0" expanded="false" />
+                <element signature="e#5155#5704#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbconfig.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/dbconfig.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,9 +77,11 @@
       <file leaf-file-name="global_var.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+              <folding>
+                <element signature="e#63#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,13 +128,19 @@
         <option value="$PROJECT_DIR$/init.py" />
         <option value="$PROJECT_DIR$/globalpkg/othertools.py" />
         <option value="$PROJECT_DIR$/httpprotocol.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/globalpkg/mydb.py" />
-        <option value="$PROJECT_DIR$/globalpkg/global_var.py" />
         <option value="$PROJECT_DIR$/htmlreporter.py" />
         <option value="$PROJECT_DIR$/config/logconfig.conf" />
         <option value="$PROJECT_DIR$/config/report.conf" />
+        <option value="$PROJECT_DIR$/testcase.py" />
+        <option value="$PROJECT_DIR$/globalpkg/log.py" />
+        <option value="$PROJECT_DIR$/tetz.py" />
+        <option value="$PROJECT_DIR$/globalpkg/mydb.py" />
+        <option value="$PROJECT_DIR$/config/dbconfig.conf" />
+        <option value="$PROJECT_DIR$/globalpkg/global_var.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/cmain.py" />
+        <option value="$PROJECT_DIR$/mainxx.py" />
+        <option value="$PROJECT_DIR$/singleticket.py" />
       </list>
     </option>
   </component>
@@ -126,16 +179,6 @@
               <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface_project_for_dev" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface_project_for_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="globalpkg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface_project_for_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -145,7 +188,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -173,7 +216,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmain.py" />
+      <option name="SCRIPT_NAME" value="C:\pro\interface_project_for_dev\pcdouble.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,7 +260,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mainxx" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -230,24 +273,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\pro\interface_project_for_dev\singledebug.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.init" />
-      <item index="2" class="java.lang.String" itemvalue="Python.cmain" />
-      <item index="3" class="java.lang.String" itemvalue="Python.global_var" />
+    <configuration name="tetz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="interface_project_for_dev" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tetz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.init" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cmain" />
+      <item index="2" class="java.lang.String" itemvalue="Python.global_var" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mainxx" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tetz" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.cmain" />
-        <item index="1" class="java.lang.String" itemvalue="Python.global_var" />
-        <item index="2" class="java.lang.String" itemvalue="Python.init" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mainxx" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tetz" />
+        <item index="3" class="java.lang.String" itemvalue="Python.global_var" />
+        <item index="4" class="java.lang.String" itemvalue="Python.init" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +339,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37618545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37618545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -304,38 +368,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="55" column="79" lean-forward="true" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29624">
-          <caret line="1319" column="21" lean-forward="true" selection-start-line="1319" selection-start-column="21" selection-end-line="1319" selection-end-column="21" />
-          <folding>
-            <element signature="e#42#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/InterfaceUnittestTestCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpprotocol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2599">
-          <caret line="121" column="17" lean-forward="false" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/globalpkg/mytestlink.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -375,7 +407,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#63#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -446,7 +480,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#63#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,13 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittesttestcase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6486">
-          <caret line="369" column="19" lean-forward="false" selection-start-line="369" selection-start-column="8" selection-end-line="369" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -556,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4508">
-          <caret line="211" column="4" lean-forward="false" selection-start-line="211" selection-start-column="4" selection-end-line="211" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python33/Lib/configparser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-588">
@@ -578,38 +600,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/globalpkg/mydb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2323">
-          <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-          <folding>
-            <element signature="e#63#82#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2576">
-          <caret line="123" column="85" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/htmlreporter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3105">
           <caret line="144" column="28" lean-forward="false" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="28" />
           <folding>
-            <element signature="e#63#72#0" expanded="true" />
+            <element signature="e#63#72#0" expanded="false" />
             <marker date="1591061923610" expanded="true" signature="9569:9966" ph="SELECT step_... case_step_report_tb" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/dbconfig.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -662,20 +660,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
+    <entry file="file://$PROJECT_DIR$/globalpkg/mydb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#63#82#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="119" column="19" lean-forward="false" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+          <folding>
+            <element signature="e#63#74#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittesttestcase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="369" column="19" lean-forward="false" selection-start-line="369" selection-start-column="8" selection-end-line="369" selection-end-column="19" />
+          <folding>
+            <element signature="e#63#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalpkg/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmain.py">
+    <entry file="file://$PROJECT_DIR$/tetz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="161">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
-            <element signature="e#42#55#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dbconfig.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1877">
+          <caret line="211" column="5" lean-forward="false" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+          <folding>
+            <element signature="e#63#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcdouble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1476" selection-end-column="135" />
+          <folding>
+            <element signature="e#52#65#0" expanded="true" />
+            <element signature="e#2912#3704#0" expanded="false" />
+            <element signature="e#3794#4975#0" expanded="false" />
+            <element signature="e#5155#5704#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleticket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2392">
+          <caret line="1476" column="135" lean-forward="false" selection-start-line="1476" selection-start-column="135" selection-end-line="1476" selection-end-column="135" />
+          <folding>
+            <element signature="e#52#65#0" expanded="true" />
+            <element signature="e#2912#3704#0" expanded="false" />
+            <element signature="e#3794#4975#0" expanded="false" />
+            <element signature="e#5155#5704#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singledebug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1591234396103" expanded="true" signature="1731:1806" ph="select workt... hse_work_ticket" />
+            <marker date="1591234396103" expanded="true" signature="1824:1879" ph="select ts fr... hse_work_ticket" />
+            <marker date="1591234396103" expanded="true" signature="1905:1976" ph="select workt... hse_work_ticket" />
+            <marker date="1591234396103" expanded="true" signature="2006:2088" ph="SELECT work_... hse_safety_task" />
           </folding>
         </state>
       </provider>

@@ -46,6 +46,8 @@ elif sys.argv[1] == '2':
 logger.info('正在初始化数据库[名称：TESTDB]对象')
 testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
 
+logger.info('正在初始化数据库[名称：CHANGQING]对象')
+testdb1 = MyDB('./config/dbconfig.conf', 'CHANGQING')
 '''
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()

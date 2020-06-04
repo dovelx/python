@@ -1,5 +1,6 @@
 import http.cookiejar, urllib.request
-
+from globalpkg.mydb import MyDB
+from globalpkg.log import LogSignleton
 cookie = http.cookiejar.CookieJar()
 handler = urllib.request.HTTPCookieProcessor(cookie)
 opener = urllib.request.build_opener(handler)
