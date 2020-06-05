@@ -20,7 +20,7 @@ from globalpkg.global_var import logger
 
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': 'DB7520665A4F144E5FE0AFE8A3DBEF19Xrovjn'}
+cookies={'JSESSIONID': 'A38EB763D77A9972D16C220BA04CC9C86RepBO'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -50,6 +50,8 @@ sql_query_ticket = 'select workticketid from hse_work_ticket order by workticket
 sql_query_ts = 'select ts from hse_work_ticket order by ts desc limit 1'
 sql_query_worktaskid = 'select worktaskid from hse_work_ticket ORDER BY worktaskid desc limit 1'
 sql_query_work_appoint_id ='SELECT work_appoint_id from hse_safety_task ORDER BY  work_appoint_id desc LIMIT 1'
+sql_query_work_jsaid='SELECT jsaid from hse_safety_analysis ORDER BY  jsaid desc LIMIT 1'
+sql_query_work_safeclarid='SELECT safeclarid from hse_safety_disclosure ORDER BY  safeclarid desc LIMIT 1'
 logger.info('正在更新步骤执行结果')
 #testdb.execute_update(sql_update, data)
 temp = testdb_changqing.select_one_record(sql_query_ticket)
@@ -78,6 +80,20 @@ work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = work_appoint_id[0]
 print("work_appoint_id",work_appoint_id)
+
+temp = testdb_changqing.select_one_record(sql_query_work_jsaid)
+print(temp)
+jsaid = temp[0]
+#jsaid
+jsaid = jsaid[0]
+print("jsaid",jsaid)
+
+temp = testdb_changqing.select_one_record(sql_query_work_safeclarid)
+print(temp)
+safeclarid = temp[0]
+#jsaid
+safeclarid = safeclarid[0]
+print("safeclarid",safeclarid)
 testdb_changqing.close()
 #暂时关闭登录
 '''
@@ -154,7 +170,7 @@ for a in data:
     temp.append(a['work_appoint_id'])
 work_appoint_id = temp[0]
 #当前最大work_appoint_id加1
-c =work_appoint_id+1
+num =work_appoint_id+1
 
 
 
@@ -169,7 +185,7 @@ caseinfo['id'] = caseid
 caseinfo['name'] = casename
 #拼写预约URL
 
-num = c
+
 print("作业预约列表NEW ID-num:",num)
 url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
 #作业预约作业任务名称随机数生成函数
@@ -399,6 +415,7 @@ testsuit.append(caseinfo.copy())
 data = data['data']['data']['worktaskid']
 print("安全分析及交底保存worktaskid========",data)
 worktaskid = data
+print("安全分析及交底保存jsaid========",jsaid)
 #获取安全分析接口用例信息
 #caseid = 6
 casename = '获取安全分析列表'
@@ -436,7 +453,7 @@ for i in range(len(a)):
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
 #print (b)
-num1 = worktaskid
+num1 = jsaid+1
 print ("安全分析列表使用ID:",num1)
 
 #安全分析步骤添加
@@ -587,6 +604,7 @@ caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
 num2 = num1+17
+num2 = safeclarid
 print ("送交ID:",num2)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
 data = {

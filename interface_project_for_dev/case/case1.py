@@ -3,7 +3,8 @@ from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
-
+from globalpkg.global_var import jsaid
+from globalpkg.global_var import safeclarid
 #times
 starttime = tool.starttime
 endtime = tool.endtime
@@ -184,7 +185,7 @@ url11 = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/getMetaData?0.2638645
 
 
 num1 = work_appoint_id-33
-
+num1 = jsaid+1
 print ("安全分析列表使用ID:",num1)
 
 
@@ -306,6 +307,7 @@ caseid = count
 caseinfo['id'] = 7
 caseinfo['name'] = casename
 num2 = num1+17
+num2 = safeclarid
 print ("送交ID:",num2)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
 
