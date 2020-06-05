@@ -6,3 +6,4 @@ worktaskid = 'select worktaskid from hse_work_ticket ORDER BY worktaskid desc li
 appoint_id ='SELECT work_appoint_id from hse_safety_task ORDER BY  work_appoint_id desc LIMIT 1'
 sql_query_work_jsaid='SELECT jsaid from hse_safety_analysis ORDER BY  jsaid desc LIMIT 1'
 sql_query_work_safeclarid='SELECT safeclarid from hse_safety_disclosure ORDER BY  safeclarid desc LIMIT 1'
+sql_query_work_appointid ='SELECT work_appoint_id from hse_work_appoint ORDER BY  work_appoint_id desc LIMIT 1'

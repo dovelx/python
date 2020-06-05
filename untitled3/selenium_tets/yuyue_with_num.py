@@ -47,7 +47,7 @@ for a in c:
         #print (b)
 cookies={'JSESSIONID': b['value']}
 '''
-cookies={'JSESSIONID': 'A38EB763D77A9972D16C220BA04CC9C86RepBO'}
+cookies={'JSESSIONID': '829D66F9731C78E762EE90156E732AE8IKEAdt'}
 print(cookies)
 
 #预约列表接口地址

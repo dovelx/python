@@ -59,7 +59,7 @@ sql_query_worktaskid = sqls.worktaskid
 sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
-
+sql_query_work_appointid = sqls.sql_query_work_appointid
 logger.info('开始数据库查询')
 temp = testdb_changqing.select_one_record(sql_query_ticket)
 
@@ -100,6 +100,13 @@ safeclarid = temp[0]
 #jsaid
 safeclarid = safeclarid[0]
 print("safeclarid",safeclarid)
+
+temp = testdb_changqing.select_one_record(sql_query_work_appointid)
+print(temp)
+sql_query_work_appointid = temp[0]
+#jsaid
+sql_query_work_appointid = sql_query_work_appointid[0]
+print("sql_query_work_appointid",sql_query_work_appointid)
 logger.info("===关闭数据库=============")
 testdb_changqing.close()
 '''

@@ -14,7 +14,7 @@ import string
 import datetime
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': '851CA0F578EC3DEF2F066A01A0953CBCvRZ7zS'}
+cookies={'JSESSIONID': '829D66F9731C78E762EE90156E732AE8IKEAdt'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -44,7 +44,9 @@ data = ('Block', '%s' % e, protocol_method, run_time, str(case_executed_history_
 sql_query_ticket = 'select workticketid from hse_work_ticket order by workticketid desc limit 1'
 sql_query_ts = 'select ts from hse_work_ticket order by ts desc limit 1'
 sql_query_worktaskid = 'select worktaskid from hse_work_ticket ORDER BY worktaskid desc limit 1'
-sql_query_work_appoint_id ='SELECT work_appoint_id from hse_safety_task ORDER BY  work_appoint_id desc LIMIT 1'
+#sql_query_work_appoint_id ='SELECT work_appoint_id from hse_safety_task ORDER BY  work_appoint_id desc LIMIT 1'
+
+sql_query_work_appointid ='SELECT work_appoint_id from hse_work_appoint ORDER BY  work_appoint_id desc LIMIT 1'
 logger.info('正在更新步骤执行结果')
 #testdb.execute_update(sql_update, data)
 temp = testdb.select_one_record(sql_query_ticket)
@@ -68,7 +70,7 @@ worktaskid = temp[0]
 worktaskid = worktaskid[0]
 print(worktaskid)
 
-temp = testdb.select_one_record(sql_query_work_appoint_id)
+temp = testdb.select_one_record(sql_query_work_appointid)
 work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = work_appoint_id[0]

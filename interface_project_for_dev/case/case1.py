@@ -5,6 +5,7 @@ from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
+from globalpkg.global_var import sql_query_work_appointid
 #times
 starttime = tool.starttime
 endtime = tool.endtime
@@ -12,7 +13,7 @@ now = tool.now
 mendtime = tool.mendtime
 #作业预约名称
 name = tool.ran_name_with_str()
-
+print(name)
 #用例信息变量定义
 testsuit = []
 caseinfo = {}
@@ -25,6 +26,7 @@ caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 work_appoint_id_plus1=work_appoint_id+1
+work_appoint_id_plus1 = sql_query_work_appointid+1
 #作业预约创建使用ID
 num = work_appoint_id_plus1
 count =0
@@ -184,7 +186,7 @@ testsuit.append(caseinfo.copy())
 url11 = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/getMetaData?0.26386458099914045&contentType=json&ajax=true&tid=1'
 
 
-num1 = work_appoint_id-33
+#num1 = work_appoint_id-33
 num1 = jsaid+1
 print ("安全分析列表使用ID:",num1)
 
@@ -306,7 +308,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = 7
 caseinfo['name'] = casename
-num2 = num1+17
+#num2 = num1+17
 num2 = safeclarid
 print ("送交ID:",num2)
 url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
@@ -369,11 +371,16 @@ caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
 
 #单票
+#num7 ==num
+num7 = work_appoint_id+1
+#num8==num1
+num8 = jsaid+1
+
 data = {
 	"tableName": "hse_work_task",
 	"iscontractor": "0",
 	"isupgrade": "0",
-	"work_appoint_name": "",
+	"work_appoint_name": name,
 	"territorialunitid": 2000000003339,
 	"applyunitname": "长庆石化分公司",
 	"task_pause": "0",
@@ -391,14 +398,14 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"projecttype": "",
+	"projecttype": "rcjx",
 	"isrecord": "",
 	"eq_position": "",
 	"territorialdeviceid": 2000000003454,
 	"territorialdevicename": "制氢装置",
-	"jsaid": 2000000002082,
-	"work_appoint_id": "",
-	"jsa_code": "任务名称",
+	"jsaid": num8,
+	"work_appoint_id": num7,
+	"jsa_code": name,
 	"site": "作业地点123",
 	"workunit": 1688712,
 	"workunitname": "长庆石化分公司",
