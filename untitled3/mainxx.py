@@ -14,7 +14,7 @@ import string
 import datetime
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': 'D7032D29FE8DF9C25AE83C0ED4745132D1ayKL'}
+cookies={'JSESSIONID': '851CA0F578EC3DEF2F066A01A0953CBCvRZ7zS'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))

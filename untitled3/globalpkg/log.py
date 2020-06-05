@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 
-__author__ = 'shouke'
+__author__ = ''
 import logging
 from logging.handlers import RotatingFileHandler
 from logging.handlers import TimedRotatingFileHandler
@@ -50,7 +50,7 @@ class LogSignleton(object):
             console.setFormatter(formatter)
             console.setLevel(self.log_level_in_console)
             self.logger.addHandler(console)
-            print(self.logger.getEffectiveLevel())
+            #print(self.logger.getEffectiveLevel())
 
         if self.logfile_log_on == 1: # 如果开启文件日志
             #rt_file_handler = RotatingFileHandler(self.log_filename, maxBytes=self.max_bytes_each, backupCount=self.backup_count)

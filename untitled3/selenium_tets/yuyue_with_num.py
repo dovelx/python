@@ -26,7 +26,7 @@ now2 = now + datetime.timedelta(minutes=10)
 fnow1 = now1.strftime("%Y-%m-%d %H:%M:%S")
 fnow2 = now2.strftime("%Y-%m-%d %H:%M:%S")
 now =now.strftime("%Y-%m-%d %H:%M:%S")
-
+'''
 #selenium登录测试长庆
 driver = webdriver.Firefox()
 driver.get("http://192.168.6.27:6030/passports/login?service=http%3A%2F%2F192.168.6.27%3A6030%2Fportals%2Fcas&tenantCode=cqsh&trial=false")
@@ -46,7 +46,8 @@ for a in c:
         b=a
         #print (b)
 cookies={'JSESSIONID': b['value']}
-#cookies={'JSESSIONID': '59E80FDA10220D88AB9A643E9CC4F314TcoeKm'}
+'''
+cookies={'JSESSIONID': 'A38EB763D77A9972D16C220BA04CC9C86RepBO'}
 print(cookies)
 
 #预约列表接口地址
@@ -161,14 +162,8 @@ if num == 3200:
 	print("yes")
 else:
 	print("no")
-#json_dicts=json.dumps(data,indent=4)
-#print(json_dicts['status'])
-#获取接口返回状态
-#for i in rsp:
-#	print (i)
-#if rsp['status'] == 3200:
-#	print("预约接口访问成功:")
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=2000000002231&topFuncCode=HSE_WORK_APPOINT&dataId=2000000002231&0.09415972609006307&contentType=json&ajax=true&tid=1'
 
-time.sleep(2)
-driver.close()
-driver.quit()
+#请求作业预约保存接口
+rs=requests.post(url2, json = formdatanew, headers = headers,cookies=cookies)
+print(rs.content)
