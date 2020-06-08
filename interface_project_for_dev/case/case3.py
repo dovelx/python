@@ -1,3 +1,4 @@
+from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
@@ -5,11 +6,10 @@ from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
-import requests
-import json
+from tools.gethost import host
 
-#临时cookies
-cookies={'JSESSIONID': '719FF49AB0E6CB255165409E8ACB4C9Fqoevbc'}
+host = host()
+print(host)
 #times
 starttime = tool.starttime
 endtime = tool.endtime
@@ -19,7 +19,7 @@ now = tool.now
 name = tool.ran_name_with_str()
 print(name)
 #用例信息变量定义
-testsuit = []
+testsuit3 = []
 caseinfo = {}
 caseinfo['id'] = 1
 caseinfo['name'] = ''
@@ -30,26 +30,18 @@ caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 #work_appoint_id_plus1=  work_appoint_id+1
-work_appoint_id_plus1 = sql_query_work_appointid+1
+
 #作业预约创建使用ID
-yuyueid = work_appoint_id_plus1
+work_appoint_id_plus1 = sql_query_work_appointid+1
+#work_appoint_id_plus1 = work_appoint_id_plus1
 count =0
 #用例信息
 caseinfo['id'] = 1
 caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
 #拼写预约URL
-work_appoint_id_l = sql_query_work_appointid+1
-#print("作业预约NEW ID:work_appoint_id_l",work_appoint_id_l)
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(work_appoint_id_l,work_appoint_id_l)
-#作业预约请求头
-headers={
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
-    'csrf': 'bd95a01c276341b89715228e81d0ca3f',
-    'X-Requested-With': 'XMLHttpRequest',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
-    'Content-Type': 'text/plain',
-    }
+url2='http://%s/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
+caseinfo['url'] = url2
 #作业许可大票数据
 data = {
 	"tableName": "hse_work_appoint",
@@ -103,58 +95,32 @@ data = {
 	"material_medium": "物料介质123",
 	"risksmeasures": "重点防控的风险123"
 }
-#请求作业预约保存接口
-rs=requests.post(url2, json = data, headers = headers,cookies=cookies)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json化
-data = json.loads(data)
-#获取接口返回状态
-sta= data['status']
-if sta == 3200:
-    print("作业预约成功", sta)
-else:
-    print("rulst",data)
-
-    ####
+caseinfo['data'] =data
+testsuit3.append(caseinfo.copy())
 
 #送交用例信息
-casename = '作业预约送交'
+
+caseinfo['id'] = 2
+caseinfo['name'] = '作业预约送交'
 #送交接口地址
-url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(work_appoint_id_l,work_appoint_id_l)
+url3='http://%s/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
+caseinfo['url'] = url3
 formdata2={
 	"opinion": "申请审批",
 	"nodeStr": "2000000009070",
 	"2000000009070": "测试用户",
 	"2000000009070_id": 1000
 }
-#请求送交接口
-rs=requests.post(url3, json = formdata2, headers = headers,cookies=cookies)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#获取接口返回状态
-status= data['status']
-if status == 3200:
+caseinfo['data'] =formdata2
+print(caseinfo['id'] )
+testsuit3.append(caseinfo.copy())
 
-    print("作业预约送交", status)
-    #caseinfo['result'] = 1
-else:
-    print("作业预约送交", data)
-#收集用例执行信息
-#testsuit.append(caseinfo.copy())
 #作业预约审批用例信息
-
-casename = '作业预约审批'
-# count =count+1
-# caseid = count
-# caseinfo['id'] = caseid
-# caseinfo['name'] = casename
+caseinfo['id'] = 3
+caseinfo['name'] = '作业预约审批'
 #审批接口地址
-#url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(work_appoint_id_l,work_appoint_id_l)
-url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(work_appoint_id_l)
-
+url4='http://%s/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1)
+caseinfo['url'] = url4
 #参数
 formdata ={
 	"opinion": "同意",
@@ -164,30 +130,20 @@ formdata ={
 	"is_normal_finish": "true",
 	"nodeStr": ""
 }
-#请求接口
-rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
-#rs.encoding='utf-8'
-#cc = str(rs.content, 'utf8')
-#返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#获取接口返回状态
-status= data['status']
+caseinfo['data'] =formdata
+testsuit3.append(caseinfo.copy())
 
-if status == 3200:
 
-    print("作业预约审批", status)
-    #caseinfo['result'] = 1
-
+#作业预约作废
+#caseid = 5
 casename = '作业预约作废'
-# count =count+1
-# caseid = count
-# caseinfo['id'] = caseid
-# caseinfo['name'] = casename
+count =count+1
+caseid = count
+caseinfo['id'] = 4
+caseinfo['name'] = casename
 #审批接口地址
-#url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(work_appoint_id_l)
-url4 = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfInvalid?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.9786549083065863&contentType=json&ajax=true&tid=1'%(work_appoint_id_l,work_appoint_id_l)
+#url4='http://host/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(work_appoint_id_plus1)
+url4 = 'http://%s/hse/HSE_WORK_APPOINT/wfInvalid?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.9786549083065863&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
 #参数
 formdata = {
 	"tableName": "hse_work_appoint",
@@ -233,7 +189,7 @@ formdata = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"work_appoint_id": work_appoint_id_l,
+	"work_appoint_id": work_appoint_id_plus1,
 	"code": "",
 	"iscontractor": "0",
 	"workunit": 1688712,
@@ -263,18 +219,6 @@ formdata = {
 	"isspecialcondition": "",
 	"specialcondition": ""
 }
-#请求接口
-rs=requests.post(url4, json = formdata, headers = headers,cookies=cookies)
-#rs.encoding='utf-8'
-#cc = str(rs.content, 'utf8')
-#返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#获取接口返回状态
-status= data['status']
-
-if status == 3200:
-
-    print("作业预约作废", status)
-    #caseinfo['result'] = 1
+caseinfo['url'] = url4
+caseinfo['data'] =formdata
+testsuit3.append(caseinfo.copy())

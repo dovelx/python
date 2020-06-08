@@ -252,3 +252,4 @@ if status == 3200:
 
     print("作业预约作废", status)
     #caseinfo['result'] = 1
+#DONE
