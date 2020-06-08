@@ -309,9 +309,10 @@ caseid = count
 caseinfo['id'] = 7
 caseinfo['name'] = casename
 #worktaskidxx = jsaidxx+17
-anquansongjiaoid = safeclarid
-print ("送交ID:",anquansongjiaoid)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx,anquansongjiaoid)
+anquansongjiaoid = safeclarid+1
+safeclaridxx = safeclarid+1
+print ("送交ID:",safeclaridxx)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx,safeclaridxx)
 
 data = {
 	"tableName": "hse_safety_disclosure",
@@ -342,7 +343,35 @@ data = {
 	"worktaskid": jsaidxx,
 	"work_position_id": 2000000002019
 }
-
+data = {
+	"tableName": "hse_safety_disclosure",
+	"additional_content": "",
+	"confirm_content": "1、已清楚作业区域及周边生产作业情况\r\n2、已清楚本次作业的安全风险（JSA）\r\n3、已清楚本次作业的具体安全要求（作业许可证中的控制措施）\r\n4、已对本次作业现场安全措施进行了检查确认\r\n5、已清楚本次作业涉及的作业许可证的有限期限 \r\n6、已掌握个人防护用具正确佩戴使用方法\r\n7、已清楚突发情况下的应急避险方法",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"safeclarid": safeclaridxx,
+	"projecttype": "",
+	"safe_name": "长庆石化安全交底",
+	"worktype": "aqjd",
+	"workstatus": "draft",
+	"scopeandenv": "",
+	"workrisk": "",
+	"preventmeasure": "",
+	"emermeasure": "",
+	"othermatter": "",
+	"safe_content": "长庆石化安全交底",
+	"safe_clar_temp_id": 2000000001040,
+	"safe_clar_temp_name": "",
+	"worktaskid": jsaid,
+	"work_position_id": 2000000002019
+}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
@@ -355,7 +384,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = 8
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaid,jsaid)
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
