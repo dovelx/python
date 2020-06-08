@@ -14,10 +14,10 @@ import string
 import datetime
 #大票和小票合并审核
 #临时cookies
-cookies={'JSESSIONID': 'F7F4B597A81664716FE28B267297190E30H8mW'}
+cookies={'JSESSIONID': 'F25CB5EEC234C2563774B901F8109629gGg8Z3'}
 #作业预约作业任务名称随机数生成函数
-def ranstr(num):
-    salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
+def ranstr(number):
+    salt = ''.join(random.sample(string.ascii_letters+string.digits,number))
     return  salt
 name = "Created_by_Python_"+ranstr(6)
 print("作业预约名称",name)
@@ -52,7 +52,7 @@ temp = testdb.select_one_record(sql_query_ticket)
 workticketid = temp[0]
 #作业票数据库当前ID
 workticketid = workticketid[0]
-print(workticketid)
+print("workticketid",workticketid)
 temp = testdb.select_one_record(sql_query_ts)
 
 print(temp)
@@ -66,7 +66,7 @@ temp = testdb.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
-print(worktaskid)
+print("worktaskid",worktaskid)
 
 temp = testdb.select_one_record(sql_query_work_appoint_id)
 work_appoint_id = temp[0]
@@ -164,9 +164,9 @@ caseinfo['id'] = caseid
 caseinfo['name'] = casename
 #拼写预约URL
 
-num = c
-print("作业预约列表NEW ID:",num)
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(num,num)
+yuyueid = c
+print("作业预约列表NEW ID:",yuyueid)
+url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
 #作业预约作业任务名称随机数生成函数
 #print ("预约url\n",url2)
 
@@ -368,7 +368,7 @@ caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
 #送交接口地址
-url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(num,num)
+url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
 
 formdata2={
 	"opinion": "申请审批",
@@ -404,7 +404,7 @@ caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
 #审批接口地址
-url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(num)
+url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(yuyueid)
 #参数
 formdata ={
 	"opinion": "同意",
@@ -465,7 +465,7 @@ formdatafenxi ={
 	"territorialdeviceid": 2000000003454,
 	"territorialdevicename": "制氢装置",
 
-	"work_appoint_id": num,
+	"work_appoint_id": yuyueid,
 	"workcontent": "作业内容123",
 	"workname": name,
 	"worktickettype": "xkz,dh",
@@ -546,8 +546,8 @@ for i in range(len(a)):
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
 #print (b)
-num1 = worktaskid
-print ("安全分析列表使用ID:",num1)
+anquanfenxiid = worktaskid
+print ("安全分析列表使用ID:",anquanfenxiid)
 
 #安全分析步骤添加
 #安全分析步骤添加接口用例信息
@@ -557,13 +557,13 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
-#url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.5426692795870303&contentType=json&ajax=true&tid=1'%(num1,num1)
-url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(num1,num1)
+#url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.5426692795870303&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid)
+url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid)
 data = {
 	"tableName": "hse_safety_analysis_step",
 	"qualify_level": "no_qualify",
 	"duty_name": "",
-	"jsaid": num1,
+	"jsaid": anquanfenxiid,
 	"dataStatus": 0,
 	"ver": 1,
 	"created_by": "",
@@ -610,10 +610,10 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
-#num1 = num1
-print("num1:",num1)
-#url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
+#anquanfenxiid = anquanfenxiid
+print("anquanfenxiid:",anquanfenxiid)
+#url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.2955948527813328&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid,anquanfenxiid)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid,anquanfenxiid)
 data = {
 	"tableName": "hse_safety_analysis",
 
@@ -626,7 +626,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"jsaid": num1,
+	"jsaid": anquanfenxiid,
 	"jsa_templete_name": "",
 	"jsa_templete_id": "",
 	"temp_type": "newWorkTask",
@@ -637,7 +637,7 @@ data = {
 	"analyze_time": "2020-06-03 13:51:20",
 	"worktickettype": "",
 	"equip_stuff": "",
-	"worktaskid": num1,
+	"worktaskid": anquanfenxiid,
 	"workstatus": "",
 	"worktype": "jsa",
 	"revampandadvide": "",
@@ -696,9 +696,9 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
-num2 = num1+17
-print ("送交ID:",num2)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
+songjiaoid = anquanfenxiid+17
+print ("送交ID:",songjiaoid)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid,songjiaoid)
 data = {
 	"tableName": "hse_safety_disclosure",
 	"additional_content": "",
@@ -712,7 +712,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"safeclarid": num2,
+	"safeclarid": songjiaoid,
 	"projecttype": "",
 	"safe_name": "长庆石化安全交底",
 	"worktype": "aqjd",
@@ -725,7 +725,7 @@ data = {
 	"safe_content": "长庆石化安全交底",
 	"safe_clar_temp_id": 2000000001040,
 	"safe_clar_temp_name": "",
-	"worktaskid": num1,
+	"worktaskid": anquanfenxiid,
 	"work_position_id": 2000000002019
 }
 data = {
@@ -754,7 +754,7 @@ data = {
 	"safe_content": "",
 	"safe_clar_temp_id": 2000000001050,
 	"safe_clar_temp_name": "",
-	"worktaskid": num1,
+	"worktaskid": anquanfenxiid,
 	"work_position_id": 2000000002019
 }
 #请求接口
@@ -783,7 +783,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(num1,num1)
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(anquanfenxiid,anquanfenxiid)
 data = {}
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
@@ -813,54 +813,54 @@ caseinfo['name'] = casename
 
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
 #双票
-data  = {
-	"tableName": "hse_work_task",
-	"iscontractor": "0",
-	"isupgrade": "0",
-	"work_appoint_name": name,
-	"territorialunitid": 2000000003339,
-	"applyunitname": "长庆石化分公司",
-	"task_pause": "0",
-	"territorialunitname": "运行一部",
-	"territorialunitcode": "CS8082020",
-	"applyunitid": "1688712",
-	"workstatus": "draft",
-	"autorisklevel": 1,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"projecttype": "rcjx",
-	"isrecord": "",
-	"eq_position": "",
-	"territorialdeviceid": 2000000003454,
-	"territorialdevicename": "制氢装置",
-	"jsaid": num1,
-	"work_appoint_id": num1,
-	"jsa_code": "Created_by_Python_HmNEGR",
-	"site": "作业地点123",
-	"workunit": 1688712,
-	"workunitname": "长庆石化分公司",
-	"work_position_id": 2000000002019,
-	"work_position_name": "制氢北区",
-	"workcontent": "作业内容123",
-	"planstarttime": fnow1,
-	"planendtime": fnow2,
-	"standardmaintenance_name": "",
-	"constructionscheme": 0,
-	"worktickettype": "xkz,dh",
-	"worktickettype_name": "作业许可证,动火作业",
-	"standardmaintenance": "",
-	"equipmentname": "",
-	"equipmentnumber": "",
-	"equipmentcode": "",
-	"workname": name
-}
+# data  = {
+# 	"tableName": "hse_work_task",
+# 	"iscontractor": "0",
+# 	"isupgrade": "0",
+# 	"work_appoint_name": name,
+# 	"territorialunitid": 2000000003339,
+# 	"applyunitname": "长庆石化分公司",
+# 	"task_pause": "0",
+# 	"territorialunitname": "运行一部",
+# 	"territorialunitcode": "CS8082020",
+# 	"applyunitid": "1688712",
+# 	"workstatus": "draft",
+# 	"autorisklevel": 1,
+# 	"dataStatus": 0,
+# 	"ver": 1,
+# 	"created_by": "",
+# 	"created_dt": now,
+# 	"updated_by": "",
+# 	"updated_dt": now,
+# 	"df": 0,
+# 	"tenantid": 1,
+# 	"ts": "",
+# 	"projecttype": "rcjx",
+# 	"isrecord": "",
+# 	"eq_position": "",
+# 	"territorialdeviceid": 2000000003454,
+# 	"territorialdevicename": "制氢装置",
+# 	"jsaid": anquanfenxiid,
+# 	"work_appoint_id": anquanfenxiid,
+# 	"jsa_code": "Created_by_Python_HmNEGR",
+# 	"site": "作业地点123",
+# 	"workunit": 1688712,
+# 	"workunitname": "长庆石化分公司",
+# 	"work_position_id": 2000000002019,
+# 	"work_position_name": "制氢北区",
+# 	"workcontent": "作业内容123",
+# 	"planstarttime": fnow1,
+# 	"planendtime": fnow2,
+# 	"standardmaintenance_name": "",
+# 	"constructionscheme": 0,
+# 	"worktickettype": "xkz,dh",
+# 	"worktickettype_name": "作业许可证,动火作业",
+# 	"standardmaintenance": "",
+# 	"equipmentname": "",
+# 	"equipmentnumber": "",
+# 	"equipmentcode": "",
+# 	"workname": name
+# }
 #单票
 data = {
 	"tableName": "hse_work_task",
@@ -971,8 +971,8 @@ for i in range(len(a)):
         b.append(a[i]['worktaskid'])
 #print (b)
 #print (max(b))
-num2 = max(b)
-print("作业任务列表ID-num2==:",num2)
+songjiaoid = max(b)
+print("作业任务列表ID-songjiaoid==:",songjiaoid)
 #作业任务提交
 #作业任务提交接口用例信息
 
@@ -981,8 +981,8 @@ count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(num2,num2)
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(num2,num2)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.7819922897402813&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid)
 #双票
 data ={
 	"tableName": "hse_work_task",
@@ -1022,7 +1022,7 @@ data ={
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"worktaskid": num2,
+	"worktaskid": songjiaoid,
 	"workname": name,
 	"work_position_name": "制氢北区",
 	"work_appoint_name": name,
@@ -1071,8 +1071,8 @@ data ={
 	"safecode": "",
 	"work_position_id": 2000000002019,
 	"jsa_code": name,
-	"jsaid": num,
-	"work_appoint_id": num,
+	"jsaid": yuyueid,
+	"work_appoint_id": yuyueid,
 	"wf_current_nodeid": "",
 	"wf_audit_time": "",
 	"task_risklevel": "",
@@ -1192,7 +1192,7 @@ data = {
 	"safecode": "",
 	"work_position_id": 2000000002019,
 	"jsa_code": name,
-	"jsaid": num,
+	"jsaid": yuyueid,
 	"work_appoint_id": "",
 	"wf_current_nodeid": "",
 	"wf_audit_time": "",
@@ -1263,7 +1263,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"worktaskid": num2,
+	"worktaskid": songjiaoid,
 	"workname": name,
 	"work_position_name": "制氢北区",
 	"work_appoint_name": "",
@@ -1313,7 +1313,7 @@ data = {
 	"safecode": "",
 	"work_position_id": 2000000002019,
 	"jsa_code": name,
-	"jsaid": num,
+	"jsaid": yuyueid,
 	"work_appoint_id": "",
 	"wf_current_nodeid": "",
 	"wf_audit_time": "",
@@ -1368,11 +1368,11 @@ testsuit.append(caseinfo.copy())
 
 #作业许可证保存
 #作业票ID
-num3 = workticketid+1
+zuoyepiaoiid = workticketid+1
 ts = tsi+1
-print(num3)
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
-#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005573&ts=1590656443277&0.7178753893110355&contentType=json&ajax=true&tid=1'%(num2,num2)
+print(zuoyepiaoiid)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid,zuoyepiaoiid)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005573&ts=1590656443277&0.7178753893110355&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid)
 #print(url)
 #双票
 data = {
@@ -1417,8 +1417,8 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": num3,
-	"worktaskid": num2,
+	"workticketid": zuoyepiaoiid,
+	"worktaskid": songjiaoid,
 	"equipmentnumber": "",
 	"worktype": "xkz",
 	"territorialunitid": 2000000003339,
@@ -1566,8 +1566,8 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": num3,
-	"worktaskid": num2,
+	"workticketid": zuoyepiaoiid,
+	"worktaskid": songjiaoid,
 	"equipmentnumber": "",
 	"worktype": "xkz",
 	"territorialunitid": 2000000003339,
@@ -1678,7 +1678,7 @@ cc = str(rs.content, 'utf8')
 #print ("作业许可证保存",cc)
 
 #作业许可证提交
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(num2,num2,num3)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid,zuoyepiaoiid)
 #print(url)
 data ={
 	"tableName": "hse_work_ticket",
@@ -1722,8 +1722,8 @@ data ={
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": num3,
-	"worktaskid": num2,
+	"workticketid": zuoyepiaoiid,
+	"worktaskid": songjiaoid,
 	"equipmentnumber": "",
 	"worktype": "xkz",
 	"territorialunitid": 2000000003339,
@@ -1836,10 +1836,10 @@ cc = str(rs.content, 'utf8')
 #driver.close()
 #driver.quit()
 #动火作业保存
-num3 = workticketid +1
+zuoyepiaoiid = workticketid +1
 ts = tsi+1
 #动火
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.9284553583877271&contentType=json&ajax=true&tid=1'%(num2,num2,num3,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.9284553583877271&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid,zuoyepiaoiid,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -1884,8 +1884,8 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": num3,
-	"worktaskid": num2,
+	"workticketid": zuoyepiaoiid,
+	"worktaskid": songjiaoid,
 	"equipmentnumber": "",
 	"worktype": "dh",
 	"territorialunitid": 2000000003339,
@@ -1995,7 +1995,7 @@ rs.encoding='utf-8'
 cc = str(rs.content, 'utf8')
 #print(cc)
 #动火票提交
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6197776458397488&contentType=json&ajax=true&tid=1'%(num2,num2,num3,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6197776458397488&contentType=json&ajax=true&tid=1'%(songjiaoid,songjiaoid,zuoyepiaoiid,ts)
 data ={
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -2040,8 +2040,8 @@ data ={
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": num3,
-	"worktaskid": num2,
+	"workticketid": zuoyepiaoiid,
+	"worktaskid": songjiaoid,
 	"equipmentnumber": "",
 	"worktype": "dh",
 	"territorialunitid": 2000000003339,
@@ -2220,7 +2220,7 @@ print(loginStoken)
 
 #cookies={'JSESSIONID': '0F5ED4C32181CF4F223E2984DFCE086A0afqB2'}
 #保存作业许可票
-num3 = workticketid+2
+zuoyepiaoiid = workticketid+2
 ts = tsi+2
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/cardSave.json?level=1"
 headers = {
@@ -2252,8 +2252,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2275,8 +2275,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2298,8 +2298,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2321,8 +2321,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2344,8 +2344,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2367,8 +2367,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2390,8 +2390,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2413,8 +2413,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2436,8 +2436,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2459,8 +2459,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2482,8 +2482,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2505,8 +2505,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2528,8 +2528,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2551,8 +2551,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2574,8 +2574,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2597,8 +2597,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2620,8 +2620,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2643,8 +2643,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2666,8 +2666,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2689,8 +2689,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2712,8 +2712,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2735,8 +2735,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2758,8 +2758,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2781,8 +2781,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2804,8 +2804,8 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
+				"worktaskid": songjiaoid,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2824,7 +2824,7 @@ data = {
 				"updated_dt": now,
 				"tenantid": 1,
 				"updated_by": 1000,
-				"workticketid": num3,
+				"workticketid": zuoyepiaoiid,
 				"ismustconfirm": 0,
 				"isconfirm": 0
 			}
@@ -2847,8 +2847,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2869,8 +2869,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2891,8 +2891,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2913,8 +2913,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2935,8 +2935,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2957,8 +2957,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -2979,8 +2979,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3001,8 +3001,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3023,8 +3023,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3045,8 +3045,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3067,8 +3067,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3089,8 +3089,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3111,8 +3111,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3133,8 +3133,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3155,8 +3155,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3177,8 +3177,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3199,8 +3199,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}, {
@@ -3221,8 +3221,8 @@ data = {
 				"updated_dt": now,
 				"updated_by": 1000,
 				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"isconfirm": 0
 			}
 		}],
@@ -3249,8 +3249,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3276,8 +3276,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3303,8 +3303,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3330,8 +3330,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3357,8 +3357,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3384,8 +3384,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3411,8 +3411,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3438,8 +3438,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3465,8 +3465,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3492,8 +3492,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3519,8 +3519,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3546,8 +3546,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3573,8 +3573,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3600,8 +3600,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3627,8 +3627,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3654,8 +3654,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3681,8 +3681,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3708,8 +3708,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3735,8 +3735,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3762,8 +3762,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3789,8 +3789,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}, {
@@ -3816,8 +3816,8 @@ data = {
 				"tenantid": 1,
 				"updated_by": 1000,
 				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
+				"workticketid": zuoyepiaoiid,
+				"worktaskid": songjiaoid,
 				"ismustconfirm": 0
 			}
 		}]
@@ -3862,7 +3862,7 @@ data = {
 		"isgas_detection": 1,
 		"hse_work_task_measure_mcq_m": 22,
 		"workcontent": "作业内容123",
-		"workticketid": num3,
+		"workticketid": zuoyepiaoiid,
 		"close_type": "",
 		"isupgrade": 0,
 		"invalidreason": "",
@@ -3887,7 +3887,7 @@ data = {
 		"gas_aging": "1",
 		"territorialunitcode": "CS8082020",
 		"hashseplan": "",
-		"worktaskid": num2,
+		"worktaskid": songjiaoid,
 		"ts": ts
 	}
 }
@@ -3903,9 +3903,9 @@ print(data)
 status= data['status']
 
 #手机提交作业许可票
-num3 = workticketid+2
+zuoyepiaoiid = workticketid+2
 ts = tsi+2
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/submit.json?dataId=%d&ts=%d"%(num3,ts)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/submit.json?dataId=%d&ts=%d"%(zuoyepiaoiid,ts)
 data = {
 	"vo": {
 		"hse_work_task_harm_mcq_m": 52,
@@ -3947,7 +3947,7 @@ data = {
 		"isgas_detection": 1,
 		"hse_work_task_measure_mcq_m": 44,
 		"workcontent": "作业内容123",
-		"workticketid": num3,
+		"workticketid": zuoyepiaoiid,
 		"close_type": "",
 		"isupgrade": 0,
 		"invalidreason": "",
@@ -3972,7 +3972,7 @@ data = {
 		"gas_aging": 1,
 		"territorialunitcode": "CS8082020",
 		"hashseplan": "",
-		"worktaskid": num2,
+		"worktaskid": songjiaoid,
 		"ts": ts
 	}
 }
@@ -3987,9 +3987,9 @@ print(data)
 status= data['status']
 
 #手机保存和提交动火作业许可票
-num3 = workticketid+1
+zuoyepiaoiid = workticketid+1
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_DH_MCQ_M/submit.json?dataId=%d&ts=%d"%(num3,ts)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_DH_MCQ_M/submit.json?dataId=%d&ts=%d"%(zuoyepiaoiid,ts)
 data = {
 	"vo": {
 		"df": 0,
@@ -4029,7 +4029,7 @@ data = {
 		"isgas_detection": 1,
 		"hse_work_task_measure_mcq_m": 20,
 		"workcontent": "作业内容123",
-		"workticketid": num3,
+		"workticketid": zuoyepiaoiid,
 		"close_type": "",
 		"isupgrade": 0,
 		"ticketdealphoto_attachshowlist": [],
@@ -4055,7 +4055,7 @@ data = {
 		"ticketdealphoto": 0,
 		"territorialunitcode": "CS8082020",
 		"hashseplan": "",
-		"worktaskid": num2,
+		"worktaskid": songjiaoid,
 		"ts": ts
 	}
 }
@@ -4071,10 +4071,10 @@ print(data)
 status= data['status']
 
 #手机疑似合并审批，个人防护
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/ppeHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=ppe&actionCode=ppe"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/ppeHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=ppe&actionCode=ppe"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 data = {
 	"mainAttributeVO": {},
 	"voList": [{
@@ -4096,8 +4096,8 @@ data = {
 		"updated_by": 1000,
 		"tenantid": 1,
 		"audittype": "",
-		"workticketid": num6,
-		"worktaskid": num3,
+		"workticketid": zuoyepiaoidplus2,
+		"worktaskid": zuoyepiaoiid,
 		"isconfirm": 1,
 		"signSrc": ""
 	}]
@@ -4109,13 +4109,13 @@ data = rs.content.decode('utf-8')
 #json格式化
 data = json.loads(data)
 
-print(data)
+print("合并审批",data)
 #获取接口返回状态
 status= data['status']
 
 #手机合并审批，气体
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/gasHebinAudit.json?workType=zyrw&datatype=gas&detectiontype=audit"
 data = {
@@ -4193,7 +4193,7 @@ data = {
 			"name": "可燃气体",
 			"value": "0",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"downlimit": 20,
@@ -4207,7 +4207,7 @@ data = {
 			"name": "氧气",
 			"value": "20",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 25
 		}, {
 			"downlimit": 0,
@@ -4221,7 +4221,7 @@ data = {
 			"name": "硫化氢",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"downlimit": 0,
@@ -4235,7 +4235,7 @@ data = {
 			"name": "苯",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"code": "detectiontype",
@@ -4357,7 +4357,7 @@ data = {
 			"disporder": 1,
 			"longitude": 0
 		}],
-		"workticketid": num5,
+		"workticketid": zuoyepiaoiid,
 		"worktypename": "动火作业"
 	}, {
 		"unCompleteStaticValueList": [{
@@ -4372,7 +4372,7 @@ data = {
 			"name": "可燃气体",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"downlimit": 20,
@@ -4386,7 +4386,7 @@ data = {
 			"name": "氧气",
 			"value": "20",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 25
 		}, {
 			"downlimit": 0,
@@ -4400,7 +4400,7 @@ data = {
 			"name": "硫化氢",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"downlimit": 0,
@@ -4414,7 +4414,7 @@ data = {
 			"name": "苯",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [zuoyepiaoiid, zuoyepiaoidplus2],
 			"upperlimit": 10
 		}, {
 			"code": "detectiontype",
@@ -4534,7 +4534,7 @@ data = {
 			"disporder": 1,
 			"longitude": 0
 		}],
-		"workticketid": num6,
+		"workticketid": zuoyepiaoidplus2,
 		"worktypename": "作业许可证"
 	}]
 }
@@ -4549,10 +4549,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，危害
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/harmHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=harm&actionCode=harm"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/harmHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=harm&actionCode=harm"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 data = {
 	"mainAttributeVO": {},
 	"voList": [{
@@ -4574,8 +4574,8 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"audittype": "",
-		"worktaskid": num2,
-		"workticketid": num6,
+		"worktaskid": songjiaoid,
+		"workticketid": zuoyepiaoidplus2,
 		"ismustconfirm": 0,
 		"isconfirm": 1,
 		"signSrc": ""
@@ -4598,8 +4598,8 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"audittype": "",
-		"worktaskid": num2,
-		"workticketid": num6,
+		"worktaskid": songjiaoid,
+		"workticketid": zuoyepiaoidplus2,
 		"ismustconfirm": 0,
 		"isconfirm": 1,
 		"signSrc": ""
@@ -4623,8 +4623,8 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"audittype": "",
-		"worktaskid": num2,
-		"workticketid": num5,
+		"worktaskid": songjiaoid,
+		"workticketid": zuoyepiaoiid,
 		"ismustconfirm": 0,
 		"isconfirm": 1,
 		"signSrc": ""
@@ -4641,10 +4641,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业风险消减措施
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=zyfxxjcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=zyfxxjcs&actionCode=measure"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 data = {
 	"mainAttributeVO": {
 		"cardnum": "911CDA4D",
@@ -4733,8 +4733,8 @@ data = {
 		"worktaskmeasureid": 2000000045595,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
-		"worktaskid": num2,
+		"workticketid": zuoyepiaoiid,
+		"worktaskid": songjiaoid,
 		"isconfirm": "1"
 	}]
 }
@@ -4749,10 +4749,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，工艺风险消减措施
-num5 = workticketid+1
-num6 = workticketid+2
+#zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gyfxxjcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gyfxxjcs&actionCode=measure"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 #签名数据
 data = {
 	"mainAttributeVO": {},
@@ -4809,8 +4809,8 @@ data = {
 		"worktaskmeasureid": 2000000045685,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
-		"worktaskid": num2,
+		"workticketid": zuoyepiaoiid,
+		"worktaskid": songjiaoid,
 		"isconfirm": "1"
 	}, {
 		"measuredesc": "3.清除动火点周围的可燃介质和可燃物",
@@ -4839,8 +4839,8 @@ data = {
 		"worktaskmeasureid": 2000000045686,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
-		"worktaskid": num2,
+		"workticketid": zuoyepiaoiid,
+		"worktaskid": songjiaoid,
 		"isconfirm": "1"
 	}]
 }
@@ -4855,10 +4855,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，工作前安全措施
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gzqaqcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gzqaqcs&actionCode=measure"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 data = {
 	"mainAttributeVO": {
 		"cardnum": "911CDA4D",
@@ -4947,8 +4947,8 @@ data = {
 		"worktaskmeasureid": 2000000042204,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num6,
-		"worktaskid": num2,
+		"workticketid": zuoyepiaoidplus2,
+		"worktaskid": songjiaoid,
 		"isconfirm": "1"
 	}]
 }
@@ -4963,10 +4963,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，会签前检查
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/beforeHebinSignValidate.json?worktaskid=%d&workTicketids=%d,%d"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/beforeHebinSignValidate.json?worktaskid=%d&workTicketids=%d,%d"%(songjiaoid,zuoyepiaoiid,zuoyepiaoidplus2)
 
 rs = requests.get(url = url,headers=headers)
 #返回值转码
@@ -4979,10 +4979,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，申请人会签
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5024,11 +5024,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业人会签
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data ={
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5070,11 +5070,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，属地监护人会签
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5116,11 +5116,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业单位监护人会签
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5162,11 +5162,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，当班班长会签
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5208,11 +5208,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，工艺
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5254,11 +5254,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，设备
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5300,11 +5300,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，安全
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5346,11 +5346,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，组长/队长
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5392,11 +5392,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，确认人
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5438,11 +5438,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，批准人
-num5 = workticketid+1
-num6 = workticketid+2
+zuoyepiaoiid = workticketid+1
+zuoyepiaoidplus2 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(zuoyepiaoiid,zuoyepiaoidplus2,songjiaoid)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{

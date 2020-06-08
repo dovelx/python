@@ -20,7 +20,7 @@ from globalpkg.global_var import logger
 
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': '829D66F9731C78E762EE90156E732AE8IKEAdt'}
+cookies={'JSESSIONID': 'F25CB5EEC234C2563774B901F8109629gGg8Z3'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -59,7 +59,7 @@ temp = testdb_changqing.select_one_record(sql_query_ticket)
 workticketid = temp[0]
 #作业票数据库当前ID
 workticketid = workticketid[0]
-print(workticketid)
+print("workticketid",workticketid)
 temp = testdb_changqing.select_one_record(sql_query_ts)
 
 print(temp)
@@ -73,7 +73,7 @@ temp = testdb_changqing.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
-print(worktaskid)
+print("worktaskid",worktaskid)
 
 temp = testdb_changqing.select_one_record(sql_query_work_appoint_id)
 work_appoint_id = temp[0]
@@ -830,8 +830,9 @@ for i in range(len(a)):
     if a[i]['worktaskid'] !="" and a[i]['worktaskid'] !="None":
         b.append(a[i]['worktaskid'])
 #print (b)
-#print (max(b))
+print ("作业任务列表当前ID",max(b))
 num2 = max(b)
+#num2 = worktaskid
 print("作业任务列表ID-num2==:",num2)
 #作业任务提交
 #作业任务提交接口用例信息
@@ -1365,1775 +1366,1775 @@ data = json.loads(data)
 loginStoken = data['data']['st']
 #print(data)
 #print(loginStoken)
-
-#保存作业许可票
-num3 = workticketid+1
-ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/cardSave.json?level=1"
-headers = {
-            "Accept":"application/json",
-"Accept-Encoding": "gzip",
-"user-agent":"ONEPLUS A6010(Android/10) (com.hayden.hap.fv/1.0.2) Weex/0.16.0 1080x2134",
-"Content-Type": "application/json;charset=UTF-8",
-    "st":loginStoken,
-    "tid":"1"
-
-}
-data = {
-	"children": {
-		"HSE_WORK_TASK_HARM_MCQ_M": [{
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008710,
-				"harmcode": "gzxy001",
-				"harmname": "爆炸性气体",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019723,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008711,
-				"harmcode": "gzxy002",
-				"harmname": "易燃性物质",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019724,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008712,
-				"harmcode": "gzxy003",
-				"harmname": "腐蚀性液体",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019725,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008713,
-				"harmcode": "gzxy004",
-				"harmname": "有毒有害化学品",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019726,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008714,
-				"harmcode": "gzxy005",
-				"harmname": "高压气体/液体",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019727,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008715,
-				"harmcode": "gzxy006",
-				"harmname": "蒸汽",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019728,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008716,
-				"harmcode": "gzxy007",
-				"harmname": "爆炸性粉尘",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019729,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008717,
-				"harmcode": "gzxy008",
-				"harmname": "惰性气体",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019730,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008718,
-				"harmcode": "gzxy009",
-				"harmname": "危险物料混窜",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019731,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008719,
-				"harmcode": "gzxy010",
-				"harmname": "转动设备",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019732,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008720,
-				"harmcode": "gzxy011",
-				"harmname": "物料自然",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019733,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008721,
-				"harmcode": "gzxy012",
-				"harmname": "中毒窒息",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019734,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008722,
-				"harmcode": "gzxy013",
-				"harmname": "辐射",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019735,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008723,
-				"harmcode": "gzxy014",
-				"harmname": "化学反应",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019736,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008724,
-				"harmcode": "gzxy015",
-				"harmname": "隐蔽工程泄漏",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019737,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008725,
-				"harmcode": "gzxy016",
-				"harmname": "不利天气",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019738,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008726,
-				"harmcode": "gzxy017",
-				"harmname": "坠落",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019739,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008727,
-				"harmcode": "gzxy018",
-				"harmname": "产生火花",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019740,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008728,
-				"harmcode": "gzxy019",
-				"harmname": "噪音",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019741,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008729,
-				"harmcode": "gzxy020",
-				"harmname": "灼伤/烫伤",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019742,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008730,
-				"harmcode": "gzxy021",
-				"harmname": "物体打击",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019743,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008731,
-				"harmcode": "gzxy022",
-				"harmname": "触电/静电",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019744,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008732,
-				"harmcode": "gzxy023",
-				"harmname": "湿滑跌倒",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019745,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008733,
-				"harmcode": "gzxy024",
-				"harmname": "淹溺/坍塌",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019746,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmid": 2000000008734,
-				"harmcode": "gzxy025",
-				"harmname": "其他请注明：（）",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019747,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"worktaskid": num2,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"harmname": "风险及危害123",
-				"created_by": 1000,
-				"tableName": "hse_work_task_harm",
-				"worktaskharmid": 2000000019748,
-				"updated_dt": now,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"workticketid": num3,
-				"ismustconfirm": 0,
-				"isconfirm": 0
-			}
-		}],
-		"HSE_WORK_TASK_EQUIPMENT_M": [{
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "安全眼镜",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000100,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010018,
-				"equipmentcode": "aqyj",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "全封闭眼罩",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000101,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010019,
-				"equipmentcode": "qfbyz",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "焊接护目镜",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000102,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010020,
-				"equipmentcode": "hjhmj",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "安全帽",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000103,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010021,
-				"equipmentcode": "aqm",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "防静电服装",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000104,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010022,
-				"equipmentcode": "fjdfz",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "护耳",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000105,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010023,
-				"equipmentcode": "he",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "安全鞋",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000106,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010024,
-				"equipmentcode": "aqx",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "防毒面罩",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000107,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010025,
-				"equipmentcode": "fdmz",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "正压式呼吸器",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000108,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010026,
-				"equipmentcode": "zyshxq",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "防化服",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000109,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010027,
-				"equipmentcode": "fhf",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "手套",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000110,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010028,
-				"equipmentcode": "st",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "绝缘服",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000111,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010029,
-				"equipmentcode": "jyfz",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "防弧面具",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000112,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010030,
-				"equipmentcode": "fhmj",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "安全带",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000113,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010031,
-				"equipmentcode": "aqd",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "安全绳",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000114,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010032,
-				"equipmentcode": "aqs",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "逃生设施",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000115,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010033,
-				"equipmentcode": "tsss",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "人员培训已完成",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000116,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010034,
-				"equipmentcode": "rypx",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}, {
-			"vo": {
-				"isselect": 0,
-				"ver": 1,
-				"df": 0,
-				"created_dt": now,
-				"ismust": 1,
-				"equipmentname": "其他（）",
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"personequipmentid": 2000000000117,
-				"created_by": 1000,
-				"tableName": "hse_work_task_equipment",
-				"worktaskequipmentid": 2000000010035,
-				"equipmentcode": "qtfh",
-				"updated_dt": now,
-				"updated_by": 1000,
-				"tenantid": 1,
-				"workticketid": num3,
-				"worktaskid": num2,
-				"isconfirm": 0
-			}
-		}],
-		"HSE_WORK_TASK_MEASURE_MCQ_M": [{
-			"vo": {
-				"measuredesc": "切断工艺流程",
-				"riskrepositoryid": 2000000004946,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk01",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042204,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "设路障",
-				"riskrepositoryid": 2000000004947,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk02",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042205,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "设备隔离、吹扫、置换",
-				"riskrepositoryid": 2000000004948,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk03",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042206,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "工作警示牌",
-				"riskrepositoryid": 2000000004949,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk04",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042207,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "电源切断",
-				"riskrepositoryid": 2000000004950,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk05",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042208,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "通讯工具",
-				"riskrepositoryid": 2000000004951,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk06",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042209,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "完成上锁挂牌",
-				"riskrepositoryid": 2000000004952,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk07",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042210,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "火花防护罩",
-				"riskrepositoryid": 2000000004953,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk08",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042211,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "通风",
-				"riskrepositoryid": 2000000004954,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk09",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042212,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "气体检测仪",
-				"riskrepositoryid": 2000000004955,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk10",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042213,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "气体检测",
-				"riskrepositoryid": 2000000004956,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk11",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042214,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "防爆机具",
-				"riskrepositoryid": 2000000004957,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk12",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042215,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "工作区域围栏、警戒线",
-				"riskrepositoryid": 2000000004958,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk13",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042216,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "急救设施",
-				"riskrepositoryid": 2000000004959,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk14",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042217,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "紧急疏散指示",
-				"riskrepositoryid": 2000000004960,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk15",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042218,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "消防设施",
-				"riskrepositoryid": 2000000004961,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk16",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042219,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "需要夜间照明和警示灯具",
-				"riskrepositoryid": 2000000004962,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk17",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042220,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "安全冲淋设施",
-				"riskrepositoryid": 2000000004963,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk18",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042221,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "设备安全检查合格并已贴标签",
-				"riskrepositoryid": 2000000004964,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk19",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042222,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "安全工作方案审核通过",
-				"riskrepositoryid": 2000000004965,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk20",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042223,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "特种作业人员均持有效资质",
-				"riskrepositoryid": 2000000004966,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk21",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042224,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}, {
-			"vo": {
-				"measuredesc": "其他措施：（）",
-				"riskrepositoryid": 2000000004967,
-				"isselect": 0,
-				"df": 0,
-				"ver": 1,
-				"created_dt": now,
-				"measurecode": "gzxk22",
-				"mesuresource": "qy",
-				"ismust": 1,
-				"dataStatus": 0,
-				"worktype": "xkz",
-				"prepareperson": "1000",
-				"created_by": 1000,
-				"ismustphoto": 0,
-				"measuretype": "gzqaqcs",
-				"tableName": "hse_work_task_measure",
-				"updated_dt": now,
-				"worktaskmeasureid": 2000000042225,
-				"tenantid": 1,
-				"updated_by": 1000,
-				"preparepersonname": "测试用户",
-				"workticketid": num3,
-				"worktaskid": num2,
-				"ismustconfirm": 0
-			}
-		}]
-	},
-	"vo": {
-		"hse_work_task_harm_mcq_m": 26,
-		"df": 0,
-		"sent_overdueclose_message": 0,
-		"workname": name,
-		"drawshow": "",
-		"workunitname": "长庆石化分公司",
-		"delaynum": "0",
-		"otherunit": "",
-		"level_upgrade": 0,
-		"beendelaynum": 0,
-		"created_by_name": "测试用户",
-		"tableName": "hse_work_ticket",
-		"aecolcode": 0,
-		"othercontent": "",
-		"hse_work_task_equipment_m": 18,
-		"worktype_name": "作业许可证",
-		"territorialunitid": 2000000003339,
-		"hasdrawpaper": "0",
-		"hassafetyplan": "0",
-		"aecolcode_attachshowlist": [],
-		"territorialunitname": "运行一部",
-		"worker": "长庆石化分公司",
-		"is_pause": 0,
-		"ver": 1,
-		"lock_status": 0,
-		"planendtime": fnow2,
-		"applyunitname": "长庆石化分公司",
-		"dataStatus": 0,
-		"worktask_name": name,
-		"isfireday": 0,
-		"created_by": 1000,
-		"worknumber": "",
-		"workunit": 1688712,
-		"task_pause": 0,
-		"updated_by": 1000,
-		"planstarttime": fnow1,
-		"isgas_detection": 1,
-		"hse_work_task_measure_mcq_m": 22,
-		"workcontent": "作业内容123",
-		"workticketid": num3,
-		"close_type": "",
-		"isupgrade": 0,
-		"invalidreason": "",
-		"ticketdealphoto_attachshowlist": [],
-		"work_position_name": "制氢北区",
-		"updated_by_name": "测试用户",
-		"tenantid": 1,
-		"workstatus": "draft",
-		"istaskpause": 0,
-		"actualstarttime": "",
-		"actualendtime": "",
-		"created_dt": now,
-		"closereason": "",
-		"worktype": "xkz",
-		"work_position_id": 2000000002019,
-		"site": "作业地点123",
-		"isdue": 0,
-		"updated_dt": now,
-		"gas_detector_no": "",
-		"applyunitid": 1688712,
-		"ticketdealphoto": 0,
-		"gas_aging": "1",
-		"territorialunitcode": "CS8082020",
-		"hashseplan": "",
-		"worktaskid": num2,
-		"ts": ts
-	}
-}
-
-#rs = requests.post(url = url,json=data,headers=headers)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-
-#print(data)
-#获取接口返回状态
-status= data['status']
-
-#手机提交作业许可票
-
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/submit.json?dataId=%d&ts=%d"%(num3,ts)
-data = {
-	"vo": {
-		"hse_work_task_harm_mcq_m": 52,
-		"df": 0,
-		"sent_overdueclose_message": 0,
-		"workname": name,
-		"drawshow": "",
-		"workunitname": "长庆石化分公司",
-		"delaynum": "0",
-		"otherunit": "",
-		"level_upgrade": 0,
-		"beendelaynum": 0,
-		"created_by_name": "测试用户",
-		"tableName": "hse_work_ticket",
-		"aecolcode": 0,
-		"othercontent": "",
-		"hse_work_task_equipment_m": 36,
-		"worktype_name": "作业许可证",
-		"territorialunitid": 2000000003339,
-		"hasdrawpaper": 0,
-		"hassafetyplan": 0,
-		"aecolcode_attachshowlist": [],
-		"territorialunitname": "运行一部",
-		"worker": "长庆石化分公司",
-		"is_pause": 0,
-		"ver": 1,
-		"lock_status": 0,
-		"planendtime": fnow2,
-		"applyunitname": "长庆石化分公司",
-		"dataStatus": 0,
-		"worktask_name": name,
-		"isfireday": 0,
-		"created_by": 1000,
-		"worknumber": "",
-		"workunit": 1688712,
-		"task_pause": 0,
-		"updated_by": 1000,
-		"planstarttime": fnow1,
-		"isgas_detection": 1,
-		"hse_work_task_measure_mcq_m": 44,
-		"workcontent": "作业内容123",
-		"workticketid": num3,
-		"close_type": "",
-		"isupgrade": 0,
-		"invalidreason": "",
-		"ticketdealphoto_attachshowlist": [],
-		"work_position_name": "制氢北区",
-		"updated_by_name": "测试用户",
-		"tenantid": 1,
-		"workstatus": "draft",
-		"istaskpause": 0,
-		"actualstarttime": "",
-		"actualendtime": "",
-		"created_dt": now,
-		"closereason": "",
-		"worktype": "xkz",
-		"work_position_id": 2000000002019,
-		"site": "作业地点123",
-		"isdue": 0,
-		"updated_dt": now,
-		"gas_detector_no": "",
-		"applyunitid": 1688712,
-		"ticketdealphoto": 0,
-		"gas_aging": 1,
-		"territorialunitcode": "CS8082020",
-		"hashseplan": "",
-		"worktaskid": num2,
-		"ts": ts
-	}
-}
-#rs = requests.post(url = url,json=data,headers=headers)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-
-#print(data)
-#获取接口返回状态
-status= data['status']
+#
+# #保存作业许可票
+# num3 = workticketid+1
+# ts = tsi+1
+# url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/cardSave.json?level=1"
+# headers = {
+#             "Accept":"application/json",
+# "Accept-Encoding": "gzip",
+# "user-agent":"ONEPLUS A6010(Android/10) (com.hayden.hap.fv/1.0.2) Weex/0.16.0 1080x2134",
+# "Content-Type": "application/json;charset=UTF-8",
+#     "st":loginStoken,
+#     "tid":"1"
+#
+# }
+# data = {
+# 	"children": {
+# 		"HSE_WORK_TASK_HARM_MCQ_M": [{
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008710,
+# 				"harmcode": "gzxy001",
+# 				"harmname": "爆炸性气体",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019723,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008711,
+# 				"harmcode": "gzxy002",
+# 				"harmname": "易燃性物质",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019724,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008712,
+# 				"harmcode": "gzxy003",
+# 				"harmname": "腐蚀性液体",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019725,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008713,
+# 				"harmcode": "gzxy004",
+# 				"harmname": "有毒有害化学品",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019726,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008714,
+# 				"harmcode": "gzxy005",
+# 				"harmname": "高压气体/液体",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019727,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008715,
+# 				"harmcode": "gzxy006",
+# 				"harmname": "蒸汽",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019728,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008716,
+# 				"harmcode": "gzxy007",
+# 				"harmname": "爆炸性粉尘",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019729,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008717,
+# 				"harmcode": "gzxy008",
+# 				"harmname": "惰性气体",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019730,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008718,
+# 				"harmcode": "gzxy009",
+# 				"harmname": "危险物料混窜",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019731,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008719,
+# 				"harmcode": "gzxy010",
+# 				"harmname": "转动设备",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019732,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008720,
+# 				"harmcode": "gzxy011",
+# 				"harmname": "物料自然",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019733,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008721,
+# 				"harmcode": "gzxy012",
+# 				"harmname": "中毒窒息",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019734,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008722,
+# 				"harmcode": "gzxy013",
+# 				"harmname": "辐射",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019735,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008723,
+# 				"harmcode": "gzxy014",
+# 				"harmname": "化学反应",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019736,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008724,
+# 				"harmcode": "gzxy015",
+# 				"harmname": "隐蔽工程泄漏",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019737,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008725,
+# 				"harmcode": "gzxy016",
+# 				"harmname": "不利天气",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019738,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008726,
+# 				"harmcode": "gzxy017",
+# 				"harmname": "坠落",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019739,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008727,
+# 				"harmcode": "gzxy018",
+# 				"harmname": "产生火花",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019740,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008728,
+# 				"harmcode": "gzxy019",
+# 				"harmname": "噪音",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019741,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008729,
+# 				"harmcode": "gzxy020",
+# 				"harmname": "灼伤/烫伤",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019742,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008730,
+# 				"harmcode": "gzxy021",
+# 				"harmname": "物体打击",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019743,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008731,
+# 				"harmcode": "gzxy022",
+# 				"harmname": "触电/静电",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019744,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008732,
+# 				"harmcode": "gzxy023",
+# 				"harmname": "湿滑跌倒",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019745,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008733,
+# 				"harmcode": "gzxy024",
+# 				"harmname": "淹溺/坍塌",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019746,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmid": 2000000008734,
+# 				"harmcode": "gzxy025",
+# 				"harmname": "其他请注明：（）",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019747,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"worktaskid": num2,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"harmname": "风险及危害123",
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_harm",
+# 				"worktaskharmid": 2000000019748,
+# 				"updated_dt": now,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"workticketid": num3,
+# 				"ismustconfirm": 0,
+# 				"isconfirm": 0
+# 			}
+# 		}],
+# 		"HSE_WORK_TASK_EQUIPMENT_M": [{
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "安全眼镜",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000100,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010018,
+# 				"equipmentcode": "aqyj",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "全封闭眼罩",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000101,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010019,
+# 				"equipmentcode": "qfbyz",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "焊接护目镜",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000102,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010020,
+# 				"equipmentcode": "hjhmj",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "安全帽",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000103,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010021,
+# 				"equipmentcode": "aqm",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "防静电服装",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000104,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010022,
+# 				"equipmentcode": "fjdfz",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "护耳",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000105,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010023,
+# 				"equipmentcode": "he",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "安全鞋",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000106,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010024,
+# 				"equipmentcode": "aqx",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "防毒面罩",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000107,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010025,
+# 				"equipmentcode": "fdmz",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "正压式呼吸器",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000108,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010026,
+# 				"equipmentcode": "zyshxq",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "防化服",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000109,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010027,
+# 				"equipmentcode": "fhf",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "手套",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000110,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010028,
+# 				"equipmentcode": "st",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "绝缘服",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000111,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010029,
+# 				"equipmentcode": "jyfz",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "防弧面具",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000112,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010030,
+# 				"equipmentcode": "fhmj",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "安全带",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000113,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010031,
+# 				"equipmentcode": "aqd",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "安全绳",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000114,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010032,
+# 				"equipmentcode": "aqs",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "逃生设施",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000115,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010033,
+# 				"equipmentcode": "tsss",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "人员培训已完成",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000116,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010034,
+# 				"equipmentcode": "rypx",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"isselect": 0,
+# 				"ver": 1,
+# 				"df": 0,
+# 				"created_dt": now,
+# 				"ismust": 1,
+# 				"equipmentname": "其他（）",
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"personequipmentid": 2000000000117,
+# 				"created_by": 1000,
+# 				"tableName": "hse_work_task_equipment",
+# 				"worktaskequipmentid": 2000000010035,
+# 				"equipmentcode": "qtfh",
+# 				"updated_dt": now,
+# 				"updated_by": 1000,
+# 				"tenantid": 1,
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"isconfirm": 0
+# 			}
+# 		}],
+# 		"HSE_WORK_TASK_MEASURE_MCQ_M": [{
+# 			"vo": {
+# 				"measuredesc": "切断工艺流程",
+# 				"riskrepositoryid": 2000000004946,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk01",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042204,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "设路障",
+# 				"riskrepositoryid": 2000000004947,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk02",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042205,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "设备隔离、吹扫、置换",
+# 				"riskrepositoryid": 2000000004948,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk03",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042206,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "工作警示牌",
+# 				"riskrepositoryid": 2000000004949,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk04",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042207,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "电源切断",
+# 				"riskrepositoryid": 2000000004950,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk05",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042208,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "通讯工具",
+# 				"riskrepositoryid": 2000000004951,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk06",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042209,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "完成上锁挂牌",
+# 				"riskrepositoryid": 2000000004952,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk07",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042210,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "火花防护罩",
+# 				"riskrepositoryid": 2000000004953,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk08",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042211,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "通风",
+# 				"riskrepositoryid": 2000000004954,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk09",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042212,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "气体检测仪",
+# 				"riskrepositoryid": 2000000004955,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk10",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042213,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "气体检测",
+# 				"riskrepositoryid": 2000000004956,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk11",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042214,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "防爆机具",
+# 				"riskrepositoryid": 2000000004957,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk12",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042215,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "工作区域围栏、警戒线",
+# 				"riskrepositoryid": 2000000004958,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk13",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042216,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "急救设施",
+# 				"riskrepositoryid": 2000000004959,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk14",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042217,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "紧急疏散指示",
+# 				"riskrepositoryid": 2000000004960,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk15",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042218,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "消防设施",
+# 				"riskrepositoryid": 2000000004961,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk16",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042219,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "需要夜间照明和警示灯具",
+# 				"riskrepositoryid": 2000000004962,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk17",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042220,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "安全冲淋设施",
+# 				"riskrepositoryid": 2000000004963,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk18",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042221,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "设备安全检查合格并已贴标签",
+# 				"riskrepositoryid": 2000000004964,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk19",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042222,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "安全工作方案审核通过",
+# 				"riskrepositoryid": 2000000004965,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk20",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042223,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "特种作业人员均持有效资质",
+# 				"riskrepositoryid": 2000000004966,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk21",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042224,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}, {
+# 			"vo": {
+# 				"measuredesc": "其他措施：（）",
+# 				"riskrepositoryid": 2000000004967,
+# 				"isselect": 0,
+# 				"df": 0,
+# 				"ver": 1,
+# 				"created_dt": now,
+# 				"measurecode": "gzxk22",
+# 				"mesuresource": "qy",
+# 				"ismust": 1,
+# 				"dataStatus": 0,
+# 				"worktype": "xkz",
+# 				"prepareperson": "1000",
+# 				"created_by": 1000,
+# 				"ismustphoto": 0,
+# 				"measuretype": "gzqaqcs",
+# 				"tableName": "hse_work_task_measure",
+# 				"updated_dt": now,
+# 				"worktaskmeasureid": 2000000042225,
+# 				"tenantid": 1,
+# 				"updated_by": 1000,
+# 				"preparepersonname": "测试用户",
+# 				"workticketid": num3,
+# 				"worktaskid": num2,
+# 				"ismustconfirm": 0
+# 			}
+# 		}]
+# 	},
+# 	"vo": {
+# 		"hse_work_task_harm_mcq_m": 26,
+# 		"df": 0,
+# 		"sent_overdueclose_message": 0,
+# 		"workname": name,
+# 		"drawshow": "",
+# 		"workunitname": "长庆石化分公司",
+# 		"delaynum": "0",
+# 		"otherunit": "",
+# 		"level_upgrade": 0,
+# 		"beendelaynum": 0,
+# 		"created_by_name": "测试用户",
+# 		"tableName": "hse_work_ticket",
+# 		"aecolcode": 0,
+# 		"othercontent": "",
+# 		"hse_work_task_equipment_m": 18,
+# 		"worktype_name": "作业许可证",
+# 		"territorialunitid": 2000000003339,
+# 		"hasdrawpaper": "0",
+# 		"hassafetyplan": "0",
+# 		"aecolcode_attachshowlist": [],
+# 		"territorialunitname": "运行一部",
+# 		"worker": "长庆石化分公司",
+# 		"is_pause": 0,
+# 		"ver": 1,
+# 		"lock_status": 0,
+# 		"planendtime": fnow2,
+# 		"applyunitname": "长庆石化分公司",
+# 		"dataStatus": 0,
+# 		"worktask_name": name,
+# 		"isfireday": 0,
+# 		"created_by": 1000,
+# 		"worknumber": "",
+# 		"workunit": 1688712,
+# 		"task_pause": 0,
+# 		"updated_by": 1000,
+# 		"planstarttime": fnow1,
+# 		"isgas_detection": 1,
+# 		"hse_work_task_measure_mcq_m": 22,
+# 		"workcontent": "作业内容123",
+# 		"workticketid": num3,
+# 		"close_type": "",
+# 		"isupgrade": 0,
+# 		"invalidreason": "",
+# 		"ticketdealphoto_attachshowlist": [],
+# 		"work_position_name": "制氢北区",
+# 		"updated_by_name": "测试用户",
+# 		"tenantid": 1,
+# 		"workstatus": "draft",
+# 		"istaskpause": 0,
+# 		"actualstarttime": "",
+# 		"actualendtime": "",
+# 		"created_dt": now,
+# 		"closereason": "",
+# 		"worktype": "xkz",
+# 		"work_position_id": 2000000002019,
+# 		"site": "作业地点123",
+# 		"isdue": 0,
+# 		"updated_dt": now,
+# 		"gas_detector_no": "",
+# 		"applyunitid": 1688712,
+# 		"ticketdealphoto": 0,
+# 		"gas_aging": "1",
+# 		"territorialunitcode": "CS8082020",
+# 		"hashseplan": "",
+# 		"worktaskid": num2,
+# 		"ts": ts
+# 	}
+# }
+#
+# #rs = requests.post(url = url,json=data,headers=headers)
+# #返回值转码
+# data = rs.content.decode('utf-8')
+# #json格式化
+# data = json.loads(data)
+#
+# #print(data)
+# #获取接口返回状态
+# status= data['status']
+#
+# #手机提交作业许可票
+#
+# url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_XKZ_MCQ_M/submit.json?dataId=%d&ts=%d"%(num3,ts)
+# data = {
+# 	"vo": {
+# 		"hse_work_task_harm_mcq_m": 52,
+# 		"df": 0,
+# 		"sent_overdueclose_message": 0,
+# 		"workname": name,
+# 		"drawshow": "",
+# 		"workunitname": "长庆石化分公司",
+# 		"delaynum": "0",
+# 		"otherunit": "",
+# 		"level_upgrade": 0,
+# 		"beendelaynum": 0,
+# 		"created_by_name": "测试用户",
+# 		"tableName": "hse_work_ticket",
+# 		"aecolcode": 0,
+# 		"othercontent": "",
+# 		"hse_work_task_equipment_m": 36,
+# 		"worktype_name": "作业许可证",
+# 		"territorialunitid": 2000000003339,
+# 		"hasdrawpaper": 0,
+# 		"hassafetyplan": 0,
+# 		"aecolcode_attachshowlist": [],
+# 		"territorialunitname": "运行一部",
+# 		"worker": "长庆石化分公司",
+# 		"is_pause": 0,
+# 		"ver": 1,
+# 		"lock_status": 0,
+# 		"planendtime": fnow2,
+# 		"applyunitname": "长庆石化分公司",
+# 		"dataStatus": 0,
+# 		"worktask_name": name,
+# 		"isfireday": 0,
+# 		"created_by": 1000,
+# 		"worknumber": "",
+# 		"workunit": 1688712,
+# 		"task_pause": 0,
+# 		"updated_by": 1000,
+# 		"planstarttime": fnow1,
+# 		"isgas_detection": 1,
+# 		"hse_work_task_measure_mcq_m": 44,
+# 		"workcontent": "作业内容123",
+# 		"workticketid": num3,
+# 		"close_type": "",
+# 		"isupgrade": 0,
+# 		"invalidreason": "",
+# 		"ticketdealphoto_attachshowlist": [],
+# 		"work_position_name": "制氢北区",
+# 		"updated_by_name": "测试用户",
+# 		"tenantid": 1,
+# 		"workstatus": "draft",
+# 		"istaskpause": 0,
+# 		"actualstarttime": "",
+# 		"actualendtime": "",
+# 		"created_dt": now,
+# 		"closereason": "",
+# 		"worktype": "xkz",
+# 		"work_position_id": 2000000002019,
+# 		"site": "作业地点123",
+# 		"isdue": 0,
+# 		"updated_dt": now,
+# 		"gas_detector_no": "",
+# 		"applyunitid": 1688712,
+# 		"ticketdealphoto": 0,
+# 		"gas_aging": 1,
+# 		"territorialunitcode": "CS8082020",
+# 		"hashseplan": "",
+# 		"worktaskid": num2,
+# 		"ts": ts
+# 	}
+# }
+# #rs = requests.post(url = url,json=data,headers=headers)
+# #返回值转码
+# data = rs.content.decode('utf-8')
+# #json格式化
+# data = json.loads(data)
+#
+# #print(data)
+# #获取接口返回状态
+# status= data['status']
 
 #现场确认-危害
-num5 = workticketid +1
+#num3 = workticketid +1
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TICKET_M/harmAudit.json?workticketid=%d&workType=xkz&tabtype=harm"%(num3)
 data = {
 	"mainAttributeVO": {},
@@ -3155,7 +3156,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3176,7 +3177,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3197,7 +3198,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3218,7 +3219,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3239,7 +3240,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3260,7 +3261,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 1
 	}, {
@@ -3281,7 +3282,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3302,7 +3303,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3323,7 +3324,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3344,7 +3345,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3365,7 +3366,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3386,7 +3387,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3407,7 +3408,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3428,7 +3429,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3449,7 +3450,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3470,7 +3471,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3491,7 +3492,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3512,7 +3513,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3533,7 +3534,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3554,7 +3555,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3575,7 +3576,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3596,7 +3597,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3617,7 +3618,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3638,7 +3639,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3659,7 +3660,7 @@ data = {
 		"tenantid": 1,
 		"updated_by": 1000,
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}, {
@@ -3676,7 +3677,7 @@ data = {
 		"updated_dt": now,
 		"tenantid": 1,
 		"updated_by": 1000,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 0
 	}]
@@ -3689,7 +3690,7 @@ data = json.loads(data)
 
 print(data)
 #获取接口返回状态
-status= data['status']
+#status= data['status']
 
 
 #措施确认人属地签名
@@ -3753,7 +3754,7 @@ data = {
 		"worktaskmeasureid": 2000000046607,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": "1"
 	}]
@@ -3829,7 +3830,7 @@ data = {
 		"worktaskmeasureid": 2000000046607,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": "1"
 	}]
@@ -3867,7 +3868,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 1
 	}, {
@@ -3888,7 +3889,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -3909,7 +3910,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -3930,7 +3931,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -3951,7 +3952,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -3972,7 +3973,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -3993,7 +3994,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4014,7 +4015,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4035,7 +4036,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4056,7 +4057,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4077,7 +4078,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4098,7 +4099,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4119,7 +4120,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4140,7 +4141,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4161,7 +4162,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4182,7 +4183,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4203,7 +4204,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}, {
@@ -4224,7 +4225,7 @@ data = {
 		"updated_dt": now,
 		"updated_by": 1000,
 		"tenantid": 1,
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": 0
 	}]
@@ -4432,10 +4433,10 @@ print(data)
 status= data['status']
 '''
 #手机疑似合并审批，个人防护
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/ppeHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=ppe&actionCode=ppe"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/ppeHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=ppe&actionCode=ppe"%(num2,num3,num6)
 data = {
 	"mainAttributeVO": {},
 	"voList": [{
@@ -4475,7 +4476,7 @@ print(data)
 status= data['status']
 
 #手机合并审批，气体
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/gasHebinAudit.json?workType=zyrw&datatype=gas&detectiontype=audit"
@@ -4554,7 +4555,7 @@ data = {
 			"name": "可燃气体",
 			"value": "0",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"downlimit": 20,
@@ -4568,7 +4569,7 @@ data = {
 			"name": "氧气",
 			"value": "20",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 25
 		}, {
 			"downlimit": 0,
@@ -4582,7 +4583,7 @@ data = {
 			"name": "硫化氢",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"downlimit": 0,
@@ -4596,7 +4597,7 @@ data = {
 			"name": "苯",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"code": "detectiontype",
@@ -4718,7 +4719,7 @@ data = {
 			"disporder": 1,
 			"longitude": 0
 		}],
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktypename": "动火作业"
 	}, {
 		"unCompleteStaticValueList": [{
@@ -4733,7 +4734,7 @@ data = {
 			"name": "可燃气体",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"downlimit": 20,
@@ -4747,7 +4748,7 @@ data = {
 			"name": "氧气",
 			"value": "20",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 25
 		}, {
 			"downlimit": 0,
@@ -4761,7 +4762,7 @@ data = {
 			"name": "硫化氢",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"downlimit": 0,
@@ -4775,7 +4776,7 @@ data = {
 			"name": "苯",
 			"value": "",
 			"worktypename": ["动火作业", "作业许可证"],
-			"workticketid": [num5, num6],
+			"workticketid": [num3, num6],
 			"upperlimit": 10
 		}, {
 			"code": "detectiontype",
@@ -4910,10 +4911,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，危害
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/harmHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=harm&actionCode=harm"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/harmHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=harm&actionCode=harm"%(num2,num3,num6)
 data = {
 	"mainAttributeVO": {},
 	"voList": [{
@@ -4985,7 +4986,7 @@ data = {
 		"updated_by": 1000,
 		"audittype": "",
 		"worktaskid": num2,
-		"workticketid": num5,
+		"workticketid": num3,
 		"ismustconfirm": 0,
 		"isconfirm": 1,
 		"signSrc": ""
@@ -5002,10 +5003,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业风险消减措施
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=zyfxxjcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=zyfxxjcs&actionCode=measure"%(num2,num3,num6)
 data = {
 	"mainAttributeVO": {
 		"cardnum": "911CDA4D",
@@ -5094,7 +5095,7 @@ data = {
 		"worktaskmeasureid": 2000000045595,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": "1"
 	}]
@@ -5110,10 +5111,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，工艺风险消减措施
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gyfxxjcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gyfxxjcs&actionCode=measure"%(num2,num3,num6)
 #签名数据
 data = {
 	"mainAttributeVO": {},
@@ -5170,7 +5171,7 @@ data = {
 		"worktaskmeasureid": 2000000045685,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": "1"
 	}, {
@@ -5200,7 +5201,7 @@ data = {
 		"worktaskmeasureid": 2000000045686,
 		"updated_by": 1000,
 		"preparepersonname": "测试用户",
-		"workticketid": num5,
+		"workticketid": num3,
 		"worktaskid": num2,
 		"isconfirm": "1"
 	}]
@@ -5216,10 +5217,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，工作前安全措施
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gzqaqcs&actionCode=measure"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/measureHebinAudit.json?worktaskid=%d&workType=zyrw&workTicketids=%d,%d&tabtype=measure&businesstype=gzqaqcs&actionCode=measure"%(num2,num3,num6)
 data = {
 	"mainAttributeVO": {
 		"cardnum": "911CDA4D",
@@ -5324,10 +5325,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，会签前检查
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/beforeHebinSignValidate.json?worktaskid=%d&workTicketids=%d,%d"%(num2,num5,num6)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/beforeHebinSignValidate.json?worktaskid=%d&workTicketids=%d,%d"%(num2,num3,num6)
 
 rs = requests.get(url = url,headers=headers)
 #返回值转码
@@ -5340,10 +5341,10 @@ print(data)
 status= data['status']
 
 #手机合并审批，申请人会签
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5385,11 +5386,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业人会签
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data ={
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5431,11 +5432,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，属地监护人会签
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5477,11 +5478,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，作业单位监护人会签
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5523,11 +5524,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，当班班长会签
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5569,11 +5570,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，工艺
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5615,11 +5616,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，设备
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5661,11 +5662,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，安全
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5707,11 +5708,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，组长/队长
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5753,11 +5754,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，确认人
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
@@ -5799,11 +5800,11 @@ print(data)
 status= data['status']
 
 #手机合并审批，批准人
-num5 = workticketid+1
+num3 = workticketid+1
 num6 = workticketid+2
 ts = tsi+1
-#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
-url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num5,num6,num2)
+#url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
+url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_TASK_M/signHebinAudit.json?workTicketids=%d,%d&worktaskid=%d&workType=zyrw&datatype=sign&actionCode=sign&hdBusKeyCode=worktaskid"%(num3,num6,num2)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{

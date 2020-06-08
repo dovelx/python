@@ -12,7 +12,7 @@ testsuitex = []
 testsuitrul = []
 
 # 临时cookies
-cookies = {'JSESSIONID': '829D66F9731C78E762EE90156E732AE8IKEAdt'}
+cookies = {'JSESSIONID': 'F25CB5EEC234C2563774B901F8109629gGg8Z3'}
 
 
 
