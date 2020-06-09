@@ -4,7 +4,7 @@ from globalpkg.global_var import executed_history_id
 from tools import method
 from globalpkg.global_var import *
 import time
-
+from tools.gethost import pro
 #post.p(caseinfo,url2,headers,cookies,data)
 def runcase(testsuit,cookies):
 
@@ -16,7 +16,7 @@ def runcase(testsuit,cookies):
         logger.info("执行用例id=%s,name=%s",caseinfo['id'],caseinfo['name'] )
         #print(caseinfo['url'])
         result = method.pa(caseinfo, headers, cookies)
-        logger.info("执行用例id=%s,name=%s执行结果%s", caseinfo['id'], caseinfo['name'],result)
+        logger.info("执行用例[id=%s,name=%s]执行结果:%s", caseinfo['id'], caseinfo['name'],result)
 
         #插入执行情况
         # 构造测试步骤对象
@@ -28,10 +28,10 @@ def runcase(testsuit,cookies):
         # testcase_isactive = 1
         # testsuite_id = 1
         # testsuite_name = "作业许可"
-        testplan = "plan1"
+        testplan = "Plan1"
         #project_name = "changqing"
         testcase_id = testsuit[i]['id']
-        testproject = 'changqing'
+        testproject = pro()
         #preconditions = ''
         host = "192.168.6.27"
         port = "6030"
@@ -77,11 +77,11 @@ def runcase(testsuit,cookies):
         # testcase_isactive = 1
         # testsuite_id = 1
         testsuite_name= "作业许可"
-        testplan =  "plan1"
-        project_name = "changqing"
+        testplan =  "Plan1"
+        project_name = pro()
         testcase_id = testsuit[i]['id']
         #preconditions =''
-        tc_external_id = 1
+        tc_external_id = i+1
 
         try:
             sql_insert = 'INSERT INTO ' + testcase_report_tb + '(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime, tc_external_id)' \

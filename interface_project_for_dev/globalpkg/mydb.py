@@ -55,7 +55,7 @@ class MyDB:
             exit()
 
     def execute_insert(self, query, data):
-        logger.info('query：%s  data：%s' % (query, data))
+        #logger.info('query：%s  data：%s' % (query, data))
         try:
             db_cursor = self.dbconn.cursor()
             db_cursor.execute(query, data)
@@ -70,7 +70,7 @@ class MyDB:
 
     def execute_update(self, query, data):
         query = query % data
-        logger.info('query：%s' % query)
+        #logger.info('query：%s' % query)
         try:
             db_cursor = self.dbconn.cursor()
             db_cursor.execute(query)
@@ -103,7 +103,7 @@ class MyDB:
 
     def select_many_record(self, query, data=""):
         '''返回结果只包含多条记录'''
-        logger.info('query：%s  data：%s' % (query, data))
+        #logger.info('query：%s  data：%s' % (query, data))
         try:
             db_cursor = self.dbconn.cursor()
             if data:

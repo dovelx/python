@@ -1,7 +1,7 @@
 #手机端主流程
 import requests
 import json
-from globalpkg.global_var import work_appoint_id
+#from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid

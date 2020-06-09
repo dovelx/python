@@ -1,5 +1,5 @@
 #作业预约作废
-from globalpkg.global_var import work_appoint_id
+#from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
@@ -8,8 +8,10 @@ from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
 from tools.gethost import host
+from tools.gethost import pro
 
-host = host()
+projectname = pro()
+host = host(projectname)
 print(host)
 #times
 starttime = tool.starttime

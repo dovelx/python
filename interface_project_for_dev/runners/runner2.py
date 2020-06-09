@@ -5,6 +5,7 @@ from tools import method
 from globalpkg.global_var import *
 import time
 from runners import m_login
+from tools.gethost import pro
 #post.p(caseinfo,url2,headers,cookies,data)
 def runcase(testsuitm):
 
@@ -29,10 +30,10 @@ def runcase(testsuitm):
         # testcase_isactive = 1
         # testsuite_id = 1
         # testsuite_name = "作业许可"
-        testplan = "plan1"
+        testplan = "Plan1"
         #project_name = "changqing"
         testcase_id = testsuitm[i]['id']
-        testproject = 'changqing'
+        testproject = pro()
         #preconditions = ''
         host = "192.168.6.27"
         port = "6030"
@@ -78,11 +79,11 @@ def runcase(testsuitm):
         # testcase_isactive = 1
         # testsuite_id = 1
         testsuite_name= "作业许可"
-        testplan =  "plan1"
-        project_name = "changqing"
+        testplan =  "Plan1"
+        project_name = pro()
         testcase_id = testsuitm[i]['id']
         #preconditions =''
-        tc_external_id = 1
+        tc_external_id = 101+i
 
         try:
             sql_insert = 'INSERT INTO ' + testcase_report_tb + '(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime, tc_external_id)' \

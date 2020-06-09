@@ -14,7 +14,9 @@ from globalpkg.mydb import MyDB
 from globalpkg.mytestlink import TestLink
 from globalpkg.othertools import OtherTools
 from tools import sqls
+from tools.gethost import pro
 
+projectname = pro()
 '''
 __all__=['global_headers', 'global_name','global_time', 'global_ctime',
          'global_dtime','saofudb','testdb','mytestlink',
@@ -47,27 +49,27 @@ elif sys.argv[1] == '2':
 '''
 logger.info('正在初始化数据库[名称：TESTDB]对象')
 testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
-
-logger.info('正在初始化数据库[名称：CHANGQING]对象')
-testdb_changqing = MyDB('./config/dbconfig.conf', 'CHANGQING')
+#长庆项目库
+logger.info('正在初始化数据库[名称：%s]对象',projectname)
+testdb_test = MyDB('./config/dbconfig.conf', projectname)
 
 #操作hse_work_ticket表，获取workticketid获取
 
 sql_query_ticket = sqls.ticket
 sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
-sql_query_work_appoint_id =sqls.appoint_id
+#sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
 logger.info('开始数据库查询')
-temp = testdb_changqing.select_one_record(sql_query_ticket)
+temp = testdb_test.select_one_record(sql_query_ticket)
 
 workticketid = temp[0]
 #作业票数据库当前ID-workticketid
 workticketid = workticketid[0]
 print("workticketid",workticketid)
-temp = testdb_changqing.select_one_record(sql_query_ts)
+temp = testdb_test.select_one_record(sql_query_ts)
 #获取TS
 ts = temp[0][0]
 #print(ts)
@@ -75,40 +77,40 @@ ts = ts.decode('utf-8')
 #TS ID
 tsi = int(ts)
 print("TS",ts)
-temp = testdb_changqing.select_one_record(sql_query_worktaskid)
+temp = testdb_test.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
 print("worktaskid",worktaskid)
 
-temp = testdb_changqing.select_one_record(sql_query_work_appoint_id)
+#temp = testdb_test.select_one_record(sql_query_work_appoint_id)
 work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = work_appoint_id[0]
 print("work_appoint_id",work_appoint_id)
 
-temp = testdb_changqing.select_one_record(sql_query_work_jsaid)
+temp = testdb_test.select_one_record(sql_query_work_jsaid)
 print(temp)
 jsaid = temp[0]
 #jsaid
 jsaid = jsaid[0]
 print("jsaid",jsaid)
 
-temp = testdb_changqing.select_one_record(sql_query_work_safeclarid)
+temp = testdb_test.select_one_record(sql_query_work_safeclarid)
 print(temp)
 safeclarid = temp[0]
 #jsaid
 safeclarid = safeclarid[0]
 print("safeclarid",safeclarid)
 
-temp = testdb_changqing.select_one_record(sql_query_work_appointid)
+temp = testdb_test.select_one_record(sql_query_work_appointid)
 print(temp)
 sql_query_work_appointid = temp[0]
 #jsaid
 sql_query_work_appointid = sql_query_work_appointid[0]
 print("sql_query_work_appointid",sql_query_work_appointid)
 logger.info("===关闭数据库=============")
-testdb_changqing.close()
+testdb_test.close()
 '''
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()

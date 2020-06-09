@@ -124,7 +124,7 @@ class HtmlReport:
 
             logger.info('正在记录测试测试计划[project：%s, testplan：%s]的测试用例运行结果到测试报告' % (row[0],row[1]))
             for row in result:
-                if row[6] != 'Pass':
+                if row[6] != 'pass':
                     td6 = td(row[6], align='center', bgcolor="red")
                 else:
                     td6 = td(row[6], align='center')
@@ -190,7 +190,7 @@ class HtmlReport:
                 data = (project, testplan, case_id, case_exec_history_id)
                 result = testdb.select_many_record(query, data)
                 for row in result:
-                    if row[7] != 'Pass':
+                    if row[7] != 'pass':
                         td7 = td(row[7], align='center', bgcolor="red")
                     else:
                         td7 = td(row[7], align='center')

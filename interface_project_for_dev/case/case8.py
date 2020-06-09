@@ -1,6 +1,6 @@
 #作业任务，撤回，撤回后再送交
 #作业许可证，撤回，撤回后再送交
-from globalpkg.global_var import work_appoint_id
+#from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
