@@ -1,6 +1,6 @@
 #2020-6-4 PC和手机端主流程，单票
 from case.case2 import *
-from case.case1 import *
+from case.case8 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
@@ -12,7 +12,7 @@ testsuitex = []
 testsuitrul = []
 
 # 临时cookies
-cookies = {'JSESSIONID': 'F25CB5EEC234C2563774B901F8109629gGg8Z3'}
+cookies = {'JSESSIONID': 'DC5931099F51530871159B758FD286462wyw8p'}
 
 
 
@@ -21,7 +21,7 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner1.runcase(testsuit,cookies)
+runner1.runcase(testsuit8,cookies)
 #mobile
 runner2.runcase(testsuitm)
 

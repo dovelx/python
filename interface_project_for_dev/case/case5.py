@@ -1,4 +1,4 @@
-#作业预约作废
+#作业预约修改，复制和删除
 from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
@@ -20,7 +20,7 @@ now = tool.now
 name = tool.ran_name_with_str()
 print(name)
 #用例信息变量定义
-testsuit3 = []
+testsuit5 = []
 caseinfo = {}
 caseinfo['id'] = 1
 caseinfo['name'] = ''
@@ -97,56 +97,15 @@ data = {
 	"risksmeasures": "重点防控的风险123"
 }
 caseinfo['data'] =data
-testsuit3.append(caseinfo.copy())
+testsuit5.append(caseinfo.copy())
 
-#送交用例信息
-
+#作业预约修改接口
+#用例信息
 caseinfo['id'] = 2
-caseinfo['name'] = '作业预约送交'
-#送交接口地址
-url3='http://%s/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
-caseinfo['url'] = url3
-formdata2={
-	"opinion": "申请审批",
-	"nodeStr": "2000000009070",
-	"2000000009070": "测试用户",
-	"2000000009070_id": 1000
-}
-caseinfo['data'] =formdata2
-print(caseinfo['id'] )
-testsuit3.append(caseinfo.copy())
-
-#作业预约审批用例信息
-caseinfo['id'] = 3
-caseinfo['name'] = '作业预约审批'
-#审批接口地址
-url4='http://%s/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1)
-caseinfo['url'] = url4
-#参数
-formdata ={
-	"opinion": "同意",
-	"cC": "1000",
-	"cCName": "测试用户",
-	"nickName": "用户",
-	"is_normal_finish": "true",
-	"nodeStr": ""
-}
-caseinfo['data'] =formdata
-testsuit3.append(caseinfo.copy())
-
-
-#作业预约作废
-#caseid = 5
-casename = '作业预约作废'
-count =count+1
-caseid = count
-caseinfo['id'] = 4
-caseinfo['name'] = casename
-#审批接口地址
-#url4='http://host/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&parentFuncCode=&topEntityId=+&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.027850408425730055&contentType=json&ajax=true&tid=1'%(work_appoint_id_plus1)
-url4 = 'http://%s/hse/HSE_WORK_APPOINT/wfInvalid?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.9786549083065863&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
-#参数
-formdata = {
+caseinfo['name'] = '作业预约修改接口'
+caseinfo['isactive'] = 1
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.18905889749571658&contentType=json&ajax=true&tid=1'%(work_appoint_id_plus1,work_appoint_id_plus1)
+data = {
 	"tableName": "hse_work_appoint",
 	"task_worktype_code": "QT",
 	"equt_name": "",
@@ -159,7 +118,7 @@ formdata = {
 	"created_by_name": "测试用户",
 	"worklevel_dh": "",
 	"sourcecode": "",
-	"iscontainplayday": 0,
+	"iscontainplayday": "",
 	"worktype_name": "作业许可证",
 	"sourcefunc": "",
 	"equipmentcode": "",
@@ -204,15 +163,103 @@ formdata = {
 	"appointstarttime": starttime,
 	"appointendtime": endtime,
 	"work_position_name": "制氢北区",
-	"status": "approval",
+	"status": "draft",
 	"constructionscheme": "",
-	"wf_current_user": "1000",
-	"wf_audit_state": "2",
+	"wf_current_user": "",
+	"wf_audit_state": "0",
 	"wf_create_user": 1000,
-	"wf_type": "2",
-	"wf_instance": 2000000010669,
-	"wf_current_nodeid": "2000000009070",
-	"wf_audit_time": now,
+	"wf_type": "",
+	"wf_instance": "",
+	"wf_current_nodeid": "",
+	"wf_audit_time": "",
+	"worktype": "xkz",
+	"worksite": "作业地点1234455",
+	"equipmentnumber": "",
+	"projecttype": "rcjx",
+	"isspecialcondition": "",
+	"specialcondition": ""
+}
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuit5.append(caseinfo.copy())
+
+#作业预约复制
+#用例信息
+caseinfo['id'] = 3
+caseinfo['name'] = '作业预约复制'
+caseinfo['isactive'] = 1
+url = "http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.6280400811634435&contentType=json&ajax=true&tid=1"%(work_appoint_id_plus1,work_appoint_id_plus1)
+
+data = {
+	"tableName": "hse_work_appoint",
+	"task_worktype_code": "QT",
+	"": "",
+	"equt_name": "",
+	"territorialdeviceid": 2000000003454,
+	"created_by_name_nick": "用户",
+	"worktaskid_no": 0,
+	"cywlqfyxzz": "0",
+	"specialenvironment": "ALLNOT",
+	"isreport": "0",
+	"created_by_name": "测试用户",
+	"worklevel_dh": "",
+	"sourcecode": "",
+	"updated_by_name": "测试用户",
+	"iscontainplayday": "",
+	"worktype_name": "作业许可证",
+	"sourcefunc": "",
+	"equipmentcode": "",
+	"territorialdevicename": "制氢装置",
+	"sourcetype": "",
+	"worktypename": "作业许可证",
+	"sourceid": "",
+	"worklevel_gx": "",
+	"serviceplanid": "",
+	"task_worktype_name": "其他",
+	"standardmaintenance": "",
+	"worklevel_sx": "",
+	"material_medium": "物料介质123",
+	"risksmeasures": "重点防控的风险123",
+	"issjtssxzy": "0",
+	"isupgradedh": "0",
+	"isdzdh": "0",
+	"worklevel_gc": "",
+	"funccode": "HSE_WORK_APPOINT",
+	"persistent_type": "newoperation",
+	"territorialunitcode": "CS8082020",
+	"worklevel_dz": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"work_appoint_id": work_appoint_id_plus1,
+	"code": "",
+	"iscontractor": "0",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"workunitname_no": "长庆石化分公司",
+	"workcontent": "作业内容123",
+	"workname": name,
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"work_position_id": 2000000002019,
+	"appointstarttime": starttime,
+	"appointendtime": endtime,
+	"work_position_name": "制氢北区",
+	"status": "draft",
+	"constructionscheme": 0,
+	"wf_current_user": "",
+	"wf_audit_state": "0",
+	"wf_create_user": 1000,
+	"wf_type": "",
+	"wf_instance": "",
+	"wf_current_nodeid": "",
+	"wf_audit_time": "",
 	"worktype": "xkz",
 	"worksite": "作业地点123",
 	"equipmentnumber": "",
@@ -220,6 +267,19 @@ formdata = {
 	"isspecialcondition": "",
 	"specialcondition": ""
 }
-caseinfo['url'] = url4
-caseinfo['data'] =formdata
-testsuit3.append(caseinfo.copy())
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuit5.append(caseinfo.copy())
+
+
+#作业预约删除
+#用例信息
+caseinfo['id'] = 4
+caseinfo['name'] = '作业预约删除'
+caseinfo['isactive'] = 1
+num1 = work_appoint_id_plus1 + 1
+url = "http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/listDeleteBatch?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.8829315873575496&contentType=json&ajax=true&tid=1"%(work_appoint_id_plus1,num1)
+data = [work_appoint_id_plus1]
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuit5.append(caseinfo.copy())

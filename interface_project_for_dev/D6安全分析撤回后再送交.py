@@ -479,7 +479,7 @@ else:
 
 casename = '安全分析撤回'
 
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaid_l,jsaid_l)
+
 url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/withdraw?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.8385515971602189&contentType=json&ajax=true&tid=1'%(jsaid_l,jsaid_l)
 data = {
 	"tableName": "hse_safety_task",

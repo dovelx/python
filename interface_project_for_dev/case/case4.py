@@ -1,30 +1,48 @@
-#作业预约增改、复制
-import json
-import requests
-from globalpkg.global_var import *
-from tools.tool import *
+#作业预约修改和复制
+from globalpkg.global_var import work_appoint_id
+from tools import tool
+from globalpkg.global_var import tsi
+from globalpkg.global_var import workticketid
+from globalpkg.global_var import worktaskid
+from globalpkg.global_var import jsaid
+from globalpkg.global_var import safeclarid
+from globalpkg.global_var import sql_query_work_appointid
+from tools.gethost import host
 
-#临时cookies
-cookies={'JSESSIONID': 'F25CB5EEC234C2563774B901F8109629gGg8Z3'}
-print(cookies)
-name = ran_name_with_str()
-print("作业预约名称",name)
+host = host()
+print(host)
+#times
+starttime = tool.starttime
+endtime = tool.endtime
+now = tool.now
+#mendtime = tool.mendtime
+#作业预约名称
+name = tool.ran_name_with_str()
+print(name)
+#用例信息变量定义
+testsuit4 = []
+caseinfo = {}
+caseinfo['id'] = 1
+caseinfo['name'] = ''
+caseinfo['result'] = ""
+caseinfo['url'] = ''
+caseinfo['data'] = ''
+caseinfo['sign'] =''
+caseinfo['flag'] = ''
+caseinfo['isactive'] = ''
+#work_appoint_id_plus1=  work_appoint_id+1
 
-
-#开始作业预约
+#作业预约创建使用ID
+work_appoint_id_plus1 = sql_query_work_appointid+1
+#work_appoint_id_plus1 = work_appoint_id_plus1
+count =0
+#用例信息
+caseinfo['id'] = 1
+caseinfo['name'] = '作业预约'
+caseinfo['isactive'] = 1
 #拼写预约URL
-work_appoint_id_l = sql_query_work_appointid+1
-print("作业预约NEW ID:",work_appoint_id_l)
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(work_appoint_id_l,work_appoint_id_l)
-
-#作业预约请求头
-headers={
-    'Accept': 'application/json, text/javascript, */*; q=0.01',
-    'csrf': 'bd95a01c276341b89715228e81d0ca3f',
-    'X-Requested-With': 'XMLHttpRequest',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
-    'Content-Type': 'text/plain',
-    }
+url2='http://%s/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(host,work_appoint_id_plus1,work_appoint_id_plus1)
+caseinfo['url'] = url2
 #作业许可大票数据
 data = {
 	"tableName": "hse_work_appoint",
@@ -73,27 +91,20 @@ data = {
 	"workcontent": "作业内容123",
 	"worktypename": "作业许可证",
 	"worktype": "xkz",
-	"appointstarttime": fnow1,
-	"appointendtime": fnow2,
+	"appointstarttime": starttime,
+	"appointendtime": endtime,
 	"material_medium": "物料介质123",
 	"risksmeasures": "重点防控的风险123"
 }
-#请求作业预约保存接口
-rs=requests.post(url2, json = data, headers = headers,cookies=cookies)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json化
-data = json.loads(data)
-#获取接口返回状态
-sta= data['status']
-if sta == 3200:
-    print("作业预约成功", sta)
-else:
-    print("rulst",data)
+caseinfo['data'] =data
+testsuit4.append(caseinfo.copy())
 
 #作业预约修改接口
-
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.18905889749571658&contentType=json&ajax=true&tid=1'%(num,num)
+#用例信息
+caseinfo['id'] = 2
+caseinfo['name'] = '作业预约修改接口'
+caseinfo['isactive'] = 1
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.18905889749571658&contentType=json&ajax=true&tid=1'%(work_appoint_id_plus1,work_appoint_id_plus1)
 data = {
 	"tableName": "hse_work_appoint",
 	"task_worktype_code": "QT",
@@ -138,7 +149,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"work_appoint_id": num,
+	"work_appoint_id": work_appoint_id_plus1,
 	"code": "",
 	"iscontractor": "0",
 	"workunit": 1688712,
@@ -149,8 +160,8 @@ data = {
 	"territorialunitid": 2000000003339,
 	"territorialunitname": "运行一部",
 	"work_position_id": 2000000002019,
-	"appointstarttime": fnow1,
-	"appointendtime": fnow2,
+	"appointstarttime": starttime,
+	"appointendtime": endtime,
 	"work_position_name": "制氢北区",
 	"status": "draft",
 	"constructionscheme": "",
@@ -168,46 +179,16 @@ data = {
 	"isspecialcondition": "",
 	"specialcondition": ""
 }
-#请求作业预约修改接口
-rs=requests.post(url2, json = data, headers = headers,cookies=cookies)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json化
-data = json.loads(data)
-print(data)
-#获取接口返回状态
-sta= data['status']
-if sta == 3200:
-    print("作业预约修改成功", sta)
-else:
-	print("rulst", data)
-
-# num1 = num + 1
-# url = "http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/listDeleteBatch?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.8829315873575496&contentType=json&ajax=true&tid=1"%(num,num1)
-#
-# data = [num]
-#
-# #请求作业预约删除接口
-# rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-# #返回值转码
-# data = rs.content.decode('utf-8')
-# #json化
-# data = json.loads(data)
-# print(data)
-# #获取接口返回状态
-# sta= data['status']
-# if sta == 3200:
-#     print("作业删除成功", sta)
-#
-# else:
-#
-#     print(data)
-
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuit4.append(caseinfo.copy())
 
 #作业预约复制
-#name = ranstr(7)
-#num = num + 1
-url = "http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.6280400811634435&contentType=json&ajax=true&tid=1"%(num,num)
+#用例信息
+caseinfo['id'] = 3
+caseinfo['name'] = '作业预约复制'
+caseinfo['isactive'] = 1
+url = "http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.6280400811634435&contentType=json&ajax=true&tid=1"%(work_appoint_id_plus1,work_appoint_id_plus1)
 
 data = {
 	"tableName": "hse_work_appoint",
@@ -256,7 +237,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"work_appoint_id": num,
+	"work_appoint_id": work_appoint_id_plus1,
 	"code": "",
 	"iscontractor": "0",
 	"workunit": 1688712,
@@ -267,8 +248,8 @@ data = {
 	"territorialunitid": 2000000003339,
 	"territorialunitname": "运行一部",
 	"work_position_id": 2000000002019,
-	"appointstarttime": fnow1,
-	"appointendtime": fnow2,
+	"appointstarttime": starttime,
+	"appointendtime": endtime,
 	"work_position_name": "制氢北区",
 	"status": "draft",
 	"constructionscheme": 0,
@@ -286,18 +267,9 @@ data = {
 	"isspecialcondition": "",
 	"specialcondition": ""
 }
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuit4.append(caseinfo.copy())
 
 
-#作业预约复制
-rs=requests.post(url, json = data, headers = headers,cookies=cookies)
-#返回值转码
-data = rs.content.decode('utf-8')
-#json化
-data = json.loads(data)
-print(data)
-#获取接口返回状态
-sta= data['status']
-if sta == 3200:
-    print("作业预约复制", sta)
-else:
-    print(data)
+

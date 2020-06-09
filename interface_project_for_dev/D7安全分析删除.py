@@ -370,7 +370,7 @@ if status == 3200:
 
     print("安全分析保存", status)
 
-#安全分析修改
+#安全分析删除
 
 
 casename = '安全分析删除'

@@ -55,9 +55,9 @@ def runcase(testsuitm):
         run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
         action_of_step = ""
         if result == "pass":
-            result_of_step = "Pass"
+            result_of_step = "pass"
         else:
-            result_of_step = "Fail"
+            result_of_step = "fail"
             fail_or_error_reason = result
         sql_update = 'UPDATE ' + case_step_report_tb + ' SET runresult=\"%s\",reason=\"%s\", protocol_method=\"%s\", runtime=\"%s\",' \
                                                        'step_action=\"%s\", expected_results=\"%s\"' \
@@ -96,9 +96,9 @@ def runcase(testsuitm):
             run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
             case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())  # 流水记录编号
             if result == "pass":
-                testcase_run_result = "Pass"
+                testcase_run_result = "pass"
             else:
-                testcase_run_result = "Fail"
+                testcase_run_result = "fail"
             #testcase_run_result = testsuit[i]['result']
 
             logger.info('正在更新用例执行结果')
