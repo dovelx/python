@@ -80,10 +80,9 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="55" column="60" lean-forward="true" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+            <state relative-caret-position="154">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="10" />
               <folding>
-                <element signature="e#62#77#0" expanded="true" />
                 <element signature="e#3404#3919#0" expanded="false" />
                 <element signature="e#3951#6431#0" expanded="false" />
                 <element signature="e#6465#7972#0" expanded="false" />
@@ -98,7 +97,7 @@
       <file leaf-file-name="sys.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1571908645/sys.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2067">
+            <state relative-caret-position="9944">
               <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
               <folding />
             </state>
@@ -108,7 +107,7 @@
       <file leaf-file-name="global_function.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/globalpkg/global_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
+            <state relative-caret-position="66">
               <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
@@ -714,7 +713,6 @@
         <state relative-caret-position="0">
           <caret line="197" column="26" lean-forward="false" selection-start-line="197" selection-start-column="26" selection-end-line="197" selection-end-column="26" />
           <folding>
-            <element signature="e#62#77#0" expanded="true" />
             <element signature="e#3404#3919#0" expanded="false" />
             <element signature="e#3951#6431#0" expanded="false" />
             <element signature="e#6465#7972#0" expanded="false" />
@@ -766,7 +764,6 @@
         <state relative-caret-position="0">
           <caret line="275" column="17" lean-forward="false" selection-start-line="275" selection-start-column="17" selection-end-line="275" selection-end-column="17" />
           <folding>
-            <element signature="e#62#77#0" expanded="true" />
             <element signature="e#3404#3919#0" expanded="false" />
             <element signature="e#3951#6431#0" expanded="false" />
             <element signature="e#6465#7972#0" expanded="false" />
@@ -811,7 +808,6 @@
         <state relative-caret-position="0">
           <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
           <folding>
-            <element signature="e#62#77#0" expanded="true" />
             <element signature="e#3404#3919#0" expanded="false" />
             <element signature="e#3951#6431#0" expanded="false" />
             <element signature="e#6465#7972#0" expanded="false" />
@@ -1058,7 +1054,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/globalpkg/global_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="66">
           <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
@@ -1076,7 +1072,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1571908645/sys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2067">
+        <state relative-caret-position="9944">
           <caret line="452" column="0" lean-forward="false" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
           <folding />
         </state>
@@ -1100,10 +1096,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="55" column="60" lean-forward="true" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="10" />
           <folding>
-            <element signature="e#62#77#0" expanded="true" />
             <element signature="e#3404#3919#0" expanded="false" />
             <element signature="e#3951#6431#0" expanded="false" />
             <element signature="e#6465#7972#0" expanded="false" />

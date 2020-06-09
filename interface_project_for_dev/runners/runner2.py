@@ -1,3 +1,4 @@
+#mobile
 from case.case2 import *
 from globalpkg.global_var import logger
 from globalpkg.global_var import executed_history_id
@@ -35,8 +36,8 @@ def runcase(testsuitm):
         testcase_id = testsuitm[i]['id']
         testproject = pro()
         #preconditions = ''
-        host = "192.168.6.27"
-        port = "6030"
+        host = ""
+        port = ""
 
         case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
         expected_results = ""

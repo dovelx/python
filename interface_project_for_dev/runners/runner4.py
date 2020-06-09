@@ -15,8 +15,10 @@ def runcase(testsuit,cookies):
 
         caseinfo = testsuit[i]
         logger.info("执行用例id=%s,name=%s",caseinfo['id'],caseinfo['name'] )
-        #print(caseinfo['url'])
-        result = method.pa(caseinfo, headers, cookies)
+        if caseinfo['flag'] == "get":
+            result = method.gh(caseinfo,gheaders,cookies)
+        elif caseinfo['flag'] == "post":
+            result = method.pa(caseinfo, headers, cookies)
         logger.info("执行用例[id=%s,name=%s]执行结果:%s", caseinfo['id'], caseinfo['name'],result)
 
         #插入执行情况
@@ -51,7 +53,7 @@ def runcase(testsuit,cookies):
         testdb.execute_insert(sql_insert, data)
 
         fail_or_error_reason = ''
-        protocol_method = "Post"
+        protocol_method = caseinfo['flag']
         run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
         action_of_step = ""
         if result == "pass":

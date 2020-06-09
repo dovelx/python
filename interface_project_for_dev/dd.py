@@ -1,4 +1,6 @@
-from tools.gethost import host
+f = open("E:\\report\\atts.txt","w+")
+for i in range(10):
 
-host = host()
-print(host)
+     f.write("This is line %d\r\n" % (i+1))
+
+f.close()
