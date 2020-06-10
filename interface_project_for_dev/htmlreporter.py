@@ -175,8 +175,8 @@ class HtmlReport:
                        + td('主机', bgcolor='#ABABAB', align='center')
                        + td('端口', bgcolor='#ABABAB', align='center')
                        + td('ACTION', bgcolor='#ABABAB', align='center')
-                       + td('预期结果', bgcolor='#ABABAB', align='center')
                        + td('运行结果', bgcolor='#ABABAB', align='center')
+                       + td('预期结果', bgcolor='#ABABAB', align='center')
                        + td('原因分析', bgcolor='#ABABAB', align='center')
                        + td('运行时间', bgcolor='#ABABAB', align='center'))
 

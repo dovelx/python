@@ -1,4 +1,4 @@
-#mobile
+#mobile runner
 from case.case2 import *
 from globalpkg.global_var import logger
 from globalpkg.global_var import executed_history_id
@@ -7,8 +7,8 @@ from globalpkg.global_var import *
 import time
 from runners import m_login
 from tools.gethost import pro
-#post.p(caseinfo,url2,headers,cookies,data)
-def runcase(testsuitm):
+#post.pm
+def runmobile(testsuitm):
 
     #print(cookies)
     print('用例总数：',len(testsuitm))

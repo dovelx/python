@@ -90,21 +90,21 @@ work_appoint_id = work_appoint_id[0]
 print("work_appoint_id",work_appoint_id)
 
 temp = testdb_test.select_one_record(sql_query_work_jsaid)
-print(temp)
+#print(temp)
 jsaid = temp[0]
 #jsaid
 jsaid = jsaid[0]
 print("jsaid",jsaid)
 
 temp = testdb_test.select_one_record(sql_query_work_safeclarid)
-print(temp)
+#print(temp)
 safeclarid = temp[0]
 #jsaid
 safeclarid = safeclarid[0]
 print("safeclarid",safeclarid)
 
 temp = testdb_test.select_one_record(sql_query_work_appointid)
-print(temp)
+#print(temp)
 sql_query_work_appointid = temp[0]
 #jsaid
 sql_query_work_appointid = sql_query_work_appointid[0]

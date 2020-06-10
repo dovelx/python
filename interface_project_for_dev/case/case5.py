@@ -10,7 +10,7 @@ from globalpkg.global_var import sql_query_work_appointid
 from tools.gethost import host
 from tools.gethost import pro
 
-
+case = '作业预约修改，复制和删除'
 projectname = pro()
 host = host(projectname)
 print(host)

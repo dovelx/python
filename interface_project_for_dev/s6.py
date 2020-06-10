@@ -1,25 +1,14 @@
 #报表统计
-# from case.case9 import *
-# from case.case8 import *
-# from case.case7 import *
+
 from case.case6 import *
-# from case.case5 import *
-# from case.case4 import *
-# from case.case3 import *
-# from case.case2 import *
-# from case.case1 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
-from runners import runner4
-#from runners import runner2
+from runners import runner3
 from globalpkg.global_var import *
 from runners import pc_login
 testsuitex = []
 testsuitrul = []
-
-# 临时cookies
-cookies = {'JSESSIONID': '1CD5EA144D943D9EDC9B6179D3BF8770ITBQp2'}
 
 cookies = pc_login.cookies
 
@@ -28,7 +17,7 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC-预约作废 DONE
-runner4.runcase(testsuit6,cookies)
+runner3.runcase(testsuit6,cookies)
 #runner1.runcase(testsuit5,cookies)
 #runner1.runcase(testsuit9,cookies)
 #mobile
@@ -49,7 +38,8 @@ runner4.runcase(testsuit6,cookies)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告
-html_report = HtmlReport('test report', 'ushayden_interface_autotest_report')
+report_title = 'ushayden_interface_autotest_report(%s)'%case
+html_report = HtmlReport('test report', report_title)
 html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
 
 # 读取测试报告路径及文件名

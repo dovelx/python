@@ -1,4 +1,4 @@
-#pc
+#pc post runner
 from case.datas import *
 from globalpkg.global_var import logger
 from globalpkg.global_var import executed_history_id
@@ -6,8 +6,8 @@ from tools import method
 from globalpkg.global_var import *
 import time
 from tools.gethost import pro
-#post.p(caseinfo,url2,headers,cookies,data)
-def runcase(testsuit,cookies):
+#post.pa
+def runcase_old(testsuit,cookies):
 
     print(cookies)
     print('用例总数：',len(testsuit))

@@ -7,6 +7,8 @@ from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
+
+case = '安全分析修改，删除'
 #times
 starttime = tool.starttime
 endtime = tool.endtime

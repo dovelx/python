@@ -15,7 +15,7 @@ now = tool.now
 name = tool.ran_name_with_str()
 print(name)
 #用例信息变量定义
-testsuit = []
+testsuit1 = []
 caseinfo = {}
 caseinfo['id'] = 1
 caseinfo['name'] = ''
@@ -91,7 +91,7 @@ data = {
 	"risksmeasures": "重点防控的风险123"
 }
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 #送交用例信息
 
@@ -108,7 +108,7 @@ formdata2={
 }
 caseinfo['data'] =formdata2
 print(caseinfo['id'] )
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 #作业预约审批用例信息
 caseinfo['id'] = 3
@@ -126,7 +126,7 @@ formdata ={
 	"nodeStr": ""
 }
 caseinfo['data'] =formdata
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 #
 # #安全分析第一个保存用例信息
 # #caseid = 5
@@ -179,7 +179,7 @@ testsuit.append(caseinfo.copy())
 # }
 # caseinfo['url'] = urlfenxi
 # caseinfo['data'] =formdatafenxi
-# testsuit.append(caseinfo.copy())
+# testsuit1.append(caseinfo.copy())
 #
 # #获取安全分析接口用例信息
 # #预约安全分析接口地址
@@ -227,7 +227,7 @@ testsuit.append(caseinfo.copy())
 # }
 # caseinfo['url'] = url
 # caseinfo['data'] =data
-# testsuit.append(caseinfo.copy())
+# testsuit1.append(caseinfo.copy())
 #
 # #安全分析步保存加接口用例信息
 #
@@ -299,7 +299,7 @@ testsuit.append(caseinfo.copy())
 #
 # caseinfo['url'] = url
 # caseinfo['data'] =data
-# testsuit.append(caseinfo.copy())
+# testsuit1.append(caseinfo.copy())
 casename = '安全分析及交底保存'
 count =count+1
 caseid = count
@@ -349,7 +349,7 @@ formdatafenxi ={
 }
 caseinfo['url'] = urlfenxi
 caseinfo['data'] =formdatafenxi
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 #获取安全分析接口用例信息
 #预约安全分析接口地址
@@ -396,7 +396,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 #安全分析步保存加接口用例信息
 
@@ -466,7 +466,7 @@ data = {
 
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 #安全交底，环境影响大
 casename = '安全交底'
 count =count+1
@@ -511,7 +511,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 
 #安全送交接口用例信息
@@ -525,7 +525,7 @@ url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 #作业任务添加接口用例信息
 
 casename = '作业任务添加'
@@ -588,7 +588,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 
 
@@ -726,7 +726,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 
 caseinfo['id'] = 11
 caseinfo['name'] = '作业许可证保存'
@@ -887,7 +887,7 @@ data = {
 
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 #作业许可证提交
 caseinfo['id'] = 12
 caseinfo['name'] = '作业许可证提交'
@@ -1042,5 +1042,5 @@ data ={
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+testsuit1.append(caseinfo.copy())
 

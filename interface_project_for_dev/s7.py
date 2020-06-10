@@ -3,7 +3,7 @@ from case.case7 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
-from runners import runner1
+from runners import runner3
 #from runners import runner2
 from globalpkg.global_var import *
 from runners import m_login
@@ -17,11 +17,12 @@ cookies = pc_login.cookies
 start_time = datetime.datetime.now()
 
 #执行测试
-runner1.runcase(testsuit7,cookies)
+runner3.runcase_old(testsuit7,cookies)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告
-html_report = HtmlReport('test report', 'ushayden_interface_autotest_report')
+report_title = 'ushayden_interface_autotest_report(%s)'%case
+html_report = HtmlReport('test report', report_title)
 html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
 
 # 读取测试报告路径及文件名

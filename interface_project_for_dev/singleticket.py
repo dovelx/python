@@ -4,8 +4,8 @@ from case.case8 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
-from runners import runner1
 from runners import runner2
+from runners import runner3
 from globalpkg.global_var import *
 from runners import pc_login
 import sys
@@ -22,9 +22,9 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner1.runcase(testsuit8,cookies)
+runner3.runcase_old(testsuit8,cookies)
 #mobile
-runner2.runcase(testsuitm)
+runner2.runmobile(testsuitm)
 if sys.argv[1] == '1':
     # 记录测试结束时间
     end_time = datetime.datetime.now()
