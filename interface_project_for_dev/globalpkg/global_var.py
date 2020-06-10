@@ -58,7 +58,7 @@ testdb_test = MyDB('./config/dbconfig.conf', projectname)
 sql_query_ticket = sqls.ticket
 sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
-#sql_query_work_appoint_id =sqls.appoint_id
+sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
@@ -83,11 +83,11 @@ worktaskid = temp[0]
 worktaskid = worktaskid[0]
 print("worktaskid",worktaskid)
 
-#temp = testdb_test.select_one_record(sql_query_work_appoint_id)
-work_appoint_id = temp[0]
+temp = testdb_test.select_one_record(sql_query_work_appoint_id)
+sql_query_work_appoint_id = temp[0]
 #worktaskid
-work_appoint_id = work_appoint_id[0]
-print("work_appoint_id",work_appoint_id)
+work_appoint_id = sql_query_work_appoint_id[0]
+print("work_appoint_id",sql_query_work_appoint_id)
 
 temp = testdb_test.select_one_record(sql_query_work_jsaid)
 #print(temp)
