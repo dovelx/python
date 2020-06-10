@@ -22,8 +22,8 @@ def getEntryPwd(encryptType,pwd,modulus,publicExponent):
 
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
-now1 = now + datetime.timedelta(minutes=5)
-now2 = now + datetime.timedelta(minutes=60)
+now1 = now + datetime.timedelta(minutes=15)
+now2 = now + datetime.timedelta(minutes=120)
 #now3 = now + datetime.timedelta(minutes=50)
 starttime = now1.strftime("%Y-%m-%d %H:%M:%S")
 endtime = now2.strftime("%Y-%m-%d %H:%M:%S")

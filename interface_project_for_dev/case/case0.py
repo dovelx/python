@@ -351,8 +351,7 @@ testsuit.append(caseinfo.copy())
 #作业任务添加接口用例信息
 
 casename = '作业任务添加'
-count =count+1
-caseid = count
+
 caseinfo['id'] = 9
 caseinfo['name'] = casename
 
@@ -419,12 +418,11 @@ print("作业任务列表ID-worktaskid:",worktaskidxx)
 #作业任务提交接口用例信息
 
 casename = '作业任务提交'
-count =count+1
-caseid = count
+
 caseinfo['id'] = 10
 caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
-
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.9505796541855793&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
 data = {
 	"tableName": "hse_work_task",
 	"task_worktype_code": "",
