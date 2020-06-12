@@ -1,5 +1,5 @@
 #mobile runner
-from case.case2 import *
+#from case.case2 import *
 from globalpkg.global_var import logger
 from globalpkg.global_var import executed_history_id
 from tools import method

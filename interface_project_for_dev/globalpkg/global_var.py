@@ -11,7 +11,7 @@ import string
 
 from globalpkg.log import logger
 from globalpkg.mydb import MyDB
-from globalpkg.mytestlink import TestLink
+#from globalpkg.mytestlink import TestLink
 from globalpkg.othertools import OtherTools
 from tools import sqls
 from tools.gethost import pro
