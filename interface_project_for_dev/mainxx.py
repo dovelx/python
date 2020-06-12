@@ -7,7 +7,7 @@ import string
 import datetime
 #大票审核
 #临时cookies
-cookies={'JSESSIONID': 'E33E839D5B30BA263BDE5DD4C53225C5gYK5CC'}
+cookies={'JSESSIONID': 'B1D6B766AD8A624D0EB3B3C3452EE42EuFUPwl'}
 #作业预约作业任务名称随机数生成函数
 def ranstr(num):
     salt = ''.join(random.sample(string.ascii_letters+string.digits,num))
@@ -17,8 +17,8 @@ print("作业预约名称",name)
 
 #获取当前时间，为作业预约提供时间变量
 now = datetime.datetime.now()
-now1 = now + datetime.timedelta(minutes=5)
-now2 = now + datetime.timedelta(minutes=10)
+now1 = now + datetime.timedelta(minutes=39)
+now2 = now + datetime.timedelta(minutes=120)
 fnow1 = now1.strftime("%Y-%m-%d %H:%M:%S")
 fnow2 = now2.strftime("%Y-%m-%d %H:%M:%S")
 now =now.strftime("%Y-%m-%d %H:%M:%S")
@@ -578,7 +578,9 @@ caseinfo['id'] = caseid
 caseinfo['name'] = casename
 num2 = num1+17
 print ("送交ID:",num2)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num2)
+#url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
+#http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=2000000001904&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=2000000001904&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=2000000001904&0.6129988799902932&contentType=json&ajax=true&tid=1
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.6129988799902932&contentType=json&ajax=true&tid=1'%(num1,num1,num1)
 data = {
 	"tableName": "hse_safety_disclosure",
 	"additional_content": "",
@@ -608,7 +610,7 @@ data = {
 	"worktaskid": num1,
 	"work_position_id": 2000000002019
 }
-data = {
+data1 = {
 	"tableName": "hse_safety_disclosure",
 	"additional_content": "",
 	"confirm_content": "1、已清楚作业区域及周边生产作业情况\r\n2、已清楚本次作业的安全风险（JSA）\r\n3、已清楚本次作业的具体安全要求（作业许可证中的控制措施）\r\n4、已对本次作业现场安全措施进行了检查确认\r\n5、已清楚本次作业涉及的作业许可证的有限期限 \r\n6、已掌握个人防护用具正确佩戴使用方法\r\n7、已清楚突发情况下的应急避险方法",
@@ -633,6 +635,35 @@ data = {
 	"othermatter": "",
 	"safe_content": "",
 	"safe_clar_temp_id": 2000000001050,
+	"safe_clar_temp_name": "",
+	"worktaskid": num1,
+	"work_position_id": 2000000002019
+}
+data = {
+	"tableName": "hse_safety_disclosure",
+	"additional_content": "",
+	"confirm_content": "1、已清楚作业区域及周边生产作业情况\r\n2、已清楚本次作业的安全风险（JSA）\r\n3、已清楚本次作业的具体安全要求（作业许可证中的控制措施）\r\n4、已对本次作业现场安全措施进行了检查确认\r\n5、已清楚本次作业涉及的作业许可证的有限期限 \r\n6、已掌握个人防护用具正确佩戴使用方法\r\n7、已清楚突发情况下的应急避险方法",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": "2020-06-12 13:37:22",
+	"updated_by": 1000,
+	"updated_dt": "2020-06-12 13:37:22",
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"safeclarid": num1,
+	"projecttype": "",
+	"safe_name": "长庆石化安全交底",
+	"worktype": "aqjd",
+	"workstatus": "draft",
+	"scopeandenv": "",
+	"workrisk": "",
+	"preventmeasure": "",
+	"emermeasure": "",
+	"othermatter": "",
+	"safe_content": "长庆石化安全交底",
+	"safe_clar_temp_id": 2000000001040,
 	"safe_clar_temp_name": "",
 	"worktaskid": num1,
 	"work_position_id": 2000000002019
@@ -692,7 +723,7 @@ caseinfo['id'] = caseid
 caseinfo['name'] = casename
 
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
-
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.39045431239752615&contentType=json&ajax=true&tid=1'
 #单票
 data = {
 	"tableName": "hse_work_task",
@@ -742,6 +773,55 @@ data = {
 	"equipmentcode": "",
 	"workname": name
 }
+#num3 = sql_query_work_appointid + 1
+data = {
+	"tableName": "hse_work_task",
+	"iscontractor": "0",
+	"isupgrade": "0",
+	"work_appoint_name": name,
+	"territorialunitid": "2000000003339",
+	"applyunitname": "运行一部",
+	"task_pause": "0",
+	"territorialunitname": "运行一部",
+	"territorialunitcode": "CS8082020",
+	"applyunitid": "2000000003339",
+	"workstatus": "draft",
+	"autorisklevel": 1,
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"projecttype": "rcjx",
+	"isrecord": "",
+	"eq_position": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"jsaid": num1,
+	"work_appoint_id": num,
+	"jsa_code": name,
+	"site": "作业地点123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"workcontent": "作业内容123",
+	"planstarttime": fnow1,
+	"planendtime": fnow2,
+	"standardmaintenance_name": "",
+	"constructionscheme": 0,
+	"worktickettype": "xkz",
+	"worktickettype_name": "作业许可证",
+	"standardmaintenance": "",
+	"equipmentname": "",
+	"equipmentnumber": "",
+	"equipmentcode": "",
+	"workname": name
+}
 #请求接口
 rs=requests.post(url, json = data, headers = headers,cookies=cookies)
 #返回值转码
@@ -753,7 +833,7 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    print("作业任务添加", status)
     caseinfo['result'] = 1
 else:
     caseinfo['result'] = 0
@@ -807,14 +887,15 @@ num2 = max(b)
 print("作业任务列表ID-num2==:",num2)
 #作业任务提交
 #作业任务提交接口用例信息
-
+#num2 = num1 + 2368
+print("作业任务列表ID-num2==:",num2)
 casename = '作业任务提交'
 count =count+1
 caseid = count
 caseinfo['id'] = caseid
 caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(num2,num2)
-
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.22018334633296166&contentType=json&ajax=true&tid=1'%(num2,num2)
 data = {
 	"tableName": "hse_work_task",
 	"task_worktype_code": "",
@@ -947,11 +1028,11 @@ status= data['status']
 
 if status == 3200:
 
-    print("获取列表成功", status)
+    print("作业任务提交", status)
     caseinfo['result'] = 1
 else:
     caseinfo['result'] = 0
-    print(data)
+    print("作业任务提交",data)
 #收集用例执行信息
 testsuit.append(caseinfo.copy())
 

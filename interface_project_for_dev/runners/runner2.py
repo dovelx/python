@@ -21,15 +21,15 @@ def runmobile(testsuitm):
         logger.info("执行用例id=%s,name=%s",caseinfo['id'],caseinfo['name'] )
         #print(caseinfo['url'])
 
-        if caseinfo['flag'] == "get":
-            result = method.gm(caseinfo, mheaders)
-            # if len(result)>1:
-            #     result = result[0]
-            #     insertx = result[1]
-            #     logger.info("%s",insertx)
-        elif caseinfo['flag'] == "post":
-            result = method.pm(caseinfo, mheaders)
-        #result = method.pm(caseinfo, mheaders )
+        # if caseinfo['flag'] == "get":
+        #     result = method.gm(caseinfo, mheaders)
+        #     # if len(result)>1:
+        #     #     result = result[0]
+        #     #     insertx = result[1]
+        #     #     logger.info("%s",insertx)
+        # elif caseinfo['flag'] == "post":
+        #     result = method.pm(caseinfo, mheaders)
+        result = method.pm(caseinfo, mheaders )
         logger.info("执行用例id=%s,name=%s执行结果%s", caseinfo['id'], caseinfo['name'],result)
 
         #插入执行情况
@@ -127,4 +127,4 @@ def runmobile(testsuitm):
 
     logger.info('接口测试已执行完成，正在关闭数据库连接')
     testdb.close()
-    return insertx
+#    return insertx

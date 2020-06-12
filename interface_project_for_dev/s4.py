@@ -5,7 +5,7 @@
 # from case.case6 import *
 # from case.case5 import *
 from case.case4 import *
-from case.case3 import *
+#from case.case3 import *
 # from case.case2 import *
 # from case.case1 import *
 from htmlreporter import HtmlReport
@@ -46,7 +46,8 @@ html_report.mkdir_of_report(dir_of_report)
 html_report.generate_html(report_name)
 
 logger.info('生成测试报告成功')
-reportname = html_report.get_filename()
+report_title = 'ushayden_interface_autotest_report(%s)'%case
+html_report = HtmlReport('test report', report_title)
 # mymail = MyMail('./config/mail.conf')
 # mymail.connect()
 # mymail.login()

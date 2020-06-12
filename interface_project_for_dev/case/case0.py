@@ -414,6 +414,7 @@ testsuit.append(caseinfo.copy())
 
 
 worktaskidxx = worktaskid+1
+#worktaskidxx = worktaskid-37
 print("作业任务列表ID-worktaskid:",worktaskidxx)
 #作业任务提交接口用例信息
 

@@ -17,7 +17,7 @@ print("url:",host)
 starttime = tool.starttime
 endtime = tool.endtime
 now = tool.now
-#mendtime = tool.mendtime
+
 #作业预约名称
 name = tool.ran_name_with_str()
 print("作业预约名称：",name)
@@ -35,6 +35,7 @@ caseinfo['isactive'] = ''
 
 #作业预约创建使用ID
 work_appoint_idx = sql_query_work_appointid
+print("作业预约使用变量work_appoint_idx",work_appoint_idx)
 #work_appoint_id_plus1 = work_appoint_id_plus1
 count =0
 #用例信息
@@ -137,7 +138,7 @@ data = {
 	"2000000009070_id": 1000
 }
 caseinfo['data'] = data
-print(caseinfo['id'] )
+#print(caseinfo['id'] )
 testsuit11.append(caseinfo.copy())
 
 #作业预约审批用例信息
@@ -208,18 +209,18 @@ caseinfo['data'] =formdatafenxi
 testsuit11.append(caseinfo.copy())
 
 #安全分析步骤添加接口用例信息
-jsaidxx = jsaid+1
-print ("安全分析步骤添加使用ID:",jsaidxx)
+jsaidx = jsaid+1
+print ("安全分析步骤添加使用变量jsaidx:",jsaidx)
 
 casename = '安全分析步骤添加'
 caseinfo['id'] = 5
 caseinfo['name'] = casename
-url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
+url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx)
 data = {
 	"tableName": "hse_safety_analysis_step",
 	"qualify_level": "no_qualify",
 	"duty_name": "",
-	"jsaid": jsaidxx,
+	"jsaid": jsaidx,
 	"dataStatus": 0,
 	"ver": 1,
 	"created_by": "",
@@ -248,7 +249,7 @@ testsuit11.append(caseinfo.copy())
 casename = '安全分析保存'
 caseinfo['id'] = 6
 caseinfo['name'] = casename
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx,jsaidxx)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.09494809285755568&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx,jsaidx)
 data = {
 	"tableName": "hse_safety_analysis",
 
@@ -261,7 +262,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"jsaid": jsaidxx,
+	"jsaid": jsaidx,
 	"jsa_templete_name": "",
 	"jsa_templete_id": "",
 	"temp_type": "newWorkTask",
@@ -272,7 +273,7 @@ data = {
 	"analyze_time": now,
 	"worktickettype": "",
 	"equip_stuff": "",
-	"worktaskid": jsaidxx,
+	"worktaskid": jsaidx,
 	"workstatus": "",
 	"worktype": "jsa",
 	"revampandadvide": "",
@@ -313,9 +314,9 @@ testsuit11.append(caseinfo.copy())
 casename = '安全交底'
 caseinfo['id'] = 7
 caseinfo['name'] = casename
-safeclaridxx = safeclarid+1
-print ("送交ID:",safeclaridxx)
-url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx,safeclaridxx)
+safeclaridx = safeclarid+1
+print ("安全交底使用变量safeclaridx:",safeclaridx)
+url='http://192.168.6.27:6030/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx,safeclaridx)
 
 data = {
 	"tableName": "hse_safety_disclosure",
@@ -330,7 +331,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"safeclarid": safeclaridxx,
+	"safeclarid": safeclaridx,
 	"projecttype": "",
 	"safe_name": "长庆石化安全交底",
 	"worktype": "aqjd",
@@ -355,7 +356,7 @@ testsuit11.append(caseinfo.copy())
 casename = '安全送交'
 caseinfo['id'] = 8
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx)
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -421,16 +422,16 @@ testsuit11.append(caseinfo.copy())
 
 
 #作业任务提交接口用例信息
-worktaskidxx = worktaskid+1
-print("作业任务提交-worktaskidxx:",worktaskidxx)
+worktaskidx = worktaskid+1
+print("作业任务提交使用变量worktaskidx:",worktaskidx)
 
 casename = '作业任务提交'
 count =count+1
 caseid = count
 caseinfo['id'] = 10
 caseinfo['name'] = casename
-#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.9505796541855793&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.9505796541855793&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx)
 
 data = {
 	"tableName": "hse_work_task",
@@ -470,7 +471,7 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"workname": name,
 	"work_position_name": "制氢北区",
 	"work_appoint_name": name,
@@ -559,12 +560,12 @@ testsuit11.append(caseinfo.copy())
 
 caseinfo['id'] = 11
 caseinfo['name'] = '作业许可证保存'
-#作业许可证 全票时自增=7 来自于查库hse_work_ticket找关系
+#作业许可证 库hse_work_ticket
 workticketidx = workticketid+7
 #work_appoint_idx = work_appoint_id +1
 ts = tsi+7
-print(workticketidx)
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.4267930966220024&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+print(caseinfo['name'],workticketidx)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.4267930966220024&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -609,7 +610,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
 	"territorialunitid": 2000000003339,
@@ -720,9 +721,9 @@ testsuit11.append(caseinfo.copy())
 #作业许可证提交
 caseinfo['id'] = 12
 caseinfo['name'] = '作业许可证提交'
-#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,zuoyexukeid)
 #url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=2000000004507&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004507&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006126&ts=1591777628274&0.6407359796760996&contentType=json&ajax=true&tid=1'
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=2000000004507&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6407359796760996&contentType=json&ajax=true&tid=1'%(worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=2000000004507&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6407359796760996&contentType=json&ajax=true&tid=1'%(worktaskidx,workticketidx,ts)
 #print(url)
 
 data = {
@@ -769,7 +770,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
 	"territorialunitid": 2000000003339,
@@ -880,14 +881,14 @@ testsuit11.append(caseinfo.copy())
 
 caseinfo['id'] = 13
 caseinfo['name'] = '动火作业保存'
-#动火作业保存全票时 自增=7 来自于查库hse_work_ticket找关系
+#动火作业保存全票时 
 workticketidx = workticketid+4
 #work_appoint_idx = work_appoint_id +1
 ts = tsi+4
-print(workticketidx)
-#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.4267930966220024&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+print(caseinfo['name'],workticketidx)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.4267930966220024&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/cardSave?parentEntityId=2000000004508&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004508&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006133&ts=1591778296758&0.9800620495858712&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.9800620495858712&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.9800620495858712&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -933,7 +934,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dh",
 	"territorialunitid": 2000000003339,
@@ -1044,9 +1045,9 @@ testsuit11.append(caseinfo.copy())
 #动火作业提交
 caseinfo['id'] = 14
 caseinfo['name'] = '动火作业提交'
-#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,zuoyexukeid)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/hse_work_ticket_submit?parentEntityId=2000000004514&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004514&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006193&ts=1591779435030&0.5103439717780738&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.5103439717780738&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DH_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.5103439717780738&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -1093,7 +1094,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dh",
 	"territorialunitid": 2000000003339,
@@ -1201,16 +1202,15 @@ caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit11.append(caseinfo.copy())
 
-
+#
 caseinfo['id'] = 15
 caseinfo['name'] = '受限作业保存'
-#
-workticketidx = workticketid+5
 
+workticketidx = workticketid+5
 ts = tsi+5
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/cardSave?parentEntityId=2000000004515&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004515&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006204&ts=1591779828324&0.8214154673307006&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8214154673307006&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8214154673307006&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -1255,7 +1255,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "sx",
 	"territorialunitid": 2000000003339,
@@ -1367,7 +1367,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 16
 caseinfo['name'] = '受限作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/hse_work_ticket_submit?parentEntityId=2000000004517&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004517&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006224&ts=1591781327182&0.49287209088923034&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.49287209088923034&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.49287209088923034&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -1413,7 +1413,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "sx",
 	"territorialunitid": 2000000003339,
@@ -1527,9 +1527,9 @@ caseinfo['name'] = '吊装作业保存'
 workticketidx = workticketid+6
 
 ts = tsi+6
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/cardSave?parentEntityId=2000000004518&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004518&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006235&ts=1591781865298&0.7881595889416673&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.7881595889416673&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.7881595889416673&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -1574,7 +1574,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dz",
 	"territorialunitid": 2000000003339,
@@ -1686,7 +1686,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 18
 caseinfo['name'] = '吊装作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/hse_work_ticket_submit?parentEntityId=2000000004519&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004519&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006245&ts=1591835920695&0.2895095529533147&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.2895095529533147&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DZ_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.2895095529533147&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -1732,7 +1732,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dz",
 	"territorialunitid": 2000000003339,
@@ -1845,9 +1845,9 @@ caseinfo['id'] = 19
 caseinfo['name'] = '临时用电保存'
 workticketidx = workticketid+1
 ts = tsi+1
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/cardSave?parentEntityId=2000000004520&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004520&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006250&ts=1591836199628&0.22774814767641516&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.22774814767641516&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.22774814767641516&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -1892,7 +1892,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "lsyd",
 	"territorialunitid": 2000000003339,
@@ -2004,7 +2004,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 20
 caseinfo['name'] = '临时用电提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/hse_work_ticket_submit?parentEntityId=2000000004521&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004521&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006260&ts=1591836539464&0.894764926006997&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.894764926006997&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_LSYD_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.894764926006997&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -2050,7 +2050,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "lsyd",
 	"territorialunitid": 2000000003339,
@@ -2163,9 +2163,9 @@ caseinfo['id'] = 21
 caseinfo['name'] = '高处作业保存'
 workticketidx = workticketid+9
 ts = tsi+9
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/cardSave?parentEntityId=2000000004522&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004522&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006278&ts=1591837035769&0.23750256010188697&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.23750256010188697&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.23750256010188697&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -2210,7 +2210,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "gc",
 	"territorialunitid": 2000000003339,
@@ -2322,7 +2322,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 22
 caseinfo['name'] = '高处作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/hse_work_ticket_submit?parentEntityId=2000000004523&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004523&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006288&ts=1591838465684&0.8602956738456475&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8602956738456475&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GC_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8602956738456475&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -2368,7 +2368,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "gc",
 	"territorialunitid": 2000000003339,
@@ -2481,9 +2481,9 @@ caseinfo['id'] = 23
 caseinfo['name'] = '管线作业保存'
 workticketidx = workticketid+3
 ts = tsi+3
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/cardSave?parentEntityId=2000000004527&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004527&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006300&ts=1591839629701&0.08776440017753662&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.08776440017753662&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.08776440017753662&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -2528,7 +2528,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "gx",
 	"territorialunitid": 2000000003339,
@@ -2641,7 +2641,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 24
 caseinfo['name'] = '管线作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/hse_work_ticket_submit?parentEntityId=2000000004527&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004527&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006300&ts=1591839762877&0.2940449411368411&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.2940449411368411&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_GX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.2940449411368411&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -2688,7 +2688,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "gx",
 	"territorialunitid": 2000000003339,
@@ -2801,9 +2801,9 @@ caseinfo['id'] = 25
 caseinfo['name'] = '挖掘作业保存'
 workticketidx = workticketid+2
 ts = tsi+2
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/cardSave?parentEntityId=2000000004528&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004528&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006309&ts=1591840183410&0.7322566354763398&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.7322566354763398&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.7322566354763398&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -2848,7 +2848,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dt",
 	"territorialunitid": 2000000003339,
@@ -2960,7 +2960,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 26
 caseinfo['name'] = '挖掘作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/hse_work_ticket_submit?parentEntityId=2000000004528&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004528&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006309&ts=1591840368574&0.1537674191009537&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.1537674191009537&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DT_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.1537674191009537&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -3006,7 +3006,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dt",
 	"territorialunitid": 2000000003339,
@@ -3119,9 +3119,9 @@ caseinfo['id'] = 27
 caseinfo['name'] = '断路作业保存'
 workticketidx = workticketid+8
 ts = tsi+8
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/cardSave?parentEntityId=2000000004251&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004251&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005717&ts=1591841335187&0.09230460814488173&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.09230460814488173&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.09230460814488173&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -3166,7 +3166,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dl",
 	"territorialunitid": 2000000003339,
@@ -3278,7 +3278,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 28
 caseinfo['name'] = '断路作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/hse_work_ticket_submit?parentEntityId=2000000004251&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004251&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005717&ts=1591841498887&0.6530686162830868&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6530686162830868&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_DL_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6530686162830868&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -3324,7 +3324,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "dl",
 	"territorialunitid": 2000000003339,
@@ -3437,9 +3437,9 @@ caseinfo['id'] = 29
 caseinfo['name'] = '射线作业保存'
 workticketidx = workticketid+10
 ts = tsi+10
-print(workticketidx)
+print(caseinfo['name'],workticketidx)
 #http://http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/cardSave?parentEntityId=2000000004252&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004252&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005729&ts=1591842038600&0.8902545084000464&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8902545084000464&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.8902545084000464&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 data = {
 	"tableName": "hse_work_ticket",
 	"clause": "",
@@ -3484,7 +3484,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "shex",
 	"territorialunitid": 2000000003339,
@@ -3596,7 +3596,7 @@ testsuit11.append(caseinfo.copy())
 caseinfo['id'] = 30
 caseinfo['name'] = '射线作业提交'
 #http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/hse_work_ticket_submit?parentEntityId=2000000004255&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004255&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000005759&ts=1591843746360&0.046230678614398&contentType=json&ajax=true&tid=1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.046230678614398&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_SHEX_MCQ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.046230678614398&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -3642,7 +3642,7 @@ data = {
 	"projecttype": "",
 	"is_pause": 0,
 	"workticketid": workticketidx,
-	"worktaskid": worktaskidxx,
+	"worktaskid": worktaskidx,
 	"equipmentnumber": "",
 	"worktype": "shex",
 	"territorialunitid": 2000000003339,

@@ -2,8 +2,8 @@ import os
 import time
 
 from htmlreporter import HtmlReport
-#for i in range(1):
-
+# for i in range(30):
+#     os.system("python mainxx.py")
 
 os.system("python s0.py 0")
 time.sleep(1)

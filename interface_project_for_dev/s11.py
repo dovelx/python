@@ -1,4 +1,4 @@
-#7,安全分析修改，删除
+#作业预约全票
 from case.case11 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
