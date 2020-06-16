@@ -1,28 +1,19 @@
-#手机端主流程
-import requests
-import json
-#from globalpkg.global_var import work_appoint_id
+#手机端主流程 预约，审批
 from tools import tool
-from globalpkg.global_var import tsi
-from globalpkg.global_var import workticketid
-from globalpkg.global_var import worktaskid
-#from case.case1 import *
-from tools import tool
-from globalpkg.global_var import jsaid
-from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
-#from runners.runner2 import inse
+from tools import mname
+from tools import minsert
 #times
 starttime = tool.starttime
 endtime = tool.endtime
 now = tool.now
 #mendtime = tool.mendtime
 #作业预约名称
-name = tool.ran_name_with_str()
+name = mname.name
 print(name)
 case = '手机全流程'
 #用例信息变量定义
-testsuitm = []
+testsuitm100 = []
 caseinfo = {}
 caseinfo['id'] = 1
 caseinfo['name'] = ''
@@ -33,20 +24,10 @@ caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 
+insert = minsert.get_insert_code()
+#作业预约
 
-
-caseinfo['id'] = 100
-caseinfo['name'] = '作业预约'
-caseinfo['flag'] = 'get'
-url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardAdd.json'
-caseinfo['url'] = url
-#caseinfo['data'] =data
-testsuitm.append(caseinfo.copy())
-
-caseinfo['id'] = 101
-caseinfo['name'] = '作业预约'
-caseinfo['flag'] = 'post'
-#workticketidxxx = workticketid +1
+work_appoint_idx = sql_query_work_appointid+1
 url = "http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardSave.json"
 data = {
 	"add_attachs": [],
@@ -117,7 +98,31 @@ data = {
 		"territorialunitcode": "CS8082020"
 	}
 }
+caseinfo['id'] = 1
+caseinfo['name'] = '手机端作业预约'
+caseinfo['isactive'] = 1
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuitm.append(caseinfo.copy())
+testsuitm100.append(caseinfo.copy())
 
+#作业预约送交
+
+#Url
+url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/wfSend.json?dataId=%d&ts='%(work_appoint_idx)
+data= {"nodeStr":"2000000009070","opinion":"申请审批","2000000009070":"测试用户","2000000009070_id":"1000","cCName":"","cC":""}
+caseinfo['id'] = 2
+caseinfo['name'] = '作业预约送交'
+caseinfo['isactive'] = 1
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuitm100.append(caseinfo.copy())
+
+#作业预约审核
+url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/wfFinish.json?dataId=%d&ts='%(work_appoint_idx)
+data ={"cC":"1000","nickName":"用户","nodeStr":"","opinion":"同意","cCName":"测试用户","is_normal_finish":'true'}
+caseinfo['id'] = 3
+caseinfo['name'] = '作业预约审核'
+caseinfo['isactive'] = 1
+caseinfo['url'] = url
+caseinfo['data'] =data
+testsuitm100.append(caseinfo.copy())

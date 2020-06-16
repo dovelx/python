@@ -15,13 +15,15 @@ from globalpkg.global_var import sql_query_work_appointid
 from runners import m_login
 from case import datas
 from runners import pc_login
+from tools import mname
+from tools import msql
 #times
 starttime = tool.starttime
 endtime = tool.endtime
 now = tool.now
 #mendtime = tool.mendtime
 #作业预约名称
-name = tool.ran_name_with_str()
+name = mname.name
 print(name)
 case = '手机全流程'
 #用例信息变量定义
@@ -55,12 +57,12 @@ data = rs.content.decode('utf-8')
 # json化
 data = json.loads(data)
 # 获取接口返回状态
-print("data", data)
+#print("data", data)
 sta = data['status']
 # if caseinfo['id'] == 100:
 insert = data['data']['data']['insert__']
 
-print(sta)
+print('获取insertid',sta)
 #workticketidxxx = workticketid +1
 
 #作业预约
@@ -145,8 +147,7 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
-
+print("作业预约",sta)
 #作业预约送交
 #Url
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/wfSend.json?dataId=%d&ts='%(work_appoint_idx)
@@ -158,7 +159,7 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+print('作业预约送交',sta)
 
 #作业预约审核
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/wfFinish.json?dataId=%d&ts='%(work_appoint_idx)
@@ -171,7 +172,11 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+if sta == 3200:
+
+	print('作业预约审核',sta)
+else:
+	print('作业预约审核',data)
 
 #work_appoint_idx = work_appoint_idx-1
 #安全分析及交底保存
@@ -224,13 +229,12 @@ rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
 data = rs.content.decode('utf-8')
 #json格式化
 data = json.loads(data)
-print(data)
+#print(data)
 # 获取接口返回状态
-#sta = data['status']
+sta = data['status']
 
-#if sta != 3200:
-#    print(sta)
-    #print(data)
+if sta == 3200:
+	print("安全分析及交底保存 成功")
 
 #安全分析步骤添加接口用例信息
 jsaidxx = jsaid+1
@@ -272,7 +276,8 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+if sta == 3200:
+	print("安全分析步骤添加 成功")
 
 #安全分析步保存加接口用例信息
 casename = '安全分析保存'
@@ -342,7 +347,8 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+if sta == 3200:
+	print("安全分析保存 成功")
 #安全交底，环境影响大
 casename = '安全交底'
 caseinfo['id'] = 7
@@ -387,7 +393,8 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+if sta == 3200:
+	print("安全交底 成功")
 
 #安全送交接口用例信息
 
@@ -403,7 +410,8 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(sta)
+if sta == 3200:
+	print("安全送交 成功")
 #作业任务添加m预制任务
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORKAPPLY_MCQ_M/cardAdd.json'
 rs = requests.get(url=url, headers=mheaders)
@@ -412,12 +420,13 @@ data = rs.content.decode('utf-8')
 # json化
 data = json.loads(data)
 # 获取接口返回状态
-print("data", data)
+#print("data", data)
 sta = data['status']
 # if caseinfo['id'] == 100:
 insert = data['data']['data']['insert__']
 
-print(sta)
+print("作业任务添加m预制任务",sta)
+
 #作业任务添加m
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORKAPPLY_MCQ_M/cardSave.json'
 data = {
@@ -437,7 +446,7 @@ data = {
 		"insert__": insert,
 		"equipmentcode": "",
 		"territorialunitid": "2000000003339",
-		"jsaid": 2000000001875,
+		"jsaid": jsaid,
 		"territorialdevicename": "制氢装置",
 		"tenantid": 1,
 		"projecttype": "rcjx",
@@ -479,10 +488,12 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(data)
-print(sta)
+#print(data)
+print('作业任务添加m',data)
 #作业任务提交
 worktaskidxx = worktaskid+1
+worktaskidxx = msql.sql_query_worktaskid(name)
+print("worktaskidxx",worktaskidxx)
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORKAPPLY_MCQ_M/submit.json?dataId=%d&ts='%(worktaskidxx)
 data = {
 	"vo": {
@@ -551,5 +562,8 @@ data = rs.content.decode('utf-8')
 data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
-print(data)
-print(sta)
+#print(data)
+if sta == 3200:
+	print("作业任务提交",sta)
+else:
+	print(data)

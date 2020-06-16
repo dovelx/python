@@ -1,4 +1,4 @@
-
+#pc
 #操作hse_work_ticket表，获取workticketid获取
 ticket = 'select workticketid from hse_work_ticket order by workticketid desc limit 1'
 ts = 'select ts from hse_work_ticket order by ts desc limit 1'

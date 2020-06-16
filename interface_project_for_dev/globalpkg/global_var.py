@@ -87,7 +87,7 @@ temp = testdb_test.select_one_record(sql_query_work_appoint_id)
 sql_query_work_appoint_id = temp[0]
 #worktaskid
 work_appoint_id = sql_query_work_appoint_id[0]
-print("work_appoint_id",sql_query_work_appoint_id)
+print("sql_query_work_appoint_id",work_appoint_id)
 
 temp = testdb_test.select_one_record(sql_query_work_jsaid)
 #print(temp)
@@ -109,8 +109,8 @@ sql_query_work_appointid = temp[0]
 #jsaid
 sql_query_work_appointid = sql_query_work_appointid[0]
 print("sql_query_work_appointid",sql_query_work_appointid)
-logger.info("===关闭数据库=============")
-testdb_test.close()
+# logger.info("===关闭数据库=============")
+# testdb_test.close()
 '''
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()

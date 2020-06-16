@@ -1,13 +1,14 @@
 #2020-6-4 PC和手机端主流程，单票
 from case.case100 import *
-#from case.case8 import *
+from case.case101 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
 from runners import runner2
-#from runners import runner3
+from runners import runner3
 from globalpkg.global_var import *
 from runners import pc_login
+from case.case102 import testsuitm102
 import sys
 testsuitex = []
 testsuitrul = []
@@ -21,10 +22,13 @@ cookies = pc_login.cookies
 start_time = datetime.datetime.now()
 
 #执行测试
+
+#mobilem
+runner2.runmobile(testsuitm100)
 #PC
-#runner3.runcase_old(testsuit8,cookies)
-#mobile
-runner2.runmobile(testsuitm)
+runner3.runcase_old(testsuit101,cookies)
+#
+runner2.runmobile(testsuitm102)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告

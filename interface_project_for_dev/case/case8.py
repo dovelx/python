@@ -501,6 +501,7 @@ caseinfo['id'] = 12
 caseinfo['name'] = casename
 
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
+#http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.8361609278218327&contentType=json&ajax=true&tid=1
 
 #单票
 #sql_query_work_appointidxxx ==yuyueid
@@ -556,6 +557,56 @@ data = {
 	"equipmentnumber": "",
 	"equipmentcode": "",
 	"workname": name
+}
+#20200-6-16添加安全分析图片字段
+data = {
+	"tableName": "hse_work_task",
+	"iscontractor": "0",
+	"isupgrade": "0",
+	"work_appoint_name": name,
+	"territorialunitid": "2000000003339",
+	"applyunitname": "运行一部",
+	"task_pause": "0",
+	"territorialunitname": "运行一部",
+	"territorialunitcode": "CS8082020",
+	"applyunitid": "2000000003339",
+	"workstatus": "draft",
+	"autorisklevel": 1,
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"projecttype": "rcjx",
+	"isrecord": "",
+	"eq_position": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"jsaid": jsaidxxx,
+	"work_appoint_id": "",
+	"jsa_code": name,
+	"site": "作业地点123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"workcontent": "作业内容123",
+	"planstarttime": starttime,
+	"planendtime": endtime,
+	"standardmaintenance_name": "",
+	"constructionscheme": 0,
+	"worktickettype": "xkz",
+	"worktickettype_name": "作业许可证",
+	"standardmaintenance": "",
+	"equipmentname": "",
+	"equipmentnumber": "",
+	"equipmentcode": "",
+	"workname": name,
+	"safety_task_img": "[{\"dfs_file_name\":\"map.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003536,\"dataStatus\":0,\"ver\":1,\"created_by\":"",\"created_dt\":\"2020-06-16 14:01:42\",\"updated_by\":"",\"updated_dt\":\"2020-06-16 14:01:42\",\"df\":0,\"tenantid\":1,\"ts\":"",\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/16/wKgGGl7oYEaAdgBvAAIemjI3PH8335.jpg\",\"dfs_file_size\":138906,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/16/wKgGGl7oYEaAdgBvAAIemjI3PH8335.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/16/wKgGGl7oYEaAQah-AAHKnlsRKiE118.png\"}]"
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
