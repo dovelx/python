@@ -15,7 +15,7 @@ def login():
 
     driver.get("http://192.168.6.156/passports/login?service=http%3A%2F%2F192.168.6.156%2Fportals%2Fcas&tenantCode=clsh&trial=false")
 
-    driver.find_element(By.ID, "name").send_keys("test")
+    driver.find_element(By.ID, "name").send_keys("clshadmin")
     driver.find_element(By.ID, "pwd1").send_keys("1")
     #driver.find_element(By.CSS_SELECTOR, ".justUse").click()
     driver.find_element(By.LINK_TEXT, "登录").click()

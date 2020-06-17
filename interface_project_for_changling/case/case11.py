@@ -362,7 +362,7 @@ caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit11.append(caseinfo.copy())
 
-#作业任务添加接口用例信息
+#作业任务添加接口用例信息--modify
 casename = '作业任务添加'
 caseinfo['id'] = 9
 caseinfo['name'] = casename

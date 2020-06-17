@@ -43,7 +43,7 @@ html_report.mkdir_of_report(dir_of_report)
 # 生成测试报告
 html_report.generate_html(report_name)
 
-logger.info('生成测试报告成功')
+logger.info('生成测试报告成功%s',name)
 # if sys.argv[1] == '1':
 #     # 记录测试结束时间
 #     end_time = datetime.datetime.now()
