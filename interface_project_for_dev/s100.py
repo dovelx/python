@@ -27,7 +27,7 @@ start_time = datetime.datetime.now()
 runner2.runmobile(testsuitm100)
 #PC
 runner3.runcase_old(testsuit101,cookies)
-#
+#m作业任务
 runner2.runmobile(testsuitm102)
 # 记录测试结束时间
 end_time = datetime.datetime.now()

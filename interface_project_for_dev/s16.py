@@ -16,9 +16,9 @@ cookies = pc_login.cookies
 # 记录测试开始时间
 start_time = datetime.datetime.now()
 
-#执行测试
+#执行测试-PC预约，安全，申请
 runner3.runcase_old(testsuit11,cookies)
-#mobile
+#mobile-现场确认，作业票关闭
 runner2.runmobile(testsuitm16)
 # 记录测试结束时间
 end_time = datetime.datetime.now()

@@ -109,7 +109,7 @@ testsuitm100.append(caseinfo.copy())
 
 #Url
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORK_APPOINTAUDIT_M/wfSend.json?dataId=%d&ts='%(work_appoint_idx)
-data= {"nodeStr":"2000000009070","opinion":"申请审批","2000000009070":"测试用户","2000000009070_id":"1000","cCName":"","cC":""}
+data= {"nodeStr":"2000000009070","opinion":"申请审批","2000000009070":"海顿测试","2000000009070_id":"1000","cCName":"","cC":""}
 caseinfo['id'] = 2
 caseinfo['name'] = '作业预约送交'
 caseinfo['isactive'] = 1

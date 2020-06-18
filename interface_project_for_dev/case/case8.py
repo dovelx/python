@@ -1,5 +1,4 @@
-#作业任务，撤回，撤回后再送交
-#作业许可证，撤回，撤回后再送交
+#作业任务-撤回，作业任务-撤回后再送交，作业许可证-撤回，作业许可证-撤回后再送交
 #from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi
@@ -479,7 +478,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())
 
 #安全分析撤回再送交
 
@@ -491,7 +490,7 @@ url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())
 #作业任务添加接口用例信息
 
 casename = '作业任务添加'
@@ -508,7 +507,6 @@ url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&p
 #sql_query_work_appointidxxx = sql_query_work_appointid+1
 #jsaidxxx==jsaidxx
 jsaidxxx = jsaid+1
-
 
 data = {
 	"tableName": "hse_work_task",
@@ -613,8 +611,6 @@ data = {
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit8.append(caseinfo.copy())
-
-
 
 worktaskidxx = worktaskid+1
 print("作业任务列表ID-worktaskid:",worktaskidxx)
@@ -891,7 +887,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())
 
 #作业任务撤回后提交
 
@@ -919,6 +915,7 @@ data = {
 	"hassafetyplan": "",
 	"worker": "",
 	"card_code": "",
+    "safety_task_img": "[{\"dfs_file_name\":\"微信图片_20200617160345.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003652,\"dataStatus\":0,\"ver\":1,\"created_by\":null,\"created_dt\":\"2020-06-17 17:22:42\",\"updated_by\":null,\"updated_dt\":\"2020-06-17 17:22:42\",\"df\":0,\"tenantid\":1,\"ts\":null,\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_file_size\":78172,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OWAFqCrAAIKVnDfoY0466.png\"}]",
 	"reminder": "",
 	"constructionscheme": 0,
 	"reminderid": "",
@@ -1025,14 +1022,14 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())
 
 caseinfo['id'] = 16
 caseinfo['name'] = '作业许可证保存'
 zuoyexukeid = workticketid+1
 workticketidx = workticketid+1
-zuoyexukeid = worktaskidxx+2086
-workticketidx = zuoyexukeid
+#zuoyexukeid = worktaskidxx+2086
+#workticketidx = zuoyexukeid
 ts = tsi
 print("zuoyexukeid",zuoyexukeid)
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid)
@@ -1655,7 +1652,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())
 
 #作业许可证撤回后提交
 caseinfo['id'] = 19
@@ -1811,4 +1808,4 @@ data ={
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-#testsuit8.append(caseinfo.copy())
+testsuit8.append(caseinfo.copy())

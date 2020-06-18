@@ -1,4 +1,4 @@
-#2020-6-4 PC和手机端主流程，单票
+#2020-6-4 单票-PC和手机端主流程
 from case.case2 import *
 #from case.case8 import *
 from htmlreporter import HtmlReport
@@ -23,7 +23,7 @@ start_time = datetime.datetime.now()
 #执行测试
 #PC
 runner3.runcase_old(testsuit8,cookies)
-#mobile
+#mobile-现场确认-作业票关闭
 runner2.runmobile(testsuitm)
 if sys.argv[1] == '1':
     # 记录测试结束时间

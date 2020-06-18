@@ -8,8 +8,8 @@ from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
 from tools.gethost import host
 from tools.gethost import pro
-
-case = '作业预约全票'
+#全票-作业预约-安全分析-作业许可证提交
+case = '作业许可全票'
 projectname = pro()
 host = host(projectname)
 print("url:",host)
@@ -40,7 +40,7 @@ print("作业预约使用变量work_appoint_idx",work_appoint_idx)
 count =0
 #用例信息
 caseinfo['id'] = 1
-caseinfo['name'] = '作业预约全票'
+caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.621597217691122&contentType=json&ajax=true&tid=1'%(work_appoint_idx,work_appoint_idx)
 data = {

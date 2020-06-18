@@ -32,10 +32,12 @@ from globalpkg.global_var import *
 from htmlreporter import HtmlReport
 from globalpkg.global_var import executed_history_id
 from sendmail import MyMail
-
+from runners import pc_login
 
 #临时cookies
 cookies={'JSESSIONID': 'DB7520665A4F144E5FE0AFE8A3DBEF19Xrovjn'}
+
+cookies = pc_login.cookies
 logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
 logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
 logger.info("-----------------------------------------------------------------------------------------------------------------------------------")
@@ -108,29 +110,7 @@ logger.info('正在创建测试步骤报告报表')
 testdb.execute_create(create_case_step_reporter_tb_sql)
 
 
-#暂时关闭登录
-'''
-#selenium登录测试长庆
-driver = webdriver.Firefox()
-driver.get("http://192.168.6.27:6030/passports/login?service=http%3A%2F%2F192.168.6.27%3A6030%2Fportals%2Fcas&tenantCode=cqsh&trial=false")
 
-driver.find_element(By.ID, "username").send_keys("test")
-driver.find_element(By.ID, "pwd1").send_keys("1")
-driver.find_element(By.CSS_SELECTOR, ".justUse").click()
-
-#获取JSESSIONID
-c= driver.get_cookies()
-#print (c)
-#print (c[0])
-for a in c:
-    #print (a)
-    if a['name'] == 'JSESSIONID':
-        b=a
-        #print (b)
-cookies={'JSESSIONID': b['value']}
-
-'''
-print(cookies)
 
 
 
@@ -301,7 +281,7 @@ url3='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&paren
 formdata2={
 	"opinion": "申请审批",
 	"nodeStr": "2000000009070",
-	"2000000009070": "测试用户",
+	"2000000009070": "海顿测试",
 	"2000000009070_id": 1000
 }
 #time.sleep(15)
@@ -339,7 +319,7 @@ url4='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/wfFinish?parentEntityId=&par
 formdata ={
 	"opinion": "同意",
 	"cC": "1000",
-	"cCName": "测试用户",
+	"cCName": "海顿测试",
 	"nickName": "用户",
 	"is_normal_finish": "true",
 	"nodeStr": ""
@@ -441,7 +421,7 @@ testsuit.append(caseinfo.copy())
 #获取worktaskid
 data = data['data']['data']['worktaskid']
 print("安全分析和交底_worktaskid",data)
-logger.info("安全分析和交底_worktaskid:%ss",data)
+logger.info("安全分析和交底_worktaskid:%s",data)
 worktaskid = data
 #安全步骤URL请求ID
 num1 = worktaskid

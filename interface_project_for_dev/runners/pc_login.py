@@ -1,5 +1,5 @@
 # 临时cookies
-cookies = {'JSESSIONID': 'E328ABF7D98965B8F9FF545829E3526EfDl5CN'}
+cookies = {'JSESSIONID': '7116A26F0769987C4DBD2E7EB40E3C982wUZXN'}
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Firefox,FirefoxOptions
