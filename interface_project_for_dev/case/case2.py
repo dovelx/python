@@ -6,7 +6,7 @@ from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
-from case.case1 import *
+from case.case8 import *
 
 #用例信息变量定义
 testsuitm = []

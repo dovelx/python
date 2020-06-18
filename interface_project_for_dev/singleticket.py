@@ -1,6 +1,6 @@
 #2020-6-4 PC和手机端主流程，单票
 from case.case2 import *
-from case.case8 import *
+#from case.case8 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser

@@ -479,7 +479,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())
 
 #安全分析撤回再送交
 
@@ -491,7 +491,7 @@ url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())
 #作业任务添加接口用例信息
 
 casename = '作业任务添加'
@@ -502,7 +502,7 @@ caseinfo['name'] = casename
 
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.9079012038155838&contentType=json&ajax=true&tid=1'
 #http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.8361609278218327&contentType=json&ajax=true&tid=1
-
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_TASK_MCQ&0.24849631848666864&contentType=json&ajax=true&tid=1'
 #单票
 #sql_query_work_appointidxxx ==yuyueid
 #sql_query_work_appointidxxx = sql_query_work_appointid+1
@@ -586,8 +586,8 @@ data = {
 	"eq_position": "",
 	"territorialdeviceid": 2000000003454,
 	"territorialdevicename": "制氢装置",
-	"jsaid": jsaidxxx,
-	"work_appoint_id": "",
+	"jsaid": jsaidxx,
+	"work_appoint_id": 2000000001921,
 	"jsa_code": name,
 	"site": "作业地点123",
 	"workunit": 1688712,
@@ -606,7 +606,9 @@ data = {
 	"equipmentnumber": "",
 	"equipmentcode": "",
 	"workname": name,
-	"safety_task_img": "[{\"dfs_file_name\":\"map.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003536,\"dataStatus\":0,\"ver\":1,\"created_by\":"",\"created_dt\":\"2020-06-16 14:01:42\",\"updated_by\":"",\"updated_dt\":\"2020-06-16 14:01:42\",\"df\":0,\"tenantid\":1,\"ts\":"",\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/16/wKgGGl7oYEaAdgBvAAIemjI3PH8335.jpg\",\"dfs_file_size\":138906,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/16/wKgGGl7oYEaAdgBvAAIemjI3PH8335.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/16/wKgGGl7oYEaAQah-AAHKnlsRKiE118.png\"}]"
+	#"safety_task_img": "[{\"dfs_file_name\":\"map.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003551,\"dataStatus\":0,\"ver\":1,\"created_by\":"",\"created_dt\":\"2020-06-17 16:50:28\",\"updated_by\":"",\"updated_dt\":\"2020-06-17 16:50:28\",\"df\":0,\"tenantid\":1,\"ts\":"",\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p2VSAJxy9AAIemjI3PH8782.jpg\",\"dfs_file_size\":138906,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p2VSAJxy9AAIemjI3PH8782.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p2VSAWc-oAAHKnlsRKiE156.png\"}]"
+	#"safety_task_img": "[ {\n  \"dfs_file_name\" : \"map.jpg\",\n  \"dfs_file_group_name\" : "",\n  \"dfs_file_key\" : \"M00/01/17/wKgGGl7p3M2AeAP5AAIemjI3PH8065.jpg\",\n  \"dfs_file_size\" : 138906,\n  \"dfs_preview_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p3M2AeAP5AAIemjI3PH8065.jpg\",\n  \"dfs_thumbnail_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p3M2ADS2BAAHKnlsRKiE726.png\"\n} ]"
+    "safety_task_img": "[{\"dfs_file_name\":\"微信图片_20200617160345.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003652,\"dataStatus\":0,\"ver\":1,\"created_by\":null,\"created_dt\":\"2020-06-17 17:22:42\",\"updated_by\":null,\"updated_dt\":\"2020-06-17 17:22:42\",\"df\":0,\"tenantid\":1,\"ts\":null,\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_file_size\":78172,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OWAFqCrAAIKVnDfoY0466.png\"}]"
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -623,7 +625,9 @@ count =count+1
 caseid = count
 caseinfo['id'] = 13
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
+#http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=2000000004432&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000004432&0.09387665412976709&contentType=json&ajax=true&tid=1
+url = "http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.9363228587279249&contentType=json&ajax=true&tid=1"%(worktaskidxx,worktaskidxx)
 
 data = {
 	"tableName": "hse_work_task",
@@ -642,6 +646,8 @@ data = {
 	"hassafetyplan": "",
 	"worker": "",
 	"card_code": "",
+	#"safety_task_img": "[ {\n  \"dfs_file_name\" : \"微信图片_20200617160345.jpg\",\n  \"dfs_file_group_name\" : "",\n  \"dfs_file_key\" : \"M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\n  \"dfs_file_size\" : 78172,\n  \"dfs_preview_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\n  \"dfs_thumbnail_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OWAFqCrAAIKVnDfoY0466.png\"\n} ]",
+	"safety_task_img": "[{\"dfs_file_name\":\"微信图片_20200617160345.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003652,\"dataStatus\":0,\"ver\":1,\"created_by\":null,\"created_dt\":\"2020-06-17 17:22:42\",\"updated_by\":null,\"updated_dt\":\"2020-06-17 17:22:42\",\"df\":0,\"tenantid\":1,\"ts\":null,\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_file_size\":78172,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OWAFqCrAAIKVnDfoY0466.png\"}]",
 	"reminder": "",
 	"constructionscheme": 0,
 	"reminderid": "",
@@ -666,7 +672,7 @@ data = {
 	"worktaskid": worktaskidxx,
 	"workname": name,
 	"work_position_name": "制氢北区",
-	"work_appoint_name": "",
+	"work_appoint_name": name,
 	"actualstarttime": "",
 	"actualendtime": "",
 	"isgas_detection": "",
@@ -688,20 +694,20 @@ data = {
 	"territorialunitid": 2000000003339,
 	"territorialunitname": "运行一部",
 	"site": "作业地点123",
-	"work_property": "rush_to_repair",
+	"work_property": "bespeak",
 	"equipmentnumber": "",
 	"workunit": 1688712,
 	"workunitname": "长庆石化分公司",
-	"projecttype": "",
+	"projecttype": "rcjx",
 	"iscontractor": "0",
 	"planstarttime": starttime,
 	"planendtime": endtime,
 	"worktickettype": "xkz",
 	"workstatus": "draft",
-	"applyunitid": 1688712,
-	"applyunitname": "长庆石化分公司",
-	"created_by_name": "测试用户",
-	"updated_by_name": "测试用户",
+	"applyunitid": 2000000003339,
+	"applyunitname": "运行一部",
+	"created_by_name": "卢健",
+	"updated_by_name": "卢健",
 	"workcontent": "作业内容123",
 	"woid": "",
 	"wo_code": "",
@@ -713,8 +719,8 @@ data = {
 	"safecode": "",
 	"work_position_id": 2000000002019,
 	"jsa_code": name,
-	"jsaid": yuyueid,
-	"work_appoint_id": "",
+	"jsaid": jsaidxx,
+	"work_appoint_id": 2000000001921,
 	"wf_current_nodeid": "",
 	"wf_audit_time": "",
 	"task_risklevel": "",
@@ -885,7 +891,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())
 
 #作业任务撤回后提交
 
@@ -1019,15 +1025,19 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())
 
 caseinfo['id'] = 16
 caseinfo['name'] = '作业许可证保存'
 zuoyexukeid = workticketid+1
-ts = tsi+1
-print(zuoyexukeid)
+workticketidx = workticketid+1
+zuoyexukeid = worktaskidxx+2086
+workticketidx = zuoyexukeid
+ts = tsi
+print("zuoyexukeid",zuoyexukeid)
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid)
-
+#http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=2000000004439&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004439&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006525&ts=1592386315324&0.5766079874564594&contentType=json&ajax=true&tid=1
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.5766079874564594&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid,ts)
 
 data = {
 	"tableName": "hse_work_ticket",
@@ -1052,7 +1062,7 @@ data = {
 	"updated_dt": now,
 	"df": 0,
 	"tenantid": 1,
-	"ts": 1591170000174,
+	"ts": ts,
 	"istaskpause": 0,
 	"classgroup": "",
 	"isend": "",
@@ -1072,7 +1082,7 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": zuoyexukeid,
+	"workticketid": workticketidx,
 	"worktaskid": worktaskidxx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
@@ -1152,6 +1162,155 @@ data = {
 	"work_position_id": 2000000002019,
 	"isgas_detection": "0",
 	"gas_aging": "",
+	"isqualgasdetection": "",
+	"dig_size_l": "",
+	"dig_size_w": "",
+	"dig_size_h": "",
+	"attaches": "",
+	"lock_status": 0,
+	"lock_equipment_id": "",
+	"dl_uuid": "",
+	"dl_time": "",
+	"level_upgrade": 0,
+	"loadgoodsname": "",
+	"loadhigh": "",
+	"worktask_name": name,
+	"worktype_name": "作业许可证",
+	"dz_craneno": "",
+	"gas_standard_type": "",
+	"isproprietor": "",
+	"worksite": "",
+	"workticketmbcdid": "",
+	"isstoppower": "",
+	"work_position_name": "制氢北区",
+	"gas_detector_no": "",
+	"additional_requirements": "",
+	"worklevel_org": ""
+}
+
+data = {
+	"tableName": "hse_work_ticket",
+	"clause": "",
+	"tasktype": "",
+	"radiosourcenum": "",
+	"relevantdoc": "",
+	"safedistance": "",
+	"issjtssxzy": "",
+	"isupgradedh": "",
+	"isdzdh": "",
+	"isrecord": "",
+	"excavation_eqp": "",
+	"territorialunitcode": "CS8082020",
+	"worker": "受影响相关方",
+	"pipeline_level": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": "2020-06-17 17:31:54",
+	"updated_by": 1000,
+	"updated_dt": "2020-06-17 17:31:54",
+	"df": 0,
+	"tenantid": 1,
+	"ts": ts,
+	"istaskpause": 0,
+	"classgroup": "",
+	"isend": "",
+	"end_reason": "",
+	"end_dt": "",
+	"groundwire_num": "",
+	"groupknife_num": "",
+	"groundwire_code": "",
+	"othercontent": "",
+	"sent_overdueclose_message": 0,
+	"isupgrade": "0",
+	"isfireday": "0",
+	"isdue": "0",
+	"operator": "",
+	"worktimeconsum": "",
+	"device_id": "",
+	"task_pause": "0",
+	"projecttype": "",
+	"is_pause": 0,
+	"workticketid": workticketidx,
+	"worktaskid": worktaskidxx,
+	"equipmentnumber": "",
+	"worktype": "xkz",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"applyunitid": 2000000003339,
+	"applyunitname": "运行一部",
+	"worknumber": "",
+	"worklevel": "",
+	"site": "作业地点123",
+	"workway": "",
+	"planstarttime": starttime,
+	"planendtime": endtime,
+	"actualstarttime": "",
+	"actualendtime": "",
+	"otherwork": "",
+	"workname": name,
+	"workcontent": "作业内容123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"workstatus": "draft",
+	"equipmentpipename": "",
+	"medium": "",
+	"temperature": "",
+	"pressure": "",
+	"blindplate_material": "",
+	"blindplate_spec": "",
+	"blindplate_code": "",
+	"blindplate_mapandcode": "",
+	"workhighly": "",
+	"objectmass": "",
+	"poweraccesspoint": "",
+	"workvoltage": "",
+	"equipmentandpower": "",
+	"otherunit": "",
+	"workreason": "",
+	"isharmconfirm": "",
+	"ismeasureconfirm": "",
+	"isgascomplate": "",
+	"issigncomplate": "",
+	"created_by_name": "卢健",
+	"updated_by_name": "卢健",
+	"closereason": "",
+	"gastestaging": "",
+	"blindplate_worktype": "",
+	"gasket_material": "",
+	"gasket_spec": "",
+	"close_type": "",
+	"delaynum": 0,
+	"beendelaynum": 0,
+	"isppeconfirm": "",
+	"invalidreason": "",
+	"hassafetyplan": "0",
+	"hashseplan": "",
+	"hasemergencyplan": "",
+	"hasdrawpaper": "0",
+	"haschecklist": "",
+	"hasrescueplan": "",
+	"loadradius": "",
+	"loaddegree": "",
+	"loadrate": "",
+	"objectnorm": "",
+	"loadmass": "",
+	"haslineopensitemap": "",
+	"radiosourcetype": "",
+	"sourcecode": "",
+	"sourcestrength": "",
+	"suprange": "",
+	"controlrange": "",
+	"drawshow": "",
+	"hashookcheck": "",
+	"hasfacadecheck": "",
+	"hasdrivermedical": "",
+	"objectname": "",
+	"cancelreason": "",
+	"hidesituation": "",
+	"work_position_id": 2000000002019,
+	"isgas_detection": "0",
+	"gas_aging": "4",
 	"isqualgasdetection": "",
 	"dig_size_l": "",
 	"dig_size_w": "",
@@ -1496,7 +1655,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())
 
 #作业许可证撤回后提交
 caseinfo['id'] = 19
@@ -1652,4 +1811,4 @@ data ={
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit8.append(caseinfo.copy())
+#testsuit8.append(caseinfo.copy())

@@ -1,4 +1,4 @@
-#作业预约全票
+#作业全票-关闭
 from case.case16 import *
 from case.case11 import *
 from htmlreporter import HtmlReport

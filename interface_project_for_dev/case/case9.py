@@ -552,6 +552,57 @@ data = {
 	"equipmentcode": "",
 	"workname": name
 }
+data = {
+	"tableName": "hse_work_task",
+	"iscontractor": "0",
+	"isupgrade": "0",
+	"work_appoint_name": name,
+	"territorialunitid": "2000000003339",
+	"applyunitname": "运行一部",
+	"task_pause": "0",
+	"territorialunitname": "运行一部",
+	"territorialunitcode": "CS8082020",
+	"applyunitid": "2000000003339",
+	"workstatus": "draft",
+	"autorisklevel": 1,
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"projecttype": "rcjx",
+	"isrecord": "",
+	"eq_position": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"jsaid": jsaidxxx,
+	"work_appoint_id": 2000000001921,
+	"jsa_code": name,
+	"site": "作业地点123",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"workcontent": "作业内容123",
+	"planstarttime": starttime,
+	"planendtime": endtime,
+	"standardmaintenance_name": "",
+	"constructionscheme": 0,
+	"worktickettype": "xkz",
+	"worktickettype_name": "作业许可证",
+	"standardmaintenance": "",
+	"equipmentname": "",
+	"equipmentnumber": "",
+	"equipmentcode": "",
+	"workname": name,
+	#"safety_task_img": "[{\"dfs_file_name\":\"map.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003551,\"dataStatus\":0,\"ver\":1,\"created_by\":"",\"created_dt\":\"2020-06-17 16:50:28\",\"updated_by\":"",\"updated_dt\":\"2020-06-17 16:50:28\",\"df\":0,\"tenantid\":1,\"ts\":"",\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p2VSAJxy9AAIemjI3PH8782.jpg\",\"dfs_file_size\":138906,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p2VSAJxy9AAIemjI3PH8782.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p2VSAWc-oAAHKnlsRKiE156.png\"}]"
+	#"safety_task_img": "[ {\n  \"dfs_file_name\" : \"map.jpg\",\n  \"dfs_file_group_name\" : "",\n  \"dfs_file_key\" : \"M00/01/17/wKgGGl7p3M2AeAP5AAIemjI3PH8065.jpg\",\n  \"dfs_file_size\" : 138906,\n  \"dfs_preview_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p3M2AeAP5AAIemjI3PH8065.jpg\",\n  \"dfs_thumbnail_url\" : \"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p3M2ADS2BAAHKnlsRKiE726.png\"\n} ]"
+    "safety_task_img": "[{\"dfs_file_name\":\"微信图片_20200617160345.jpg\",\"isicon\":false,\"tableName\":\"sy_attach_dfs\",\"dfs_id\":2000000003652,\"dataStatus\":0,\"ver\":1,\"created_by\":null,\"created_dt\":\"2020-06-17 17:22:42\",\"updated_by\":null,\"updated_dt\":\"2020-06-17 17:22:42\",\"df\":0,\"tenantid\":1,\"ts\":null,\"dfs_file_group_name\":\"group1\",\"dfs_file_key\":\"M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_file_size\":78172,\"dfs_preview_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OKAaPXcAAExXFSqfEE896.jpg\",\"dfs_thumbnail_url\":\"http://192.168.6.26:8888//group1//M00/01/17/wKgGGl7p4OWAFqCrAAIKVnDfoY0466.png\"}]"
+}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit9.append(caseinfo.copy())

@@ -1,5 +1,5 @@
 # 临时cookies
-cookies = {'JSESSIONID': '1DB98F9F643BCB62D8DF361111E774B8HitJ9f'}
+cookies = {'JSESSIONID': 'E328ABF7D98965B8F9FF545829E3526EfDl5CN'}
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Firefox,FirefoxOptions
@@ -29,6 +29,8 @@ def login():
     cookies={'JSESSIONID': b['value']}
 
     #cookies={'JSESSIONID': '3BAB7DF0381948EA376F907859D5321C'}
+    driver.close()
+    driver.quit()
     return cookies
 
 #cookies= login()
