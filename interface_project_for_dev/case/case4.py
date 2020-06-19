@@ -1,4 +1,4 @@
-#查询
+#PC端-作业许可-查询
 from globalpkg.global_var import work_appoint_id
 from tools import tool
 from globalpkg.global_var import tsi

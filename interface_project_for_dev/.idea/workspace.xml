@@ -11,35 +11,38 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/interface_project_for_dev$global_var.coverage" NAME="global_var Coverage Results" MODIFIED="1591255040996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/globalpkg" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s100.coverage" NAME="s100 Coverage Results" MODIFIED="1592447722814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s100.coverage" NAME="s100 Coverage Results" MODIFIED="1592465692791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$.coverage" NAME="作业许可证撤回再提交 Coverage Results" MODIFIED="1591667083935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$m_login.coverage" NAME="m_login Coverage Results" MODIFIED="1591262122575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runners" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug1.coverage" NAME="sdebug1 Coverage Results" MODIFIED="1591690534281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s11.coverage" NAME="s11 Coverage Results" MODIFIED="1592449419142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$debug102.coverage" NAME="debug102 Coverage Results" MODIFIED="1592470634436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$debug11.coverage" NAME="debug11 Coverage Results" MODIFIED="1591246426607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$dd.coverage" NAME="dd Coverage Results" MODIFIED="1591697130168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$case100.coverage" NAME="case100 Coverage Results" MODIFIED="1592464304823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$singledebug.coverage" NAME="singledebug Coverage Results" MODIFIED="1591582298727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$pc_login.coverage" NAME="pc_login Coverage Results" MODIFIED="1592289381449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runners" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$init.coverage" NAME="init Coverage Results" MODIFIED="1592442403222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$init.coverage" NAME="init Coverage Results" MODIFIED="1592476750605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1590739790987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$pcdouble.coverage" NAME="pcdouble Coverage Results" MODIFIED="1592448339000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$mainxx.coverage" NAME="mainxx Coverage Results" MODIFIED="1591942428630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s5.coverage" NAME="s5 Coverage Results" MODIFIED="1591693090161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s16.coverage" NAME="s16 Coverage Results" MODIFIED="1592390535931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$dd1.coverage" NAME="dd1 Coverage Results" MODIFIED="1592286291622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$singleticket.coverage" NAME="singleticket Coverage Results" MODIFIED="1592442862975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s16.coverage" NAME="s16 Coverage Results" MODIFIED="1592528090279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$dd1.coverage" NAME="dd1 Coverage Results" MODIFIED="1592531102580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$singleticket.coverage" NAME="singleticket Coverage Results" MODIFIED="1592460112575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case101.coverage" NAME="case101 Coverage Results" MODIFIED="1592279069081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case11.coverage" NAME="case11 Coverage Results" MODIFIED="1591835961598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$__1_.coverage" NAME="安全分析修改 (1) Coverage Results" MODIFIED="1591601387660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s6.coverage" NAME="s6 Coverage Results" MODIFIED="1591751236893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s3.coverage" NAME="s3 Coverage Results" MODIFIED="1591692672606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s0.coverage" NAME="s0 Coverage Results" MODIFIED="1591942007285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s0.coverage" NAME="s0 Coverage Results" MODIFIED="1592476720528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case3.coverage" NAME="case3 Coverage Results" MODIFIED="1591610777207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$idmq.coverage" NAME="idmq Coverage Results" MODIFIED="1591586807656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case1.coverage" NAME="case1 Coverage Results" MODIFIED="1591585174368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$dee.coverage" NAME="dee Coverage Results" MODIFIED="1591783659320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s12.coverage" NAME="s12 Coverage Results" MODIFIED="1592445978010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$debug101.coverage" NAME="debug101 Coverage Results" MODIFIED="1592288974144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s12.coverage" NAME="s12 Coverage Results" MODIFIED="1592475989862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$mobile.coverage" NAME="mobile Coverage Results" MODIFIED="1592554210148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$debug101.coverage" NAME="debug101 Coverage Results" MODIFIED="1592468093582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug.coverage" NAME="sdebug Coverage Results" MODIFIED="1591692511937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$tetz.coverage" NAME="tetz Coverage Results" MODIFIED="1591233197911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$cmain.coverage" NAME="cmain Coverage Results" MODIFIED="1591234281784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -47,13 +50,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="s16.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s16.py">
+      <file leaf-file-name="pc_login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="25">
+              <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
               <folding>
-                <element signature="e#9#34#0" expanded="true" />
+                <element signature="e#195#1101#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="755">
+              <caret line="15181" column="1" lean-forward="false" selection-start-line="15181" selection-start-column="1" selection-end-line="15181" selection-end-column="1" />
+              <folding>
+                <element signature="e#28#43#0" expanded="true" />
+                <element signature="e#8422#8910#0" expanded="false" />
+                <element signature="e#9652#10806#0" expanded="false" />
+                <element signature="e#11625#12409#0" expanded="false" />
+                <element signature="e#16901#23279#0" expanded="false" />
+                <element signature="e#25486#35804#0" expanded="false" />
+                <element signature="e#52321#53640#0" expanded="false" />
+                <element signature="e#54289#55843#0" expanded="false" />
+                <element signature="e#56092#56171#0" expanded="false" />
+                <element signature="e#56455#94509#0" expanded="false" />
+                <element signature="e#172023#173553#0" expanded="false" />
+                <element signature="e#174146#191517#0" expanded="false" />
+                <element signature="e#194374#225593#0" expanded="false" />
+                <element signature="e#226326#228074#0" expanded="false" />
+                <element signature="e#228669#242269#0" expanded="false" />
+                <element signature="e#243004#244406#0" expanded="false" />
+                <element signature="e#244997#267697#0" expanded="false" />
+                <element signature="e#268430#269898#0" expanded="false" />
+                <element signature="e#270488#277978#0" expanded="false" />
+                <element signature="e#278601#280099#0" expanded="false" />
+                <element signature="e#280690#312934#0" expanded="false" />
+                <element signature="e#313557#315186#0" expanded="false" />
+                <element signature="e#315805#317312#0" expanded="false" />
+                <element signature="e#317938#319445#0" expanded="false" />
+                <element signature="e#320371#322993#0" expanded="false" />
+                <element signature="e#323942#327468#0" expanded="false" />
+                <element signature="e#328423#365916#0" expanded="false" />
+                <element signature="e#366871#556802#0" expanded="false" />
+                <element signature="e#557051#557130#0" expanded="false" />
+                <element signature="e#557778#564565#0" expanded="false" />
+                <element signature="e#564814#564893#0" expanded="false" />
+                <element signature="e#565746#567112#0" expanded="false" />
+                <element signature="e#567361#567440#0" expanded="false" />
+                <element signature="e#568295#578936#0" expanded="false" />
+                <element signature="e#579185#579264#0" expanded="false" />
+                <element signature="e#591173#591252#0" expanded="false" />
+                <element signature="e#591298#591299#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,10 +113,9 @@
       <file leaf-file-name="global_var.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
-                <element signature="e#63#74#0" expanded="true" />
                 <element signature="e#357#1103#1" expanded="false" />
                 <element signature="e#1104#1442#1" expanded="false" />
                 <element signature="e#3270#3344#1" expanded="false" />
@@ -75,216 +125,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case16.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/case16.py">
+      <file leaf-file-name="sqls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/sqls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="50">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="85" />
               <folding>
-                <element signature="e#35743#35775#0" expanded="false" />
-                <element signature="e#1808979#1820462#0" expanded="false" />
-                <element signature="e#1820828#1828599#0" expanded="false" />
-                <element signature="e#1828967#1837731#0" expanded="false" />
-                <element signature="e#1838097#1852423#0" expanded="false" />
-                <element signature="e#1852789#1861220#0" expanded="false" />
-                <element signature="e#1861588#1871300#0" expanded="false" />
-                <element signature="e#1871669#1881285#0" expanded="false" />
-                <element signature="e#1881651#1895005#0" expanded="false" />
-                <element signature="e#1895371#1896803#0" expanded="false" />
-                <element signature="e#1897173#1905064#0" expanded="false" />
-                <element signature="e#1905432#1916676#0" expanded="false" />
-                <element signature="e#1917042#1929096#0" expanded="false" />
-                <element signature="e#1929462#1937402#0" expanded="false" />
-                <element signature="e#1937768#1948770#0" expanded="false" />
-                <element signature="e#1949142#1956307#0" expanded="false" />
-                <element signature="e#1956679#1964476#0" expanded="false" />
-                <element signature="e#1964848#1974166#0" expanded="false" />
-                <element signature="e#1974532#1982528#0" expanded="false" />
-                <element signature="e#1982894#1991602#0" expanded="false" />
-                <element signature="e#1991968#2003578#0" expanded="false" />
-                <element signature="e#2003944#2011915#0" expanded="false" />
-                <element signature="e#2012281#2022239#0" expanded="false" />
-                <element signature="e#2022605#2031518#0" expanded="false" />
-                <element signature="e#2031884#2042284#0" expanded="false" />
-                <element signature="e#2042650#2054112#0" expanded="false" />
-                <element signature="e#2054480#2061201#0" expanded="false" />
-                <element signature="e#2061569#2070551#0" expanded="false" />
-                <element signature="e#2070919#2077902#0" expanded="false" />
-                <element signature="e#2078269#2086717#0" expanded="false" />
-                <element signature="e#2087084#2099294#0" expanded="false" />
+                <marker date="1592274615042" expanded="true" signature="51:126" ph="select workt... hse_work_ticket" />
+                <marker date="1592274615042" expanded="true" signature="134:189" ph="select ts fr... hse_work_ticket" />
+                <marker date="1592274615042" expanded="true" signature="205:276" ph="select workt... hse_work_ticket" />
+                <marker date="1592274615042" expanded="true" signature="291:373" ph="SELECT work_... hse_safety_task" />
+                <marker date="1592274615042" expanded="true" signature="397:463" ph="SELECT jsaid... hse_safety_analysis" />
+                <marker date="1592274615042" expanded="true" signature="492:570" ph="SELECT safec... hse_safety_disclosure" />
+                <marker date="1592274615042" expanded="true" signature="599:682" ph="SELECT work_... hse_work_appoint" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case12.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/case12.py">
+      <file leaf-file-name="tool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/tool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="7" />
-              <folding>
-                <element signature="e#669#11998#0" expanded="false" />
-                <element signature="e#12390#35324#0" expanded="false" />
-                <element signature="e#24793#25491#0" expanded="false" />
-                <element signature="e#35717#136602#0" expanded="false" />
-                <element signature="e#136956#145577#0" expanded="false" />
-                <element signature="e#145963#156208#0" expanded="false" />
-                <element signature="e#156591#163200#0" expanded="false" />
-                <element signature="e#163583#172632#0" expanded="false" />
-                <element signature="e#173012#179855#0" expanded="false" />
-                <element signature="e#180273#201461#0" expanded="false" />
-                <element signature="e#201872#218124#0" expanded="false" />
-                <element signature="e#218525#233349#0" expanded="false" />
-                <element signature="e#233750#241150#0" expanded="false" />
-                <element signature="e#241551#251143#0" expanded="false" />
-                <element signature="e#251546#259133#0" expanded="false" />
-                <element signature="e#259538#269031#0" expanded="false" />
-                <element signature="e#269433#278951#0" expanded="false" />
-                <element signature="e#279351#290263#0" expanded="false" />
-                <element signature="e#290663#300824#0" expanded="false" />
-                <element signature="e#301224#313791#0" expanded="false" />
-                <element signature="e#314194#324952#0" expanded="false" />
-                <element signature="e#325354#342509#0" expanded="false" />
-                <element signature="e#342912#357160#0" expanded="false" />
-                <element signature="e#357563#371169#0" expanded="false" />
-                <element signature="e#371574#381325#0" expanded="false" />
-                <element signature="e#381726#393351#0" expanded="false" />
-                <element signature="e#393752#407185#0" expanded="false" />
-                <element signature="e#407591#419575#0" expanded="false" />
-                <element signature="e#419989#442413#0" expanded="false" />
-                <element signature="e#442827#458339#0" expanded="false" />
-                <element signature="e#458746#467374#0" expanded="false" />
-                <element signature="e#467782#478377#0" expanded="false" />
-                <element signature="e#478788#494344#0" expanded="false" />
-                <element signature="e#494747#501809#0" expanded="false" />
-                <element signature="e#502215#511750#0" expanded="false" />
-                <element signature="e#512153#521604#0" expanded="false" />
-                <element signature="e#522007#533259#0" expanded="false" />
-                <element signature="e#533666#544982#0" expanded="false" />
-                <element signature="e#545389#556748#0" expanded="false" />
-                <element signature="e#557152#565853#0" expanded="false" />
-                <element signature="e#566255#579018#0" expanded="false" />
-                <element signature="e#579420#591908#0" expanded="false" />
-                <element signature="e#592310#604754#0" expanded="false" />
-                <element signature="e#605159#614660#0" expanded="false" />
-                <element signature="e#615064#625862#0" expanded="false" />
-                <element signature="e#626267#638486#0" expanded="false" />
-                <element signature="e#638891#654936#0" expanded="false" />
-                <element signature="e#655343#668500#0" expanded="false" />
-                <element signature="e#668880#674773#0" expanded="false" />
-                <element signature="e#675183#692929#0" expanded="false" />
-                <element signature="e#693330#700625#0" expanded="false" />
-                <element signature="e#701026#709609#0" expanded="false" />
-                <element signature="e#710014#722137#0" expanded="false" />
-                <element signature="e#722539#731388#0" expanded="false" />
-                <element signature="e#731794#741455#0" expanded="false" />
-                <element signature="e#741857#751010#0" expanded="false" />
-                <element signature="e#751411#764101#0" expanded="false" />
-                <element signature="e#764502#779666#0" expanded="false" />
-                <element signature="e#780089#819588#0" expanded="false" />
-                <element signature="e#820013#1027456#0" expanded="false" />
-                <element signature="e#1027863#1235306#0" expanded="false" />
-                <element signature="e#1235714#1244604#0" expanded="false" />
-                <element signature="e#1245013#1255033#0" expanded="false" />
-                <element signature="e#1255441#1265875#0" expanded="false" />
-                <element signature="e#1266279#1277158#0" expanded="false" />
-                <element signature="e#1277566#1289037#0" expanded="false" />
-                <element signature="e#1289395#1293927#0" expanded="false" />
-                <element signature="e#1294307#1301298#0" expanded="false" />
-                <element signature="e#1301678#1305910#0" expanded="false" />
-                <element signature="e#1306300#1315472#0" expanded="false" />
-                <element signature="e#1315830#1322056#0" expanded="false" />
-                <element signature="e#1322447#1329999#0" expanded="false" />
-                <element signature="e#1330388#1339590#0" expanded="false" />
-                <element signature="e#1339978#1348564#0" expanded="false" />
-                <element signature="e#1348952#1359278#0" expanded="false" />
-                <element signature="e#1359667#1371105#0" expanded="false" />
-                <element signature="e#1371499#1382246#0" expanded="false" />
-                <element signature="e#1382639#1399993#0" expanded="false" />
-                <element signature="e#1400385#1410964#0" expanded="false" />
-                <element signature="e#1411353#1426244#0" expanded="false" />
-                <element signature="e#1426633#1440878#0" expanded="false" />
-                <element signature="e#1441259#1454644#0" expanded="false" />
-                <element signature="e#1455043#1478947#0" expanded="false" />
-                <element signature="e#1479345#1587419#0" expanded="false" />
-                <element signature="e#1587803#1594237#0" expanded="false" />
-                <element signature="e#1594620#1604733#0" expanded="false" />
-                <element signature="e#1605118#1614829#0" expanded="false" />
-                <element signature="e#1615214#1626767#0" expanded="false" />
-                <element signature="e#1626850#1626857#0" expanded="false" />
-                <element signature="e#1639168#1649207#0" expanded="false" />
-                <element signature="e#1649590#1661797#0" expanded="false" />
-                <element signature="e#1662148#1664475#0" expanded="false" />
-                <element signature="e#1664852#1668494#0" expanded="false" />
-                <element signature="e#1668877#1676579#0" expanded="false" />
-                <element signature="e#1676963#1685731#0" expanded="false" />
-                <element signature="e#1686114#1695740#0" expanded="false" />
-                <element signature="e#1696123#1707986#0" expanded="false" />
-                <element signature="e#1708328#1708481#0" expanded="false" />
-                <element signature="e#1708860#1721955#0" expanded="false" />
-                <element signature="e#1722349#1730059#0" expanded="false" />
-                <element signature="e#1730454#1739518#0" expanded="false" />
-                <element signature="e#1739903#1748901#0" expanded="false" />
-                <element signature="e#1749286#1755730#0" expanded="false" />
-                <element signature="e#1756121#1762843#0" expanded="false" />
-                <element signature="e#1763230#1773608#0" expanded="false" />
-                <element signature="e#1773995#1784378#0" expanded="false" />
-                <element signature="e#1784767#1798592#0" expanded="false" />
-                <element signature="e#1798982#1808588#0" expanded="false" />
-                <element signature="e#1808975#1820458#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="singleticket.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/singleticket.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="294">
+              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/case2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="21" />
-              <folding>
-                <element signature="e#531#541#0" expanded="false" />
-                <element signature="e#45295#57055#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case8.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/case8.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="e#1240#2463#0" expanded="false" />
-                <element signature="e#2836#2940#0" expanded="false" />
-                <element signature="e#3342#3460#0" expanded="false" />
-                <element signature="e#3854#4787#0" expanded="false" />
-                <element signature="e#5752#6240#0" expanded="false" />
-                <element signature="e#6703#7857#0" expanded="false" />
-                <element signature="e#8250#9422#0" expanded="false" />
-                <element signature="e#10003#10785#0" expanded="false" />
-                <element signature="e#11581#12753#0" expanded="false" />
-                <element signature="e#14021#15136#0" expanded="false" />
-                <element signature="e#19019#22784#0" expanded="false" />
-                <element signature="e#23538#26205#0" expanded="false" />
-                <element signature="e#26649#29969#0" expanded="false" />
-                <element signature="e#31093#34260#0" expanded="false" />
-                <element signature="e#34269#37471#0" expanded="false" />
-                <element signature="e#37923#41064#0" expanded="false" />
-                <element signature="e#41542#44714#0" expanded="false" />
-                <element signature="e#45173#48314#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -292,10 +156,9 @@
       <file leaf-file-name="case11.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/case11.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="197">
+              <caret line="3118" column="3" lean-forward="false" selection-start-line="3118" selection-start-column="1" selection-end-line="3118" selection-end-column="3" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
                 <element signature="e#1338#3556#0" expanded="false" />
                 <element signature="e#4191#4295#0" expanded="false" />
                 <element signature="e#4704#4822#0" expanded="false" />
@@ -329,26 +192,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s12.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s12.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="s11.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/s11.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -360,48 +203,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>2000000005763</find>
-      <find>&quot;2020-06-11 11:39:51&quot;</find>
-      <find>&quot;2020-06-11 16:50:29&quot;</find>
-      <find>2000000005762</find>
-      <find>2000000004256</find>
-      <find>192</find>
-      <find>testsuitm12</find>
-      <find>197</find>
-      <find>作业许可证</find>
-      <find>210</find>
-      <find>作业许可证保存</find>
-      <find>work_appoint_id</find>
-      <find>testsuitm101</find>
-      <find>work_appoint_idx</find>
-      <find>作业任务添加m预制任务</find>
-      <find>&quot;Created_by_Python_YyGxwK&quot;</find>
-      <find>testsuitm</find>
-      <find>安全分析列表使用ID</find>
-      <find>2000000001921</find>
-      <find>&quot;Created_by_Python_XtxQqu&quot;</find>
-      <find>6525</find>
-      <find>作业任务列表ID-worktaskid:</find>
-      <find>workticketid</find>
-      <find>10</find>
-      <find>name</find>
-      <find>ran_name_with_str</find>
-      <find>print(name)</find>
       <find>作业任务列表ID-worktaskid</find>
       <find>添加</find>
       <find>作业任务添加</find>
+      <find>&quot;Created_by_Python_VvPN1u&quot;</find>
+      <find>&quot;Created_by_Python_eDwaC0&quot;</find>
+      <find>Created_by_Python_eDwaC0</find>
+      <find>work_appoint_name</find>
+      <find>&quot;Created_by_Python_xmpt9R&quot;</find>
+      <find>&quot;2020-06-18 15:20:28&quot;</find>
+      <find>送交ID</find>
+      <find>id</find>
+      <find>task</find>
+      <find>safeclarid</find>
+      <find>ticket</find>
+      <find>time.sleep(1)</find>
+      <find>jsaid</find>
+      <find>Pass</find>
+      <find>2000000007402</find>
+      <find>1592531768701</find>
+      <find>2000000007399</find>
+      <find>2000000007404</find>
+      <find>&quot;2020-06-19 09:50:03&quot;</find>
+      <find>planstarttime</find>
+      <find>&quot;2020-06-19 11:45:03&quot;</find>
+      <find>planendtime</find>
+      <find>&quot;Created_by_Python_Gcf0NX&quot;</find>
+      <find>2000000004560</find>
+      <find>作业许可证保存</find>
+      <find>吊装作业提交</find>
+      <find>断路</find>
     </findStrings>
     <replaceStrings>
-      <replace>safeclarid_l</replace>
-      <replace>host</replace>
-      <replace>endtime</replace>
-      <replace>work_appoint_id_plus1</replace>
       <replace>work_appoint_id_l</replace>
       <replace>jsaidxx</replace>
       <replace>testsuit7</replace>
       <replace>testsuit8</replace>
       <replace>zuoyexukeid</replace>
-      <replace>worktaskidxx</replace>
       <replace>testsuit9</replace>
       <replace>testsuit4</replace>
       <replace>testsuit5</replace>
@@ -415,13 +253,18 @@
       <replace>work_appoint_idx</replace>
       <replace>jsaidx</replace>
       <replace>workticketid</replace>
-      <replace>now</replace>
-      <replace>workticketidx</replace>
       <replace>worktaskidx</replace>
       <replace>testsuitm16</replace>
       <replace>testsuit101</replace>
       <replace>testsuitm100</replace>
+      <replace>pass</replace>
+      <replace>ts</replace>
+      <replace>starttime</replace>
+      <replace>endtime</replace>
       <replace>name</replace>
+      <replace>worktaskidxx</replace>
+      <replace>now</replace>
+      <replace>workticketidx</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\project\interface_project_for_dev</dir>
@@ -430,29 +273,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sdebug.py" />
-        <option value="$PROJECT_DIR$/sdebug1.py" />
-        <option value="$PROJECT_DIR$/case/case1.py" />
-        <option value="$PROJECT_DIR$/runners/runner4.py" />
-        <option value="$PROJECT_DIR$/runners/runner1.py" />
-        <option value="$PROJECT_DIR$/s0.py" />
-        <option value="$PROJECT_DIR$/case/case4.py" />
-        <option value="$PROJECT_DIR$/s6.py" />
-        <option value="$PROJECT_DIR$/case/case6.py" />
         <option value="$PROJECT_DIR$/s3.py" />
         <option value="$PROJECT_DIR$/case/case3.py" />
-        <option value="$PROJECT_DIR$/s9.py" />
         <option value="$PROJECT_DIR$/s7.py" />
         <option value="$PROJECT_DIR$/s5.py" />
         <option value="$PROJECT_DIR$/case/case7.py" />
         <option value="$PROJECT_DIR$/case/case5.py" />
-        <option value="$PROJECT_DIR$/runners/runner3.py" />
         <option value="$PROJECT_DIR$/htmlreporter.py" />
-        <option value="$PROJECT_DIR$/tools/tool.py" />
         <option value="$PROJECT_DIR$/dd.py" />
         <option value="$PROJECT_DIR$/dee.py" />
         <option value="$PROJECT_DIR$/mainxx.py" />
-        <option value="$PROJECT_DIR$/init.py" />
         <option value="$PROJECT_DIR$/s4.py" />
         <option value="$PROJECT_DIR$/config/logconfig.conf" />
         <option value="$PROJECT_DIR$/runners/runner2.py" />
@@ -462,25 +292,38 @@
         <option value="$PROJECT_DIR$/tools/minsert.py" />
         <option value="$PROJECT_DIR$/case/case101.py" />
         <option value="$PROJECT_DIR$/globalpkg/global_var.py" />
-        <option value="$PROJECT_DIR$/tools/msql.py" />
-        <option value="$PROJECT_DIR$/dd1.py" />
-        <option value="$PROJECT_DIR$/debug101.py" />
         <option value="$PROJECT_DIR$/case/case9.py" />
-        <option value="$PROJECT_DIR$/case/case0.py" />
-        <option value="$PROJECT_DIR$/case/case100.py" />
-        <option value="$PROJECT_DIR$/case/case102.py" />
-        <option value="$PROJECT_DIR$/tools/method.py" />
-        <option value="$PROJECT_DIR$/runners/pc_login.py" />
-        <option value="$PROJECT_DIR$/s100.py" />
         <option value="$PROJECT_DIR$/pcdouble.py" />
         <option value="$PROJECT_DIR$/case/case16.py" />
-        <option value="$PROJECT_DIR$/s16.py" />
-        <option value="$PROJECT_DIR$/s12.py" />
         <option value="$PROJECT_DIR$/case/case2.py" />
         <option value="$PROJECT_DIR$/singleticket.py" />
-        <option value="$PROJECT_DIR$/case/case8.py" />
         <option value="$PROJECT_DIR$/s11.py" />
         <option value="$PROJECT_DIR$/case/case11.py" />
+        <option value="$PROJECT_DIR$/s12.py" />
+        <option value="$PROJECT_DIR$/s16.py" />
+        <option value="$PROJECT_DIR$/case/case4.py" />
+        <option value="$PROJECT_DIR$/s9.py" />
+        <option value="$PROJECT_DIR$/case/case1.py" />
+        <option value="$PROJECT_DIR$/case/case103.py" />
+        <option value="$PROJECT_DIR$/case/case17.py" />
+        <option value="$PROJECT_DIR$/case/case100.py" />
+        <option value="$PROJECT_DIR$/s100.py" />
+        <option value="$PROJECT_DIR$/case/case102.py" />
+        <option value="$PROJECT_DIR$/tools/msql.py" />
+        <option value="$PROJECT_DIR$/debug101.py" />
+        <option value="$PROJECT_DIR$/debug102.py" />
+        <option value="$PROJECT_DIR$/init.py" />
+        <option value="$PROJECT_DIR$/tools/getdata.py" />
+        <option value="$PROJECT_DIR$/tools/method.py" />
+        <option value="$PROJECT_DIR$/runners/runner3.py" />
+        <option value="$PROJECT_DIR$/case/case0.py" />
+        <option value="$PROJECT_DIR$/s0.py" />
+        <option value="$PROJECT_DIR$/case/caseinfos" />
+        <option value="$PROJECT_DIR$/case/case8.py" />
+        <option value="$PROJECT_DIR$/dd1.py" />
+        <option value="$PROJECT_DIR$/tools/tool.py" />
+        <option value="$PROJECT_DIR$/runners/pc_login.py" />
+        <option value="$PROJECT_DIR$/mobile.py" />
       </list>
     </option>
   </component>
@@ -491,8 +334,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="440" />
-    <option name="y" value="373" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -511,7 +354,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -523,11 +365,6 @@
               <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface_project_for_dev" type="462c0819:PsiDirectoryNode" />
               <item name="case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface_project_for_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="globalpkg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interface_project_for_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -544,23 +381,25 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/project/interface_project_for_dev" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pro\interface_project_for_dev\tools" />
+      <recent name="C:\pro\interface_project_for_dev\case" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\pro\interface_project_for_dev\backup" />
       <recent name="C:\pro\interface_project_for_dev\case" />
       <recent name="C:\pro\interface_project_for_dev" />
       <recent name="C:\pro\interface_project_for_dev\useless" />
       <recent name="C:\pro\interface_project_for_dev\debugs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\pro\interface_project_for_dev\tools" />
-      <recent name="C:\pro\interface_project_for_dev\case" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -575,8 +414,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.s11">
-    <configuration name="pcdouble" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.mobile">
+    <configuration name="dd1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -589,13 +428,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pcdouble.py" />
+      <option name="SCRIPT_NAME" value="C:\pro\interface_project_for_dev\mobile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="s100" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="init" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -608,13 +447,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s100.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="s11" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mobile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -627,13 +466,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mobile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="s12" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="s0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -646,13 +485,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s12.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="singleticket" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="s16" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -665,26 +504,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="interface_project_for_dev" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/singleticket.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s16.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.s12" />
-      <item index="1" class="java.lang.String" itemvalue="Python.singleticket" />
-      <item index="2" class="java.lang.String" itemvalue="Python.s100" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pcdouble" />
-      <item index="4" class="java.lang.String" itemvalue="Python.s11" />
+      <item index="0" class="java.lang.String" itemvalue="Python.init" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dd1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.s0" />
+      <item index="3" class="java.lang.String" itemvalue="Python.s16" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mobile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.s11" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pcdouble" />
-        <item index="2" class="java.lang.String" itemvalue="Python.s100" />
-        <item index="3" class="java.lang.String" itemvalue="Python.s12" />
-        <item index="4" class="java.lang.String" itemvalue="Python.singleticket" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mobile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dd1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.s16" />
+        <item index="3" class="java.lang.String" itemvalue="Python.init" />
+        <item index="4" class="java.lang.String" itemvalue="Python.s0" />
       </list>
     </recent_temporary>
   </component>
@@ -710,23 +549,23 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4236038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2918862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -770,95 +609,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="31" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="1667" column="0" lean-forward="false" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python33/Lib/site-packages/requests/cookies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python33/Lib/site-packages/requests/adapters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="524" column="0" lean-forward="false" selection-start-line="524" selection-start-column="0" selection-end-line="524" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python33/Lib/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python33/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/runner3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding>
-            <element signature="e#4#28#0" expanded="false" />
-            <element signature="e#333#5652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python33/Lib/http/cookiejar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="1645" column="0" lean-forward="false" selection-start-line="1645" selection-start-column="0" selection-end-line="1645" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doublesign.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/mname.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -874,22 +629,6 @@
           <folding>
             <element signature="e#63#72#0" expanded="false" />
             <marker date="1591754956978" expanded="true" signature="9569:9966" ph="SELECT step_... case_step_report_tb" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/sqls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <marker date="1592274615042" expanded="true" signature="51:126" ph="select workt... hse_work_ticket" />
-            <marker date="1592274615042" expanded="true" signature="134:189" ph="select ts fr... hse_work_ticket" />
-            <marker date="1592274615042" expanded="true" signature="205:276" ph="select workt... hse_work_ticket" />
-            <marker date="1592274615042" expanded="true" signature="291:373" ph="SELECT work_... hse_safety_task" />
-            <marker date="1592274615042" expanded="true" signature="397:463" ph="SELECT jsaid... hse_safety_analysis" />
-            <marker date="1592274615042" expanded="true" signature="492:570" ph="SELECT safec... hse_safety_disclosure" />
-            <marker date="1592274615042" expanded="true" signature="599:682" ph="SELECT work_... hse_work_appoint" />
           </folding>
         </state>
       </provider>
@@ -911,45 +650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case101.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-            <element signature="e#1121#2257#0" expanded="false" />
-            <element signature="e#2743#3231#0" expanded="false" />
-            <element signature="e#3675#4829#0" expanded="false" />
-            <element signature="e#5324#6106#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/minsert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
           <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dd1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="448" column="23" lean-forward="true" selection-start-line="448" selection-start-column="23" selection-end-line="448" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/msql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#3#12#0" expanded="false" />
-            <marker date="1592285838908" expanded="true" signature="382:445" ph="SELECT workt... hse_work_task" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,29 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debug101.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case/case7.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/case6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,23 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/case4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/case1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,154 +682,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case3.py">
+    <entry file="file://$PROJECT_DIR$/s4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="137" column="33" lean-forward="true" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
-          <folding>
-            <element signature="e#4272#6059#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s0.py">
+    <entry file="file://$PROJECT_DIR$/s5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s9.py">
+    <entry file="file://$PROJECT_DIR$/s6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case0.py">
+    <entry file="file://$PROJECT_DIR$/s7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="728" column="31" lean-forward="false" selection-start-line="728" selection-start-column="31" selection-end-line="728" selection-end-column="31" />
-          <folding>
-            <element signature="e#1196#2419#0" expanded="false" />
-            <element signature="e#2791#2895#0" expanded="false" />
-            <element signature="e#3296#3414#0" expanded="false" />
-            <element signature="e#3760#4693#0" expanded="false" />
-            <element signature="e#5494#5982#0" expanded="false" />
-            <element signature="e#6444#7598#0" expanded="false" />
-            <element signature="e#8170#8952#0" expanded="false" />
-            <element signature="e#10863#13727#0" expanded="false" />
-            <element signature="e#17150#20915#0" expanded="false" />
-            <element signature="e#21426#24602#0" expanded="false" />
-            <element signature="e#25053#28194#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="554" column="0" lean-forward="false" selection-start-line="554" selection-start-column="0" selection-end-line="604" selection-end-column="1" />
-          <folding>
-            <element signature="e#14655#17519#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.py">
+    <entry file="file://$PROJECT_DIR$/s11.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case102.py">
+    <entry file="file://$PROJECT_DIR$/case/case6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#497#2482#0" expanded="false" />
-            <element signature="e#2867#4421#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case100.py">
+    <entry file="file://$PROJECT_DIR$/case/case4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="126" column="22" lean-forward="true" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          <folding>
-            <element signature="e#14#36#0" expanded="false" />
-            <element signature="e#690#2561#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcdouble.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#65#0" expanded="true" />
-            <element signature="e#3850#5031#0" expanded="false" />
-            <element signature="e#5574#5905#0" expanded="false" />
-            <element signature="e#6158#6214#0" expanded="false" />
-            <element signature="e#6225#6295#0" expanded="false" />
-            <element signature="e#7017#7348#0" expanded="false" />
-            <element signature="e#7362#8621#0" expanded="false" />
-            <element signature="e#10447#10565#0" expanded="false" />
-            <element signature="e#10831#10887#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/runner2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#590#613#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s100.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#23#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/case12.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="7" />
+        <state relative-caret-position="-7">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#669#11998#0" expanded="false" />
             <element signature="e#12390#35324#0" expanded="false" />
@@ -1278,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/case16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
           <folding>
             <element signature="e#35743#35775#0" expanded="false" />
             <element signature="e#1808979#1820462#0" expanded="false" />
@@ -1316,33 +892,280 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s16.py">
+    <entry file="file://$PROJECT_DIR$/case/case17.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case103.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/runner2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="e#9#34#0" expanded="true" />
+            <element signature="e#590#613#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singleticket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s100.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case100.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case102.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="276" column="21" lean-forward="true" selection-start-line="276" selection-start-column="21" selection-end-line="276" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case101.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="200" column="23" lean-forward="true" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/msql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug101.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug102.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/case2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="21" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/getdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="e#531#541#0" expanded="false" />
-            <element signature="e#45295#57055#0" expanded="false" />
+            <element signature="e#0#16#0" expanded="false" />
+            <element signature="e#227#582#0" expanded="false" />
+            <element signature="e#1496#2886#0" expanded="false" />
+            <element signature="e#1657#2008#0" expanded="false" />
+            <element signature="e#2929#4316#0" expanded="false" />
+            <element signature="e#3090#3441#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding>
+            <element signature="e#1767#2155#0" expanded="false" />
+            <element signature="e#2194#2764#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/runner3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="229" column="18" lean-forward="false" selection-start-line="229" selection-start-column="18" selection-end-line="229" selection-end-column="18" />
+          <folding>
+            <element signature="e#333#5652#0" expanded="false" />
+            <element signature="e#5695#10807#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#23#45#0" expanded="false" />
+            <element signature="e#1233#2456#0" expanded="false" />
+            <element signature="e#2911#4134#0" expanded="false" />
+            <element signature="e#4647#4751#0" expanded="false" />
+            <element signature="e#5152#5270#0" expanded="false" />
+            <element signature="e#5616#6549#0" expanded="false" />
+            <element signature="e#7350#7838#0" expanded="false" />
+            <element signature="e#8300#9454#0" expanded="false" />
+            <element signature="e#10026#10808#0" expanded="false" />
+            <element signature="e#12719#15583#0" expanded="false" />
+            <element signature="e#19006#22771#0" expanded="false" />
+            <element signature="e#23282#26458#0" expanded="false" />
+            <element signature="e#26909#30050#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/caseinfos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="1810" column="33" lean-forward="true" selection-start-line="1810" selection-start-column="33" selection-end-line="1810" selection-end-column="33" />
+          <folding>
+            <element signature="e#1250#2473#0" expanded="false" />
+            <element signature="e#2846#2950#0" expanded="false" />
+            <element signature="e#3352#3470#0" expanded="false" />
+            <element signature="e#3864#4797#0" expanded="false" />
+            <element signature="e#5762#6250#0" expanded="false" />
+            <element signature="e#6713#7867#0" expanded="false" />
+            <element signature="e#8260#9432#0" expanded="false" />
+            <element signature="e#10013#10795#0" expanded="false" />
+            <element signature="e#11591#12763#0" expanded="false" />
+            <element signature="e#14031#15146#0" expanded="false" />
+            <element signature="e#15176#18039#0" expanded="false" />
+            <element signature="e#19029#22794#0" expanded="false" />
+            <element signature="e#23548#26215#0" expanded="false" />
+            <element signature="e#26659#29979#0" expanded="false" />
+            <element signature="e#31103#34270#0" expanded="false" />
+            <element signature="e#34279#37481#0" expanded="false" />
+            <element signature="e#37933#41074#0" expanded="false" />
+            <element signature="e#41552#44724#0" expanded="false" />
+            <element signature="e#45183#48324#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcdouble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#3850#5031#0" expanded="false" />
+            <element signature="e#5574#5905#0" expanded="false" />
+            <element signature="e#6158#6214#0" expanded="false" />
+            <element signature="e#6225#6295#0" expanded="false" />
+            <element signature="e#7017#7348#0" expanded="false" />
+            <element signature="e#7362#8621#0" expanded="false" />
+            <element signature="e#10447#10565#0" expanded="false" />
+            <element signature="e#10831#10887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding>
-            <element signature="e#63#74#0" expanded="true" />
             <element signature="e#357#1103#1" expanded="false" />
             <element signature="e#1104#1442#1" expanded="false" />
             <element signature="e#3270#3344#1" expanded="false" />
@@ -1351,55 +1174,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case8.py">
+    <entry file="file://$PROJECT_DIR$/tools/sqls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="50">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="85" />
           <folding>
-            <element signature="e#1240#2463#0" expanded="false" />
-            <element signature="e#2836#2940#0" expanded="false" />
-            <element signature="e#3342#3460#0" expanded="false" />
-            <element signature="e#3854#4787#0" expanded="false" />
-            <element signature="e#5752#6240#0" expanded="false" />
-            <element signature="e#6703#7857#0" expanded="false" />
-            <element signature="e#8250#9422#0" expanded="false" />
-            <element signature="e#10003#10785#0" expanded="false" />
-            <element signature="e#11581#12753#0" expanded="false" />
-            <element signature="e#14021#15136#0" expanded="false" />
-            <element signature="e#19019#22784#0" expanded="false" />
-            <element signature="e#23538#26205#0" expanded="false" />
-            <element signature="e#26649#29969#0" expanded="false" />
-            <element signature="e#31093#34260#0" expanded="false" />
-            <element signature="e#34269#37471#0" expanded="false" />
-            <element signature="e#37923#41064#0" expanded="false" />
-            <element signature="e#41542#44714#0" expanded="false" />
-            <element signature="e#45173#48314#0" expanded="false" />
+            <marker date="1592274615042" expanded="true" signature="51:126" ph="select workt... hse_work_ticket" />
+            <marker date="1592274615042" expanded="true" signature="134:189" ph="select ts fr... hse_work_ticket" />
+            <marker date="1592274615042" expanded="true" signature="205:276" ph="select workt... hse_work_ticket" />
+            <marker date="1592274615042" expanded="true" signature="291:373" ph="SELECT work_... hse_safety_task" />
+            <marker date="1592274615042" expanded="true" signature="397:463" ph="SELECT jsaid... hse_safety_analysis" />
+            <marker date="1592274615042" expanded="true" signature="492:570" ph="SELECT safec... hse_safety_disclosure" />
+            <marker date="1592274615042" expanded="true" signature="599:682" ph="SELECT work_... hse_work_appoint" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s12.py">
+    <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singleticket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+          <folding>
+            <element signature="e#195#1101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/case11.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="197">
+          <caret line="3118" column="3" lean-forward="false" selection-start-line="3118" selection-start-column="1" selection-end-line="3118" selection-end-column="3" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
             <element signature="e#1338#3556#0" expanded="false" />
             <element signature="e#4191#4295#0" expanded="false" />
             <element signature="e#4704#4822#0" expanded="false" />
@@ -1432,13 +1237,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s11.py">
+    <entry file="file://$PROJECT_DIR$/mobile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="755">
+          <caret line="15181" column="1" lean-forward="false" selection-start-line="15181" selection-start-column="1" selection-end-line="15181" selection-end-column="1" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+            <element signature="e#8422#8910#0" expanded="false" />
+            <element signature="e#9652#10806#0" expanded="false" />
+            <element signature="e#11625#12409#0" expanded="false" />
+            <element signature="e#16901#23279#0" expanded="false" />
+            <element signature="e#25486#35804#0" expanded="false" />
+            <element signature="e#52321#53640#0" expanded="false" />
+            <element signature="e#54289#55843#0" expanded="false" />
+            <element signature="e#56092#56171#0" expanded="false" />
+            <element signature="e#56455#94509#0" expanded="false" />
+            <element signature="e#172023#173553#0" expanded="false" />
+            <element signature="e#174146#191517#0" expanded="false" />
+            <element signature="e#194374#225593#0" expanded="false" />
+            <element signature="e#226326#228074#0" expanded="false" />
+            <element signature="e#228669#242269#0" expanded="false" />
+            <element signature="e#243004#244406#0" expanded="false" />
+            <element signature="e#244997#267697#0" expanded="false" />
+            <element signature="e#268430#269898#0" expanded="false" />
+            <element signature="e#270488#277978#0" expanded="false" />
+            <element signature="e#278601#280099#0" expanded="false" />
+            <element signature="e#280690#312934#0" expanded="false" />
+            <element signature="e#313557#315186#0" expanded="false" />
+            <element signature="e#315805#317312#0" expanded="false" />
+            <element signature="e#317938#319445#0" expanded="false" />
+            <element signature="e#320371#322993#0" expanded="false" />
+            <element signature="e#323942#327468#0" expanded="false" />
+            <element signature="e#328423#365916#0" expanded="false" />
+            <element signature="e#366871#556802#0" expanded="false" />
+            <element signature="e#557051#557130#0" expanded="false" />
+            <element signature="e#557778#564565#0" expanded="false" />
+            <element signature="e#564814#564893#0" expanded="false" />
+            <element signature="e#565746#567112#0" expanded="false" />
+            <element signature="e#567361#567440#0" expanded="false" />
+            <element signature="e#568295#578936#0" expanded="false" />
+            <element signature="e#579185#579264#0" expanded="false" />
+            <element signature="e#591173#591252#0" expanded="false" />
+            <element signature="e#591298#591299#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

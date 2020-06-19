@@ -1,4 +1,4 @@
-#from globalpkg.global_var import work_appoint_id
+#back up of case0
 from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid

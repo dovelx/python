@@ -21,26 +21,11 @@ cookies = pc_login.cookies
 start_time = datetime.datetime.now()
 
 #执行测试
-#PC-预约作废 DONE
-#runner1.runcase(testsuit3,cookies)
-#runner1.runcase(testsuit5,cookies)
+#PC-预约作废
+
 runner3.runcase_old(testsuit9,cookies)
-#runner1.runcase(testsuit3,cookies)
-#mobile
-#runner2.runcase(testsuitm)
-#4和6
-# 3,作业预约作废
-# 5,作业预约修改，复制和删除,影响主线执行结果
-# 6-,安全分析修改，撤回，撤回后再送交，全流程
-# 7,安全分析修改，删除
-# 8-,安全分析修改，撤回，撤回后再送交，全流程&作业任务，撤回，撤回后再送交 &作业许可证，撤回，撤回后再送交
-# 9，作业任务删除
-# runner1.runcase(testsuit3,cookies)
-# runner1.runcase(testsuit5,cookies)
-# runner1.runcase(testsuit6,cookies)
-# runner1.runcase(testsuit7,cookies)
-# runner1.runcase(testsuit8,cookies)
-# runner1.runcase(testsuit9,cookies)
+
+
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告

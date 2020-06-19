@@ -22,6 +22,7 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC
+#runner3.runcase_new(testsuit,cookies)
 runner3.runcase_old(testsuit,cookies)
 #mobile
 #runner2.runcase(testsuitm)

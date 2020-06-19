@@ -14,7 +14,7 @@ from globalpkg.global_var import other_tools
 sql_query_work_appointid = 'SELECT worktaskid from hse_work_task WHERE workname like "name";'
 def sql_query_worktaskid(name):
     hse_work_task = "hse_work_task"
-    logger.info('正在查询测试用例总数')
+    logger.info('正在查询worktaskid，workname = %s',name)
     query = 'SELECT worktaskid FROM ' + hse_work_task + ' WHERE workname = %s'
     data = (name,)
     result = testdb_test.select_one_record(query, data)
