@@ -112,11 +112,11 @@ def get_work_task_id(cookies,name):
                 # print("\n\n",a)
                 if a['workname'] == name:
                     temp.append(a['worktaskid'])
-                    worktaskid = temp[0]
+                    worktaskidt = temp[0]
             # 当前最大work_appoint_id加1
                     #worktaskid = worktaskid + 1
-            print("worktaskid", worktaskid)
-            return worktaskid
+            print("worktaskid", worktaskidt)
+            return worktaskidt
         else:
             print("fail")
             return 0

@@ -3,6 +3,7 @@ from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
+from globalpkg.global_var import worktaskid1
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
@@ -31,14 +32,14 @@ caseinfo['isactive'] = ''
 #work_appoint_id_plus1=  work_appoint_id+1
 work_appoint_id_plus1 = sql_query_work_appointid+1
 #作业预约创建使用ID
-yuyueid = 123
+yuyueid = work_appoint_id_plus1
 count =0
 #用例信息
 caseinfo['id'] = 0
 caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
 #拼写预约URL
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
+url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.5564922508434509&contentType=json&ajax=true&tid=1'
 caseinfo['url'] = url2
 #作业许可大票数据
 data = {
@@ -61,10 +62,10 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"isspecialcondition": "",
+	"isspecialcondition": "0",
 	"specialenvironment": "ALLNOT",
-	"task_worktype_code": "QT",
-	"task_worktype_name": "其他",
+	"task_worktype_code": "GCN",
+	"task_worktype_name": "储罐浮舱内",
 	"cywlqfyxzz": "0",
 	"isdzdh": "0",
 	"projecttype": "rcjx",
@@ -81,17 +82,17 @@ data = {
 	"territorialdevicename": "制氢装置",
 	"work_position_id": 2000000002019,
 	"work_position_name": "制氢北区",
-	"worksite": "作业地点123",
+	"worksite": "作业地点",
 	"workunit": 1688712,
 	"workunitname": "长庆石化分公司",
 	"workname": name,
-	"workcontent": "作业内容123",
+	"workcontent": "作业内容",
 	"worktypename": "作业许可证",
 	"worktype": "xkz",
 	"appointstarttime": starttime,
 	"appointendtime": endtime,
-	"material_medium": "物料介质123",
-	"risksmeasures": "重点防控的风险123"
+	"material_medium": "物料介质",
+	"risksmeasures": "重点防控的风险"
 }
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
@@ -173,7 +174,7 @@ caseinfo['url'] = url3
 formdata2={
 	"opinion": "申请审批",
 	"nodeStr": "2000000009070",
-	"2000000009070": "测试用户",
+	"2000000009070": "卢健",
 	"2000000009070_id": 1000
 }
 caseinfo['data'] =formdata2
@@ -190,7 +191,7 @@ caseinfo['url'] = url4
 formdata ={
 	"opinion": "同意",
 	"cC": "1000",
-	"cCName": "测试用户",
+	"cCName": "卢健",
 	"nickName": "用户",
 	"is_normal_finish": "true",
 	"nodeStr": ""
@@ -317,9 +318,9 @@ data = {
 	"jsa_templete_id": "",
 	"temp_type": "newWorkTask",
 	"jsa_monitor_userid": 1000,
-	"jsa_monitor_name": "测试用户",
+	"jsa_monitor_name": "卢健",
 	"jsa_menber_userids": "1000",
-	"jsa_menber_username": "测试用户",
+	"jsa_menber_username": "卢健",
 	"analyze_time": now,
 	"worktickettype": "",
 	"equip_stuff": "",
@@ -413,7 +414,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = 8
 caseinfo['name'] = casename
-url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaid,jsaid)
+url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -429,54 +430,7 @@ url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/cardSave?parentEntityId=&p
 
 jsaidxxx = jsaid+1
 
-data = {
-	"tableName": "hse_work_task",
-	"iscontractor": "0",
-	"isupgrade": "0",
-	"work_appoint_name": "",
-	"territorialunitid": 2000000003339,
-	"applyunitname": "长庆石化分公司",
-	"task_pause": "0",
-	"territorialunitname": "运行一部",
-	"territorialunitcode": "CS8082020",
-	"applyunitid": "1688712",
-	"workstatus": "draft",
-	"autorisklevel": 1,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"projecttype": "",
-	"isrecord": "",
-	"eq_position": "",
-	"territorialdeviceid": 2000000003454,
-	"territorialdevicename": "制氢装置",
-	"jsaid": jsaidxxx,
-	"work_appoint_id": "",
-	"jsa_code": name,
-	"site": "作业地点123",
-	"workunit": 1688712,
-	"workunitname": "长庆石化分公司",
-	"work_position_id": 2000000002019,
-	"work_position_name": "制氢北区",
-	"workcontent": "作业内容123",
-	"planstarttime": starttime,
-	"planendtime": endtime,
-	"standardmaintenance_name": "",
-	"constructionscheme": 0,
-	"worktickettype": "xkz",
-	"worktickettype_name": "作业许可证",
-	"standardmaintenance": "",
-	"equipmentname": "",
-	"equipmentnumber": "",
-	"equipmentcode": "",
-	"workname": name
-}
+
 data = {
 	"tableName": "hse_work_task",
 	"iscontractor": "0",
@@ -545,127 +499,7 @@ caseinfo['id'] = 10
 caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.412998005925274&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TASK_MCQ/hse_work_task_submit?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&0.9505796541855793&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx)
-data = {
-	"tableName": "hse_work_task",
-	"task_worktype_code": "",
-	"hasrescueplan": "",
-	"territorialdeviceid": 2000000003454,
-	"drawshow": "",
-	"cywlqfyxzz": "",
-	"autorisklevel": 1,
-	"worktools": "",
-	"othercontent": "",
-	"equipmentcode": "",
-	"ishasworker": "",
-	"territorialdevicename": "制氢装置",
-	"hasdrawpaper": "",
-	"hassafetyplan": "",
-	"worker": "",
-	"card_code": "",
-	"reminder": "",
-	"constructionscheme": 0,
-	"reminderid": "",
-	"worktickettype_name": "作业许可证",
-	"task_worktype_name": "",
-	"standardmaintenance": "",
-	"attaches": "",
-	"material_medium": "",
-	"risksmeasures": "",
-	"isrecord": "",
-	"persistent_type": "",
-	"flights": "",
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": 1000,
-	"created_dt": now,
-	"updated_by": 1000,
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"worktaskid": worktaskidxx,
-	"workname": name,
-	"work_position_name": "制氢北区",
-	"work_appoint_name": "",
-	"actualstarttime": "",
-	"actualendtime": "",
-	"isgas_detection": "",
-	"delayreason": "",
-	"cancelreason": "",
-	"pause": 0,
-	"isupgrade": "0",
-	"sourcetaskid": "",
-	"nlglnumber": "",
-	"isreport": "",
-	"iswfnotreport": 0,
-	"gas_standard_type": "",
-	"parentid": "",
-	"lsydticketid": "",
-	"dqyzticketid": "",
-	"dqezticketid": "",
-	"task_pause": "0",
-	"device_id": "",
-	"territorialunitid": 2000000003339,
-	"territorialunitname": "运行一部",
-	"site": "作业地点123",
-	"work_property": "rush_to_repair",
-	"equipmentnumber": "",
-	"workunit": 1688712,
-	"workunitname": "长庆石化分公司",
-	"projecttype": "",
-	"iscontractor": "0",
-	"planstarttime": starttime,
-	"planendtime": endtime,
-	"worktickettype": "xkz",
-	"workstatus": "draft",
-	"applyunitid": 1688712,
-	"applyunitname": "长庆石化分公司",
-	"created_by_name": "测试用户",
-	"updated_by_name": "测试用户",
-	"workcontent": "作业内容123",
-	"woid": "",
-	"wo_code": "",
-	"territorialunitcode": "CS8082020",
-	"equt_position": "",
-	"position_name": "",
-	"equipmentname": "",
-	"safeclar": "",
-	"safecode": "",
-	"work_position_id": 2000000002019,
-	"jsa_code": name,
-	"jsaid": yuyueid,
-	"work_appoint_id": "",
-	"wf_current_nodeid": "",
-	"wf_audit_time": "",
-	"task_risklevel": "",
-	"task_closereason": "",
-	"task_closetype": "",
-	"wf_current_user": "",
-	"wf_audit_state": "0",
-	"wf_create_user": 1000,
-	"wf_instance": "",
-	"wf_type": "",
-	"delaynum": 0,
-	"beendelaynum": 0,
-	"jobstatus": "",
-	"weekplanid": "",
-	"plan_type": 3,
-	"gasdetecttype": "",
-	"close_type": "",
-	"closereason": "",
-	"jsa_code2": "",
-	"jsaid2": "",
-	"isproprietor": "",
-	"planendtime_org": "",
-	"specialenvironment": "",
-	"gas_aging": "",
-	"safetyanalysisid": "",
-	"safetyanalysiscode": "",
-	"isspecialcondition": "",
-	"specialcondition": "",
-	"task_risklevel_org": "",
-	"eq_position": ""
-}
+
 data = {
 	"tableName": "hse_work_task",
 	"task_worktype_code": "",
@@ -796,7 +630,7 @@ testsuit.append(caseinfo.copy())
 caseinfo['id'] = 11
 caseinfo['name'] = '作业许可证保存'
 zuoyexukeid = workticketid+1
-zuoyexukeid = worktaskidxx+2086
+#zuoyexukeid = worktaskidxx+2086
 ts = tsi+1
 print(zuoyexukeid)
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1590652813735&0.27372678355625824&contentType=json&ajax=true&tid=1'%(worktaskidxx,worktaskidxx,zuoyexukeid)
@@ -886,8 +720,8 @@ data = {
 	"ismeasureconfirm": "",
 	"isgascomplate": "",
 	"issigncomplate": "",
-	"created_by_name": "测试用户",
-	"updated_by_name": "测试用户",
+	"created_by_name": "卢健",
+	"updated_by_name": "卢健",
 	"closereason": "",
 	"gastestaging": "",
 	"blindplate_worktype": "",
@@ -1042,8 +876,8 @@ data ={
 	"ismeasureconfirm": "",
 	"isgascomplate": "",
 	"issigncomplate": "",
-	"created_by_name": "测试用户",
-	"updated_by_name": "测试用户",
+	"created_by_name": "卢健",
+	"updated_by_name": "卢健",
 	"closereason": "",
 	"gastestaging": "",
 	"blindplate_worktype": "",

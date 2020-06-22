@@ -7,6 +7,7 @@ from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
+from globalpkg.global_var import worktaskid1
 #times
 starttime = tool.starttime
 endtime = tool.endtime
@@ -36,7 +37,7 @@ caseinfo['id'] = 1
 caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
 #拼写预约URL
-url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
+url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.5564922508434509&contentType=json&ajax=true&tid=1'
 caseinfo['url'] = url2
 #作业许可大票数据
 data = {
@@ -59,10 +60,10 @@ data = {
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"isspecialcondition": "",
+	"isspecialcondition": "0",
 	"specialenvironment": "ALLNOT",
-	"task_worktype_code": "QT",
-	"task_worktype_name": "其他",
+	"task_worktype_code": "GCN",
+	"task_worktype_name": "储罐浮舱内",
 	"cywlqfyxzz": "0",
 	"isdzdh": "0",
 	"projecttype": "rcjx",
@@ -79,17 +80,17 @@ data = {
 	"territorialdevicename": "制氢装置",
 	"work_position_id": 2000000002019,
 	"work_position_name": "制氢北区",
-	"worksite": "作业地点123",
+	"worksite": "作业地点",
 	"workunit": 1688712,
 	"workunitname": "长庆石化分公司",
 	"workname": name,
-	"workcontent": "作业内容123",
+	"workcontent": "作业内容",
 	"worktypename": "作业许可证",
 	"worktype": "xkz",
 	"appointstarttime": starttime,
 	"appointendtime": endtime,
-	"material_medium": "物料介质123",
-	"risksmeasures": "重点防控的风险123"
+	"material_medium": "物料介质",
+	"risksmeasures": "重点防控的风险"
 }
 caseinfo['data'] =data
 testsuit8.append(caseinfo.copy())
@@ -1028,6 +1029,7 @@ caseinfo['id'] = 16
 caseinfo['name'] = '作业许可证保存'
 zuoyexukeid = workticketid+1
 workticketidx = workticketid+1
+worktaskidxx = worktaskid1+1
 #zuoyexukeid = worktaskidxx+2086
 #workticketidx = zuoyexukeid
 ts = tsi

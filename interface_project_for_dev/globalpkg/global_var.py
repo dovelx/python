@@ -58,17 +58,20 @@ testdb_test = MyDB('./config/dbconfig.conf', projectname)
 sql_query_ticket = sqls.ticket
 sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
+sql_query_worktaskid1 = sqls.worktaskid1
 sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
 logger.info('开始数据库查询')
-temp = testdb_test.select_one_record(sql_query_ticket)
 
+temp = testdb_test.select_one_record(sql_query_ticket)
 workticketid = temp[0]
 #作业票数据库当前ID-workticketid
 workticketid = workticketid[0]
 print("workticketid",workticketid)
+
+
 temp = testdb_test.select_one_record(sql_query_ts)
 #获取TS
 ts = temp[0][0]
@@ -77,11 +80,19 @@ ts = ts.decode('utf-8')
 #TS ID
 tsi = int(ts)
 print("TS",ts)
+#预约worktaskid
 temp = testdb_test.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
 print("worktaskid",worktaskid)
+
+#作业任务提交worktaskid
+temp = testdb_test.select_one_record(sql_query_worktaskid1)
+worktaskid1 = temp[0]
+#worktaskid
+worktaskid1 = worktaskid1[0]
+print("worktaskid1",worktaskid1)
 
 temp = testdb_test.select_one_record(sql_query_work_appoint_id)
 sql_query_work_appoint_id = temp[0]

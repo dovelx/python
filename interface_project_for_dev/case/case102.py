@@ -77,7 +77,7 @@ data = {
 }
 
 caseinfo['id'] = 2001
-caseinfo['name'] = '手机端作业任务添加m'
+caseinfo['name'] = '安全交底-现场作业人员签字'
 caseinfo['isactive'] = 1
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -147,7 +147,7 @@ testsuitm102.append(caseinfo.copy())
 #c
 worktaskidxx = worktaskid+1
 #匹配taskid
-worktaskidxx = msql.sql_query_worktaskid(name)
+#worktaskidxx = msql.sql_query_worktaskid(name)
 work_appoint_id = sql_query_work_appointid +1
 print("worktaskidxx",worktaskidxx)
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORKAPPLY_MCQ_M/submit.json?dataId=%d&ts='%(worktaskidxx)

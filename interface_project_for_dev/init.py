@@ -22,3 +22,11 @@ os.system("python s5.py")
 os.system("python s0.py 0")
 #time.sleep(1)
 os.system("python singleticket.py 1")
+
+#os.system("python s16.py ")
+
+#os.system("python s17.py ")
+
+
+
+

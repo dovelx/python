@@ -6,8 +6,11 @@ from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
+from globalpkg.global_var import worktaskid1
 from tools.gethost import host
 from tools.gethost import pro
+from tools import getdata
+from runners import pc_login
 #全票-作业预约-安全分析-作业许可证提交
 case = '作业许可全票'
 projectname = pro()
@@ -34,7 +37,7 @@ caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 
 #作业预约创建使用ID
-work_appoint_idx = sql_query_work_appointid
+work_appoint_idx = sql_query_work_appointid+1
 print("作业预约使用变量work_appoint_idx",work_appoint_idx)
 #work_appoint_id_plus1 = work_appoint_id_plus1
 count =0
@@ -42,7 +45,9 @@ count =0
 caseinfo['id'] = 1
 caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.621597217691122&contentType=json&ajax=true&tid=1'%(work_appoint_idx,work_appoint_idx)
+#url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.621597217691122&contentType=json&ajax=true&tid=1'%(work_appoint_idx,work_appoint_idx)
+#url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.3350052747150394&contentType=json&ajax=true&tid=1'
 data = {
 	"tableName": "hse_work_appoint",
 	"task_worktype_code": "GCN",
@@ -119,6 +124,59 @@ data = {
 	"projecttype": "rcjx",
 	"isspecialcondition": "1",
 	"specialcondition": "好艰苦"
+}
+
+data= {
+	"tableName": "hse_work_appoint",
+	"iscontractor": "0",
+	"workunitname_no": "",
+	"territorialunitid": 2000000003339,
+	"worktaskid_no": 0,
+	"isreport": "0",
+	"territorialunitname": "运行一部",
+	"territorialunitcode": "CS8082020",
+	"wf_audit_state": "6",
+	"status": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"isspecialcondition": "",
+	"specialenvironment": "ALLNOT",
+	"task_worktype_code": "GCN",
+	"task_worktype_name": "储罐浮舱内",
+	"cywlqfyxzz": "1",
+	"isdzdh": "0",
+	"projecttype": "rcjx",
+	"isupgradedh": "0",
+	"persistent_type": "newoperation",
+	"issjtssxzy": "0",
+	"worklevel_dh": "mcq_dh_workLevel02",
+	"worklevel_sx": "mcq_sx_workLevel02",
+	"worklevel_gc": "mcq_gc_workLevel02",
+	"worklevel_dz": "mcq_dz_workLevel01",
+	"worklevel_gx": "",
+	"sourcetype": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"worksite": "作业地点",
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"workname": name,
+	"workcontent": "作业内容",
+	"worktypename": "作业许可证,动火作业,受限空间,高处作业,吊装作业,管线/设备打开,挖掘作业,断路作业,临时用电,射线作业",
+	"worktype": "xkz,dh,sx,gc,dz,gx,dt,dl,lsyd,shex",
+	"appointstarttime": starttime,
+	"appointendtime": endtime,
+	"risksmeasures": "重点防控的风险",
+	"material_medium": "物料介质"
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -394,7 +452,7 @@ data = {
 	"eq_position": "",
 	"territorialdeviceid": 2000000003454,
 	"territorialdevicename": "制氢装置",
-	"jsaid": 2000000002030,
+	"jsaid": jsaidx,
 	"work_appoint_id": work_appoint_idx,
 	"jsa_code": name,
 	"site": "作业地点123",
@@ -423,7 +481,11 @@ testsuit11.append(caseinfo.copy())
 
 
 #作业任务提交接口用例信息
-worktaskidx = worktaskid+1
+#cookies = pc_login.cookies
+#worktaskidxx = getdata.get_work_task_id(cookies,name)
+
+#print("worktaskidxx",worktaskidxx)
+worktaskidx = worktaskid1+1
 print("作业任务提交使用变量worktaskidx:",worktaskidx)
 
 casename = '作业任务提交'
@@ -523,7 +585,7 @@ data = {
 	"safecode": "",
 	"work_position_id": 2000000002019,
 	"jsa_code": name,
-	"jsaid": 2000000002030,
+	"jsaid": jsaidx,
 	"work_appoint_id": work_appoint_idx,
 	"wf_current_nodeid": "",
 	"wf_audit_time": "",
@@ -725,7 +787,7 @@ caseinfo['id'] = 12
 caseinfo['name'] = '作业许可证提交'
 #url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=1591086843103&0.5776995917838637&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,zuoyexukeid)
 #url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=2000000004507&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=2000000004507&topFuncCode=HSE_WORK_TASK_MCQ&dataId=2000000006126&ts=1591777628274&0.6407359796760996&contentType=json&ajax=true&tid=1'
-url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=2000000004507&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6407359796760996&contentType=json&ajax=true&tid=1'%(worktaskidx,workticketidx,ts)
+url = 'http://192.168.6.27:6030/hse/HSE_WORK_TICKET_XKZ/hse_work_ticket_submit?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK_MCQ&topEntityId=%d&topFuncCode=HSE_WORK_TASK_MCQ&dataId=%d&ts=%d&0.6407359796760996&contentType=json&ajax=true&tid=1'%(worktaskidx,worktaskidx,workticketidx,ts)
 #print(url)
 
 data = {

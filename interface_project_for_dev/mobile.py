@@ -15482,133 +15482,133 @@ else:
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
-#
-# logger.info('正在初始化数据库[名称：TESTDB]对象')
-# testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
-# #用例执行
-# for i in range(len(testsuitm)):
-#     # 构造测试步骤对象
-#     step_id = 1
-#     step_number = 1
-#     step_action = ''
-#     testcase_name = testsuitm[i]['name']
-#     testcase_steps = 1
-#     testcase_isactive = 1
-#     testsuite_id = 1
-#     testsuite_name = "作业许可"
-#     testplan = "plan1"
-#     project_name = "changqing"
-#     testcase_id = testsuitm[i]['id']
-#     testproject = 'changqing'
-#     preconditions = ''
-#     host = "192.168.6.27"
-#     port = "6030"
-#     #case_executed_history_id = "20200602083321"
-#     case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
-#     expected_results = ""
-#     tc_external_id = 1
-#     sql_insert = 'INSERT INTO ' + case_step_report_tb + '(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, ' \
-# 														'step_action, expected_results, runresult, reason, runtime)' \
-# 														' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
-#
-#     data = (case_executed_history_id, testcase_id, testcase_name, testplan, testproject, step_id,
-# 				step_number, '无', 'http', host, port,
-# 				step_action, expected_results, 'Unexecuted', '', '0000-00-00 00:00:00')
-#     logger.info('记录测试步骤到测试步骤报告表')
-#     testdb.execute_insert(sql_insert, data)
-#
-#
-#     fail_or_error_reason = ''
-#     protocol_method = "Post"
-#     #run_time =""
-#     run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
-#     #logger.info("===================运行时间===========================")
-#     #print(run_time)
-#     action_of_step=""
-#     if testsuitm[i]['result'] == "pass":
-#         result_of_step ="pass"
-#     else:
-#         result_of_step = "Fail"
-#     sql_update = 'UPDATE ' + case_step_report_tb + ' SET runresult=\"%s\",reason=\"%s\", protocol_method=\"%s\", runtime=\"%s\",' \
-# 														   'step_action=\"%s\", expected_results=\"%s\"' \
-# 														   ' WHERE executed_history_id = %s AND testcase_id = %s AND step_id = %s' \
-# 														   ' AND project=\'%s\' AND testplan=\'%s\'  AND runtime=\'%s\''
-#     data = ("pass", fail_or_error_reason, protocol_method, run_time, action_of_step, result_of_step,
-# 					str(case_executed_history_id), testcase_id, step_id,
-# 					testproject, testplan, '0000-00-00 00:00:00')
-#     logger.info('正在更新步骤执行结果')
-#     testdb.execute_update(sql_update, data)
-#
-#     logger.info('测试用例[id=%s, name=%s]执行成功' % (testcase_id, testcase_name))
-# #结果处理
-# for i in range(len(testsuitm)):
-#     #print(testsuit[i])
-#     # 构造测试用例对象
-#     testcase_name = testsuitm[i]['name']
-#     testcase_steps = 1
-#     testcase_isactive = 1
-#     testsuite_id = 1
-#     testsuite_name= "作业许可"
-#     testplan =  "plan1"
-#     project_name = "changqing"
-#     testcase_id = testsuitm[i]['id']
-#     preconditions =''
-#     tc_external_id = 1
-#     #executed_history_id = "20200602083913"
-#     #executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
-# 	#testcase_obj = TestCase(testcase_id, testcase_name, testcase_steps, testcase_isactive, project_name, testsuite_id, tc_external_id, preconditions)
-#     try:
-#         sql_insert = 'INSERT INTO ' + testcase_report_tb + '(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime, tc_external_id)' \
-# 														   ' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s)'
-#         data = (executed_history_id, testcase_id, testcase_name, testsuite_name, testplan, project_name, 'Unexecuted',
-# 				'0000-00-00 00:00:00', tc_external_id)
-#         logger.info('记录测试用例到测试用例报表')
-#         testdb.execute_insert(sql_insert, data)
-#
-#         #logger.info('开始执行测试用例[id=%s，name=%s]' % (testcase_id, testcase_name))
-#         run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
-#         case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())  # 流水记录编号
-#         if testsuitm[i]['result'] == "pass":
-#             testcase_run_result = "pass"
-#         else:
-#             testcase_run_result = "Fail"
-#         #testcase_run_result = testsuit[i]['result']
-#
-#         logger.info('正在更新用例执行结果')
-#         sql_update = 'UPDATE ' + testcase_report_tb + ' SET runresult=\"%s\", runtime=\"%s\",' \
-#                                              ' case_exec_history_id=\"%s\"' \
-#                                              ' WHERE executed_history_id = %s and testcase_id = %s' \
-#                                               ' AND project=\'%s\' AND testplan=\'%s\''
-#         data = (testcase_run_result, run_time, str(case_executed_history_id), executed_history_id, testcase_id, project_name,
-#         testplan)
-#         testdb.execute_update(sql_update, data)
-#     except Exception as e:
-#         logger.error('运行用例出错 %s' % e)
-#
-# logger.info('接口测试已执行完成，正在关闭数据库连接')
-# testdb.close()
-# # 记录测试结束时间
-# end_time = datetime.datetime.now()
-# # 构造测试报告
-# html_report = HtmlReport('test report', 'ushayden_interface_autotest_report')
-# html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
-#
-# # 读取测试报告路径及文件名
-# config = configparser.ConfigParser()
-# config.read('./config/report.conf', encoding='utf-8')
-# dir_of_report = config['REPORT']['dir_of_report']
-# report_name = config['REPORT']['report_name']
-#
-# # 设置报告生成路
-# html_report.mkdir_of_report(dir_of_report)
-#
-# # 生成测试报告
-# html_report.generate_html(report_name)
-#
-# logger.info('生成测试报告成功')
 
+logger.info('正在初始化数据库[名称：TESTDB]对象')
+testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
+#用例执行
 for i in range(len(testsuitm)):
+    # 构造测试步骤对象
+    step_id = 1
+    step_number = 1
+    step_action = ''
+    testcase_name = testsuitm[i]['name']
+    testcase_steps = 1
+    testcase_isactive = 1
+    testsuite_id = 1
+    testsuite_name = "作业许可"
+    testplan = "plan1"
+    project_name = "changqing"
+    testcase_id = testsuitm[i]['id']
+    testproject = 'changqing'
+    preconditions = ''
+    host = "192.168.6.27"
+    port = "6030"
+    #case_executed_history_id = "20200602083321"
+    case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
+    expected_results = ""
+    tc_external_id = 1
+    sql_insert = 'INSERT INTO ' + case_step_report_tb + '(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, ' \
+														'step_action, expected_results, runresult, reason, runtime)' \
+														' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
+
+    data = (case_executed_history_id, testcase_id, testcase_name, testplan, testproject, step_id,
+				step_number, '无', 'http', host, port,
+				step_action, expected_results, 'Unexecuted', '', '0000-00-00 00:00:00')
+    logger.info('记录测试步骤到测试步骤报告表')
+    testdb.execute_insert(sql_insert, data)
+
+
+    fail_or_error_reason = ''
+    protocol_method = "Post"
+    #run_time =""
+    run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
+    #logger.info("===================运行时间===========================")
+    #print(run_time)
+    action_of_step=""
+    if testsuitm[i]['result'] == "pass":
+        result_of_step ="pass"
+    else:
+        result_of_step = "Fail"
+    sql_update = 'UPDATE ' + case_step_report_tb + ' SET runresult=\"%s\",reason=\"%s\", protocol_method=\"%s\", runtime=\"%s\",' \
+														   'step_action=\"%s\", expected_results=\"%s\"' \
+														   ' WHERE executed_history_id = %s AND testcase_id = %s AND step_id = %s' \
+														   ' AND project=\'%s\' AND testplan=\'%s\'  AND runtime=\'%s\''
+    data = ("pass", fail_or_error_reason, protocol_method, run_time, action_of_step, result_of_step,
+					str(case_executed_history_id), testcase_id, step_id,
+					testproject, testplan, '0000-00-00 00:00:00')
+    logger.info('正在更新步骤执行结果')
+    testdb.execute_update(sql_update, data)
+
+    logger.info('测试用例[id=%s, name=%s]执行成功' % (testcase_id, testcase_name))
+#结果处理
+for i in range(len(testsuitm)):
+    #print(testsuit[i])
+    # 构造测试用例对象
+    testcase_name = testsuitm[i]['name']
+    testcase_steps = 1
+    testcase_isactive = 1
+    testsuite_id = 1
+    testsuite_name= "作业许可"
+    testplan =  "plan1"
+    project_name = "changqing"
+    testcase_id = testsuitm[i]['id']
+    preconditions =''
+    tc_external_id = 1
+    #executed_history_id = "20200602083913"
+    #executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
+	#testcase_obj = TestCase(testcase_id, testcase_name, testcase_steps, testcase_isactive, project_name, testsuite_id, tc_external_id, preconditions)
+    try:
+        sql_insert = 'INSERT INTO ' + testcase_report_tb + '(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime, tc_external_id)' \
+														   ' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s)'
+        data = (executed_history_id, testcase_id, testcase_name, testsuite_name, testplan, project_name, 'Unexecuted',
+				'0000-00-00 00:00:00', tc_external_id)
+        logger.info('记录测试用例到测试用例报表')
+        testdb.execute_insert(sql_insert, data)
+
+        #logger.info('开始执行测试用例[id=%s，name=%s]' % (testcase_id, testcase_name))
+        run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
+        case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())  # 流水记录编号
+        if testsuitm[i]['result'] == "pass":
+            testcase_run_result = "pass"
+        else:
+            testcase_run_result = "Fail"
+        #testcase_run_result = testsuit[i]['result']
+
+        logger.info('正在更新用例执行结果')
+        sql_update = 'UPDATE ' + testcase_report_tb + ' SET runresult=\"%s\", runtime=\"%s\",' \
+                                             ' case_exec_history_id=\"%s\"' \
+                                             ' WHERE executed_history_id = %s and testcase_id = %s' \
+                                              ' AND project=\'%s\' AND testplan=\'%s\''
+        data = (testcase_run_result, run_time, str(case_executed_history_id), executed_history_id, testcase_id, project_name,
+        testplan)
+        testdb.execute_update(sql_update, data)
+    except Exception as e:
+        logger.error('运行用例出错 %s' % e)
+
+logger.info('接口测试已执行完成，正在关闭数据库连接')
+testdb.close()
+# 记录测试结束时间
+end_time = datetime.datetime.now()
+# 构造测试报告
+html_report = HtmlReport('test report', 'ushayden_interface_autotest_report')
+html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
+
+# 读取测试报告路径及文件名
+config = configparser.ConfigParser()
+config.read('./config/report.conf', encoding='utf-8')
+dir_of_report = config['REPORT']['dir_of_report']
+report_name = config['REPORT']['report_name']
+
+# 设置报告生成路
+html_report.mkdir_of_report(dir_of_report)
+
+# 生成测试报告
+html_report.generate_html(report_name)
+
+logger.info('生成测试报告成功')
+
+#for i in range(len(testsuitm)):
     #print(testsuitm(i)['id'],testsuitm(i)['name'],testsuitm(i)['result'])
-    print("",testsuitm[i]['id'],testsuitm[i]['name'],testsuitm[i]['result'])
+    #print("",testsuitm[i]['id'],testsuitm[i]['name'],testsuitm[i]['result'])
 
 print(name)

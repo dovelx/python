@@ -1,11 +1,12 @@
-#作业预约全票
-from case.case11 import *
+#手机非主流程
+from case.case17 import *
+#from case.case11 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
 from runners import runner3
 from globalpkg.global_var import *
-#from runners import m_login
+from runners import runner2
 from runners import pc_login
 testsuitex = []
 testsuitrul = []
@@ -17,10 +18,12 @@ start_time = datetime.datetime.now()
 
 #执行测试-全票-作业预约-安全分析-作业许可证提交
 runner3.runcase_old(testsuit11,cookies)
+#mobile-现场确认
+runner2.runmobile(testsuitm17)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告
-report_title = 'ushayden_interface_autotest_report(%s_%s)'%(case,name)
+report_title = 'ushayden_interface_autotest_report(%s)'%case
 html_report = HtmlReport('test report', report_title)
 html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
 
