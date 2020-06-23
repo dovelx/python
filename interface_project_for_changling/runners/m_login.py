@@ -5,7 +5,7 @@ import json
 def mlogin (host,username,password):
     host = "192.168.6.27:6030"
     #移动端登录
-    url = "http://%s/m/passport/login/getEncryptType.json"%host
+    url = "http://192.168.6.156/m/passport/login/getEncryptType.json"
     #url = "http://192.168.6.27:6030/m/passport/login/getEncryptType.json"
     headers ={
         'Accept-Encoding': 'gzip',
@@ -17,10 +17,10 @@ def mlogin (host,username,password):
     eq = sr.json()
 
 
-    url1 ="http://%s/m/passport/login/login.json"%host
+    url1 ="http://192.168.6.156/m/passport/login/login.json"
     #url1 ="http://192.168.6.27:6030/m/passport/login/login.json"
     USER_NAME = username
-    USER_NAME = "test"
+    USER_NAME = "clshadmin"
     password ="1"
     loginStoken=eq['data']['loginStoken']
     encryptType=eq['data']['encryptType']
@@ -36,7 +36,7 @@ def mlogin (host,username,password):
         'Connnection': 'Keep-Alive'
         }
 
-    data={"appVersion":"01.20.0530","loginStoken":loginStoken,"password":pwd,"username":USER_NAME,'tenantid':0}
+    data={"appVersion":"01.20.0619","loginStoken":loginStoken,"password":pwd,"username":USER_NAME,'tenantid':0}
 
     rs= requests.post(url=url1,json =data,headers = headers)
 
@@ -54,7 +54,7 @@ def mlogin (host,username,password):
         "user-agent": "ONEPLUS A6010(Android/10) (com.hayden.hap.fv/1.0.2) Weex/0.16.0 1080x2134",
         "Content-Type": "application/json;charset=UTF-8",
         "st": loginStoken,
-        "tid": "1"
+        "tid": "2000000001003"
 
     }
     return  headers
