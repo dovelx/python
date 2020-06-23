@@ -38,7 +38,7 @@ caseinfo['isactive'] = ''
 
 #作业预约创建使用ID
 work_appoint_idx = sql_query_work_appointid+1
-print("作业预约使用变量work_appoint_idx",work_appoint_idx)
+print("作业预约送交使用变量work_appoint_idx",work_appoint_idx)
 #work_appoint_id_plus1 = work_appoint_id_plus1
 count =0
 #用例信息

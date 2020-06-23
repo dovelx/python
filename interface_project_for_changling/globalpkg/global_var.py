@@ -58,6 +58,7 @@ testdb_test = MyDB('./config/dbconfig.conf', projectname)
 sql_query_ticket = sqls.ticket
 sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
+sql_query_worktaskid1 = sqls.worktaskid1
 sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
@@ -77,17 +78,18 @@ ts = ts.decode('utf-8')
 #TS ID
 tsi = int(ts)
 print("TS",ts)
+
 temp = testdb_test.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
-print("worktaskid",worktaskid)
+print("作业票worktaskid",worktaskid)
 
-#temp = testdb_test.select_one_record(sql_query_work_appoint_id)
-#sql_query_work_appoint_id = temp[0]
+temp = testdb_test.select_one_record(sql_query_worktaskid1)
+sql_query__worktaskid1 = temp[0]
 #worktaskid
-#work_appoint_id = sql_query_work_appoint_id[0]
-#print("sql_query_work_appoint_id",work_appoint_id)
+worktaskid1 = sql_query__worktaskid1[0]
+print("作业任务worktaskid1",worktaskid1)
 
 temp = testdb_test.select_one_record(sql_query_work_jsaid)
 #print(temp)

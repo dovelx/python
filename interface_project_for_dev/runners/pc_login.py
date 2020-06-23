@@ -33,6 +33,6 @@ def login():
     driver.quit()
     return cookies
 
-#cookies= login()
+cookies= login()
 
 print(cookies)

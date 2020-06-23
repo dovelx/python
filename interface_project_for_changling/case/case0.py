@@ -3,6 +3,7 @@ from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
+from globalpkg.global_var import worktaskid1
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
@@ -69,6 +70,8 @@ data = {
 	"territorialdeviceid": 2000000005066,
 	"territorialdevicename": "炼油一部",
 	"territorialdevicecode": "000000010300",
+	"work_position_id": 2000000001891,
+	"work_position_name": "炼油北区",
 	"worksite": "作业地点",
 	"workunit": 2000000004016,
 	"workunitname": "中石化长岭分公司",
@@ -78,7 +81,6 @@ data = {
 	"appointstarttime": starttime,
 	"appointendtime": endtime
 }
-
 data = {
 	"tableName": "hse_work_appoint",
 	"iscontractor": "0",
@@ -102,14 +104,14 @@ data = {
 	"territorialdeviceid": 2000000005066,
 	"territorialdevicename": "炼油一部",
 	"territorialdevicecode": "000000010300",
-	"work_position_id": 2000000001891,
-	"work_position_name": "炼油北区",
 	"worksite": "作业地点",
 	"workunit": 2000000004016,
 	"workunitname": "中石化长岭分公司",
+	"work_position_id": 2000000001891,
+	"work_position_name": "炼油北区",
 	"workname": name,
-	"worktypename": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业,一般作业",
-	"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt,xkz",
+	"worktypename": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
+	"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt",
 	"appointstarttime": starttime,
 	"appointendtime": endtime
 }
@@ -221,6 +223,37 @@ data = {
 	"workcontent": "作业内容",
 	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业,一般作业",
 	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt,xkz"
+}
+data = {
+	"tableName": "hse_safety_task",
+	"wf_create_user": 2000000012062,
+	"iscontractor": "0",
+	"workstatus": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 2000000012062,
+	"created_dt": now,
+	"updated_by": 2000000012062,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 2000000001003,
+	"ts": "",
+	"analyze_type": "jsa",
+	"projecttype": "rcjx",
+	"workname": name,
+	"territorialunitid": 2000000005066,
+	"territorialunitname": "炼油一部",
+	"territorialdeviceid": 2000000005066,
+	"territorialdevicename": "炼油一部",
+	"territorialdevicecode": "000000010300",
+	"work_position_id": 2000000001891,
+	"work_position_name": "炼油北区",
+	"site": "作业地点",
+	"planstarttime": starttime,
+	"planendtime": endtime,
+	"workcontent": "作业内容",
+	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
+	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt"
 }
 caseinfo['url'] = urlfenxi
 caseinfo['data'] = data
@@ -445,8 +478,8 @@ data = {
 	"workunitname": "中石化长岭分公司",
 	"work_position_id": 2000000001891,
 	"work_position_name": "炼油北区",
-	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt,xkz",
-	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业,一般作业",
+	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt",
+	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
 	"territorialdevicename": "炼油一部",
 	"workcontent": "作业内容",
 	"planstarttime": starttime,
@@ -605,6 +638,7 @@ caseinfo['name'] = '作业许可证保存'
 #作业许可证 库hse_work_ticket
 workticketidx = workticketid+7
 #work_appoint_idx = work_appoint_id +1
+#worktaskidx = worktaskid1 +1
 ts = tsi+7
 print(caseinfo['name'],workticketidx)
 #http://192.168.6.156/hse/HSE_WORK_TICKET_XKZ_GB/cardSave?parentEntityId=2000000002853&parentFuncCode=HSE_WORK_TASK&topEntityId=2000000002853&topFuncCode=HSE_WORK_TASK&dataId=2000000003380&ts=1592375027435&0.6988032340417722&contentType=json&ajax=true&tid=2000000001003
@@ -761,7 +795,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+#testsuit.append(caseinfo.copy())
 
 caseinfo['id'] = 12
 caseinfo['name'] = '作业许可证-措施添加'
@@ -793,7 +827,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+#testsuit.append(caseinfo.copy())
 
 
 #作业许可证提交
@@ -953,7 +987,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
+#testsuit.append(caseinfo.copy())
 
 
 caseinfo['id'] = 14
@@ -2246,8 +2280,8 @@ testsuit.append(caseinfo.copy())
 #高处作业保存
 caseinfo['id'] = 22
 caseinfo['name'] = '高处作业保存'
-workticketidx = workticketid+8
-ts = tsi+8
+workticketidx = workticketid+7
+ts = tsi+7
 print(caseinfo['name'],workticketidx)
 #http://192.168.6.156/hse/HSE_WORK_TICKET_GC/cardSave?parentEntityId=2000000002864&parentFuncCode=HSE_WORK_TASK&topEntityId=2000000002864&topFuncCode=HSE_WORK_TASK&dataId=2000000003469&ts=1592380718481&0.6749652521633893&contentType=json&ajax=true&tid=2000000001003
 url = 'http://192.168.6.156/hse/HSE_WORK_TICKET_GC/cardSave?parentEntityId=%d&parentFuncCode=HSE_WORK_TASK&topEntityId=%d&topFuncCode=HSE_WORK_TASK&dataId=%d&ts=%d&0.6749652521633893&contentType=json&ajax=true&tid=2000000001003'%(worktaskidx,worktaskidx,workticketidx,ts)
