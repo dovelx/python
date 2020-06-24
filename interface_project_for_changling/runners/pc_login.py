@@ -19,7 +19,7 @@ def login():
     driver.find_element(By.ID, "pwd1").send_keys("1")
     #driver.find_element(By.CSS_SELECTOR, ".justUse").click()
     driver.find_element(By.LINK_TEXT, "登录").click()
-    time.sleep(10)
+    time.sleep(15)
     #获取JSESSIONID
     c= driver.get_cookies()
     #print (c)
