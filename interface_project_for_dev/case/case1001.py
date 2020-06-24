@@ -154,19 +154,7 @@ caseinfo['name'] = '作业预约'
 caseinfo['url'] = url
 caseinfo['data'] =data
 
-rs = requests.post(url = caseinfo['url'],json=caseinfo['data'],headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -182,19 +170,7 @@ caseinfo['id'] = 102
 caseinfo['name'] = '作业预约送交'
 caseinfo['url'] = url
 caseinfo['data'] =data
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -206,19 +182,7 @@ caseinfo['id'] = 103
 caseinfo['name'] = '作业预约审核'
 caseinfo['url'] = url
 caseinfo['data'] =data
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -267,21 +231,7 @@ data = {
 	"constructionscheme": 0,
 	"standardmaintenance": ""
 }
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#print(data)
-# 获取接口返回状态
-sta = data['status']
 
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -319,19 +269,7 @@ data = {
 	"accident_possibility": "2",
 	"step_name": "步骤活动123"
 }
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -396,19 +334,7 @@ data = {
 	"remainsrisk_level": "",
 	"risk_level": "04"
 }
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -450,19 +376,7 @@ data = {
 	"worktaskid": jsaidxx,
 	"work_position_id": 2000000002019
 }
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -473,19 +387,7 @@ caseinfo['id'] = 108
 caseinfo['name'] = casename
 url = 'http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.9498759321537273&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
 data = {}
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -529,21 +431,7 @@ data = {
 		"longitude": 116.338469
 	}]
 }
-#rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#print(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -585,21 +473,8 @@ data = {
 		"longitude": 116.338467
 	}]
 }
-#rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#print(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -611,20 +486,7 @@ caseinfo['name'] = casename
 #http://192.168.6.27:6030/m/hse_m/HSE_SAFETY_DISCLOSURE_M/jsasignAudit.json?safe_name=%E9%95%BF%E5%BA%86%E7%9F%B3%E5%8C%96%E5%AE%89%E5%85%A8%E4%BA%A4%E5%BA%95&safe_content=%E9%95%BF%E5%BA%86%E7%9F%B3%E5%8C%96%E5%AE%89%E5%85%A8%E4%BA%A4%E5%BA%95&confirm_content=1%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E4%BD%9C%E4%B8%9A%E5%8C%BA%E5%9F%9F%E5%8F%8A%E5%91%A8%E8%BE%B9%E7%94%9F%E4%BA%A7%E4%BD%9C%E4%B8%9A%E6%83%85%E5%86%B5%0D%0A2%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%EF%BC%88JSA%EF%BC%89%0D%0A3%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%85%B7%E4%BD%93%E5%AE%89%E5%85%A8%E8%A6%81%E6%B1%82%EF%BC%88%E4%BD%9C%E4%B8%9A%E8%AE%B8%E5%8F%AF%E8%AF%81%E4%B8%AD%E7%9A%84%E6%8E%A7%E5%88%B6%E6%8E%AA%E6%96%BD%EF%BC%89%0D%0A4%E3%80%81%E5%B7%B2%E5%AF%B9%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%8E%B0%E5%9C%BA%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD%E8%BF%9B%E8%A1%8C%E4%BA%86%E6%A3%80%E6%9F%A5%E7%A1%AE%E8%AE%A4%0D%0A5%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E6%B6%89%E5%8F%8A%E7%9A%84%E4%BD%9C%E4%B8%9A%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E6%9C%89%E9%99%90%E6%9C%9F%E9%99%90%20%0D%0A6%E3%80%81%E5%B7%B2%E6%8E%8C%E6%8F%A1%E4%B8%AA%E4%BA%BA%E9%98%B2%E6%8A%A4%E7%94%A8%E5%85%B7%E6%AD%A3%E7%A1%AE%E4%BD%A9%E6%88%B4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%0D%0A7%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E7%AA%81%E5%8F%91%E6%83%85%E5%86%B5%E4%B8%8B%E7%9A%84%E5%BA%94%E6%80%A5%E9%81%BF%E9%99%A9%E6%96%B9%E6%B3%95&additional_content=&workTicketid=2000000002028&worktaskid=2000000002028&workType=aqjd&actionCode=clarsign
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_SAFETY_DISCLOSURE_M/jsasignAudit.json?safe_name=%E9%95%BF%E5%BA%86%E7%9F%B3%E5%8C%96%E5%AE%89%E5%85%A8%E4%BA%A4%E5%BA%95&safe_content=%E9%95%BF%E5%BA%86%E7%9F%B3%E5%8C%96%E5%AE%89%E5%85%A8%E4%BA%A4%E5%BA%95&confirm_content=1%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E4%BD%9C%E4%B8%9A%E5%8C%BA%E5%9F%9F%E5%8F%8A%E5%91%A8%E8%BE%B9%E7%94%9F%E4%BA%A7%E4%BD%9C%E4%B8%9A%E6%83%85%E5%86%B5%0D%0A2%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9%EF%BC%88JSA%EF%BC%89%0D%0A3%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%85%B7%E4%BD%93%E5%AE%89%E5%85%A8%E8%A6%81%E6%B1%82%EF%BC%88%E4%BD%9C%E4%B8%9A%E8%AE%B8%E5%8F%AF%E8%AF%81%E4%B8%AD%E7%9A%84%E6%8E%A7%E5%88%B6%E6%8E%AA%E6%96%BD%EF%BC%89%0D%0A4%E3%80%81%E5%B7%B2%E5%AF%B9%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%8E%B0%E5%9C%BA%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD%E8%BF%9B%E8%A1%8C%E4%BA%86%E6%A3%80%E6%9F%A5%E7%A1%AE%E8%AE%A4%0D%0A5%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E6%9C%AC%E6%AC%A1%E4%BD%9C%E4%B8%9A%E6%B6%89%E5%8F%8A%E7%9A%84%E4%BD%9C%E4%B8%9A%E8%AE%B8%E5%8F%AF%E8%AF%81%E7%9A%84%E6%9C%89%E9%99%90%E6%9C%9F%E9%99%90%20%0D%0A6%E3%80%81%E5%B7%B2%E6%8E%8C%E6%8F%A1%E4%B8%AA%E4%BA%BA%E9%98%B2%E6%8A%A4%E7%94%A8%E5%85%B7%E6%AD%A3%E7%A1%AE%E4%BD%A9%E6%88%B4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%0D%0A7%E3%80%81%E5%B7%B2%E6%B8%85%E6%A5%9A%E7%AA%81%E5%8F%91%E6%83%85%E5%86%B5%E4%B8%8B%E7%9A%84%E5%BA%94%E6%80%A5%E9%81%BF%E9%99%A9%E6%96%B9%E6%B3%95&additional_content=&workTicketid='+str(jsaidxx)+'&worktaskid='+str(jsaidxx)+'&workType=aqjd&actionCode=clarsign'
 data = {"mainAttributeVO":{"additional_content":""},"auditPlainLineList":[{"actiontype":"sign","isexmaineable":1,"groupType":"4","code":"2000000005785","latitude":39.982727,"idnumber":"","dataStatus":0,"ismustaudit":1,"force_photo":0,"isEnd":1,"ismulti":0,"isShow":1,"auditorder":3,"isinputidnumber":0,"electronicSignature":[{"imgStr":"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\n","uuid":""}],"name":"作业教育人（项目负责人）","audittype":"sign,face,card","specialworktype":"","value":"iVBORw0KGgoAAAANSUhEUgAAAhwAAAGhCAYAAAAqQm1KAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAAAz7SURBVHic7d1/zO51Xcfx17kPDBQwOKAeEVFLAxVS1IiaZTqSWIoOUTfLErcmm6xo\njtYP+7HqD9dsLeds6WCzWOqKPxBlaOEoVsxpmISsgjzIERUUhIgj53A4pz+u02Kc7/dz/7qu631f\nn+vx2K6dw71z7vv5hY3rte/3ur5XAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMtkW3UA\nQGdOSHJKkmcf+vXkJPck2Z3k7kOPPWV1AMDCeHGSP8lkRBzc5OM7SS6Zbz4AsBW9Mcmd2fy4WMvj\n4jkdEwCwBfxB5jMwxh5nzP4QAYAKF6Z2ZDz5cd5sDxfmx4tGAZKPJfnFKX6/ryW5K5PXeHw9yfGZ\nvJj0hCSnJvmRdXyvk5LcP8U2AGDObsjGzz58MMlLptBwTpI7VvlZAMACuj7rHxi/N4eum0Z+9vlz\n+NkAwJR8OmsfGA8leUNB410DLfsLOgCAdbosax8aHy1q/D/bMtwFAGxRO7P2ofHGosYhQ30nlBYB\nAIO+mrUNjTdXBTYMXfrxFlkW2kp1AMCU/WomT9AvXuXPvTWTyxdXz7xo/XYNfO2kuVcAAIMezupn\nNC4rq1u7e3J497GlRQBA3pDVh8bQWYOtyotGAWCLuS2rj43nVcVtwI4YHACwZRyR1YfGn5XVbdzd\nOfw4riotAoAl9Yq0h8aBJEeX1W3c9gwfz/bKKABYRpenPTY+Xpe2abtz+PE8XloEAEvo6rTHxml1\naZv2lAwf0xmVUQCwbFqfg7K3sGta9sWLRQGg1F9nfGzcXNg1LW/J8LGdUxkFAMvkzRkfGx8u7Jqm\noWPzCbEAMCdHZXxsXFrYNU1fzvDxHVcZBQDL5NEMPxlfXhk1Rc/N8PH9U2UUACyTV2f4yfiTlVFT\nNnb2BgCYkwfS95PxNRk+Ph9DDwBz9Lkc/mT8lNKi6XlOhsfGvZVRALCsDuT/n4x/qbhlmlxKYekc\nUR0A0LBSHTADt458/RfmWgEAdOucDJ/Z+GZlFMzDtuoAgCUydtnE/4vpXo+nKwG2ou+PfP0Vc60A\nALr10QxfSvmXyigAoB/Pi3elAAAzNjY2nloZBQD0Y1+Gx8a7K6MAgH7cnOGxsasyCgDox8Xxug0A\nYIZOzfjYOLKwCwDoxNEZHxvnFHYBAB0ZGxtXVkYBAP0YGxv3VEYBAP14JMNjY29lFADQj7Gx4R0p\nAMBUPJzxseETYAGATWuNjeMKuwCATuzP+NjYWdgFAHRgJeNDw9gAADZtR4wNAGCGXp722DilLg0A\n6MFlaY8NLxAFADbl+rTHhre+AgCb8o2MD419hV0AQCdaZzXuLewCADqwPe2x8fm6NACgB09Pe2z8\nRl0aANCDV6Y9Nn6sLg0A6MFb0h4bO+rSAIAefDje9goAzNBnMz40Hi3sAgA6cWvGx8a3CrsAgE7c\nnfGx8cXCLgCgEw9kfGz8ZWEXANCJPXGPDQBghvZlfGy8vrALAOjEgYyPjbMKuwCATrTusXFqYRcA\n0InW2DixsAsA6MC2tMfG0+rSAIAeHJn22DiqLg0A6MExaY+Nlbo0AKAHJ6Y9NgAANuU5MTYAgBk6\nM+ND40BhFwDQiddlfGw8VtgFAHTilzM+NvYUdgEAnbgi42Pju4VdAEAn/jnjY2NXYRcA0In7Mj42\nvlDYBQB0ovW2178q7AIAOrDaPTZ+sy4NAOjB+WmPjXPr0gCAHrw/7bHxrLo0AKAHl8atygGAGXpG\nxofGI4VdAEBH7s3w2Pj3yihg87ZVBwA8wdAlk2uSvGneIZv0/CQvTPKiJKcl+eEkpyZ5dpKnbuD7\nfT3Jlw89bkny6elkwvwYHMBWMvYajQuSXDvPkCc4OcnpmYyHFx36/emZjIet4D8zud37H1eHQIvB\nAWwlt2fypL4WX8jkdua7kzyQ5H+SPPyEX/c96c8/M8nOJCdlMhZ2PuHR27tefifJH1VHAMBW1nqH\nisf6H7+2vn/9ALAcVru7qMfGHn+4nv8IMG0uqQBb1TezuJc6Hszk8tAdSf4jk3fZ7Mrk8s/9G/h+\nP5Hk7CSvTPIzmbx9eKNemOTOTfx9AOjS2zN54q48O/CVJJ9I8vtJ3pbkpbM84HV6fZKbsr7jubyk\nlKXmDAewiHYmOSuTF3+efOixM8nxjb9zfyb3+fj2oV/vfdI/75lh7zydn+S6Nfy5L2Zy1gQAYFM+\nmPaZjrfWpQEAvflYxkcHAMDUXJDhwXFRZRQA0J/P5PDB8Z3SIpaGF40CLJehyyieC5i5leoAAKB/\nBgcAMHMGBwAwcwYHADBzBgcAMHMGBwAwcwYHwPI4sjoAAOjfh3L4jb/+obQIAOjO0K3NX1JaxNJw\ndzmA5bCS5PGBr3seYC68hgNgOfzdwNf2zb0CAOja0OWUnywtAgC68tsZHhwAAFMzNDb+orQIAOjK\ne+PsBgAwY0Nj4zOlRQBAVz4VZzcAgBk6KsNj41OVUQBAX/bG2Q0AYIY+kOGxcVFlFADQj6dleGzs\nr4wCAPoyNDYOJjmiMgoA6MetGR4bv1IZBQD045IMj42HKqMAgH7syPilFACAqRgbGy+ojAIA+jE2\nNj5UGQUA9OOhDI+N71VGAQD9GHtHitdtAABT8bcZHxvbC7sAgE68P+Nj45mFXQBAJ96Z8bHxU3VZ\nAEAvfjbjY+OSwi4AoBOvyvjY+PPCLgCgEy/P+Nj4bGEXANCJMzM+Nm4r7AIAOnFaxsfGrsIuAKAT\nL8v42Nhd2AUAdOJHMz427ivsAgA68dMZHxsP1mUBAL1o3Wfju4VdAEAnfj7jY+PbhV0AQCfel/Gx\ncVddFgDQiysyPjb+q7ALAOjEdRkfG18p7AIAOnFbxsfG3xd2AQCduC/jY+Oqwi4AoBOPZnxs/Glh\nFwDQibGhcTDJuwq7AIAOHJ322PjxujQAoAc/mPbYeG5dGgDQgwvTHhvH1aUBAD24Mu2xsVKXBgD0\n4I6MD419hV0AQCcey/jY2F3YBQB04Ni0L6HcWFYGAHThtWmPjd+tSwMAenBt2mPjrLo0AKAHD6U9\nNo6uSwMAFt1xaQ+Ng3VpAEAPzkt7aPxjXRoA0IPr0x4bb6tLAwB68EjaY+P4ujQAYNH9UNpDY09d\nGgDQg4+kPTZuqEsDAHqw2iWUC+vSAIBFt9ollIOZ3MYcAGBDVruEcmddGgDQgz1pj42L69IAgEW3\nlksoblEOAGzYFWkPjX+tSwMAerDau1B+ri4NAFh0Z8QHrwEAM/TJtIfGzXVpAEAPvp/22HhNXRoA\nsOielfbQOJBke1kdALDw3pP22LipLg0A6MGX0h4br6pLAwB6sDfjQ+PxJCt1aQDAont62mc1bqtL\nAwB68I60x8Z769IAgB7clPbYOKUuDQDoQesW5Y8VdgEAHTg27bMaX6pLAwB6cG7aY+M9dWkAQA+u\nSntsnFyXBgD04J60b1EOALBhK2mf1bi7Lg0A6MHpaY+NK+vSAIAe/FbaY+PVdWkAQA/+Le2xcWxd\nGgDQg8cyPjT2FnYBAB04Me2zGrfUpQEAPbgo7bHx63VpAEAPbkh7bJxelwYA9GBP2mNje10aALDo\ndqQ9NB6oSwMAevD2tMfGtXVpAEAPbkl7bJxXlwYA9ODxtMfGMXVpAMCiOzPtofFgXRoA0IMr0h4b\nf1OXBgD04L/THhtn16UBAItuZ9pDw/01AIBNeV/aQ+P2ujQAoAffSHtsXFqXBgAsumOy+iWUHyir\nAwAW3mqf8npfXRoA0IPV7hr6gbo0AGDRHZHVL6E8v6wOAFh456Y9NB6tSwMAenBj2mPjmrIyAGDh\nbUuyP+4aCgDMyNlpD439mQwSAIANuS7tsXFjWRkA0IW9aY+Nc+vSAIBFd2baQ+NAfPAaALAJl6c9\nNm6pSwMAetEaGxcUdgEAHRkbG0dVRgEAfXny0Li9NgcA6NXVSb6X5HXVIQAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAALBu/wsiNaSlieaWwwAAAABJRU5ErkJggg==\n","isbrushposition":0,"disporder":3,"longitude":116.338467}]}
-#rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-#print(data)
-# 获取接口返回状态
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -710,21 +572,11 @@ data = {
 		"worktaskid": ""
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
+
+
 #作业任务提交
 casename = '作业任务提交'
 caseinfo['id'] = 114
@@ -793,19 +645,7 @@ data = {
 		"worktaskid": worktaskidxx
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -2460,19 +2300,7 @@ data = {
 		"ts": 1592531114768
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -2555,19 +2383,7 @@ data = {
 		"ts": ts
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -3540,19 +3356,7 @@ data = {
 		"ts": 1592531768729
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -4525,19 +4329,7 @@ data = {
 		"ts": 1592531768729
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -5672,19 +5464,7 @@ data = {
 		"ts": 1592531768733
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -5762,19 +5542,7 @@ data = {
 		"ts": ts
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -6534,19 +6302,7 @@ data = {
 		"ts": 1592531114768
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -6624,19 +6380,7 @@ data = {
 		"ts": ts
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -7943,19 +7687,7 @@ data = {
 		"ts": 1592531114768
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -8043,19 +7775,7 @@ data = {
 		"ts": 1592532696292
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -8617,19 +8337,7 @@ data = {
 		"ts": 1592531114767
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -8701,19 +8409,7 @@ data = {
 		"ts": 1592532903456
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -9656,19 +9352,7 @@ data = {
 		"ts": 1592531114767
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -9745,19 +9429,7 @@ data = {
 		"ts": 1592532979916
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -10086,19 +9758,7 @@ data = {
 		"ts": 1592531114768
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -10173,19 +9833,7 @@ data = {
 		"ts": 1592533078484
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -11570,19 +11218,7 @@ data = {
 		"ts": 1592531114844
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -11662,19 +11298,7 @@ data = {
 		"ts": 1592533162481
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -11750,19 +11374,7 @@ data = {
 		"ts": 1592531114769
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -11838,19 +11450,7 @@ data = {
 		"ts": 1592533268164
 	}
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -11987,19 +11587,7 @@ data = {
 		"signSrc": ""
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -12166,19 +11754,7 @@ data = {
 		"isconfirm": "1"
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -13541,19 +13117,7 @@ data = {
 		"isconfirm": "1"
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -14916,19 +14480,7 @@ data = {
 		"isconfirm": "1"
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -14971,19 +14523,7 @@ data = {
 		"longitude": 116.338462
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15060,19 +14600,7 @@ data = {
 		"longitude": 116.338471
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15116,19 +14644,7 @@ data = {
 		"longitude": 116.337939
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15172,19 +14688,7 @@ data = {
 		"longitude": 116.338416
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15228,19 +14732,7 @@ data = {
 		"longitude": 116.33832
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15285,19 +14777,7 @@ data = {
 		"longitude": 116.338282
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15342,19 +14822,7 @@ data = {
 		"longitude": 116.338469
 	}]
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15399,19 +14867,7 @@ data = {
 	"mainAttributeVO": {},
 	"closeType": "completion"
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
@@ -15422,9 +14878,7 @@ caseinfo['id'] = 146
 caseinfo['name'] = casename
 workticketidx1 = workticketid + 6
 workticketidx2 = workticketid + 8
-#ts = tsi + 10
-#http://192.168.6.27:6030/m/hse_m/HSE_WORKTASK_INJOB_M/saveCloseTicketHebinAudit.json?worktaskid=2000000004663&hdBusKeyCode=worktaskid&actionCode=close&workTicketids=2000000007735,2000000007737
-#http://192.168.6.27:6030/m/hse_m/HSE_WORKTASK_INJOB_M/saveCloseTicketHebinAudit.json?worktaskid=2000000004663&hdBusKeyCode=worktaskid&actionCode=close&workTicketids=2000000007735,2000000007737
+
 url = 'http://192.168.6.27:6030/m/hse_m/HSE_WORKTASK_INJOB_M/saveCloseTicketHebinAudit.json?worktaskid=%d&hdBusKeyCode=worktaskid&actionCode=close&workTicketids=%d,%d'%(worktaskidxx,workticketidx1,workticketidx2)
 data = {
 	"reason": "完工",
@@ -15458,149 +14912,8 @@ data = {
 	"mainAttributeVO": {},
 	"closeType": "completion"
 }
-rs = requests.post(url = url,json=data,headers=mheaders)
-# 返回值转码
-data = rs.content.decode('utf-8')
-#json格式化
-data = json.loads(data)
-# 获取接口返回状态
-sta = data['status']
-if sta == 3200:
-    #print("作业预约成功", sta)
-    caseinfo['result'] = "pass"
-else:
-    caseinfo['result'] = "Fail"
-    logger.info("%s错误结果%s", caseinfo['name'], data)
+
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
 
-logger.info('正在初始化数据库[名称：TESTDB]对象')
-testdb = MyDB('./config/dbconfig.conf', 'TESTDB')
-#用例执行
-for i in range(len(testsuitm)):
-    # 构造测试步骤对象
-    step_id = 1
-    step_number = 1
-    step_action = ''
-    testcase_name = testsuitm[i]['name']
-    testcase_steps = 1
-    testcase_isactive = 1
-    testsuite_id = 1
-    testsuite_name = "作业许可"
-    testplan = "plan1"
-    project_name = "changqing"
-    testcase_id = testsuitm[i]['id']
-    testproject = 'changqing'
-    preconditions = ''
-    host = "192.168.6.27"
-    port = "6030"
-    #case_executed_history_id = "20200602083321"
-    case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
-    expected_results = ""
-    tc_external_id = 1
-    sql_insert = 'INSERT INTO ' + case_step_report_tb + '(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, ' \
-														'step_action, expected_results, runresult, reason, runtime)' \
-														' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
-
-    data = (case_executed_history_id, testcase_id, testcase_name, testplan, testproject, step_id,
-				step_number, '无', 'http', host, port,
-				step_action, expected_results, 'Unexecuted', '', '0000-00-00 00:00:00')
-    logger.info('记录测试步骤到测试步骤报告表')
-    testdb.execute_insert(sql_insert, data)
-
-
-    fail_or_error_reason = ''
-    protocol_method = "Post"
-    #run_time =""
-    run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
-    #logger.info("===================运行时间===========================")
-    #print(run_time)
-    action_of_step=""
-    if testsuitm[i]['result'] == "pass":
-        result_of_step ="pass"
-    else:
-        result_of_step = "Fail"
-    sql_update = 'UPDATE ' + case_step_report_tb + ' SET runresult=\"%s\",reason=\"%s\", protocol_method=\"%s\", runtime=\"%s\",' \
-														   'step_action=\"%s\", expected_results=\"%s\"' \
-														   ' WHERE executed_history_id = %s AND testcase_id = %s AND step_id = %s' \
-														   ' AND project=\'%s\' AND testplan=\'%s\'  AND runtime=\'%s\''
-    data = ("pass", fail_or_error_reason, protocol_method, run_time, action_of_step, result_of_step,
-					str(case_executed_history_id), testcase_id, step_id,
-					testproject, testplan, '0000-00-00 00:00:00')
-    logger.info('正在更新步骤执行结果')
-    testdb.execute_update(sql_update, data)
-
-    logger.info('测试用例[id=%s, name=%s]执行成功' % (testcase_id, testcase_name))
-#结果处理
-for i in range(len(testsuitm)):
-    #print(testsuit[i])
-    # 构造测试用例对象
-    testcase_name = testsuitm[i]['name']
-    testcase_steps = 1
-    testcase_isactive = 1
-    testsuite_id = 1
-    testsuite_name= "作业许可"
-    testplan =  "plan1"
-    project_name = "changqing"
-    testcase_id = testsuitm[i]['id']
-    preconditions =''
-    tc_external_id = 1
-    #executed_history_id = "20200602083913"
-    #executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())
-	#testcase_obj = TestCase(testcase_id, testcase_name, testcase_steps, testcase_isactive, project_name, testsuite_id, tc_external_id, preconditions)
-    try:
-        sql_insert = 'INSERT INTO ' + testcase_report_tb + '(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime, tc_external_id)' \
-														   ' VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s)'
-        data = (executed_history_id, testcase_id, testcase_name, testsuite_name, testplan, project_name, 'Unexecuted',
-				'0000-00-00 00:00:00', tc_external_id)
-        logger.info('记录测试用例到测试用例报表')
-        testdb.execute_insert(sql_insert, data)
-
-        #logger.info('开始执行测试用例[id=%s，name=%s]' % (testcase_id, testcase_name))
-        run_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # 记录运行时间
-        case_executed_history_id = time.strftime('%Y%m%d%H%M%S', time.localtime())  # 流水记录编号
-        if testsuitm[i]['result'] == "pass":
-            testcase_run_result = "pass"
-        else:
-            testcase_run_result = "Fail"
-        #testcase_run_result = testsuit[i]['result']
-
-        logger.info('正在更新用例执行结果')
-        sql_update = 'UPDATE ' + testcase_report_tb + ' SET runresult=\"%s\", runtime=\"%s\",' \
-                                             ' case_exec_history_id=\"%s\"' \
-                                             ' WHERE executed_history_id = %s and testcase_id = %s' \
-                                              ' AND project=\'%s\' AND testplan=\'%s\''
-        data = (testcase_run_result, run_time, str(case_executed_history_id), executed_history_id, testcase_id, project_name,
-        testplan)
-        testdb.execute_update(sql_update, data)
-    except Exception as e:
-        logger.error('运行用例出错 %s' % e)
-
-logger.info('接口测试已执行完成，正在关闭数据库连接')
-testdb.close()
-# 记录测试结束时间
-end_time = datetime.datetime.now()
-# 构造测试报告
-html_report = HtmlReport('test report', 'ushayden_interface_autotest_report')
-html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
-
-# 读取测试报告路径及文件名
-config = configparser.ConfigParser()
-config.read('./config/report.conf', encoding='utf-8')
-dir_of_report = config['REPORT']['dir_of_report']
-report_name = config['REPORT']['report_name']
-
-# 设置报告生成路
-html_report.mkdir_of_report(dir_of_report)
-
-# 生成测试报告
-html_report.generate_html(report_name)
-
-logger.info('生成测试报告成功')
-
-#for i in range(len(testsuitm)):
-    #print(testsuitm(i)['id'],testsuitm(i)['name'],testsuitm(i)['result'])
-    #print("",testsuitm[i]['id'],testsuitm[i]['name'],testsuitm[i]['result'])
-
-print(name)
