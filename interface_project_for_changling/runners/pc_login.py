@@ -4,70 +4,60 @@ import requests
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Firefox,FirefoxOptions
-from bs4 import BeautifulSoup
 import re
+
 def login():
+    print("开始登录")
     opt = FirefoxOptions()            # 创建Chrome参数对象
     opt.headless = True              # 把Chrome设置成可视化无界面模式，windows/Linux 皆可
     driver = Firefox(options=opt)     # 创建Chrome无界面对象
-    #selenium登录测试长庆
-    #driver = Firefox()
 
-    driver.get("http://192.168.6.156/passports/login?service=http%3A%2F%2F192.168.6.156%2Fportals%2Fcas&tenantCode=clsh&trial=false")
+    for i in range(3):
+        # selenium登录测试长庆
 
-    driver.find_element(By.ID, "name").send_keys("clshadmin")
-    driver.find_element(By.ID, "pwd1").send_keys("1")
-    #driver.find_element(By.CSS_SELECTOR, ".justUse").click()
-    driver.find_element(By.LINK_TEXT, "登录").click()
-    time.sleep(15)
-    #获取JSESSIONID
-    c= driver.get_cookies()
-    #print (c)
-    #print (c[0])
-    for a in c:
-        #print (a)
-        if a['name'] == 'JSESSIONID':
-            b=a
-            #print (b)
-    cookies={'JSESSIONID': b['value']}
+        driver.get("http://192.168.6.156/passports/login?service=http%3A%2F%2F192.168.6.156%2Fportals%2Fcas&tenantCode=clsh&trial=false")
+        driver.find_element(By.ID, "name").send_keys("clshadmin")
+        driver.find_element(By.ID, "pwd1").send_keys("1")
+        driver.find_element(By.LINK_TEXT, "登录").click()
+        j=i+5
+        time.sleep(j)
+        # 获取JSESSIONID1
+        c = driver.get_cookies()
+        for a in c:
+            if a['name'] == 'JSESSIONID':
+                b = a
+        cookies = {'JSESSIONID': b['value']}
+        print("登录成功,cookies", cookies)
+        time.sleep(j)
+        url = 'http://192.168.6.156/portals/clsh'
+        rs = requests.get(url= url ,cookies =cookies)
+        print(rs.status_code,i)
+        data = rs.content.decode('utf-8')
 
-    #cookies={'JSESSIONID': '3BAB7DF0381948EA376F907859D5321C'}
+        searchObj = re.search("window.csrf = '(.+?)';", data, re.M | re.I)
+        if searchObj:
+            #print("searchObj.group() : ", searchObj.group())
+            #print("searchObj.group(1) : ", searchObj.group(1))
+            csrf = searchObj.group(1)
+            print("csrf found!!",csrf)
+            break
 
+        else:
+            time.sleep(1)
+            if i == 19:
+                print("Csrf Not found!!")
+                csrf = i
+            # driver.close()
+            # driver.quit()
+            # return cookies, 0
+            driver.close()
+            driver.quit()
 
-    #cookies= login()
-    #print(cookies)
-
-    url = 'http://192.168.6.156/portals/clsh'
-    rs = requests.get(url= url ,cookies =cookies)
-    data = rs.content.decode('utf-8')
-    #print(data)
-    #data = rs.content.decode('utf-8')
-    #print(data)
-    #soup = BeautifulSoup(data,'lxml')
-    #t = rs.content
-    #print(soup.prettify())
-    #print(soup.body.script)
-    #print(soup.find_all("csrf"))
-    # soup = BeautifulSoup(data, "html.parser")
-    # pattern = re.compile(r"window.csrf = \'")
-    #
-    # script = soup.find("script type=\"text/javascript\"", text=pattern)
-    # print(script)
-    #print (pattern.search(script.text).group(1))
-    searchObj = re.search("window.csrf = '(.+?)';", data, re.M | re.I)
-    # searchObj = re.search('wind(.+?)w', html_data, re.M | re.I)
-    csrf = searchObj.group(1)
-    if searchObj:
-        print("searchObj.group() : ", searchObj.group())
-        print("searchObj.group(1) : ", searchObj.group(1))
-        # print(    "searchObj.group(2) : ", searchObj.group(2))
-    else:
-        print("Nothing found!!")
-    driver.close()
+    #driver.close()
     driver.quit()
-    return cookies,csrf
-#a = []
+    print("quit browser")
+    return cookies, csrf
 
-#a = login()
+if __name__=='__main__':
 
-#print(a)
+    login()

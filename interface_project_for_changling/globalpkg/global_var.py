@@ -64,12 +64,15 @@ sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
 logger.info('开始数据库查询')
-temp = testdb_test.select_one_record(sql_query_ticket)
 
+#
+temp = testdb_test.select_one_record(sql_query_ticket)
 workticketid = temp[0]
 #作业票数据库当前ID-workticketid
 workticketid = workticketid[0]
-print("workticketid",workticketid)
+print("table-hse_work_ticket:workticketid",workticketid)
+
+#
 temp = testdb_test.select_one_record(sql_query_ts)
 #获取TS
 ts = temp[0][0]
@@ -77,40 +80,42 @@ ts = temp[0][0]
 ts = ts.decode('utf-8')
 #TS ID
 tsi = int(ts)
-print("TS",ts)
+print("table-hse_work_ticket:TS",ts)
 
+#
 temp = testdb_test.select_one_record(sql_query_worktaskid)
 worktaskid = temp[0]
 #worktaskid
 worktaskid = worktaskid[0]
-print("作业票worktaskid",worktaskid)
+print("table-hse_work_task:worktaskid(作业任务提交)",worktaskid)
 
+#
 temp = testdb_test.select_one_record(sql_query_worktaskid1)
 sql_query__worktaskid1 = temp[0]
 #worktaskid
 worktaskid1 = sql_query__worktaskid1[0]
-print("作业任务worktaskid1",worktaskid1)
+print("table-hse_work_ticket:worktaskid1（现场确认）",worktaskid1)
 
 temp = testdb_test.select_one_record(sql_query_work_jsaid)
 #print(temp)
 jsaid = temp[0]
 #jsaid
 jsaid = jsaid[0]
-print("jsaid",jsaid)
+print("table-hse_safety_analysis :jsaid",jsaid)
 
 temp = testdb_test.select_one_record(sql_query_work_safeclarid)
 #print(temp)
 safeclarid = temp[0]
 #jsaid
 safeclarid = safeclarid[0]
-print("safeclarid",safeclarid)
+print("table-hse_safety_disclosure :safeclarid",safeclarid)
 
 temp = testdb_test.select_one_record(sql_query_work_appointid)
 #print(temp)
 sql_query_work_appointid = temp[0]
 #jsaid
 sql_query_work_appointid = sql_query_work_appointid[0]
-print("sql_query_work_appointid",sql_query_work_appointid)
+print("table-hse_work_appoint：work_appointid",sql_query_work_appointid)
 # logger.info("===关闭数据库=============")
 # testdb_test.close()
 '''

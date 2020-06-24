@@ -123,9 +123,9 @@ def runcase(testsuit,cookies):
     logger.info('接口测试已执行完成，正在关闭数据库连接')
     testdb.close()
 
-def runcase_changqing(testsuit,cookies):
+def runcase_changqing(testsuit):
     #cookies = cookies
-    print("cookies",cookies)
+    print("cookies confirmed",cookie)
     print('用例数：',len(testsuit))
     for i in range(len(testsuit)):
 
