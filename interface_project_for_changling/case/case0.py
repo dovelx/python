@@ -3,9 +3,9 @@ from tools import tool
 from globalpkg.global_var import tsi
 from globalpkg.global_var import workticketid
 from globalpkg.global_var import worktaskid
-#from globalpkg.global_var import worktaskid1
+from globalpkg.global_var import worktaskid1
 from globalpkg.global_var import jsaid
-#from globalpkg.global_var import safeclarid
+from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
 
 case = '长岭项目作业许可'
