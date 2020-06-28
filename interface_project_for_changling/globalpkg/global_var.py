@@ -110,12 +110,37 @@ safeclarid = temp[0]
 safeclarid = safeclarid[0]
 print("table-hse_safety_disclosure :safeclarid",safeclarid)
 
+#
 temp = testdb_test.select_one_record(sql_query_work_appointid)
 #print(temp)
 sql_query_work_appointid = temp[0]
 #jsaid
 sql_query_work_appointid = sql_query_work_appointid[0]
 print("table-hse_work_appoint：work_appointid",sql_query_work_appointid)
+
+#
+temp = testdb_test.select_one_record(sqls.sql_query_jsa_step_harm_id)
+#print(temp)
+sql_query_jsa_step_harm_id = temp[0]
+#jsaid
+sql_query_jsa_step_harm_id = sql_query_jsa_step_harm_id[0]
+print("table-hap_hse_clsh：sql_query_jsa_step_harm_id",sql_query_jsa_step_harm_id)
+
+#
+temp = testdb_test.select_one_record(sqls.sql_query_jsastepid)
+#print(temp)
+sql_query_jsastepid = temp[0]
+#jsaid
+sql_query_jsastepid = sql_query_jsastepid[0]
+print("table-hse_safety_analysis_harm：sql_query_jsastepid",sql_query_jsastepid)
+
+#
+temp = testdb_test.select_one_record(sqls.sql_query_jsa_step_measure_id)
+#print(temp)
+sql_query_jsa_step_measure_id = temp[0]
+#jsaid
+sql_query_jsa_step_measure_id = sql_query_jsa_step_measure_id[0]
+print("table-hse_safety_analysis_measure：sql_query_jsa_step_measure_id",sql_query_jsa_step_measure_id)
 # logger.info("===关闭数据库=============")
 # testdb_test.close()
 '''
