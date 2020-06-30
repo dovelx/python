@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver import Firefox,FirefoxOptions
 import re
 
-def login():
+def login1():
     print("开始登录")
     opt = FirefoxOptions()            # 创建Chrome参数对象
     opt.headless = True              # 把Chrome设置成可视化无界面模式，windows/Linux 皆可
@@ -14,13 +14,13 @@ def login():
 
     for i in range(3):
         # selenium登录测试长庆
-
+        time.sleep(i)
         driver.get("http://192.168.6.156/passports/login?service=http%3A%2F%2F192.168.6.156%2Fportals%2Fcas&tenantCode=clsh&trial=false")
         driver.find_element(By.ID, "name").send_keys("clshadmin")
         driver.find_element(By.ID, "pwd1").send_keys("1")
         driver.find_element(By.LINK_TEXT, "登录").click()
-        j=i+5
-        time.sleep(j)
+        j=i+10
+        #time.sleep(j)
         # 获取JSESSIONID1
         c = driver.get_cookies()
         for a in c:
@@ -53,9 +53,14 @@ def login():
             driver.close()
             driver.quit()
 
-    #driver.close()
+    driver.close()
     driver.quit()
     print("quit browser")
+    return cookies, csrf
+
+def login():
+    cookies = {'JSESSIONID': '2B68F4835EE482849976503AA9752908qbD7EQ'}
+    csrf = '37f02c42112d479f9cf6980a18a949b1'
     return cookies, csrf
 
 if __name__=='__main__':

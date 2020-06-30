@@ -299,6 +299,31 @@ data = {
 	"accident_possibility": "2",
 	"step_name": "步骤活动123"
 }
+data = {
+	"tableName": "hse_safety_analysis_step",
+	"qualify_level": "no_qualify",
+	"duty_name": "",
+	"jsaid": jsaidx,
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"risk_level": "01",
+	"step_type": "01",
+	"evaluate_type": "",
+	"remain_risk_accept": "",
+	"risk_value": 0,
+	"step_name": "步骤活动",
+	"risk_harm": "风险及危害",
+	"consequence": "后果",
+	"gravity": "1",
+	"accident_possibility": "1"
+}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit11.append(caseinfo.copy())

@@ -9,9 +9,9 @@ from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
 from globalpkg.global_var import sql_query_jsastepid
 from globalpkg.global_var import sql_query_jsa_step_measure_id
+from tools import getdata
 
-
-case = '长岭项目作业许可'
+case = '长岭项目作业许可-PC'
 
 #times
 starttime = tool.starttime
@@ -34,10 +34,7 @@ caseinfo['data'] = ''
 caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
-#work_appoint_id_plus1=  work_appoint_id+1
-work_appoint_id_plus1 = sql_query_work_appointid+1
-#作业预约创建使用ID
-yuyueid = work_appoint_id_plus1
+
 count =0
 #用例信息
 caseinfo['id'] = 1
@@ -88,7 +85,11 @@ data = {
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
 #送交用例信息
-
+#getdata.get_work_appoint_id(cookies=c)
+#work_appoint_id_plus1=  work_appoint_id+1
+work_appoint_id_plus1 = sql_query_work_appointid+1
+#作业预约创建使用ID
+yuyueid = work_appoint_id_plus1
 caseinfo['id'] = 2
 caseinfo['name'] = '作业预约送交'
 #送交接口地址

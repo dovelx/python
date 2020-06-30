@@ -54,7 +54,7 @@ caseinfo['url'] = url
 
 # 记录测试开始时间
 start_time = datetime.datetime.now()# 记录测试开始时间
-start_time = datetime.datetime.now()
+
 
 rs = requests.get(url=caseinfo['url'], headers=mheaders)
 # 返回值转码

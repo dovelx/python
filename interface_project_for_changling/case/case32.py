@@ -1,4 +1,4 @@
-#手机端-安全分析任务
+#手机端-安全分析任务-for pc
 
 from case.case0 import *
 

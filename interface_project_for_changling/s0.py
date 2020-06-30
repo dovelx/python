@@ -1,4 +1,4 @@
-#2020-6-4 PC和手机端主流程，单票
+#2020-6-4 PC和手机端主流程，全票
 from case.case0 import *
 
 from htmlreporter import HtmlReport
@@ -7,7 +7,7 @@ import configparser
 from runners import runner3
 #from runners import runner2
 from globalpkg.global_var import *
-from runners import pc_login
+#from runners import pc_login
 import sys
 testsuitex = []
 testsuitrul = []
@@ -15,14 +15,14 @@ testsuitrul = []
 # 临时cookies
 #cookies = {'JSESSIONID': '743109AE5B44B3A5208A69FE52A4EF0BLKmKYh'}
 
-cookies = pc_login.cookies
+#cookies = pc_login.cookies
 
 # 记录测试开始时间
 start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner3.runcase_changqing(testsuit,cookies)
+runner3.runcase_changqing(testsuit)
 #mobile
 #runner2.runcase(testsuitm)
 # 记录测试结束时间

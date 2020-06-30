@@ -8,9 +8,8 @@ import json
 import chardet
 from html.parser import HTMLParser
 
-from globalpkg.log import logger
 from globalpkg.global_var import *
-from unittesttestcase import MyUnittestTestCase
+from useless.unittesttestcase import MyUnittestTestCase
 
 __all__ = ['InterfaceUnittestTestCase']
 

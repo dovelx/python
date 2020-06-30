@@ -4,11 +4,9 @@
 __author__ = ''
 
 import json
-import time
 
-from globalpkg.log import logger
-from testcase import  TestCase
-from httpprotocol import MyHttp
+from useless.testcase import  TestCase
+from useless.httpprotocol import MyHttp
 from globalpkg.global_var import *
 
  # 根据用例行某个用例

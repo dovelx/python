@@ -1,5 +1,4 @@
 from runners import m_login
-from case import datas
 import requests
 import json
 

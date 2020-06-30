@@ -5,10 +5,9 @@ __author__ = ''
 
 import os
 
-from pyh import *
+from useless.pyh import *
 from globalpkg.log import logger
 from globalpkg.global_var import testdb
-from globalpkg.global_var import case_step_report_tb
 from globalpkg.global_var import testcase_report_tb
 from globalpkg.global_var import executed_history_id
 #from cmain import executed_history_id

@@ -7,7 +7,7 @@ import configparser
 import sys
 import mysql.connector
 
-from globalpkg.global_var import logger
+#from globalpkg.global_var import logger
 
 class MyDB:
     """动作类，获取数据库连接，配置数据库IP，端口等信息，获取数据库连接"""
@@ -27,7 +27,7 @@ class MyDB:
         try:
             self.dbconn = mysql.connector.connect(host=self.host, port=self.port, user=self.user, password=self.passwd, database=self.db_name, charset=self.charset)
         except Exception as e:
-            logger.error('初始化数据连接失败：%s' % e)
+            #logger.error('初始化数据连接失败：%s' % e)
             sys.exit()
 
     def get_host(self):
@@ -41,7 +41,7 @@ class MyDB:
         return self.dbconn
 
     def execute_create(self,query):
-        logger.info('query：%s' % query)
+        #logger.info('query：%s' % query)
         try:
             db_cursor = self.dbconn.cursor()
             db_cursor.execute(query)
@@ -49,7 +49,7 @@ class MyDB:
             db_cursor.close()
             return True
         except Exception as e:
-            logger.error('创建数据库表操作失败：%s' % e)
+            #logger.error('创建数据库表操作失败：%s' % e)
             db_cursor.execute('rollback')
             db_cursor.close()
             exit()
@@ -63,7 +63,7 @@ class MyDB:
             db_cursor.close()
             return True
         except Exception as e:
-            logger.error('执行数据库插入操作失败：%s' % e)
+            #logger.error('执行数据库插入操作失败：%s' % e)
             db_cursor.execute('rollback')
             db_cursor.close()
             exit()
@@ -78,14 +78,14 @@ class MyDB:
             db_cursor.close()
             return ('',True)
         except Exception as e:
-            logger.error('执行数据库更新操作失败：%s' % e)
+            #logger.error('执行数据库更新操作失败：%s' % e)
             db_cursor.execute('rollback')
             db_cursor.close()
             return (e, False)
 
     def select_one_record(self, query, data=""):
         '''返回结果只包含一条记录'''
-        logger.info('query：%s  data：%s' % (query, data))
+        #logger.info('query：%s  data：%s' % (query, data))
         try:
             db_cursor = self.dbconn.cursor()
             if data:
@@ -97,7 +97,7 @@ class MyDB:
             db_cursor.close()
             return (query_result,True)
         except Exception as e:
-            logger.error('执行数据库查询操作失败：%s' % e)
+            #logger.error('执行数据库查询操作失败：%s' % e)
             db_cursor.close()
             return(e,False)
 
@@ -115,7 +115,7 @@ class MyDB:
             db_cursor.close()
             return query_result
         except Exception as e:
-            logger.error('执行数据库查询操作失败：%s' % e)
+            #logger.error('执行数据库查询操作失败：%s' % e)
             db_cursor.close()
             exit()
 

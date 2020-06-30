@@ -33,22 +33,25 @@ def g(caseinfo,headers,cookies):
         return data
 def pa(caseinfo,headers,cookies):
     rs = requests.post(url=caseinfo['url'], json=caseinfo['data'], headers=headers, cookies=cookies)
-    #print("rs",rs.content)
-    # 返回值转码
-    data = rs.content.decode('utf-8')
-    # json化
-    data = json.loads(data)
-    # 获取接口返回状态
-    sta = data['status']
-    if sta == 3200:
-        #print("作业预约成功", sta)
-        caseinfo['result'] = "pass"
-        return caseinfo['result']
+    if rs.status_code == 200:
+        #print("rs",rs.content)
+        # 返回值转码
+        data = rs.content.decode('utf-8')
+        # json化
+        data = json.loads(data)
+        # 获取接口返回状态
+        sta = data['status']
+        if sta == 3200:
+            #print("作业预约成功", sta)
+            caseinfo['result'] = "pass"
+            return caseinfo['result']
+        else:
+            caseinfo['result'] = "fail"
+
+            return data
     else:
         caseinfo['result'] = "fail"
-
-        return data
-
+        return rs.status_code
 
 def pm(caseinfo,mheaders):
 

@@ -5,9 +5,8 @@ __author__ = 'laiyu'
 
 import json
 
-from globalpkg.log import logger
 from globalpkg.global_var import *
-from unittesttestcase import MyUnittestTestCase
+from useless.unittesttestcase import MyUnittestTestCase
 
 __all__ = ['GetInCoupon']
 

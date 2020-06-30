@@ -1,9 +1,7 @@
 #pc
-from case.datas import *
+from tools.datas import *
 from tools.header import headers
 from tools.header import cookie
-from globalpkg.global_var import logger
-from globalpkg.global_var import executed_history_id
 from tools import method
 from globalpkg.global_var import *
 import time

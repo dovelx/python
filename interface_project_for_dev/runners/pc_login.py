@@ -3,6 +3,7 @@ cookies = {'JSESSIONID': '3F4CFCA46A130205CB6F275B33464EF7o7BdGv'}
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Firefox,FirefoxOptions
+import time
 def login():
     opt = FirefoxOptions()            # 创建Chrome参数对象
     opt.headless = True              # 把Chrome设置成可视化无界面模式，windows/Linux 皆可
@@ -16,7 +17,7 @@ def login():
     driver.find_element(By.ID, "pwd1").send_keys("1")
     driver.find_element(By.CSS_SELECTOR, ".justUse").click()
 
-
+    time.sleep(5)
     #获取JSESSIONID
     c= driver.get_cookies()
     #print (c)

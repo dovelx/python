@@ -2,20 +2,16 @@
 # -*- coding:utf-8 -*-
 __author__ = ''
 
-import datetime
-import json
 import configparser
-import sys
 
-from globalpkg.log import logger
 from globalpkg.global_var import *
 from globalpkg.global_function import run_testcase_by_id
 from globalpkg.global_function import get_http_conf_of_project
 
 from config.runmodeconfig import RunModeConfig
-from testsuite import TestSuite
-from testplan import TestPlan
-from testproject import TestProject
+from useless.testsuite import TestSuite
+from useless.testplan import TestPlan
+from useless.testproject import TestProject
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 

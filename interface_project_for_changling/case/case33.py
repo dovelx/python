@@ -1,6 +1,17 @@
 #手机端主流程全票-全票-作业预约
 
-from case.case0 import *
+from globalpkg.global_var import sql_query_jsa_step_harm_id
+from tools import tool
+from globalpkg.global_var import tsi
+from globalpkg.global_var import workticketid
+from globalpkg.global_var import worktaskid
+from globalpkg.global_var import worktaskid1
+from globalpkg.global_var import jsaid
+from globalpkg.global_var import safeclarid
+from globalpkg.global_var import sql_query_work_appointid
+from globalpkg.global_var import sql_query_jsastepid
+from globalpkg.global_var import sql_query_jsa_step_measure_id
+from tools.getmdata import getinsert
 
 #用例信息变量定义
 testsuitm33 = []
@@ -14,13 +25,24 @@ caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 
+
+case = '长岭项目作业许可'
+
+#times
+starttime = tool.starttime
+endtime = tool.endtime
+now = tool.now
+
+#作业预约名称
+name = tool.ran_name_with_str()
+print("作业预约名称：",name)
 #作业预约
 
 caseinfo['id'] = 3301
 caseinfo['name'] = '作业预约-新增'
 #http://192.168.6.156/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardSave.json
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardSave.json'
-
+insert = getinsert()
 data = {
 	"add_attachs": [],
 	"del_attachs": [],
@@ -28,24 +50,24 @@ data = {
 		"equt_name": "",
 		"df": 0,
 		"code": "",
-		"workname": "作业任务名称",
-		"territorialdeviceid": 2000000005070,
-		"workunitname": "炼油一部",
+		"workname": name,
+		"territorialdeviceid": 2000000005066,
+		"workunitname": "中石化长岭分公司",
 		"appointendtime": endtime,
 		"wf_instance": "",
 		"iscontainfireday": "",
 		"worktaskid_no": 0,
-		"work_position_name": "脱硫区",
+		"work_position_name": "炼油北区",
 		"wf_current_user": "",
 		"plantype": "",
 		"wf_audit_time": "",
 		"tableName": "hse_work_appoint",
 		"iscontractor": "0",
-		"insert__": "37c2f7d31a534c17b0ef26901d0f9e3a",
-		"territorialunitid": 2000000005066,
-		"territorialdevicename": "脱硫装置",
+		"insert__": insert,
+		"territorialunitid": 2000000004016,
+		"territorialdevicename": "炼油一部",
 		"tenantid": 2000000001003,
-		"territorialunitname": "炼油一部",
+		"territorialunitname": "中石化长岭分公司",
 		"equipmentnumber": "",
 		"ver": 1,
 		"created_dt": now,
@@ -56,13 +78,13 @@ data = {
 		"work_appoint_id": "",
 		"standardmaintenance": "",
 		"wf_type": "",
-		"work_position_id": 2000000001499,
+		"work_position_id": 2000000001891,
 		"wf_create_user": "",
-		"territorialdevicecode": "0000000103000008",
-		"workunit": 2000000005066,
+		"territorialdevicecode": "000000010300",
+		"workunit": 2000000004016,
 		"updated_dt": now,
 		"worksite": "北京",
-		"territorialunitcode": "000000010300",
+		"territorialunitcode": "",
 		"workcontent": "",
 		"status": "draft",
 		"wf_audit_state": ""

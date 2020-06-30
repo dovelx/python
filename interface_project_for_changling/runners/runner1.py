@@ -1,7 +1,5 @@
 #pc post runner
-from case.datas import *
-from globalpkg.global_var import logger
-from globalpkg.global_var import executed_history_id
+from tools.datas import *
 from tools import method
 from globalpkg.global_var import *
 import time
