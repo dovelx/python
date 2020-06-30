@@ -112,8 +112,8 @@ sql_query_jsa_step_measure_id = temp[0]
 #jsaid
 sql_query_jsa_step_measure_id = sql_query_jsa_step_measure_id[0]
 print("table-hse_safety_analysis_measure：sql_query_jsa_step_measure_id",sql_query_jsa_step_measure_id)
-# logger.info("===关闭数据库=============")
-# testdb_test.close()
+logger.info("===关闭数据库=============")
+testdb_test.close()
 '''
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()

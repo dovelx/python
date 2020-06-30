@@ -370,7 +370,7 @@ caseinfo['id'] = 3407
 caseinfo['name'] = '作业处理-用火作业-暂停'
 #http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/pauseSaveAudit.json?reason=%E5%93%88%E5%93%88&workticketid=2000000003772
 #url = 'http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/pauseSaveAudit.json?reason=%E5%93%88%E5%93%88&workticketid=%d'%(workticketidx)
-url = 'http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/pauseSaveAudit.json?reason=%E5%93%88%E5%93%88&workticketid='+workticketidx
+url = 'http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/pauseSaveAudit.json?reason=%E5%93%88%E5%93%88&workticketid='+str(workticketidx)
 data = {
 	"mainAttributeVO": {},
 	"auditPlainLineList": [{
