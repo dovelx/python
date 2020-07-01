@@ -1,6 +1,7 @@
 #pc
 from tools.datas import *
 from tools.header import headers
+from tools.header import gheaders
 from tools.header import cookie
 from tools import method
 from globalpkg.global_var import *
@@ -20,6 +21,8 @@ def runcase(testsuit):
         if caseinfo['flag'] == "get":
             result = method.g(caseinfo,headers,cookie)
         elif caseinfo['flag'] == "gh":
+            result = method.gh(caseinfo, gheaders, cookie)
+        elif caseinfo['flag'] == "gho":
             result = method.gh(caseinfo, headers, cookie)
         elif caseinfo['flag'] == "post":
             result = method.pa(caseinfo, headers, cookie)

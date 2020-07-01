@@ -1,5 +1,9 @@
+from debbug1 import *
+
+
+
 #2020-7-1 PC端查询
-from case.case80 import *
+#from case.case80 import *
 
 #from case.case81 import *
 from htmlreporter import HtmlReport
@@ -8,18 +12,23 @@ import configparser
 from runners import runner3
 #from runners import runner2
 from globalpkg.global_var import *
+from tools import tool
 
 testsuitex = []
 testsuitrul = []
 
 
-
+#作业预约名称
+name = tool.ran_name_with_str()
+print("作业预约名称：",name)
 # 记录测试开始时间
 start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner3.runcase(testsuit80)
+testsuit = test_case_in_excel("test_case_file.xlsx")
+
+runner3.runcase(testsuit)
 #PC
 #runner3.runcase(testsuit81)
 

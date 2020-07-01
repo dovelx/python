@@ -11,7 +11,7 @@ from tools import tool
 # from globalpkg.global_var import sql_query_jsa_step_measure_id
 # from tools import getdata
 #
-# case = '长岭项目作业许可-PC-查询'
+case = '长岭项目作业许可-PC-查询'
 #
 # #times
 # starttime = tool.starttime
@@ -34,6 +34,7 @@ caseinfo['data'] = ''
 caseinfo['sign'] =''
 caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
+caseinfo['exresult'] = {}
 
 count =0
 

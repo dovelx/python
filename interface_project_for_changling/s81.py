@@ -1,7 +1,7 @@
 #2020-7-1 PC端查询
-from case.case80 import *
+#from case.case80 import *
 
-#from case.case81 import *
+from case.case81 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
@@ -19,9 +19,9 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner3.runcase(testsuit80)
+#runner3.runcase(testsuit80)
 #PC
-#runner3.runcase(testsuit81)
+runner3.runcase(testsuit81)
 
 
 
