@@ -80,11 +80,41 @@ def g(caseinfo,headers,cookies):
 
 def pa(caseinfo,headers,cookies):
     '''post 返回为json'''
+    print(caseinfo['data'])
     rs = requests.post(url=caseinfo['url'], json=caseinfo['data'], headers=headers, cookies=cookies)
     if rs.status_code == 200:
         #print("rs",rs.content)
         # 返回值转码
         data = rs.content.decode('utf-8')
+        # json化
+        data = json.loads(data)
+        # 获取接口返回状态
+        sta = data['status']
+        if sta == 3200:
+            #print("作业预约成功", sta)
+            caseinfo['result'] = "pass"
+            return caseinfo['result']
+        else:
+            caseinfo['result'] = "fail"
+            return data
+    else:
+        caseinfo['result'] = "fail"
+        return rs.status_code
+
+def pd(caseinfo,headers):
+    '''post 返回为json'''
+
+    data = str(caseinfo['data']).encode("utf-8").decode("latin1")
+    print("即将请求", data)
+    #rs = requests.post(url=caseinfo['url'], data=caseinfo['data'], headers=headers, cookies=cookies)
+    rs = requests.request("POST", url=caseinfo['url'], headers=headers, data = data)
+    if rs.status_code == 200:
+        #print("rs",rs.content)
+        # 返回值转码
+        #print(rs.text.encode('utf8'))
+        data = rs.content.decode('utf-8')
+        #data = rs.text.encode('utf8')
+        print(data)
         # json化
         data = json.loads(data)
         # 获取接口返回状态

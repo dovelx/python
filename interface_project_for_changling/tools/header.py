@@ -11,7 +11,7 @@ headers={
     'csrf': csrf,
     'X-Requested-With': 'XMLHttpRequest',
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
-    'Content-Type': 'text/plain',
+    'Content-Type': 'text/plain'
     }
 
 gheaders = {
@@ -19,3 +19,12 @@ gheaders = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
     }
+
+theaders = {
+  'Accept': 'application/json, text/javascript, */*; q=0.01',
+  'csrf': 'ce99098e0f9d4b459f7280d8d19ed693',
+  'X-Requested-With': 'XMLHttpRequest',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+  'Content-Type': 'text/plain',
+  'Cookie': 'JSESSIONID=B0DB71A3E8DD570C2CA0EC1151603A28WQrnN5'
+}

@@ -2,6 +2,7 @@
 from tools.datas import *
 from tools.header import headers
 from tools.header import gheaders
+from tools.header import theaders
 from tools.header import cookie
 from tools import method
 from globalpkg.global_var import *
@@ -17,6 +18,7 @@ def runcase(testsuit):
     for i in range(len(testsuit)):
 
         caseinfo = testsuit[i]
+        #caseinfo['data'] = caseinfo['data'].replace("\\\\", "\\")
         logger.info("执行用例id=%s,name=%s",caseinfo['id'],caseinfo['name'] )
         if caseinfo['flag'] == "get":
             result = method.g(caseinfo,headers,cookie)
@@ -26,6 +28,8 @@ def runcase(testsuit):
             result = method.gh(caseinfo, headers, cookie)
         elif caseinfo['flag'] == "post":
             result = method.pa(caseinfo, headers, cookie)
+        elif caseinfo['flag'] == "postd":
+            result = method.pd(caseinfo, theaders)
         logger.info("执行用例[id=%s,name=%s]执行结果:%s", caseinfo['id'], caseinfo['name'],result)
 
         #插入执行情况

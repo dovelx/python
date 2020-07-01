@@ -1,15 +1,21 @@
+# -*- coding: utf-8 -*-
 import xlrd
 import sys
 import os
+from globalpkg.log import logger
+import imp
+
+imp.reload(sys)
+
 
 def test_case_in_excel(test_case_file):
     test_case_file = os.path.join(os.getcwd(), test_case_file)      # 获取测试用例的路径
     if not os.path.exists(test_case_file):
-        #Logger().info('测试用例excel文件不存在或路径有误！')
+        logger.info('测试用例excel文件不存在或路径有误！')
         sys.exit()      # 找不到指定测试文件，就退出程序 os.system("exit")是用来退出cmd的
-    test_case = xlrd.open_workbook(test_case_file)      # 读取excel文件
-    table = test_case.sheets()[0]       # 获取第一个sheet，下表从0开始
-    error_case = []     # 记录错误用例
+    test_case = xlrd.open_workbook(test_case_file,encoding_override="utf-8")      # 读取excel文件
+    table = test_case.sheets()[1]       # 获取第2个sheet，下表从0开始
+
     '''读取表格中的用例，其实就像一个二维数组'''
     for i in range(1, table.nrows):
         api_id = str(int(table.cell_value(i, 0))).replace("\n", "").replace("\r", "")
@@ -18,12 +24,14 @@ def test_case_in_excel(test_case_file):
         result = table.cell_value(i, 3).replace("\n", "").replace("\r", "")
         url = table.cell_value(i, 4).replace("\n", "").replace("\r", "")
         data = table.cell_value(i, 5).replace("\n", "").replace("\r", "")
+        #data = table.cell_value(i, 5)
+        print(data)
         sign = table.cell_value(i, 6).replace("\n", "").replace("\r", "")
         flag = table.cell_value(i, 7).replace("\n", "").replace("\r", "")
         isactive = table.cell_value(i, 8).replace("\n", "").replace("\r", "")
         exresult = table.cell_value(i, 9).replace("\n", "").replace("\r", "")
 
-        print(api_id,caseid,casename,url)
+        #print(api_id,caseid,casename,url)
 
         testsuit = []
         caseinfo = {}
@@ -31,7 +39,7 @@ def test_case_in_excel(test_case_file):
         caseinfo['name'] = ''
         caseinfo['result'] = ""
         caseinfo['url'] = ''
-        caseinfo['data'] = ''
+        caseinfo['data'] = {}
         caseinfo['sign'] = ''
         caseinfo['flag'] = ''
         caseinfo['isactive'] = ''
@@ -42,10 +50,13 @@ def test_case_in_excel(test_case_file):
         caseinfo['result'] = ""
         caseinfo['url'] = url
         caseinfo['data'] = data
+        #caseinfo['data'] =  caseinfo['data'].replace("\\","")
+        #caseinfo['data'] = caseinfo['data'].decode('utf-8')
         caseinfo['sign'] = sign
         caseinfo['flag'] = flag
         caseinfo['isactive'] = isactive
         caseinfo['exresult'] = exresult
+
         testsuit.append(caseinfo.copy())
 
 
@@ -62,9 +73,12 @@ def test_case_in_excel(test_case_file):
         #     # 访问异常，则向error_case中增加一条记录
         #     error_case.append((api_id + " " + api_name, "请求失败", api_host + api_url))
     #return error_case
+    #logger.info("%s",testsuit)
+    #testsuit = testsuit.decode('utf-8')
     return testsuit
 
 if __name__ == '__main__':
     a= test_case_in_excel("test_case_file.xlsx")
-    print(a)
+    print("\n\n",a)
+    #print("\n\n", a[0].replace("\\\\","\\"))
 
