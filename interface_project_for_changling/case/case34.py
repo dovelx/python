@@ -1,6 +1,6 @@
 #手机端主流程全票-作业处理-其他操作
 
-from case.case0 import *
+from case.case39 import *
 
 #用例信息变量定义
 testsuitm34 = []
@@ -15,58 +15,119 @@ caseinfo['flag'] = ''
 caseinfo['isactive'] = ''
 
 #作业处理-用火作业
-
+workticketidx  = workticketid +3
 caseinfo['id'] = 3401
 caseinfo['name'] = '作业处理-用火作业-气体复测'
-#http://192.168.6.156/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardSave.json
-url = 'http://192.168.6.156/m/hse_m/HSE_WORK_APPOINTAUDIT_M/cardSave.json'
+#http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/gasAudit.json?workticketid=2000000003772&workType=dh&worklevel=gb_dh_workLevel01&datatype=gas&businesstype=&detectiontype=retest
+url = 'http://192.168.6.156/m/hse_m/HSE_WORKTASK_INJOB_M/gasAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=gas&businesstype=&detectiontype=retest'%(workticketidx)
 
 data = {
-	"add_attachs": [],
-	"del_attachs": [],
-	"vo": {
-		"equt_name": "",
-		"df": 0,
-		"code": "",
-		"workname": "作业任务名称",
-		"territorialdeviceid": 2000000005070,
-		"workunitname": "炼油一部",
-		"appointendtime": endtime,
-		"wf_instance": "",
-		"iscontainfireday": "",
-		"worktaskid_no": 0,
-		"work_position_name": "脱硫区",
-		"wf_current_user": "",
-		"plantype": "",
-		"wf_audit_time": "",
-		"tableName": "hse_work_appoint",
-		"iscontractor": "0",
-		"insert__": "37c2f7d31a534c17b0ef26901d0f9e3a",
-		"territorialunitid": 2000000005066,
-		"territorialdevicename": "脱硫装置",
-		"tenantid": 2000000001003,
-		"territorialunitname": "炼油一部",
-		"equipmentnumber": "",
-		"ver": 1,
-		"created_dt": now,
-		"appointstarttime": starttime,
-		"wf_current_nodeid": "",
-		"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt",
+	"unCompleteStaticValueList": [{
+		"downlimit": 0,
+		"groupType": "3",
+		"code": "combustible",
+		"isincludeboundary": 1,
+		"preValue": "0.1",
+		"name": "可燃气",
 		"dataStatus": 0,
-		"work_appoint_id": "",
-		"standardmaintenance": "",
-		"wf_type": "",
-		"work_position_id": 2000000001499,
-		"wf_create_user": "",
-		"territorialdevicecode": "0000000103000008",
-		"workunit": 2000000005066,
-		"updated_dt": now,
-		"worksite": "北京",
-		"territorialunitcode": "000000010300",
-		"workcontent": "",
-		"status": "draft",
-		"wf_audit_state": ""
-	}
+		"value": "0.1",
+		"isShow": 1,
+		"upperlimit": 0.5
+	}, {
+		"code": "detectiontype",
+		"value": "audit"
+	}, {
+		"code": "gasdetectionid",
+		"value": ""
+	}, {
+		"code": "analysisname",
+		"value": "作业地点"
+	}, {
+		"code": "part",
+		"value": "炼油北区"
+	}, {
+		"code": "workticketid",
+		"value": workticketidx
+	}, {
+		"code": "detectiontime",
+		"value": now
+	}, {
+		"code": "iscomplete",
+		"value": "0"
+	}, {
+		"code": "created_by",
+		"value": ""
+	}, {
+		"code": "created_dt",
+		"value": ""
+	}, {
+		"code": "updated_by",
+		"value": 2000000012062
+	}, {
+		"code": "updated_dt",
+		"value": ""
+	}, {
+		"code": "tenantid",
+		"value": 2000000001003
+	}, {
+		"code": "remark",
+		"value": ""
+	}],
+	"mainAttributeVO": {
+		"cardnum": "16143013651646800519",
+		"saveApprvoalInfo": "true",
+		"person_type": "orgperson",
+		"idnumber": "",
+		"busdata": {
+			"cardnum": "16143013651646800519",
+			"person_type": "orgperson",
+			"dataStatus": 0,
+			"personid": 2000000016201,
+			"person_name": "赵成"
+		},
+		"person_name": "赵成",
+		"personid": 2000000016201,
+		"specialworktype": "",
+		"uuid": "1592961806701"
+	},
+	"auditPlainLineList": [{
+		"actiontype": "card",
+		"isexmaineable": 1,
+		"groupType": "4",
+		"code": "2000000007454",
+		"personList": [{
+			"cardnum": "16143013651646800519",
+			"saveApprvoalInfo": "true",
+			"person_type": "orgperson",
+			"idnumber": "",
+			"busdata": {
+				"cardnum": "16143013651646800519",
+				"person_type": "orgperson",
+				"dataStatus": 0,
+				"personid": 2000000016201,
+				"person_name": "赵成"
+			},
+			"person_name": "赵成",
+			"personid": 2000000016201,
+			"specialworktype": "",
+			"uuid": "1592961806701"
+		}],
+		"idnumber": "",
+		"dataStatus": 0,
+		"ismustaudit": 1,
+		"force_photo": 1,
+		"isEnd": 1,
+		"ismulti": 0,
+		"isShow": 1,
+		"auditorder": 5,
+		"isinputidnumber": 0,
+		"name": "分析人",
+		"audittype": "card",
+		"specialworktype": "",
+		"value": "",
+		"isbrushposition": 1,
+		"disporder": 5
+	}]
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -127,7 +188,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuitm34.append(caseinfo.copy())
+#testsuitm34.append(caseinfo.copy())
 
 #作业处理
 workticketidx = workticketid + 3

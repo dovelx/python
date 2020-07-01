@@ -41,13 +41,10 @@ caseinfo['id'] = 1
 caseinfo['name'] = '作业预约'
 caseinfo['isactive'] = 1
 #拼写预约URL
-#url2='http://192.168.6.156/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
 #http://192.168.6.156/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.899866420894208&contentType=json&ajax=true&tid=2000000001003
 url = 'http://192.168.6.156/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.899866420894208&contentType=json&ajax=true&tid=2000000001003'
 caseinfo['url'] = url
 #全票数据
-
-
 data = {
 	"tableName": "hse_work_appoint",
 	"iscontractor": "0",
@@ -84,6 +81,8 @@ data = {
 }
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
+
+
 #送交用例信息
 #getdata.get_work_appoint_id(cookies=c)
 #work_appoint_id_plus1=  work_appoint_id+1

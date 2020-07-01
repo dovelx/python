@@ -63,6 +63,8 @@ def get_insert_code():
     # if caseinfo['id'] == 100:
     insert = data['data']['data']['insert__']
     return insert
+
+
 if __name__ == '__main__':
 
     print(get_insert_code())

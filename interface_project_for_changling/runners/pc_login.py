@@ -59,10 +59,10 @@ def login1():
     return cookies, csrf
 
 def login():
-    cookies = {'JSESSIONID': '2B68F4835EE482849976503AA9752908qbD7EQ'}
-    csrf = '37f02c42112d479f9cf6980a18a949b1'
+    cookies = {'JSESSIONID': '7AF79B3D17B7672D9C334F759A58F3C1SvOi6Z'}
+    csrf = '52b5582b5eee48d28d840d49179b6e6d'
     return cookies, csrf
 
 if __name__=='__main__':
 
-    login()
+    login1()

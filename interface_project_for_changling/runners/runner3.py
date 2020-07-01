@@ -9,20 +9,20 @@ from tools.gethost import pro
 #from runners import m_login
 #post.p(caseinfo,url2,headers,cookies,data)
 
-def runcase(testsuit,cookies):
+def runcase(testsuit):
 
-    print(cookies)
+    #print(cookies)
     print('用例总数：',len(testsuit))
     for i in range(len(testsuit)):
 
         caseinfo = testsuit[i]
         logger.info("执行用例id=%s,name=%s",caseinfo['id'],caseinfo['name'] )
         if caseinfo['flag'] == "get":
-            result = method.g(caseinfo,gheaders,cookies)
+            result = method.g(caseinfo,headers,cookie)
         elif caseinfo['flag'] == "gh":
-            result = method.gh(caseinfo, headers, cookies)
+            result = method.gh(caseinfo, headers, cookie)
         elif caseinfo['flag'] == "post":
-            result = method.pa(caseinfo, headers, cookies)
+            result = method.pa(caseinfo, headers, cookie)
         logger.info("执行用例[id=%s,name=%s]执行结果:%s", caseinfo['id'], caseinfo['name'],result)
 
         #插入执行情况

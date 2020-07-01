@@ -1,12 +1,11 @@
-#2020-6-29
+#2020-7-1 PC端查询
+from case.case80 import *
 
-from case.case40 import *
-#from case.case38 import  case38
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
 from runners import runner3
-from runners import runner2
+#from runners import runner2
 from globalpkg.global_var import *
 #from runners import pc_login
 import sys
@@ -22,22 +21,12 @@ testsuitrul = []
 start_time = datetime.datetime.now()
 
 #执行测试
-
-#mobile-手机端预约
-runner2.runmobile(testsuitm33)
-#PC-安全分析
-runner3.runcase_changqing(testsuit1)
-#mobile-安全分析确认
-runner2.runmobile(testsuitm36)
-#mobile-作业任务添加
-runner2.runmobile(testsuitm37)
-#pc-作业票提交
-
-runner3.runcase_changqing(testsuit38)
-#mobile-现场确认作业票
-#runner2.runmobile(testsuitm39)
-#mobile-作业票关闭
-#runner2.runmobile(testsuitm40)
+#PC
+runner3.runcase(testsuit80)
+#mobile
+#runner2.runmobile(testsuitm2)
+#mobile
+#runner2.runmobileg(testsuitm60)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告
