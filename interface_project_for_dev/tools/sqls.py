@@ -1,6 +1,8 @@
 #pc
 #操作hse_work_ticket表，获取workticketid获取
-ticket = 'select workticketid from hse_work_ticket order by workticketid desc limit 1'
+#ticket = 'select workticketid from hse_work_ticket order by workticketid desc limit 1'
+#SELECT workticketid FROM `hap_hse_cqsh`.`hse_work_ticket` WHERE worktype = 'shex' ORDER BY `created_dt` DESC LIMIT 1
+ticket = "SELECT workticketid FROM `hap_hse_cqsh`.`hse_work_ticket` WHERE worktype = 'shex' ORDER BY `created_dt` DESC LIMIT 1"
 ts = 'select ts from hse_work_ticket order by ts desc limit 1'
 #连续号-作业任务添加ID
 worktaskid1 = 'select worktaskid from hse_work_ticket ORDER BY created_dt desc limit 1'

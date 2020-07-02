@@ -15,7 +15,7 @@ testsuitrul = []
 # 临时cookies
 #cookies = {'JSESSIONID': '743109AE5B44B3A5208A69FE52A4EF0BLKmKYh'}
 
-cookies = pc_login.cookies
+cookies = pc_login.login()
 
 # 记录测试开始时间
 start_time = datetime.datetime.now()
