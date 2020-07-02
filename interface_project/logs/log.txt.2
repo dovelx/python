@@ -1,0 +1,313 @@
+2018-01-25 09:20:37,907 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Error",reason="Traceback (most recent call last):  File C:\Python34\lib\urllib\parse.py, line 760, in urlencode    raise TypeErrorTypeErrorDuring handling of the above exception, another exception occurred:Traceback (most recent call last):  File D:\BaiduYunDownload\API\interface_autotest_project\interface_project\interface\sug.py, line 20, in test_taobao_sug    self.params = urllib.parse.urlencode(self.params)  File C:\Python34\lib\urllib\parse.py, line 768, in urlencode    or mapping object).with_traceback(tb)  File C:\Python34\lib\urllib\parse.py, line 760, in urlencode    raise TypeErrorTypeError: not a valid non-string sequence or mapping object", protocol_method="get", runtime="2018-01-25 09:20:37" WHERE executed_history_id = 20180125092036 AND testcase_id = 28 AND step_id = 30 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:20:38,013 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:20:38,013 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Error", runtime="2018-01-25 09:20:37" WHERE executed_history_id = 20180125092036 and testcase_id = 28 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:20:38,113 testsuite.py[line: 72] INFO: 测试套件[id=27 ,name=taobaoapi]已执行完
+2018-01-25 09:20:38,136 main.py[line: 205] INFO: 正在读取套件[id=31，name=tangapi]的协议，host，端口配置...
+2018-01-25 09:20:38,137 main.py[line: 223] INFO: 正在执行测试套件[id=31 ,name=tangapi]
+2018-01-25 09:20:38,137 testsuite.py[line: 41] INFO: 正在获取套件[id=31，name=tangapi]的测试用例...
+2018-01-25 09:20:38,212 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:20:38,213 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125092036', '32', 'rev', 'tangapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:20:38,303 testsuite.py[line: 61] INFO: 开始执行测试用例[id=32，name=rev]
+2018-01-25 09:20:38,303 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:20:38,303 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125092036', '32', 'rev', '无计划', '项目1', 34, 1, '', 'http', '192.168.0.167', '8080', '{"class":"TANGRev","function":"test_rev","method":"get","url":"/Tang_Common/rs/resource/getReserveCode","params":"{\\"requestorId\\":\\"Microsoft\\",\\"reserveCodeCount\\":2}"}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:20:38,430 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:20:38,431 casestep.py[line: 59] INFO: 调用的方法为：TANGRev.test_rev
+2018-01-25 09:20:38,431 httpprotocol.py[line: 64] INFO: 发起的请求为：http://192.168.0.167:8080/Tang_Common/rs/resource/getReserveCode
+2018-01-25 09:20:38,451 tang.py[line: 32] INFO: 正在解析返回结果
+2018-01-25 09:20:38,452 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:20:38,452 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:20:38" WHERE executed_history_id = 20180125092036 AND testcase_id = 32 AND step_id = 34 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:20:38,540 testcase.py[line: 100] INFO: 测试用例[id=32, name=rev]执行成功
+2018-01-25 09:20:38,540 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:20:38,541 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:20:38" WHERE executed_history_id = 20180125092036 and testcase_id = 32 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:20:38,606 testsuite.py[line: 72] INFO: 测试套件[id=31 ,name=tangapi]已执行完
+2018-01-25 09:20:38,606 main.py[line: 229] INFO: 接口测试已执行完成，正在关闭数据库连接
+2018-01-25 09:20:38,607 htmlreporter.py[line: 37] INFO: 正在查询测试用例总数
+2018-01-25 09:20:38,608 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20180125092036',)
+2018-01-25 09:20:38,650 htmlreporter.py[line: 43] INFO: 正在查询执行通过的用例数
+2018-01-25 09:20:38,650 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20180125092036')
+2018-01-25 09:20:38,693 htmlreporter.py[line: 49] INFO: 正在查询执行失败的用例数
+2018-01-25 09:20:38,694 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20180125092036')
+2018-01-25 09:20:38,743 htmlreporter.py[line: 55] INFO: 正在查询执行出错的用例数
+2018-01-25 09:20:38,743 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Error', '20180125092036')
+2018-01-25 09:20:38,779 htmlreporter.py[line: 61] INFO: 正在查询未执行的用例数
+2018-01-25 09:20:38,780 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Block', '20180125092036')
+2018-01-25 09:20:38,816 htmlreporter.py[line: 72] INFO: 正在查询已运的测试计划
+2018-01-25 09:20:38,816 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125092036',)
+2018-01-25 09:20:38,857 htmlreporter.py[line: 98] INFO: 正在查询测试计划[project：项目1, testplan：无计划]的测试用例执行结果
+2018-01-25 09:20:38,857 mydb.py[line: 92] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '无计划', '20180125092036')
+2018-01-25 09:20:38,892 htmlreporter.py[line: 105] INFO: 正在记录测试测试计划[project：项目1, testplan：无计划]的测试用例运行结果到测试报告
+2018-01-25 09:20:38,892 htmlreporter.py[line: 115] INFO: 正在查询已运的测试计划
+2018-01-25 09:20:38,892 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125092036',)
+2018-01-25 09:20:38,931 htmlreporter.py[line: 127] INFO: 正在查询测试计划[project：项目1, testplan：无计划]已运行的测试用例
+2018-01-25 09:20:38,931 mydb.py[line: 92] INFO: query：SELECT testcase_id, testcase_name, project, testplan FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s  GROUP BY testcase_id ORDER BY id ASC  data：('项目1', '无计划', '20180125092036')
+2018-01-25 09:20:38,976 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=20]步骤运行结果
+2018-01-25 09:20:38,976 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 20, '20180125092036')
+2018-01-25 09:20:39,066 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=28]步骤运行结果
+2018-01-25 09:20:39,067 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 28, '20180125092036')
+2018-01-25 09:20:39,103 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=32]步骤运行结果
+2018-01-25 09:20:39,103 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 32, '20180125092036')
+2018-01-25 09:20:39,173 htmlreporter.py[line: 177] INFO: 正在设置测试报告结果文件名
+2018-01-25 09:20:39,173 htmlreporter.py[line: 187] INFO: 测试报告文件名所在路径为：D:\\BaiduYunDownload\\API\\interface_autotest_project\\interface_project\\testreport\\test_report20180125092036.html
+2018-01-25 09:20:39,174 htmlreporter.py[line: 180] INFO: 正在生成测试报告
+2018-01-25 09:20:39,175 main.py[line: 251] INFO: 生成测试报告成功
+2018-01-25 09:54:07,074 test.py[line: 17] INFO: 正在发起GET请求...
+2018-01-25 09:54:35,503 test.py[line: 17] INFO: 正在发起GET请求...
+2018-01-25 09:54:40,122 globalpy.py[line: 13] INFO: init db
+2018-01-25 09:54:40,281 globalpy.py[line: 16] INFO: now get testlink
+2018-01-25 09:54:40,935 main.py[line: 66] INFO: 正在读取运行模式配置
+2018-01-25 09:54:40,947 main.py[line: 187] INFO: 按套件运行测试
+2018-01-25 09:54:40,947 main.py[line: 189] INFO: 已获取配置的套件id列表：[16,27,31]
+2018-01-25 09:54:41,061 main.py[line: 205] INFO: 正在读取套件[id=16，name=访问WebTours首页接口]的协议，host，端口配置...
+2018-01-25 09:54:41,062 main.py[line: 223] INFO: 正在执行测试套件[id=16 ,name=访问WebTours首页接口]
+2018-01-25 09:54:41,062 testsuite.py[line: 41] INFO: 正在获取套件[id=16，name=访问WebTours首页接口]的测试用例...
+2018-01-25 09:54:41,149 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:54:41,149 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '20', '获取ip信息接口', '访问WebTours首页接口', '无计划', '项目1', 'Block', '')
+2018-01-25 09:54:41,261 testsuite.py[line: 61] INFO: 开始执行测试用例[id=20，name=获取ip信息接口]
+2018-01-25 09:54:41,261 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:54:41,261 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '20', '获取ip信息接口', '无计划', '项目1', 22, 1, '', 'http', 'ip.ws.126.net', '80', '{"class":"IPQuery","function":"test_get_address_info","method":"get","url":"/ipquery","params":""}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:54:41,382 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:54:41,382 casestep.py[line: 59] INFO: 调用的方法为：IPQuery.test_get_address_info
+2018-01-25 09:54:41,383 ipquery.py[line: 24] INFO: 正在发起GET请求...
+2018-01-25 09:54:41,383 httpprotocol.py[line: 50] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2018-01-25 09:54:41,513 ipquery.py[line: 30] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095440 and testcase_id = 20 and step_id = 22
+2018-01-25 09:54:41,513 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095440 and testcase_id = 20 and step_id = 22
+2018-01-25 09:54:41,668 ipquery.py[line: 33] INFO: 正在解析返回结果
+2018-01-25 09:54:41,668 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:54:41,668 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:54:41" WHERE executed_history_id = 20180125095440 AND testcase_id = 20 AND step_id = 22 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:41,773 testcase.py[line: 100] INFO: 测试用例[id=20, name=获取ip信息接口]执行成功
+2018-01-25 09:54:41,773 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:54:41,773 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:54:41" WHERE executed_history_id = 20180125095440 and testcase_id = 20 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:42,335 testsuite.py[line: 72] INFO: 测试套件[id=16 ,name=访问WebTours首页接口]已执行完
+2018-01-25 09:54:42,363 main.py[line: 205] INFO: 正在读取套件[id=27，name=taobaoapi]的协议，host，端口配置...
+2018-01-25 09:54:42,364 main.py[line: 223] INFO: 正在执行测试套件[id=27 ,name=taobaoapi]
+2018-01-25 09:54:42,364 testsuite.py[line: 41] INFO: 正在获取套件[id=27，name=taobaoapi]的测试用例...
+2018-01-25 09:54:42,418 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:54:42,419 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '28', '淘宝建议', 'taobaoapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:54:42,603 testsuite.py[line: 61] INFO: 开始执行测试用例[id=28，name=淘宝建议]
+2018-01-25 09:54:42,604 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:54:42,604 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '28', '淘宝建议', '无计划', '项目1', 30, 1, '', 'https', 'suggest.taobao.com', '80', '{"class":"Sug","function":"test_taobao_sug","method":"get","url":"/sug","params":"code=utf-8,q=iphone,callback=cb"}', '{"result":[["iphonex手机壳","1794403"],["iphone7plus手机壳","3768908"],["iphone7手机壳","3952600"],["iphone8plus手机壳","2262648"],["iphone x","1733165"],["iphone6手机壳","2219960"],["iphone8","1757315"],["iphone7","3721542"],["iphone8手机壳","2423543"],["iphone6splus手机壳","3260072"]],"tmall":"iphone"}', 'Block', '', '')
+2018-01-25 09:54:42,832 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:54:42,832 casestep.py[line: 59] INFO: 调用的方法为：Sug.test_taobao_sug
+2018-01-25 09:54:42,833 sug.py[line: 22] INFO: 正在发起GET请求...
+2018-01-25 09:54:42,833 httpprotocol.py[line: 50] INFO: 发起的请求为：https://suggest.taobao.com:80/sugc
+2018-01-25 09:54:43,783 httpprotocol.py[line: 57] ERROR: 发送请求失败，原因：<urlopen error [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:600)>
+2018-01-25 09:54:43,783 sug.py[line: 25] INFO: 正在分析返回结果
+2018-01-25 09:54:43,784 testcase.py[line: 68] ERROR: 步骤[1]执行出错,停止执行用例[id=28, name=淘宝建议]
+2018-01-25 09:54:43,784 testcase.py[line: 74] INFO: 正在更新步骤执行结果
+2018-01-25 09:54:43,784 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Error",reason="Traceback (most recent call last):  File D:\BaiduYunDownload\API\interface_autotest_project\interface_project\interface\sug.py, line 27, in test_taobao_sug    response = response.decode(utf-8)AttributeError: NoneType object has no attribute decode", protocol_method="get", runtime="2018-01-25 09:54:42" WHERE executed_history_id = 20180125095440 AND testcase_id = 28 AND step_id = 30 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:43,871 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:54:43,871 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Error", runtime="2018-01-25 09:54:42" WHERE executed_history_id = 20180125095440 and testcase_id = 28 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:43,973 testsuite.py[line: 72] INFO: 测试套件[id=27 ,name=taobaoapi]已执行完
+2018-01-25 09:54:44,043 main.py[line: 205] INFO: 正在读取套件[id=31，name=tangapi]的协议，host，端口配置...
+2018-01-25 09:54:44,046 main.py[line: 223] INFO: 正在执行测试套件[id=31 ,name=tangapi]
+2018-01-25 09:54:44,046 testsuite.py[line: 41] INFO: 正在获取套件[id=31，name=tangapi]的测试用例...
+2018-01-25 09:54:44,168 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:54:44,168 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '32', 'rev', 'tangapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:54:44,286 testsuite.py[line: 61] INFO: 开始执行测试用例[id=32，name=rev]
+2018-01-25 09:54:44,286 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:54:44,286 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095440', '32', 'rev', '无计划', '项目1', 34, 1, '', 'http', '192.168.0.167', '8080', '{"class":"TANGRev","function":"test_rev","method":"get","url":"/Tang_Common/rs/resource/getReserveCode","params":"{\\"requestorId\\":\\"Microsoft\\",\\"reserveCodeCount\\":2}"}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:54:44,426 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:54:44,426 casestep.py[line: 59] INFO: 调用的方法为：TANGRev.test_rev
+2018-01-25 09:54:44,426 httpprotocol.py[line: 64] INFO: 发起的请求为：http://192.168.0.167:8080/Tang_Common/rs/resource/getReserveCode
+2018-01-25 09:54:44,452 tang.py[line: 32] INFO: 正在解析返回结果
+2018-01-25 09:54:44,452 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:54:44,452 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:54:44" WHERE executed_history_id = 20180125095440 AND testcase_id = 32 AND step_id = 34 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:44,630 testcase.py[line: 100] INFO: 测试用例[id=32, name=rev]执行成功
+2018-01-25 09:54:44,631 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:54:44,631 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:54:44" WHERE executed_history_id = 20180125095440 and testcase_id = 32 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:54:44,753 testsuite.py[line: 72] INFO: 测试套件[id=31 ,name=tangapi]已执行完
+2018-01-25 09:54:44,754 main.py[line: 229] INFO: 接口测试已执行完成，正在关闭数据库连接
+2018-01-25 09:54:44,755 htmlreporter.py[line: 37] INFO: 正在查询测试用例总数
+2018-01-25 09:54:44,755 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20180125095440',)
+2018-01-25 09:54:44,831 htmlreporter.py[line: 43] INFO: 正在查询执行通过的用例数
+2018-01-25 09:54:44,831 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20180125095440')
+2018-01-25 09:54:45,049 htmlreporter.py[line: 49] INFO: 正在查询执行失败的用例数
+2018-01-25 09:54:45,049 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20180125095440')
+2018-01-25 09:54:45,211 htmlreporter.py[line: 55] INFO: 正在查询执行出错的用例数
+2018-01-25 09:54:45,212 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Error', '20180125095440')
+2018-01-25 09:54:45,397 htmlreporter.py[line: 61] INFO: 正在查询未执行的用例数
+2018-01-25 09:54:45,398 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Block', '20180125095440')
+2018-01-25 09:54:45,492 htmlreporter.py[line: 72] INFO: 正在查询已运的测试计划
+2018-01-25 09:54:45,492 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125095440',)
+2018-01-25 09:54:45,565 htmlreporter.py[line: 98] INFO: 正在查询测试计划[project：项目1, testplan：无计划]的测试用例执行结果
+2018-01-25 09:54:45,566 mydb.py[line: 92] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '无计划', '20180125095440')
+2018-01-25 09:54:45,619 htmlreporter.py[line: 105] INFO: 正在记录测试测试计划[project：项目1, testplan：无计划]的测试用例运行结果到测试报告
+2018-01-25 09:54:45,620 htmlreporter.py[line: 115] INFO: 正在查询已运的测试计划
+2018-01-25 09:54:45,620 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125095440',)
+2018-01-25 09:54:45,685 htmlreporter.py[line: 127] INFO: 正在查询测试计划[project：项目1, testplan：无计划]已运行的测试用例
+2018-01-25 09:54:45,686 mydb.py[line: 92] INFO: query：SELECT testcase_id, testcase_name, project, testplan FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s  GROUP BY testcase_id ORDER BY id ASC  data：('项目1', '无计划', '20180125095440')
+2018-01-25 09:54:45,763 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=20]步骤运行结果
+2018-01-25 09:54:45,764 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 20, '20180125095440')
+2018-01-25 09:54:45,880 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=28]步骤运行结果
+2018-01-25 09:54:45,880 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 28, '20180125095440')
+2018-01-25 09:54:45,939 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=32]步骤运行结果
+2018-01-25 09:54:45,939 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 32, '20180125095440')
+2018-01-25 09:54:45,973 htmlreporter.py[line: 177] INFO: 正在设置测试报告结果文件名
+2018-01-25 09:54:45,973 htmlreporter.py[line: 187] INFO: 测试报告文件名所在路径为：D:\\BaiduYunDownload\\API\\interface_autotest_project\\interface_project\\testreport\\test_report20180125095440.html
+2018-01-25 09:54:45,974 htmlreporter.py[line: 180] INFO: 正在生成测试报告
+2018-01-25 09:54:46,013 main.py[line: 251] INFO: 生成测试报告成功
+2018-01-25 09:56:08,080 globalpy.py[line: 13] INFO: init db
+2018-01-25 09:56:08,203 globalpy.py[line: 16] INFO: now get testlink
+2018-01-25 09:56:08,263 main.py[line: 66] INFO: 正在读取运行模式配置
+2018-01-25 09:56:08,264 main.py[line: 187] INFO: 按套件运行测试
+2018-01-25 09:56:08,265 main.py[line: 189] INFO: 已获取配置的套件id列表：[16,27,31]
+2018-01-25 09:56:08,360 main.py[line: 205] INFO: 正在读取套件[id=16，name=访问WebTours首页接口]的协议，host，端口配置...
+2018-01-25 09:56:08,361 main.py[line: 223] INFO: 正在执行测试套件[id=16 ,name=访问WebTours首页接口]
+2018-01-25 09:56:08,361 testsuite.py[line: 41] INFO: 正在获取套件[id=16，name=访问WebTours首页接口]的测试用例...
+2018-01-25 09:56:08,418 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:56:08,419 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '20', '获取ip信息接口', '访问WebTours首页接口', '无计划', '项目1', 'Block', '')
+2018-01-25 09:56:08,527 testsuite.py[line: 61] INFO: 开始执行测试用例[id=20，name=获取ip信息接口]
+2018-01-25 09:56:08,527 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:56:08,528 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '20', '获取ip信息接口', '无计划', '项目1', 22, 1, '', 'http', 'ip.ws.126.net', '80', '{"class":"IPQuery","function":"test_get_address_info","method":"get","url":"/ipquery","params":""}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:56:08,623 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:56:08,623 casestep.py[line: 59] INFO: 调用的方法为：IPQuery.test_get_address_info
+2018-01-25 09:56:08,624 ipquery.py[line: 24] INFO: 正在发起GET请求...
+2018-01-25 09:56:08,624 httpprotocol.py[line: 50] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2018-01-25 09:56:08,725 ipquery.py[line: 30] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095608 and testcase_id = 20 and step_id = 22
+2018-01-25 09:56:08,725 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095608 and testcase_id = 20 and step_id = 22
+2018-01-25 09:56:08,774 ipquery.py[line: 33] INFO: 正在解析返回结果
+2018-01-25 09:56:08,774 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:56:08,775 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:56:08" WHERE executed_history_id = 20180125095608 AND testcase_id = 20 AND step_id = 22 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:08,831 testcase.py[line: 100] INFO: 测试用例[id=20, name=获取ip信息接口]执行成功
+2018-01-25 09:56:08,831 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:56:08,831 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:56:08" WHERE executed_history_id = 20180125095608 and testcase_id = 20 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:08,890 testsuite.py[line: 72] INFO: 测试套件[id=16 ,name=访问WebTours首页接口]已执行完
+2018-01-25 09:56:08,954 main.py[line: 205] INFO: 正在读取套件[id=27，name=taobaoapi]的协议，host，端口配置...
+2018-01-25 09:56:08,955 main.py[line: 223] INFO: 正在执行测试套件[id=27 ,name=taobaoapi]
+2018-01-25 09:56:08,955 testsuite.py[line: 41] INFO: 正在获取套件[id=27，name=taobaoapi]的测试用例...
+2018-01-25 09:56:08,998 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:56:08,998 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '28', '淘宝建议', 'taobaoapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:56:09,075 testsuite.py[line: 61] INFO: 开始执行测试用例[id=28，name=淘宝建议]
+2018-01-25 09:56:09,075 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:56:09,075 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '28', '淘宝建议', '无计划', '项目1', 30, 1, '', 'https', 'suggest.taobao.com', '80', '{"class":"Sug","function":"test_taobao_sug","method":"get","url":"/sug","params":"?code=utf-8&amp;q=iphone&amp;callback=cb"}', '{"result":[["iphonex手机壳","1794403"],["iphone7plus手机壳","3768908"],["iphone7手机壳","3952600"],["iphone8plus手机壳","2262648"],["iphone x","1733165"],["iphone6手机壳","2219960"],["iphone8","1757315"],["iphone7","3721542"],["iphone8手机壳","2423543"],["iphone6splus手机壳","3260072"]],"tmall":"iphone"}', 'Block', '', '')
+2018-01-25 09:56:09,177 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:56:09,177 casestep.py[line: 59] INFO: 调用的方法为：Sug.test_taobao_sug
+2018-01-25 09:56:09,177 sug.py[line: 22] INFO: 正在发起GET请求...
+2018-01-25 09:56:09,177 httpprotocol.py[line: 50] INFO: 发起的请求为：https://suggest.taobao.com:80/sug?
+2018-01-25 09:56:09,987 httpprotocol.py[line: 57] ERROR: 发送请求失败，原因：<urlopen error [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:600)>
+2018-01-25 09:56:09,987 sug.py[line: 25] INFO: 正在分析返回结果
+2018-01-25 09:56:09,988 testcase.py[line: 68] ERROR: 步骤[1]执行出错,停止执行用例[id=28, name=淘宝建议]
+2018-01-25 09:56:09,988 testcase.py[line: 74] INFO: 正在更新步骤执行结果
+2018-01-25 09:56:09,988 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Error",reason="Traceback (most recent call last):  File D:\BaiduYunDownload\API\interface_autotest_project\interface_project\interface\sug.py, line 27, in test_taobao_sug    response = response.decode(utf-8)AttributeError: NoneType object has no attribute decode", protocol_method="get", runtime="2018-01-25 09:56:09" WHERE executed_history_id = 20180125095608 AND testcase_id = 28 AND step_id = 30 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:10,046 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:56:10,046 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Error", runtime="2018-01-25 09:56:09" WHERE executed_history_id = 20180125095608 and testcase_id = 28 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:10,108 testsuite.py[line: 72] INFO: 测试套件[id=27 ,name=taobaoapi]已执行完
+2018-01-25 09:56:10,203 main.py[line: 205] INFO: 正在读取套件[id=31，name=tangapi]的协议，host，端口配置...
+2018-01-25 09:56:10,204 main.py[line: 223] INFO: 正在执行测试套件[id=31 ,name=tangapi]
+2018-01-25 09:56:10,204 testsuite.py[line: 41] INFO: 正在获取套件[id=31，name=tangapi]的测试用例...
+2018-01-25 09:56:10,275 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:56:10,278 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '32', 'rev', 'tangapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:56:10,374 testsuite.py[line: 61] INFO: 开始执行测试用例[id=32，name=rev]
+2018-01-25 09:56:10,374 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:56:10,374 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095608', '32', 'rev', '无计划', '项目1', 34, 1, '', 'http', '192.168.0.167', '8080', '{"class":"TANGRev","function":"test_rev","method":"get","url":"/Tang_Common/rs/resource/getReserveCode","params":"{\\"requestorId\\":\\"Microsoft\\",\\"reserveCodeCount\\":2}"}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:56:10,454 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:56:10,454 casestep.py[line: 59] INFO: 调用的方法为：TANGRev.test_rev
+2018-01-25 09:56:10,454 httpprotocol.py[line: 64] INFO: 发起的请求为：http://192.168.0.167:8080/Tang_Common/rs/resource/getReserveCode
+2018-01-25 09:56:10,464 tang.py[line: 32] INFO: 正在解析返回结果
+2018-01-25 09:56:10,465 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:56:10,465 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:56:10" WHERE executed_history_id = 20180125095608 AND testcase_id = 32 AND step_id = 34 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:10,522 testcase.py[line: 100] INFO: 测试用例[id=32, name=rev]执行成功
+2018-01-25 09:56:10,522 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:56:10,522 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:56:10" WHERE executed_history_id = 20180125095608 and testcase_id = 32 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:56:10,585 testsuite.py[line: 72] INFO: 测试套件[id=31 ,name=tangapi]已执行完
+2018-01-25 09:56:10,585 main.py[line: 229] INFO: 接口测试已执行完成，正在关闭数据库连接
+2018-01-25 09:56:10,586 htmlreporter.py[line: 37] INFO: 正在查询测试用例总数
+2018-01-25 09:56:10,586 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20180125095608',)
+2018-01-25 09:56:10,624 htmlreporter.py[line: 43] INFO: 正在查询执行通过的用例数
+2018-01-25 09:56:10,625 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20180125095608')
+2018-01-25 09:56:10,660 htmlreporter.py[line: 49] INFO: 正在查询执行失败的用例数
+2018-01-25 09:56:10,661 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20180125095608')
+2018-01-25 09:56:10,699 htmlreporter.py[line: 55] INFO: 正在查询执行出错的用例数
+2018-01-25 09:56:10,699 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Error', '20180125095608')
+2018-01-25 09:56:10,736 htmlreporter.py[line: 61] INFO: 正在查询未执行的用例数
+2018-01-25 09:56:10,737 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Block', '20180125095608')
+2018-01-25 09:56:10,774 htmlreporter.py[line: 72] INFO: 正在查询已运的测试计划
+2018-01-25 09:56:10,774 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125095608',)
+2018-01-25 09:56:10,830 htmlreporter.py[line: 98] INFO: 正在查询测试计划[project：项目1, testplan：无计划]的测试用例执行结果
+2018-01-25 09:56:10,830 mydb.py[line: 92] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '无计划', '20180125095608')
+2018-01-25 09:56:10,917 htmlreporter.py[line: 105] INFO: 正在记录测试测试计划[project：项目1, testplan：无计划]的测试用例运行结果到测试报告
+2018-01-25 09:56:10,918 htmlreporter.py[line: 115] INFO: 正在查询已运的测试计划
+2018-01-25 09:56:10,918 mydb.py[line: 92] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20180125095608',)
+2018-01-25 09:56:11,018 htmlreporter.py[line: 127] INFO: 正在查询测试计划[project：项目1, testplan：无计划]已运行的测试用例
+2018-01-25 09:56:11,018 mydb.py[line: 92] INFO: query：SELECT testcase_id, testcase_name, project, testplan FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s  GROUP BY testcase_id ORDER BY id ASC  data：('项目1', '无计划', '20180125095608')
+2018-01-25 09:56:11,071 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=20]步骤运行结果
+2018-01-25 09:56:11,071 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 20, '20180125095608')
+2018-01-25 09:56:11,180 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=28]步骤运行结果
+2018-01-25 09:56:11,180 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 28, '20180125095608')
+2018-01-25 09:56:11,267 htmlreporter.py[line: 158] INFO: 正在查询测试用例[id=32]步骤运行结果
+2018-01-25 09:56:11,267 mydb.py[line: 92] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '无计划', 32, '20180125095608')
+2018-01-25 09:56:11,306 htmlreporter.py[line: 177] INFO: 正在设置测试报告结果文件名
+2018-01-25 09:56:11,306 htmlreporter.py[line: 187] INFO: 测试报告文件名所在路径为：D:\\BaiduYunDownload\\API\\interface_autotest_project\\interface_project\\testreport\\test_report20180125095608.html
+2018-01-25 09:56:11,306 htmlreporter.py[line: 180] INFO: 正在生成测试报告
+2018-01-25 09:56:11,307 main.py[line: 251] INFO: 生成测试报告成功
+2018-01-25 09:57:35,865 globalpy.py[line: 13] INFO: init db
+2018-01-25 09:57:35,977 globalpy.py[line: 16] INFO: now get testlink
+2018-01-25 09:57:36,037 main.py[line: 66] INFO: 正在读取运行模式配置
+2018-01-25 09:57:36,039 main.py[line: 187] INFO: 按套件运行测试
+2018-01-25 09:57:36,039 main.py[line: 189] INFO: 已获取配置的套件id列表：[16,27,31]
+2018-01-25 09:57:36,086 main.py[line: 205] INFO: 正在读取套件[id=16，name=访问WebTours首页接口]的协议，host，端口配置...
+2018-01-25 09:57:36,087 main.py[line: 223] INFO: 正在执行测试套件[id=16 ,name=访问WebTours首页接口]
+2018-01-25 09:57:36,087 testsuite.py[line: 41] INFO: 正在获取套件[id=16，name=访问WebTours首页接口]的测试用例...
+2018-01-25 09:57:36,128 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:57:36,128 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '20', '获取ip信息接口', '访问WebTours首页接口', '无计划', '项目1', 'Block', '')
+2018-01-25 09:57:36,283 testsuite.py[line: 61] INFO: 开始执行测试用例[id=20，name=获取ip信息接口]
+2018-01-25 09:57:36,284 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:57:36,284 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '20', '获取ip信息接口', '无计划', '项目1', 22, 1, '', 'http', 'ip.ws.126.net', '80', '{"class":"IPQuery","function":"test_get_address_info","method":"get","url":"/ipquery","params":""}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:57:36,371 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:57:36,371 casestep.py[line: 59] INFO: 调用的方法为：IPQuery.test_get_address_info
+2018-01-25 09:57:36,372 ipquery.py[line: 24] INFO: 正在发起GET请求...
+2018-01-25 09:57:36,372 httpprotocol.py[line: 50] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2018-01-25 09:57:36,536 ipquery.py[line: 30] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095735 and testcase_id = 20 and step_id = 22
+2018-01-25 09:57:36,537 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20180125095735 and testcase_id = 20 and step_id = 22
+2018-01-25 09:57:36,604 ipquery.py[line: 33] INFO: 正在解析返回结果
+2018-01-25 09:57:36,605 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:57:36,605 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:57:36" WHERE executed_history_id = 20180125095735 AND testcase_id = 20 AND step_id = 22 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:36,664 testcase.py[line: 100] INFO: 测试用例[id=20, name=获取ip信息接口]执行成功
+2018-01-25 09:57:36,664 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:57:36,664 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:57:36" WHERE executed_history_id = 20180125095735 and testcase_id = 20 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:36,751 testsuite.py[line: 72] INFO: 测试套件[id=16 ,name=访问WebTours首页接口]已执行完
+2018-01-25 09:57:36,778 main.py[line: 205] INFO: 正在读取套件[id=27，name=taobaoapi]的协议，host，端口配置...
+2018-01-25 09:57:36,779 main.py[line: 223] INFO: 正在执行测试套件[id=27 ,name=taobaoapi]
+2018-01-25 09:57:36,779 testsuite.py[line: 41] INFO: 正在获取套件[id=27，name=taobaoapi]的测试用例...
+2018-01-25 09:57:36,824 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:57:36,824 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '28', '淘宝建议', 'taobaoapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:57:36,938 testsuite.py[line: 61] INFO: 开始执行测试用例[id=28，name=淘宝建议]
+2018-01-25 09:57:36,938 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:57:36,938 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '28', '淘宝建议', '无计划', '项目1', 30, 1, '', 'http', 'suggest.taobao.com', '80', '{"class":"Sug","function":"test_taobao_sug","method":"get","url":"/sug","params":"?code=utf-8&amp;q=iphone&amp;callback=cb"}', '{"result":[["iphonex手机壳","1794403"],["iphone7plus手机壳","3768908"],["iphone7手机壳","3952600"],["iphone8plus手机壳","2262648"],["iphone x","1733165"],["iphone6手机壳","2219960"],["iphone8","1757315"],["iphone7","3721542"],["iphone8手机壳","2423543"],["iphone6splus手机壳","3260072"]],"tmall":"iphone"}', 'Block', '', '')
+2018-01-25 09:57:37,050 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:57:37,050 casestep.py[line: 59] INFO: 调用的方法为：Sug.test_taobao_sug
+2018-01-25 09:57:37,051 sug.py[line: 22] INFO: 正在发起GET请求...
+2018-01-25 09:57:37,051 httpprotocol.py[line: 50] INFO: 发起的请求为：http://suggest.taobao.com:80/sug?
+2018-01-25 09:57:38,246 sug.py[line: 25] INFO: 正在分析返回结果
+2018-01-25 09:57:38,274 testcase.py[line: 68] ERROR: 步骤[1]执行出错,停止执行用例[id=28, name=淘宝建议]
+2018-01-25 09:57:38,275 testcase.py[line: 74] INFO: 正在更新步骤执行结果
+2018-01-25 09:57:38,275 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Error",reason="Traceback (most recent call last):  File D:\BaiduYunDownload\API\interface_autotest_project\interface_project\interface\sug.py, line 30, in test_taobao_sug    json_response = json.loads(response)  # 将返回数据转为json格式的数据  File C:\Python34\lib\json\__init__.py, line 318, in loads    return _default_decoder.decode(s)  File C:\Python34\lib\json\decoder.py, line 343, in decode    obj, end = self.raw_decode(s, idx=_w(s, 0).end())  File C:\Python34\lib\json\decoder.py, line 361, in raw_decode    raise ValueError(errmsg(Expecting value, s, err.value)) from NoneValueError: Expecting value: line 1 column 1 (char 0)", protocol_method="get", runtime="2018-01-25 09:57:37" WHERE executed_history_id = 20180125095735 AND testcase_id = 28 AND step_id = 30 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:38,339 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:57:38,339 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Error", runtime="2018-01-25 09:57:36" WHERE executed_history_id = 20180125095735 and testcase_id = 28 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:38,421 testsuite.py[line: 72] INFO: 测试套件[id=27 ,name=taobaoapi]已执行完
+2018-01-25 09:57:38,445 main.py[line: 205] INFO: 正在读取套件[id=31，name=tangapi]的协议，host，端口配置...
+2018-01-25 09:57:38,446 main.py[line: 223] INFO: 正在执行测试套件[id=31 ,name=tangapi]
+2018-01-25 09:57:38,446 testsuite.py[line: 41] INFO: 正在获取套件[id=31，name=tangapi]的测试用例...
+2018-01-25 09:57:38,519 testsuite.py[line: 58] INFO: 记录测试用例到到测试用例报表
+2018-01-25 09:57:38,520 mydb.py[line: 49] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '32', 'rev', 'tangapi', '无计划', '项目1', 'Block', '')
+2018-01-25 09:57:38,620 testsuite.py[line: 61] INFO: 开始执行测试用例[id=32，name=rev]
+2018-01-25 09:57:38,620 testcase.py[line: 47] INFO: 记录测试步骤到测试步骤报告表
+2018-01-25 09:57:38,621 mydb.py[line: 49] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20180125095735', '32', 'rev', '无计划', '项目1', 34, 1, '', 'http', '192.168.0.167', '8080', '{"class":"TANGRev","function":"test_rev","method":"get","url":"/Tang_Common/rs/resource/getReserveCode","params":"{\\"requestorId\\":\\"Microsoft\\",\\"reserveCodeCount\\":2}"}', '{"city_name":"大兴区"}', 'Block', '', '')
+2018-01-25 09:57:38,694 testcase.py[line: 59] INFO: 开始执行步骤操作[第1步]
+2018-01-25 09:57:38,694 casestep.py[line: 59] INFO: 调用的方法为：TANGRev.test_rev
+2018-01-25 09:57:38,695 httpprotocol.py[line: 64] INFO: 发起的请求为：http://192.168.0.167:8080/Tang_Common/rs/resource/getReserveCode
+2018-01-25 09:57:38,702 tang.py[line: 32] INFO: 正在解析返回结果
+2018-01-25 09:57:38,702 testcase.py[line: 97] INFO: 正在更新步骤执行结果
+2018-01-25 09:57:38,702 mydb.py[line: 62] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2018-01-25 09:57:38" WHERE executed_history_id = 20180125095735 AND testcase_id = 32 AND step_id = 34 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:38,762 testcase.py[line: 100] INFO: 测试用例[id=32, name=rev]执行成功
+2018-01-25 09:57:38,763 testsuite.py[line: 65] INFO: 正在更新用例执行结果
+2018-01-25 09:57:38,763 mydb.py[line: 62] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2018-01-25 09:57:38" WHERE executed_history_id = 20180125095735 and testcase_id = 32 AND project='项目1' AND testplan='无计划'
+2018-01-25 09:57:38,818 testsuite.py[line: 72] INFO: 测试套件[id=31 ,name=tangapi]已执行完
+2018-01-25 09:57:38,818 main.py[line: 229] INFO: 接口测试已执行完成，正在关闭数据库连接
+2018-01-25 09:57:38,819 htmlreporter.py[line: 37] INFO: 正在查询测试用例总数
+2018-01-25 09:57:38,819 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20180125095735',)
+2018-01-25 09:57:38,852 htmlreporter.py[line: 43] INFO: 正在查询执行通过的用例数
+2018-01-25 09:57:38,853 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20180125095735')
+2018-01-25 09:57:38,890 htmlreporter.py[line: 49] INFO: 正在查询执行失败的用例数
+2018-01-25 09:57:38,890 mydb.py[line: 76] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20180125095735')
+2018-01-25 09:57:38,924 htmlreporter.py[line: 55] INFO: 正在查询执行出错的用例数

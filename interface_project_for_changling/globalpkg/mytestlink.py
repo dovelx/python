@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-__author__ = 'laifuyu'
+__author__ = ''
 
 from testlink import TestLinkHelper, TestlinkAPIClient
 from globalpkg.log import logger

@@ -34,7 +34,15 @@ sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
+workticketmbcdid = sqls.workticketmbcdid
 logger.info('开始数据库查询')
+
+#
+temp = testdb_test.select_one_record(workticketmbcdid)
+workticketmbcdid = temp[0]
+#
+workticketmbcdid = workticketmbcdid[0]
+print("table-hse_ticket_mbcd:workticketmbcdid",workticketmbcdid)
 
 #
 temp = testdb_test.select_one_record(sql_query_ticket)
