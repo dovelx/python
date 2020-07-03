@@ -1,13 +1,13 @@
-#长岭项目作业许可-PC-预约-安全-申请-作业票提交
-from case.case0 import *
+#2020-6-4 PC和手机端主流程，单票
+from case.case35 import *
 
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
 from runners import runner3
-#from runners import runner2
+from runners import runner2
 from globalpkg.global_var import *
-#from runners import pc_login
+from runners import pc_login
 import sys
 testsuitex = []
 testsuitrul = []
@@ -24,7 +24,9 @@ start_time = datetime.datetime.now()
 #PC
 runner3.runcase_changqing(testsuit)
 #mobile
-#runner2.runcase(testsuitm)
+runner2.runmobile(testsuitm2)
+#mobile
+runner2.runmobile(testsuitm35)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告

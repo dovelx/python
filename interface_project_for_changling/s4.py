@@ -1,5 +1,5 @@
 #长岭项目作业许可-PC-预约-安全-申请-作业票提交
-from case.case0 import *
+from case.case4 import *
 
 from htmlreporter import HtmlReport
 from sendmail import MyMail
@@ -22,7 +22,7 @@ start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner3.runcase_changqing(testsuit)
+runner3.runcase_changqing(testsuit4)
 #mobile
 #runner2.runcase(testsuitm)
 # 记录测试结束时间

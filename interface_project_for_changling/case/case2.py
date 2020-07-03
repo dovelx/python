@@ -20,26 +20,27 @@ ts = tsi+3
 worktaskidx = worktaskid1+1
 caseinfo['id'] = 108
 caseinfo['name'] = '现场确认-用火作业-属地确认'
-#http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/measureAudit.json?workticketid=workticketidx&workType=dh&worklevel=gb_dh_workLevel01&tabtype=measure&businesstype=SDQR
+#http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/measureAudit.json?workticketid=2000000003418&workType=dh&worklevel=gb_dh_workLevel01&tabtype=measure&businesstype=SDQR
+#http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/measureAudit.json?workticketid=2000000003418&workType=dh&worklevel=gb_dh_workLevel01&tabtype=measure&businesstype=SDQR
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/measureAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&tabtype=measure&businesstype=SDQR'%(workticketidx)
 
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
-		"uuid": "1592874004509",
+		"uuid": "1593745939063",
 		"businesstype": "SDQR"
 	},
 	"auditPlainLineList": [{
@@ -47,21 +48,21 @@ data = {
 		"groupType": "4",
 		"code": "2000000007450",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
-			"uuid": "1592874004509",
+			"uuid": "1593745939063",
 			"businesstype": "SDQR"
 		}],
 		"idnumber": "",
@@ -423,6 +424,158 @@ data = {
 		"isconfirm": "1"
 	}]
 }
+# data  = {
+# 	"mainAttributeVO": {
+# 		"cardnum": "16143013651646800519",
+# 		"saveApprvoalInfo": "true",
+# 		"person_type": "orgperson",
+# 		"idnumber": "",
+# 		"busdata": {
+# 			"cardnum": "16143013651646800519",
+# 			"person_type": "orgperson",
+# 			"dataStatus": 0,
+# 			"personid": 2000000016201,
+# 			"person_name": "赵成"
+# 		},
+# 		"person_name": "赵成",
+# 		"personid": 2000000016201,
+# 		"specialworktype": "",
+# 		"uuid": "1593747091233",
+# 		"businesstype": "SDQR"
+# 	},
+# 	"auditPlainLineList": [{
+# 		"actiontype": "card",
+# 		"groupType": "4",
+# 		"code": "2000000007450",
+# 		"personList": [{
+# 			"cardnum": "16143013651646800519",
+# 			"saveApprvoalInfo": "true",
+# 			"person_type": "orgperson",
+# 			"idnumber": "",
+# 			"busdata": {
+# 				"cardnum": "16143013651646800519",
+# 				"person_type": "orgperson",
+# 				"dataStatus": 0,
+# 				"personid": 2000000016201,
+# 				"person_name": "赵成"
+# 			},
+# 			"person_name": "赵成",
+# 			"personid": 2000000016201,
+# 			"specialworktype": "",
+# 			"uuid": "1593747091233",
+# 			"businesstype": "SDQR"
+# 		}],
+# 		"idnumber": "",
+# 		"dataStatus": 0,
+# 		"ismustaudit": 1,
+# 		"force_photo": 0,
+# 		"isEnd": 1,
+# 		"ismulti": 1,
+# 		"isShow": 1,
+# 		"auditorder": 1,
+# 		"isinputidnumber": 0,
+# 		"name": "确认人",
+# 		"audittype": "card",
+# 		"specialworktype": "",
+# 		"value": "",
+# 		"isbrushposition": 1,
+# 		"disporder": 1
+# 	}],
+# 	"voList": [{
+# 		"measuredesc": "开展JSA等风险分折,制定相应的作业程序和安全措施。",
+# 		"df": 0,
+# 		"mesuresource": "qy",
+# 		"ismust": 1,
+# 		"ischecked": "true",
+# 		"ismustphoto": 0,
+# 		"tableName": "hse_work_task_measure",
+# 		"tenantid": 2000000001003,
+# 		"audittype": "",
+# 		"ismustconfirm": 0,
+# 		"signSrc": "",
+# 		"riskrepositoryid": 2000000007153,
+# 		"isselect": 0,
+# 		"ver": 1,
+# 		"created_dt": "2020-07-03 11:30:26",
+# 		"measurecode": "yhcs01",
+# 		"dataStatus": 0,
+# 		"worktype": "dh",
+# 		"isshowphoto": 0,
+# 		"person_name": "",
+# 		"prepareperson": "2000000012062",
+# 		"created_by": 2000000012062,
+# 		"measuretype": "SDQR",
+# 		"updated_dt": "2020-07-03 11:30:26",
+# 		"worktaskmeasureid": 2000000020493,
+# 		"updated_by": 2000000012062,
+# 		"preparepersonname": "长岭石化管理员",
+# 		"workticketid": 2000000003418,
+# 		"worktaskid": 2000000002910,
+# 		"isconfirm": "1"
+# 	}, {
+# 		"measuredesc": "用火设备内部的物料、构件清理干净，蒸汽吹扫或水洗合格，达到用火条件。",
+# 		"df": 0,
+# 		"mesuresource": "qy",
+# 		"ismust": 1,
+# 		"ischecked": "true",
+# 		"ismustphoto": 0,
+# 		"tableName": "hse_work_task_measure",
+# 		"tenantid": 2000000001003,
+# 		"audittype": "",
+# 		"ismustconfirm": 0,
+# 		"signSrc": "",
+# 		"riskrepositoryid": 2000000007154,
+# 		"isselect": 0,
+# 		"ver": 1,
+# 		"created_dt": "2020-07-03 11:30:26",
+# 		"measurecode": "yhcs02",
+# 		"dataStatus": 0,
+# 		"worktype": "dh",
+# 		"isshowphoto": 0,
+# 		"person_name": "",
+# 		"prepareperson": "2000000012062",
+# 		"created_by": 2000000012062,
+# 		"measuretype": "SDQR",
+# 		"updated_dt": "2020-07-03 11:30:26",
+# 		"worktaskmeasureid": 2000000020494,
+# 		"updated_by": 2000000012062,
+# 		"preparepersonname": "长岭石化管理员",
+# 		"workticketid": 2000000003418,
+# 		"worktaskid": 2000000002910,
+# 		"isconfirm": "1"
+# 	}, {
+# 		"measuredesc": "用火前及时通知班长、操作员，涉及（影响）系统、排洪沟等上下游区域通知调度和相关装置负责人。",
+# 		"df": 0,
+# 		"mesuresource": "qy",
+# 		"ismust": 1,
+# 		"ischecked": "true",
+# 		"ismustphoto": 0,
+# 		"tableName": "hse_work_task_measure",
+# 		"tenantid": 2000000001003,
+# 		"audittype": "",
+# 		"ismustconfirm": 0,
+# 		"signSrc": "",
+# 		"riskrepositoryid": 2000000007156,
+# 		"isselect": 0,
+# 		"ver": 1,
+# 		"created_dt": "2020-07-03 11:30:26",
+# 		"measurecode": "yhcs04",
+# 		"dataStatus": 0,
+# 		"worktype": "dh",
+# 		"isshowphoto": 0,
+# 		"person_name": "",
+# 		"prepareperson": "2000000012062",
+# 		"created_by": 2000000012062,
+# 		"measuretype": "SDQR",
+# 		"updated_dt": "2020-07-03 11:30:26",
+# 		"worktaskmeasureid": 2000000020496,
+# 		"updated_by": 2000000012062,
+# 		"preparepersonname": "长岭石化管理员",
+# 		"workticketid": 2000000003418,
+# 		"worktaskid": 2000000002910,
+# 		"isconfirm": "1"
+# 	}]
+# }
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuitm2.append(caseinfo.copy())
@@ -723,19 +876,19 @@ data = {
 		"value": ""
 	}],
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874193018"
 	},
@@ -745,19 +898,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007454",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874193018"
 		}],
@@ -791,19 +944,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-申请人'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874296404"
 	},
@@ -813,19 +966,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007532",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874296404"
 		}],
@@ -859,19 +1012,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-接收人'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874312468"
 	},
@@ -881,19 +1034,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007827",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874312468"
 		}],
@@ -966,19 +1119,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-生产单位监护人'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874327702"
 	},
@@ -988,19 +1141,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007457",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874327702"
 		}],
@@ -1112,19 +1265,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-基层安全管理人'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874352267"
 	},
@@ -1134,19 +1287,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007461",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874352267"
 		}],
@@ -1180,19 +1333,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-基层领导'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874364158"
 	},
@@ -1202,19 +1355,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007530",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874364158"
 		}],
@@ -1248,19 +1401,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-基层业务负责人'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874376465"
 	},
@@ -1270,19 +1423,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007529",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874376465"
 		}],
@@ -1316,19 +1469,19 @@ caseinfo['name'] = '现场确认-用火作业-会签-二级单位领导'
 url = 'http://192.168.6.156/m/hse_m/HSE_WORK_TICKET_M/signAudit.json?workticketid=%d&workType=dh&worklevel=gb_dh_workLevel01&datatype=sign&actionCode=sign'%(workticketidx)
 data = {
 	"mainAttributeVO": {
-		"cardnum": "16143013651646775869",
+		"cardnum": "16143013651646800519",
 		"saveApprvoalInfo": "true",
 		"person_type": "orgperson",
 		"idnumber": "",
 		"busdata": {
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"person_type": "orgperson",
 			"dataStatus": 0,
-			"personid": 2000000013918,
-			"person_name": "刘庆红"
+			"personid": 2000000016201,
+			"person_name": "赵成"
 		},
-		"person_name": "刘庆红",
-		"personid": 2000000013918,
+		"person_name": "赵成",
+		"personid": 2000000016201,
 		"specialworktype": "",
 		"uuid": "1592874385855"
 	},
@@ -1338,19 +1491,19 @@ data = {
 		"groupType": "4",
 		"code": "2000000007464",
 		"personList": [{
-			"cardnum": "16143013651646775869",
+			"cardnum": "16143013651646800519",
 			"saveApprvoalInfo": "true",
 			"person_type": "orgperson",
 			"idnumber": "",
 			"busdata": {
-				"cardnum": "16143013651646775869",
+				"cardnum": "16143013651646800519",
 				"person_type": "orgperson",
 				"dataStatus": 0,
-				"personid": 2000000013918,
-				"person_name": "刘庆红"
+				"personid": 2000000016201,
+				"person_name": "赵成"
 			},
-			"person_name": "刘庆红",
-			"personid": 2000000013918,
+			"person_name": "赵成",
+			"personid": 2000000016201,
 			"specialworktype": "",
 			"uuid": "1592874385855"
 		}],

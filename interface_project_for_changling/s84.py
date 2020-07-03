@@ -1,30 +1,30 @@
-#长岭项目作业许可-PC-预约-安全-申请-作业票提交
-from case.case0 import *
+#2020-7-3 PC端 列表获取
+#from case.case80 import *
 
+from case.case84 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
 from runners import runner3
 #from runners import runner2
 from globalpkg.global_var import *
-#from runners import pc_login
-import sys
+
 testsuitex = []
 testsuitrul = []
 
-# 临时cookies
-#cookies = {'JSESSIONID': '743109AE5B44B3A5208A69FE52A4EF0BLKmKYh'}
 
-#cookies = pc_login.cookies
 
 # 记录测试开始时间
 start_time = datetime.datetime.now()
 
 #执行测试
 #PC
-runner3.runcase_changqing(testsuit)
-#mobile
-#runner2.runcase(testsuitm)
+#runner3.runcase(testsuit80)
+#PC
+runner3.runcase(testsuit84)
+
+
+
 # 记录测试结束时间
 end_time = datetime.datetime.now()
 # 构造测试报告

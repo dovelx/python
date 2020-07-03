@@ -11,7 +11,7 @@ from globalpkg.global_var import sql_query_jsastepid
 from globalpkg.global_var import sql_query_jsa_step_measure_id
 from tools import getdata
 
-case = '长岭项目作业许可-PC'
+case = '长岭项目作业许可-PC-预约-安全-申请-作业票提交'
 
 #times
 starttime = tool.starttime
@@ -72,7 +72,41 @@ data = {
 	"workunit": 2000000004016,
 	"workunitname": "中石化长岭分公司",
 	"work_position_id": 2000000001891,
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
+	"workname": name,
+	"worktypename": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
+	"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt",
+	"appointstarttime": starttime,
+	"appointendtime": endtime
+}
+data = {
+	"tableName": "hse_work_appoint",
+	"iscontractor": "0",
+	"workunitname_no": "",
+	"territorialunitid": 2000000004016,
+	"worktaskid_no": 0,
+	"territorialunitname": "中石化长岭分公司",
+	"status": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 2000000001003,
+	"ts": "",
+	"isspecialcondition": "",
+	"plantype": "",
+	"wf_audit_state": "",
+	"territorialdeviceid": 2000000005066,
+	"territorialdevicename": "炼油一部",
+	"territorialdevicecode": "000000010300",
+	"work_position_id": 2000000001791,
+	"work_position_name": "炼油一部",
+	"worksite": "作业地点",
+	"workunit": 2000000004016,
+	"workunitname": "中石化长岭分公司",
 	"workname": name,
 	"worktypename": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
 	"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt",
@@ -92,7 +126,7 @@ yuyueid = work_appoint_id_plus1
 caseinfo['id'] = 2
 caseinfo['name'] = '作业预约送交'
 #送交接口地址
-#url3='http://192.168.6.156/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.30092471197648707&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
+
 #http://192.168.6.156/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=2000000000431&topFuncCode=HSE_WORK_APPOINT&dataId=2000000000431&0.06389849673294723&contentType=json&ajax=true&tid=2000000001003
 url = 'http://192.168.6.156/hse/HSE_WORK_APPOINT/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.06389849673294723&contentType=json&ajax=true&tid=2000000001003'%(work_appoint_id_plus1,work_appoint_id_plus1)
 caseinfo['url'] = url
@@ -156,7 +190,7 @@ data = {
 	"territorialdevicename": "炼油一部",
 	"territorialdevicecode": "000000010300",
 	"work_position_id": 2000000001891,
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"site": "作业地点",
 	"planstarttime": starttime,
 	"planendtime": endtime,
@@ -281,52 +315,6 @@ data = {
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
-'''
-#安全交底，环境影响大
-casename = '安全交底'
-count =count+1
-caseid = count
-caseinfo['id'] = 7
-caseinfo['name'] = casename
-#worktaskidxx = jsaidxx+17
-anquansongjiaoid = safeclarid+1
-safeclaridxx = safeclarid+1
-print ("送交ID:",safeclaridxx)
-url='http://192.168.6.156/hse/HSE_SAFETY_DISCLOSURE/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&dataId=%d&0.7447101068947941&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx,safeclaridxx)
-
-data = {
-	"tableName": "hse_safety_disclosure",
-	"additional_content": "",
-	"confirm_content": "1、已清楚作业区域及周边生产作业情况\r\n2、已清楚本次作业的安全风险（JSA）\r\n3、已清楚本次作业的具体安全要求（作业许可证中的控制措施）\r\n4、已对本次作业现场安全措施进行了检查确认\r\n5、已清楚本次作业涉及的作业许可证的有限期限 \r\n6、已掌握个人防护用具正确佩戴使用方法\r\n7、已清楚突发情况下的应急避险方法",
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": 1000,
-	"created_dt": now,
-	"updated_by": 1000,
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"safeclarid": safeclaridxx,
-	"projecttype": "",
-	"safe_name": "长庆石化安全交底",
-	"worktype": "aqjd",
-	"workstatus": "draft",
-	"scopeandenv": "",
-	"workrisk": "",
-	"preventmeasure": "",
-	"emermeasure": "",
-	"othermatter": "",
-	"safe_content": "长庆石化安全交底",
-	"safe_clar_temp_id": 2000000001040,
-	"safe_clar_temp_name": "",
-	"worktaskid": jsaid,
-	"work_position_id": 2000000002019
-}
-caseinfo['url'] = url
-caseinfo['data'] =data
-testsuit.append(caseinfo.copy())
-'''
 
 #安全送交接口用例信息
 
@@ -341,7 +329,6 @@ data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
-
 
 #作业任务添加接口用例信息
 
@@ -386,7 +373,7 @@ data = {
 	"workunit": 2000000004016,
 	"workunitname": "中石化长岭分公司",
 	"work_position_id": 2000000001891,
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt",
 	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
 	"territorialdevicename": "炼油一部",
@@ -455,7 +442,7 @@ data = {
 	"ts": "",
 	"worktaskid": worktaskidx,
 	"workname": name,
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"work_appoint_name": "Created_by_Python_mtO1UH",
 	"actualstarttime": "",
 	"actualendtime": "",
@@ -696,7 +683,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": "",
@@ -888,7 +875,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": "",
@@ -1053,7 +1040,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -1213,7 +1200,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -1376,7 +1363,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -1534,7 +1521,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -1697,7 +1684,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -1856,7 +1843,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2018,7 +2005,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2177,7 +2164,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2338,7 +2325,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2497,7 +2484,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2659,7 +2646,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2818,7 +2805,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -2979,7 +2966,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "1",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
@@ -3138,7 +3125,7 @@ data = {
 	"workticketmbcdid": "",
 	"isstoppower": "",
 	"is_fire_exit": "1",
-	"work_position_name": "炼油北区",
+	"work_position_name": "炼油一部",
 	"gas_detector_no": "",
 	"additional_requirements": "",
 	"worklevel_org": ""
