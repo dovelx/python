@@ -19,7 +19,7 @@ os.system("python s7.py")
 #time.sleep(1)
 os.system("python s5.py")
 #time.sleep(1)
-os.system("python s0.py 0")
+os.system("python singleticket.py 0")
 #time.sleep(1)
 os.system("python singleticket.py 1")
 

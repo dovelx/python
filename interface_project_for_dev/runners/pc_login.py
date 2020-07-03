@@ -187,7 +187,7 @@ def login():
         # print("searchObj.group() : ", searchObj.group())
         # print("searchObj.group(1) : ", searchObj.group(1))
         TGC = searchObj.group(1)
-        print("TGC found!!", TGC)
+        #print("TGC found!!", TGC)
 
     headers = {
         "Host": "192.168.6.27:6030",

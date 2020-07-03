@@ -9,7 +9,7 @@ from htmlreporter import HtmlReport
 #time.sleep(1)
 #os.system("python s8.py 1")
 
-os.system("python s16.py")
+#os.system("python s16.py")
 
-#os.system("python s17.py ")
+os.system("python singleticket.py ")
 

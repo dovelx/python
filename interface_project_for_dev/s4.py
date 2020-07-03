@@ -18,7 +18,7 @@ from runners import pc_login
 testsuitex = []
 testsuitrul = []
 
-cookies = pc_login.cookies
+cookies = pc_login.login()
 
 # 记录测试开始时间
 start_time = datetime.datetime.now()

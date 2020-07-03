@@ -1,6 +1,7 @@
 #pc
 #操作hse_work_ticket表，获取workticketid获取
 ticket = 'select workticketid from hse_work_ticket order by workticketid desc limit 1'
+ticket = "SELECT workticketid FROM hse_work_ticket WHERE worktype = 'gc' ORDER BY `created_dt` DESC LIMIT 1"
 #ticket = 'select workticketid from hse_work_ticket where  worktype = "lsyd" ORDER BY created_dt desc limit 1;'
 ts = 'select ts from hse_work_ticket order by ts desc limit 1'
 

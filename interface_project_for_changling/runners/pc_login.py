@@ -83,11 +83,11 @@ def login():
 
     session = requests.Session()
     res = session.get(url=url, headers=headers, allow_redirects=False)
-    print(res.headers)
+    #print(res.headers)
     a = res.headers['location']
-    print(a)
+    #print(a)
     cookies = res.headers['Set-Cookie']
-    print(cookies)
+    #print(cookies)
     searchObj = re.search("JSESSIONID=(.+?);", cookies, re.M | re.I)
     if searchObj:
         # print("searchObj.group() : ", searchObj.group())
@@ -95,9 +95,8 @@ def login():
         cookies = searchObj.group(1)
         print("cookies found!!", cookies)
     b = {}
-    b[
-        'Cookie'] = "TENANTCODE=clsh; tenantCode=clsh; prjidentify=clsh; CASPRIVACY=""; TGC=""; JSESSIONID=" + cookies + "; module=passports"
-    print(b)
+    b['Cookie'] = "TENANTCODE=clsh; tenantCode=clsh; prjidentify=clsh; CASPRIVACY=""; TGC=""; JSESSIONID=" + cookies + "; module=passports"
+    #print(b)
     url = a
     headers = {
         "Host": "192.168.6.156",
@@ -111,7 +110,7 @@ def login():
         "Cookie": "TENANTCODE=clsh; tenantCode=clsh; prjidentify=clsh; CASPRIVACY=""; TGC=""; JSESSIONID=cookies; module=passports"
     }
     headers['Cookie'] = b['Cookie']
-    print(headers)
+    #print(headers)
     session = requests.Session()
     res = session.get(url=url, headers=headers, allow_redirects=False)
     # print(res.headers['location'])
@@ -130,7 +129,7 @@ def login():
         # print("searchObj.group() : ", searchObj.group())
         # print("searchObj.group(1) : ", searchObj.group(1))
         execution = searchObj.group(1)
-        print("it found!!", execution)
+        print("execution found!!", execution)
 
     url = "http://192.168.6.156/login"
     res = session.get(url=url, headers=headers, allow_redirects=False)

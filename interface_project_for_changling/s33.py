@@ -1,4 +1,4 @@
-#2020-6-4 PC和手机端主流程，单票
+#手机端主流程全票-全票-作业预约
 from case.case33 import *
 
 from htmlreporter import HtmlReport

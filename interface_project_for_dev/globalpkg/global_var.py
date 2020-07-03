@@ -54,7 +54,7 @@ logger.info('正在初始化数据库[名称：%s]对象',projectname)
 testdb_test = MyDB('./config/dbconfig.conf', projectname)
 
 #操作hse_work_ticket表，获取workticketid获取
-
+sql_query_ticket_1 = sqls.ticket_1
 sql_query_ticket = sqls.ticket
 sql_query_ts = sqls.ts
 sql_query_worktaskid = sqls.worktaskid
@@ -71,6 +71,11 @@ workticketid = temp[0]
 workticketid = workticketid[0]
 print("workticketid",workticketid)
 
+temp = testdb_test.select_one_record(sql_query_ticket_1)
+workticketid_1 = temp[0]
+#作业票数据库当前ID-workticketid
+workticketid_1 = workticketid_1[0]
+print("workticketid_1",workticketid_1)
 
 temp = testdb_test.select_one_record(sql_query_ts)
 #获取TS

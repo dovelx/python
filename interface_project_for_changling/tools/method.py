@@ -80,7 +80,7 @@ def g(caseinfo,headers,cookies):
 
 def pa(caseinfo,headers,cookies):
     '''post 返回为json'''
-    print(caseinfo['data'])
+    #print(caseinfo['data'])
     rs = requests.post(url=caseinfo['url'], json=caseinfo['data'], headers=headers, cookies=cookies)
     if rs.status_code == 200:
         #print("rs",rs.content)

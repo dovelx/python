@@ -1,4 +1,4 @@
-#2020-6-29
+#2020-6-29 #手机端主流程全票-作业处理-其他操作
 
 from case.case34 import *
 #from case.case38 import  case38
