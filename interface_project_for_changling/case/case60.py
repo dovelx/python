@@ -12,7 +12,7 @@ from globalpkg.global_var import sql_query_jsastepid
 from globalpkg.global_var import sql_query_jsa_step_measure_id
 from tools import getdata
 
-case = '长岭项目作业许可-PC'
+case = '长岭项目作业许可-手机端-列表获取'
 
 #times
 starttime = tool.starttime

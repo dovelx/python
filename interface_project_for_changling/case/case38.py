@@ -1,7 +1,7 @@
 
 from case.case37 import  *
 
-case = '长岭项目作业许可-PC'
+case = '长岭项目作业许可-作业票保存（PC）'
 
 
 

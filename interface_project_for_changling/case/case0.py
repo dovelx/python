@@ -45,40 +45,7 @@ caseinfo['isactive'] = 1
 url = 'http://192.168.6.156/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.899866420894208&contentType=json&ajax=true&tid=2000000001003'
 caseinfo['url'] = url
 #全票数据
-data = {
-	"tableName": "hse_work_appoint",
-	"iscontractor": "0",
-	"workunitname_no": "",
-	"territorialunitid": 2000000004016,
-	"worktaskid_no": 0,
-	"territorialunitname": "中石化长岭分公司",
-	"status": "draft",
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 2000000001003,
-	"ts": "",
-	"isspecialcondition": "",
-	"plantype": "",
-	"wf_audit_state": "",
-	"territorialdeviceid": 2000000005066,
-	"territorialdevicename": "炼油一部",
-	"territorialdevicecode": "000000010300",
-	"worksite": "作业地点",
-	"workunit": 2000000004016,
-	"workunitname": "中石化长岭分公司",
-	"work_position_id": 2000000001891,
-	"work_position_name": "炼油一部",
-	"workname": name,
-	"worktypename": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
-	"worktype": "dh,sx,mbcd,gc,dz,lsyd,dt",
-	"appointstarttime": starttime,
-	"appointendtime": endtime
-}
+
 data = {
 	"tableName": "hse_work_appoint",
 	"iscontractor": "0",
