@@ -1,7 +1,7 @@
 #作业许可票-pc-预约-安全分析-作业任务
 from tools import tool
 from globalpkg.global_var import tsi
-from globalpkg.global_var import workticketid
+from globalpkg.global_var import workticketid_1
 from globalpkg.global_var import worktaskid
 from globalpkg.global_var import worktaskid1
 from globalpkg.global_var import jsaid
@@ -629,7 +629,8 @@ testsuit.append(caseinfo.copy())
 
 caseinfo['id'] = 11
 caseinfo['name'] = '作业许可证保存'
-zuoyexukeid = workticketid+1
+zuoyexukeid = workticketid_1+1
+workticketidx = workticketid_1+1
 #zuoyexukeid = worktaskidxx+2086
 ts = tsi+1
 print(zuoyexukeid)
@@ -679,7 +680,7 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": zuoyexukeid,
+	"workticketid_1": zuoyexukeid,
 	"worktaskid": worktaskidxx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
@@ -827,7 +828,7 @@ data = {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": workticketidx,
+	"workticketid_1": workticketidx,
 	"worktaskid": worktaskidxx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
@@ -982,7 +983,7 @@ data ={
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": zuoyexukeid,
+	"workticketid_1": zuoyexukeid,
 	"worktaskid": worktaskidxx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
@@ -1130,7 +1131,7 @@ data =  {
 	"task_pause": "0",
 	"projecttype": "",
 	"is_pause": 0,
-	"workticketid": workticketidx,
+	"workticketid_1": workticketidx,
 	"worktaskid": worktaskidxx,
 	"equipmentnumber": "",
 	"worktype": "xkz",
