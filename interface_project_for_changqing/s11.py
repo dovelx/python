@@ -19,24 +19,24 @@ start_time = datetime.datetime.now()
 runner3.runcase_old(testsuit11,cookies)
 # 记录测试结束时间
 end_time = datetime.datetime.now()
-# 构造测试报告
-report_title = 'ushayden_interface_autotest_report(%s_%s)'%(case,name)
-html_report = HtmlReport('test report', report_title)
-html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
-
-# 读取测试报告路径及文件名
-config = configparser.ConfigParser()
-config.read('./config/report.conf', encoding='utf-8')
-dir_of_report = config['REPORT']['dir_of_report']
-report_name = config['REPORT']['report_name']
-
-# 设置报告生成路
-html_report.mkdir_of_report(dir_of_report)
-
-# 生成测试报告
-html_report.generate_html(report_name)
-
-logger.info('生成测试报告成功%s',name)
+# # 构造测试报告
+# report_title = 'ushayden_interface_autotest_report(%s_%s)'%(case,name)
+# html_report = HtmlReport('test report', report_title)
+# html_report.set_time_took(str(end_time - start_time))  # 计算测试消耗时间
+#
+# # 读取测试报告路径及文件名
+# config = configparser.ConfigParser()
+# config.read('./config/report.conf', encoding='utf-8')
+# dir_of_report = config['REPORT']['dir_of_report']
+# report_name = config['REPORT']['report_name']
+#
+# # 设置报告生成路
+# html_report.mkdir_of_report(dir_of_report)
+#
+# # 生成测试报告
+# html_report.generate_html(report_name)
+#
+# logger.info('生成测试报告成功%s',name)
 
 # mymail = MyMail('./config/mail.conf')
 # mymail.connect()

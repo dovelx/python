@@ -1,4 +1,4 @@
-from case.case11 import *
+from case.case13 import *
 from htmlreporter import HtmlReport
 from sendmail import MyMail
 import configparser
@@ -10,7 +10,7 @@ from globalpkg.global_var import *
 start_time = datetime.datetime.now()
 
 #PC
-runner3.runcase(testsuit11)
+runner3.runcase(testsuit13)
 
 # 记录测试结束时间
 end_time = datetime.datetime.now()

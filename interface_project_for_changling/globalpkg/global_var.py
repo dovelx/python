@@ -34,8 +34,26 @@ sql_query_work_appoint_id =sqls.appoint_id
 sql_query_work_jsaid = sqls.sql_query_work_jsaid
 sql_query_work_safeclarid = sqls.sql_query_work_safeclarid
 sql_query_work_appointid = sqls.sql_query_work_appointid
+sql_query_jsa_worknumber = sqls.sql_query_jsa_worknumber
+sql_query_jsa_workname = sqls.sql_query_jsa_workname
 workticketmbcdid = sqls.workticketmbcdid
 logger.info('开始数据库查询')
+
+#
+temp = testdb_test.select_one_record(sql_query_jsa_workname)
+sql_query_jsa_workname = temp[0]
+#
+sql_query_jsa_workname = sql_query_jsa_workname[0]
+sql_query_jsa_workname = sql_query_jsa_workname.decode('utf-8')
+print("table-hse_safety_task:jsa_workname",sql_query_jsa_workname)
+
+#
+temp = testdb_test.select_one_record(sql_query_jsa_worknumber)
+sql_query_jsa_worknumber = temp[0]
+#
+sql_query_jsa_worknumber = sql_query_jsa_worknumber[0]
+sql_query_jsa_worknumber = sql_query_jsa_worknumber.decode('utf-8')
+print("table-hse_safety_task:jsa_worknumber",sql_query_jsa_worknumber)
 
 #
 temp = testdb_test.select_one_record(workticketmbcdid)
@@ -120,6 +138,15 @@ sql_query_jsa_step_measure_id = temp[0]
 #jsaid
 sql_query_jsa_step_measure_id = sql_query_jsa_step_measure_id[0]
 print("table-hse_safety_analysis_measure：sql_query_jsa_step_measure_id",sql_query_jsa_step_measure_id)
+
+#
+temp = testdb_test.select_one_record(sqls.sql_query_wf_instance)
+#print(temp)
+sql_query_wf_instance = temp[0]
+#jsaid
+sql_query_wf_instance = sql_query_wf_instance[0]
+print("table-hse_work_appoint：sql_query_wf_instance",sql_query_wf_instance)
+
 logger.info("===关闭数据库=============")
 testdb_test.close()
 '''

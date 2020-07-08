@@ -140,6 +140,7 @@ testsuit3.append(caseinfo.copy())
 
 #作业预约作废
 #caseid = 5
+work_appoint_id_plus1 = work_appoint_id_plus1-1
 casename = '作业预约作废'
 count =count+1
 caseid = count
