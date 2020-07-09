@@ -6,8 +6,8 @@ manual = 1  # 手动
 automation = 2  # 自动
 
 # 连接test link
-url = "http://192.168.0.201/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
-key = "ab2c7729883fed8dd2ee67624b038668"  # 我这个key是错误的key
+url = "http://127.0.0.1/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
+key = "2cc20c4892d7e31bf2774663c3e067cf"  # 我这个key是错误的key
 tlc = testlink.TestlinkAPIClient(url,devKey=key)
 #获取testlink上的信息
 def get_information_test_project():
@@ -49,8 +49,7 @@ def get_test_case(test_case_id):
     for i in test_case:
         print  ("序列", "执行步骤", "预期结果")
         for m in i.get("steps"):
-            print
-            m.get("step_number"), m.get("actions"), m.get("expected_results")
+            print  (m.get("step_number"), m.get("actions"), m.get("expected_results"))
 #获取项目信息
 #get_information_test_project()
 #获取测试用例集
@@ -59,12 +58,18 @@ def get_test_case(test_case_id):
 #create_test_suite("1", "c_by_python", "david no.1", "")
 
 #创建测试用例
-casedata =[["我是标题","2-前提","3-步骤1-1","4-期望结果1-1"],["5","6","步骤2-1","期望2-1"],["9","10","步骤3-1","期望3-1"]]
+#casedata =[["我是标题","2-前提","3-步骤1-1","4-期望结果1-1"],["5","6","步骤2-1","期望2-1"],["9","10","步骤3-1","期望3-1"]]
 #create_test_case("35",casedata)
 #获取测试用例
 #get_test_case(10)
 #通过用例名称获取用例ID
-response = tlc.getTestCaseIDByName("我是标题", testprojectname="项目1")
-print (response)
-test_case = tlc.getTestCase(None, testcaseexternalid='10')
-print(test_case)
+#response = tlc.getTestCaseIDByName("我是标题", testprojectname="项目1")
+#print (response)
+#test_case = tlc.getTestCase(None, testcaseexternalid='10')
+#print(test_case)
+# a = get_information_test_project()
+# b = get_test_suite()
+
+# get_test_case(test_case_id)
+Cases = tlc.getTestCasesForTestSuite(testsuiteid="39", deep=True, details="simple")
+print("Cases.....%s" % Cases)
