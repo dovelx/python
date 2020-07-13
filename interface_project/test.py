@@ -37,7 +37,7 @@ def create_test_case(father_id, data):
     tlc.initStep(data[0][2], data[0][3], automation)#操作步骤1
     for i in range(1, len(data)):
         tlc.appendStep(data[i][2], data[i][3], automation)#操作步骤2
-    tlc.createTestCase(data[0][0], father_id, "1", "david", "我是摘要", preconditions=data[0][1])
+    tlc.createTestCase(data[0][0], father_id, "27", "admin", "我是摘要", preconditions=data[0][1])
 #tlc.createTestCase(标题, father_id, "测试用例集ID", "david", "摘要", preconditions=前提)
 #发送测试结果
 def report_test_result(test_plan_id, test_case_id, test_result):
@@ -51,15 +51,20 @@ def get_test_case(test_case_id):
         for m in i.get("steps"):
             print  (m.get("step_number"), m.get("actions"), m.get("expected_results"))
 #获取项目信息
-#get_information_test_project()
+get_information_test_project()
 #获取测试用例集
-#get_test_suite()
+get_test_suite()
 #创建测试用例集
 #create_test_suite("1", "c_by_python", "david no.1", "")
 
 #创建测试用例
-#casedata =[["我是标题","2-前提","3-步骤1-1","4-期望结果1-1"],["5","6","步骤2-1","期望2-1"],["9","10","步骤3-1","期望3-1"]]
-#create_test_case("35",casedata)
+casedata =[["我是标题","前提","步骤1-1","期望的结果1-1"],["5","6","步骤2-1","期望的结果2-1"],["9","10","步骤3-1","期望的结果3-1"]]
+a =  ""
+b =""
+c =""
+d=""
+casedata = [[a,b,c,d]]
+create_test_case("39",casedata)
 #获取测试用例
 #get_test_case(10)
 #通过用例名称获取用例ID
@@ -67,9 +72,9 @@ def get_test_case(test_case_id):
 #print (response)
 #test_case = tlc.getTestCase(None, testcaseexternalid='10')
 #print(test_case)
-# a = get_information_test_project()
+#a = get_information_test_project()
 # b = get_test_suite()
 
 # get_test_case(test_case_id)
-Cases = tlc.getTestCasesForTestSuite(testsuiteid="39", deep=True, details="simple")
-print("Cases.....%s" % Cases)
+# Cases = tlc.getTestCasesForTestSuite(testsuiteid="39", deep=True, details="simple")
+# print("Cases.....%s" % Cases)
