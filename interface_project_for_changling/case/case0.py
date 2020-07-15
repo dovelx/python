@@ -129,6 +129,7 @@ casename = '安全分析及交底保存'
 caseinfo['id'] = 4
 caseinfo['name'] = casename
 #http://192.168.6.156/hse/HSE_SAFETY_TASK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK&0.666941462228346&contentType=json&ajax=true&tid=2000000001003
+#http://192.168.6.156/hse/HSE_SAFETY_TASK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK&0.04139773420156123&contentType=json&ajax=true&tid=2000000001003
 urlfenxi ='http://192.168.6.156/hse/HSE_SAFETY_TASK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK&0.666941462228346&contentType=json&ajax=true&tid=2000000001003'
 
 data = {
@@ -153,7 +154,7 @@ data = {
 	"territorialdeviceid": 2000000005066,
 	"territorialdevicename": "炼油一部",
 	"territorialdevicecode": "000000010300",
-	"work_position_id": 2000000001891,
+	"work_position_id": 2000000001791,
 	"work_position_name": "炼油一部",
 	"site": "作业地点",
 	"planstarttime": starttime,
@@ -162,6 +163,39 @@ data = {
 	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
 	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt"
 }
+data = {
+	"tableName": "hse_safety_task",
+	"wf_create_user": 2000000012062,
+	"iscontractor": "0",
+	"analyze_type": "jsa",
+	"territorialunitid": 2000000005066,
+	"territorialunitname": "炼油一部",
+	"workstatus": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 2000000012062,
+	"created_dt": now,
+	"updated_by": 2000000012062,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 2000000001003,
+	"ts": "",
+	"projecttype": "rcjx",
+	"workname": "务名称",
+	"territorialdeviceid": 2000000005066,
+	"territorialdevicename": "炼油一部",
+	"territorialdevicecode": "000000010300",
+	"work_position_id": 2000000001791,
+	"work_position_name": "炼油一部",
+	"site": "业地点",
+	"workunit": 2000000004016,
+	"workunitname": "中石化长岭分公司",
+	"planstarttime": starttime,
+	"workcontent": "奥术大师多",
+	"worktickettype_name": "用火作业,受限空间,盲板抽堵,高处作业,起重作业,临时用电,动土作业",
+	"worktickettype": "dh,sx,mbcd,gc,dz,lsyd,dt",
+	"planendtime": endtime
+}
 caseinfo['url'] = urlfenxi
 caseinfo['data'] = data
 testsuit.append(caseinfo.copy())
@@ -169,37 +203,37 @@ testsuit.append(caseinfo.copy())
 #jsaidxx = work_appoint_id-33
 jsaidx = jsaid+1
 print ("安全分析列表使用ID:",jsaidx)
-
-#安全分析步骤添加接口用例信息
-casename = '安全分析步骤添加'
-count =count+1
-caseid = count
-caseinfo['id'] = 5
-caseinfo['name'] = casename
-topEntityId = jsaidx +40
-url ='http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS_STEP/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&0.7124130928687566&contentType=json&ajax=true&tid=2000000001003'%(jsaidx,topEntityId)
-data = {
-	"tableName": "hse_safety_analysis_step",
-	"qualify_level": "no_qualify",
-	"jsaid": jsaidx,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": "2020-06-17 11:39:49",
-	"updated_by": "",
-	"updated_dt": "2020-06-17 11:39:49",
-	"df": 0,
-	"tenantid": 2000000001003,
-	"ts": "",
-	"evaluate_type": "",
-	"worktickettype_name": "一般作业",
-	"worktickettype": "xkz",
-	"worknumber": "10086",
-	"step_name": "步骤活动"
-}
-caseinfo['url'] = url
-caseinfo['data'] =data
-#testsuit.append(caseinfo.copy())
+topEntityId = jsaidx +20
+# #安全分析步骤添加接口用例信息
+# casename = '安全分析步骤添加'
+# count =count+1
+# caseid = count
+# caseinfo['id'] = 5
+# caseinfo['name'] = casename
+#
+# url ='http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS_STEP/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&0.7124130928687566&contentType=json&ajax=true&tid=2000000001003'%(jsaidx,topEntityId)
+# data = {
+# 	"tableName": "hse_safety_analysis_step",
+# 	"qualify_level": "no_qualify",
+# 	"jsaid": jsaidx,
+# 	"dataStatus": 0,
+# 	"ver": 1,
+# 	"created_by": "",
+# 	"created_dt": "2020-06-17 11:39:49",
+# 	"updated_by": "",
+# 	"updated_dt": "2020-06-17 11:39:49",
+# 	"df": 0,
+# 	"tenantid": 2000000001003,
+# 	"ts": "",
+# 	"evaluate_type": "",
+# 	"worktickettype_name": "一般作业",
+# 	"worktickettype": "xkz",
+# 	"worknumber": "10086",
+# 	"step_name": "步骤活动"
+# }
+# caseinfo['url'] = url
+# caseinfo['data'] =data
+# #testsuit.append(caseinfo.copy())
 
 #安全分析步保存加接口用例信息
 
@@ -208,12 +242,12 @@ count =count+1
 caseid = count
 caseinfo['id'] = 6
 caseinfo['name'] = casename
-print("topEntityId（安全分析步骤添加）",topEntityId)
-print("jsaidx（安全分析步骤添加）",jsaidx)
+print("topEntityId（安全分析保存）",topEntityId)
+print("jsaidx（安全分析保存）",jsaidx)
 #http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=2000000000876&parentFuncCode=HSE_SAFETY_TASK&topEntityId=2000000000876&topFuncCode=HSE_SAFETY_TASK&dataId=2000000000836&0.6015172226353962&contentType=json&ajax=true&tid=2000000001003
-url=  'http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&dataId=%d&0.6015172226353962&contentType=json&ajax=true&tid=2000000001003'%(topEntityId,topEntityId,jsaidx)
-#url = 'http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=2000000000876&parentFuncCode=HSE_SAFETY_TASK&topEntityId=2000000000876&topFuncCode=HSE_SAFETY_TASK&dataId=2000000000836&0.6015172226353962&contentType=json&ajax=true&tid=2000000001003'
-
+#http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=2000000001154&parentFuncCode=HSE_SAFETY_TASK&topEntityId=2000000001154&topFuncCode=HSE_SAFETY_TASK&dataId=2000000001134&0.4533122359249344&contentType=json&ajax=true&tid=2000000001003
+#http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=2000000001155&parentFuncCode=HSE_SAFETY_TASK&topEntityId=2000000001155&topFuncCode=HSE_SAFETY_TASK&dataId=2000000001135&0.9642654268183781&contentType=json&ajax=true&tid=2000000001003
+url=  'http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_TASK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&dataId=%d&0.4533122359249344&contentType=json&ajax=true&tid=2000000001003'%(topEntityId,topEntityId,jsaidx)
 data = {
 	"tableName": "hse_safety_analysis",
 
@@ -242,7 +276,7 @@ data = {
 	"worktype": "jsa",
 	"revampandadvide": "",
 	"inspection_name": "",
-	"work_position_id": 2000000001891,
+	"work_position_id": 2000000001791,
 	"projecttype": "",
 	"workname": "",
 	"workunitname": "",
@@ -270,6 +304,62 @@ data = {
 	"remainsrisk_level": "",
 	"risk_level": ""
 }
+data = {
+	"tableName": "hse_safety_analysis",
+#	"columnValues": "",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 2000000012062,
+	"created_dt": now,
+	"updated_by": 2000000012062,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 2000000001003,
+	"ts": "",
+	"jsaid": jsaidx,
+	"jsa_templete_name": "炼油一部安全分析数据模板",
+	"jsa_templete_id": 2000000000191,
+	"temp_type": "",
+	"jsa_monitor_userid": "",
+	"jsa_monitor_name": "JSA组长",
+	"jsa_menber_userids": "",
+	"jsa_menber_username": "SA组",
+	"analyze_time": now,
+	"worktickettype": "",
+	"equip_stuff": "",
+	"worktaskid": topEntityId,
+	"workstatus": "",
+	"worktype": "jsa",
+	"revampandadvide": "",
+	"inspection_name": "",
+	"work_position_id": 2000000001791,
+	"projecttype": "",
+	"workname": "",
+	"workunitname": "",
+	"reference": "",
+	"iscontractor": "",
+	"territorialunitid": "",
+	"territorialunitname": "",
+	"planendtime": "",
+	"reviewer": "",
+	"site": "",
+	"worknumber": "",
+	"workunit": "",
+	"craftprocess": "",
+	"planstarttime": "",
+	"workcontent": "",
+	"isnew": "",
+	"wf_instance": "",
+	"wf_current_user": "",
+	"wf_audit_time": "",
+	"wf_current_nodeid": "",
+	"wf_type": "",
+	"wf_create_user": "",
+	"wf_audit_state": "",
+	"sourcejsaid": "",
+	"remainsrisk_level": "",
+	"risk_level": ""
+}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit.append(caseinfo.copy())
@@ -282,7 +372,8 @@ caseid = count
 caseinfo['id'] = 8
 caseinfo['name'] = casename
 #http://192.168.6.156/hse/HSE_SAFETY_TASK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=2000000000886&topFuncCode=HSE_SAFETY_TASK&dataId=2000000000886&0.6665362277729903&contentType=json&ajax=true&tid=2000000001003
-url = 'http://192.168.6.156/hse/HSE_SAFETY_TASK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&dataId=%d&0.6665362277729903&contentType=json&ajax=true&tid=2000000001003'%(topEntityId,topEntityId)
+#http://192.168.6.156/hse/HSE_SAFETY_TASK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=2000000001154&topFuncCode=HSE_SAFETY_TASK&dataId=2000000001154&0.9478428483024648&contentType=json&ajax=true&tid=2000000001003
+url = 'http://192.168.6.156/hse/HSE_SAFETY_TASK/wfSend?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&dataId=%d&0.9478428483024648&contentType=json&ajax=true&tid=2000000001003'%(topEntityId,topEntityId)
 data = {}
 caseinfo['url'] = url
 caseinfo['data'] =data
