@@ -8,8 +8,8 @@ endtime = tool.endtime
 now = tool.now
 
 #作业预约名称
-name = tool.ran_name_with_str()
-print("作业预约名称：",name)
+#name = tool.ran_name_with_str()
+#print("作业预约名称：",name)
 
 #用例信息变量定义
 testsuit16 = []

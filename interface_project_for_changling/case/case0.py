@@ -181,7 +181,7 @@ data = {
 	"tenantid": 2000000001003,
 	"ts": "",
 	"projecttype": "rcjx",
-	"workname": "务名称",
+	"workname": name,
 	"territorialdeviceid": 2000000005066,
 	"territorialdevicename": "炼油一部",
 	"territorialdevicecode": "000000010300",

@@ -175,7 +175,7 @@ count =count+1
 caseid = count
 caseinfo['id'] = 5
 caseinfo['name'] = casename
-topEntityId = jsaidx +40
+topEntityId = jsaidx +20
 url ='http://192.168.6.156/hse/HSE_SAFETY_ANALYSIS_STEP/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK&0.7124130928687566&contentType=json&ajax=true&tid=2000000001003'%(jsaidx,topEntityId)
 data = {
 	"tableName": "hse_safety_analysis_step",
