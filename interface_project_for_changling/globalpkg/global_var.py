@@ -40,6 +40,14 @@ workticketmbcdid = sqls.workticketmbcdid
 logger.info('开始数据库查询')
 
 #
+temp = testdb_test.select_one_record(sql_query_work_appoint_id)
+sql_query_work_appoint_id = temp[0]
+#
+sql_query_work_appoint_id = sql_query_work_appoint_id[0]
+#sql_query_work_appoint_id = sql_query_work_appoint_id.decode('utf-8')
+print("table-hse_safety_task:sql_query_work_appoint_id",sql_query_work_appoint_id)
+
+#
 temp = testdb_test.select_one_record(sql_query_jsa_workname)
 sql_query_jsa_workname = temp[0]
 #

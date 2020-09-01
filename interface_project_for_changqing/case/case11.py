@@ -6,6 +6,7 @@ from globalpkg.global_var import worktaskid
 from globalpkg.global_var import jsaid
 from globalpkg.global_var import safeclarid
 from globalpkg.global_var import sql_query_work_appointid
+#from globalpkg.global_var import sql_query_work_appoint_id
 from globalpkg.global_var import worktaskid1
 from tools.gethost import host
 from tools.gethost import pro
@@ -48,83 +49,6 @@ caseinfo['isactive'] = 1
 #url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.621597217691122&contentType=json&ajax=true&tid=1'%(work_appoint_idx,work_appoint_idx)
 #url2='http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topEntityId=%d&topFuncCode=HSE_WORK_APPOINT&dataId=%d&0.3707947936681053&contentType=json&ajax=true&tid=1'%(yuyueid,yuyueid)
 url = 'http://192.168.6.27:6030/hse/HSE_WORK_APPOINT/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_WORK_APPOINT&0.3350052747150394&contentType=json&ajax=true&tid=1'
-data = {
-	"tableName": "hse_work_appoint",
-	"task_worktype_code": "GCN",
-	"": "",
-	"equt_name": "",
-	"territorialdeviceid": 2000000003454,
-	"worktaskid_no": 0,
-	"created_by_name_nick": "用户",
-	"isreport": "0",
-	"specialenvironment": "ALLNOT",
-	"cywlqfyxzz": "1",
-	"created_by_name": "测试用户",
-	"worklevel_dh": "mcq_dh_workLevel01",
-	"sourcecode": "",
-	"updated_by_name": "测试用户",
-	"iscontainplayday": "",
-	"worktype_name": "作业许可证,动火作业,受限空间,高处作业,吊装作业,管线/设备打开,挖掘作业,断路作业,临时用电,射线作业,承包商作业,脚手架作业,非计划性维修工作,交叉作业,屏蔽报警、解除连锁和安全应急设备,偏离规则/程序要求的工作,没有安全程序可遵循的工作,其他,清洗作业",
-	"sourcefunc": "",
-	"equipmentcode": "",
-	"territorialdevicename": "制氢装置",
-	"sourcetype": "",
-	"worktypename": "作业许可证,动火作业,受限空间,高处作业,吊装作业,管线/设备打开,挖掘作业,断路作业,临时用电,射线作业,承包商作业,脚手架作业,非计划性维修工作,交叉作业,屏蔽报警、解除连锁和安全应急设备,偏离规则/程序要求的工作,没有安全程序可遵循的工作,其他,清洗作业",
-	"sourceid": "",
-	"worklevel_gx": "",
-	"serviceplanid": "",
-	"task_worktype_name": "储罐浮舱内",
-	"standardmaintenance": "",
-	"worklevel_sx": "mcq_sx_workLevel01",
-	"material_medium": "物料介质",
-	"risksmeasures": "重点防控的风险",
-	"issjtssxzy": "1",
-	"isupgradedh": "1",
-	"isdzdh": "1",
-	"worklevel_gc": "mcq_gc_workLevel01",
-	"funccode": "HSE_WORK_APPOINT",
-	"persistent_type": "newoperation",
-	"territorialunitcode": "CS8082020",
-	"worklevel_dz": "mcq_dz_workLevel01",
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": 1000,
-	"created_dt": now,
-	"updated_by": 1000,
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"work_appoint_id": work_appoint_idx,
-	"code": "",
-	"iscontractor": "0",
-	"workunit": 1688712,
-	"workunitname": "长庆石化分公司",
-	"workunitname_no": "",
-	"workcontent": "作业内容",
-	"workname": name,
-	"territorialunitid": 2000000003339,
-	"territorialunitname": "运行一部",
-	"work_position_id": 2000000002019,
-	"appointstarttime": starttime,
-	"appointendtime": endtime,
-	"work_position_name": "制氢北区",
-	"status": "draft",
-	"constructionscheme": "",
-	"wf_current_user": "",
-	"wf_audit_state": "0",
-	"wf_create_user": 1000,
-	"wf_type": "",
-	"wf_instance": "",
-	"wf_current_nodeid": "",
-	"wf_audit_time": "",
-	"worktype": "xkz,dh,sx,gc,dz,gx,dt,dl,lsyd,shex,zylx11,jsj,zylx12,zylx13,zylx14,zylx15,zylx16,zylx17,qx",
-	"worksite": "作业地点",
-	"equipmentnumber": "",
-	"projecttype": "rcjx",
-	"isspecialcondition": "1",
-	"specialcondition": "好艰苦"
-}
 
 data= {
 	"tableName": "hse_work_appoint",
@@ -222,6 +146,7 @@ casename = '安全分析及交底保存'
 caseinfo['id'] = 4
 caseinfo['name'] = casename
 urlfenxi ='http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.6529845051499572&contentType=json&ajax=true&tid=1'
+#http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.4996225807438308&contentType=json&ajax=true&tid=1
 formdatafenxi ={
 	"tableName": "hse_safety_task",
 	"wf_create_user": 1000,
@@ -262,18 +187,53 @@ formdatafenxi ={
 	"constructionscheme": "",
 	"standardmaintenance": ""
 }
+formdatafenxi = {
+	"tableName": "hse_safety_task",
+	"wf_create_user": 1000,
+	"iscontractor": "0",
+	"analyze_type": "jsa,aqjd",
+	"work_appoint_name": "",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"workstatus": "draft",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"projecttype": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"workname": name,
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"jsa_menber_username": "系统管理员",
+	"jsa_menber_userids": "1000",
+	"jsa_monitor_name": "系统管理员",
+	"jsa_monitor_userid": 1000,
+	"planendtime": endtime,
+	"planstarttime": starttime
+}
 caseinfo['url'] = urlfenxi
 caseinfo['data'] =formdatafenxi
 testsuit11.append(caseinfo.copy())
 
 #安全分析步骤添加接口用例信息
 jsaidx = jsaid+1
+jsaidx = work_appoint_id+1
 print ("安全分析步骤添加使用变量jsaidx:",jsaidx)
 
 casename = '安全分析步骤添加'
 caseinfo['id'] = 5
 caseinfo['name'] = casename
 url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx)
+#http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=2000000002440&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=2000000002440&topFuncCode=HSE_SAFETY_TASK_RISK&0.9662067432963533&contentType=json&ajax=true&tid=1
 data = {
 	"tableName": "hse_safety_analysis_step",
 	"qualify_level": "no_qualify",
@@ -323,6 +283,94 @@ data = {
 	"consequence": "后果",
 	"gravity": "1",
 	"accident_possibility": "1"
+}
+data = {
+	"tableName": "hse_safety_analysis_step",
+	"qualify_level": "no_qualify",
+	"duty_name": "",
+	"jsaid": jsaidx,
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": "",
+	"created_dt": now,
+	"updated_by": "",
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"risk_level": "03",
+	"step_type": "02",
+	"evaluate_type": "",
+	"remain_risk_accept": "",
+	"risk_value": 0,
+	"step_name": "步骤活动1",
+	"risk_harm": "风险及危害",
+	"consequence": "后果",
+	"accident_possibility": "5",
+	"gravity": "4"
+}
+data = {
+	"tableName": "hse_safety_analysis_step",
+	"measuredesc": "",
+	"measurecode": "",
+	"created_by_name": "系统管理员",
+	"further_risk_executor": "",
+	"remain_risk_accept": "",
+	"wf_create_user": 1000,
+	"updated_by_name": "系统管理员",
+	"further_risk_executorid": "",
+	"duty_name": "",
+	"premea_executorid": "",
+	"zyzseries": "",
+	"premea_executor": "",
+	"evaluate": "",
+	"wf_audit_state": "0",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"jsastepid": 2000000003322,
+	"risk_result": "",
+	"jsaid": jsaidx,
+	"worknumber": "20200831003",
+	"risk_level": "03",
+	"risk_desc": "",
+	"account_id": "",
+	"step_config_id": "",
+	"step_type": "02",
+	"risk_harm": "风险及危害",
+	"equt_locationnum": "",
+	"equt_name": "",
+	"duty_job": "",
+	"step_config_code": "",
+	"jsa_temp_step": "",
+	"personnel": "",
+	"environmental": "",
+	"property": "",
+	"reputation": "",
+	"accident_possibility": "1",
+	"frequency_occurrence": "",
+	"isconfirm": "",
+	"personnel_id": "",
+	"environmental_id": "",
+	"property_id": "",
+	"reputation_id": "",
+	"accident_possibility_id": "",
+	"frequency_occurrence_id": "",
+	"gravity": "1",
+	"consequence": "后果",
+	"additional_measure": "",
+	"step_name": "步骤活动",
+	"evaluate_type": "",
+	"risk_value": 9,
+	"qualify_level": "no_qualify",
+	"improve_measure": "",
+	"worktype": ""
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
@@ -389,6 +437,62 @@ data = {
 	"remainsrisk_level": "",
 	"risk_level": "04"
 }
+data = {
+	"tableName": "hse_safety_analysis",
+	"riskclar_record": "风险交底记录（续表）",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"jsaid": jsaidx,
+	"jsa_templete_name": "",
+	"jsa_templete_id": "",
+	"temp_type": "newWorkTask",
+	"jsa_monitor_userid": "",
+	"jsa_monitor_name": "",
+	"jsa_menber_userids": "",
+	"jsa_menber_username": "",
+	"analyze_time": now,
+	"worktickettype": "",
+	"equip_stuff": "",
+	"worktaskid": jsaidx,
+	"workstatus": "",
+	"worktype": "jsa",
+	"revampandadvide": "",
+	"inspection_name": "",
+	"work_position_id": 2000000002019,
+	"projecttype": "",
+	"workname": "",
+	"workunitname": "",
+	"reference": "",
+	"iscontractor": "",
+	"territorialunitid": "",
+	"territorialunitname": "",
+	"planendtime": "",
+	"reviewer": "",
+	"site": "",
+	"worknumber": "",
+	"workunit": "",
+	"craftprocess": "",
+	"planstarttime": "",
+	"workcontent": "",
+	"isnew": "",
+	"wf_instance": "",
+	"wf_current_user": "",
+	"wf_audit_time": "",
+	"wf_current_nodeid": "",
+	"wf_type": "",
+	"wf_create_user": "",
+	"wf_audit_state": "",
+	"sourcejsaid": "",
+	"remainsrisk_level": "",
+	"risk_level": ""
+}
 caseinfo['url'] = url
 caseinfo['data'] =data
 testsuit11.append(caseinfo.copy())
@@ -428,6 +532,35 @@ data = {
 	"safe_clar_temp_id": 2000000001040,
 	"safe_clar_temp_name": "",
 	"worktaskid": jsaid,
+	"work_position_id": 2000000002019
+}
+data = {
+	"tableName": "hse_safety_disclosure",
+	"additional_content": "风险交底记录（续表）",
+	"confirm_content": "1、已清楚作业区域及周边生产作业情况\r\n2、已清楚本次作业的安全风险（JSA）\r\n3、已清楚本次作业的具体安全要求（作业许可证中的控制措施）\r\n4、已对本次作业现场安全措施进行了检查确认\r\n5、已清楚本次作业涉及的作业许可证的有限期限 \r\n6、已掌握个人防护用具正确佩戴使用方法\r\n7、已清楚突发情况下的应急避险方法",
+	"dataStatus": 0,
+	"ver": 1,
+	"created_by": 1000,
+	"created_dt": now,
+	"updated_by": 1000,
+	"updated_dt": now,
+	"df": 0,
+	"tenantid": 1,
+	"ts": "",
+	"safeclarid": safeclaridx,
+	"projecttype": "",
+	"safe_name": "长庆石化安全交底",
+	"worktype": "aqjd",
+	"workstatus": "draft",
+	"scopeandenv": "",
+	"workrisk": "",
+	"preventmeasure": "",
+	"emermeasure": "",
+	"othermatter": "",
+	"safe_content": "长庆石化安全交底",
+	"safe_clar_temp_id": 2000000001040,
+	"safe_clar_temp_name": "",
+	"worktaskid": jsaidx,
 	"work_position_id": 2000000002019
 }
 caseinfo['url'] = url

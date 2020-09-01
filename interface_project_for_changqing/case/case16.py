@@ -6373,7 +6373,7 @@ data = {
 }
 caseinfo['url'] = url
 caseinfo['data'] =data
-testsuitm16.append(caseinfo.copy())
+#testsuitm16.append(caseinfo.copy())
 
 #受限空间
 workticketidx = workticketid+5

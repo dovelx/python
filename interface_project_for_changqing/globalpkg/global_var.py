@@ -100,7 +100,9 @@ worktaskid1 = worktaskid1[0]
 print("worktaskid1",worktaskid1)
 
 temp = testdb_test.select_one_record(sql_query_work_appoint_id)
+print("temp",temp)
 sql_query_work_appoint_id = temp[0]
+print("sql_query_work_appoint_id---",sql_query_work_appoint_id)
 #worktaskid
 work_appoint_id = sql_query_work_appoint_id[0]
 print("sql_query_work_appoint_id",work_appoint_id)
