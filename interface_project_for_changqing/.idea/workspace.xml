@@ -11,18 +11,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/interface_project_for_dev$global_var.coverage" NAME="global_var Coverage Results" MODIFIED="1591255040996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/globalpkg" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s100.coverage" NAME="s100 Coverage Results" MODIFIED="1592812942055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$.coverage" NAME="作业许可证撤回再提交 Coverage Results" MODIFIED="1591667083935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$m_login.coverage" NAME="m_login Coverage Results" MODIFIED="1591262122575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runners" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug1.coverage" NAME="sdebug1 Coverage Results" MODIFIED="1591690534281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s17.coverage" NAME="s17 Coverage Results" MODIFIED="1592807901854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s8.coverage" NAME="s8 Coverage Results" MODIFIED="1593742053590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s11.coverage" NAME="s11 Coverage Results" MODIFIED="1592876297714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$debug102.coverage" NAME="debug102 Coverage Results" MODIFIED="1592470634436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_changqing$s16.coverage" NAME="s16 Coverage Results" MODIFIED="1598867796961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$debug11.coverage" NAME="debug11 Coverage Results" MODIFIED="1591246426607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$dd.coverage" NAME="dd Coverage Results" MODIFIED="1591697130168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_changqing$init.coverage" NAME="init Coverage Results" MODIFIED="1596503032648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case100.coverage" NAME="case100 Coverage Results" MODIFIED="1592464304823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$singledebug.coverage" NAME="singledebug Coverage Results" MODIFIED="1591582298727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$pc_login.coverage" NAME="pc_login Coverage Results" MODIFIED="1593681935292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runners" />
@@ -33,38 +25,48 @@
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s5.coverage" NAME="s5 Coverage Results" MODIFIED="1591693090161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s16.coverage" NAME="s16 Coverage Results" MODIFIED="1593742793986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$dd1.coverage" NAME="dd1 Coverage Results" MODIFIED="1592531102580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s103.coverage" NAME="s103 Coverage Results" MODIFIED="1592813334076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$singleticket.coverage" NAME="singleticket Coverage Results" MODIFIED="1593742305867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case101.coverage" NAME="case101 Coverage Results" MODIFIED="1592279069081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case11.coverage" NAME="case11 Coverage Results" MODIFIED="1591835961598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/interface_project_for_changqing$s100.coverage" NAME="s100 Coverage Results" MODIFIED="1599446297766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s3.coverage" NAME="s3 Coverage Results" MODIFIED="1591692672606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$case3.coverage" NAME="case3 Coverage Results" MODIFIED="1591610777207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$init0.coverage" NAME="init0 Coverage Results" MODIFIED="1593743253587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_changqing$mobile.coverage" NAME="mobile Coverage Results" MODIFIED="1599446969384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug2.coverage" NAME="sdebug2 Coverage Results" MODIFIED="1591692036872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s100.coverage" NAME="s100 Coverage Results" MODIFIED="1592812942055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$m_login.coverage" NAME="m_login Coverage Results" MODIFIED="1591262122575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runners" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug1.coverage" NAME="sdebug1 Coverage Results" MODIFIED="1591690534281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s17.coverage" NAME="s17 Coverage Results" MODIFIED="1592807901854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s11.coverage" NAME="s11 Coverage Results" MODIFIED="1592876297714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$debug11.coverage" NAME="debug11 Coverage Results" MODIFIED="1591246426607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$dd.coverage" NAME="dd Coverage Results" MODIFIED="1591697130168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_changqing$init.coverage" NAME="init Coverage Results" MODIFIED="1596503032648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/interface_project_for_dev$s103.coverage" NAME="s103 Coverage Results" MODIFIED="1592813334076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$killer.coverage" NAME="killer Coverage Results" MODIFIED="1593739714624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$__1_.coverage" NAME="安全分析修改 (1) Coverage Results" MODIFIED="1591601387660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s6.coverage" NAME="s6 Coverage Results" MODIFIED="1591751236893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case104.coverage" NAME="case104 Coverage Results" MODIFIED="1592792278674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s104.coverage" NAME="s104 Coverage Results" MODIFIED="1592813346107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$s3.coverage" NAME="s3 Coverage Results" MODIFIED="1591692672606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s0.coverage" NAME="s0 Coverage Results" MODIFIED="1593681794578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_changqing$init0.coverage" NAME="init0 Coverage Results" MODIFIED="1598862860244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$case3.coverage" NAME="case3 Coverage Results" MODIFIED="1591610777207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$idmq.coverage" NAME="idmq Coverage Results" MODIFIED="1591586807656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$case1.coverage" NAME="case1 Coverage Results" MODIFIED="1591585174368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$dee.coverage" NAME="dee Coverage Results" MODIFIED="1591783659320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$s12.coverage" NAME="s12 Coverage Results" MODIFIED="1592806812976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$init0.coverage" NAME="init0 Coverage Results" MODIFIED="1593743253587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$mobile.coverage" NAME="mobile Coverage Results" MODIFIED="1592815985221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$debug101.coverage" NAME="debug101 Coverage Results" MODIFIED="1592468093582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug.coverage" NAME="sdebug Coverage Results" MODIFIED="1591692511937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$tetz.coverage" NAME="tetz Coverage Results" MODIFIED="1591233197911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/interface_project_for_dev$cmain.coverage" NAME="cmain Coverage Results" MODIFIED="1591234281784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/interface_project_for_dev$sdebug2.coverage" NAME="sdebug2 Coverage Results" MODIFIED="1591692036872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="s16.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="s16.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/s16.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -73,52 +75,125 @@
       <file leaf-file-name="case11.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/case11.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1239">
-              <caret line="301" column="20" lean-forward="false" selection-start-line="301" selection-start-column="20" selection-end-line="301" selection-end-column="20" />
+            <state relative-caret-position="1748">
+              <caret line="184" column="31" lean-forward="false" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
                 <element signature="e#1898#3264#0" expanded="false" />
                 <element signature="e#3899#4003#0" expanded="false" />
                 <element signature="e#4412#4530#0" expanded="false" />
-                <element signature="e#5055#5997#0" expanded="false" />
-                <element signature="e#6014#6798#0" expanded="false" />
-                <element signature="e#7566#8053#0" expanded="false" />
-                <element signature="e#8061#8539#0" expanded="false" />
-                <element signature="e#10828#11980#0" expanded="false" />
-                <element signature="e#13652#14433#0" expanded="false" />
+                <element signature="e#5060#5844#0" expanded="false" />
+                <element signature="e#6613#7978#0" expanded="false" />
+                <element signature="e#8407#9559#0" expanded="false" />
+                <element signature="e#9567#10736#0" expanded="false" />
+                <element signature="e#11231#12012#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global_var.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
+      <file leaf-file-name="s100.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s100.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="15" />
+            <state relative-caret-position="368">
+              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding>
+                <element signature="e#23#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runner2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runners/runner2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="e#41#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runners/m_login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sqls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/sqls.py">
+      <file leaf-file-name="mobile.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="286" column="33" lean-forward="false" selection-start-line="286" selection-start-column="33" selection-end-line="286" selection-end-column="33" />
+              <folding>
+                <element signature="e#35#50#0" expanded="true" />
+                <element signature="e#1606#3477#0" expanded="false" />
+                <element signature="e#5329#5382#0" expanded="false" />
+                <element signature="e#5985#7121#0" expanded="false" />
+                <element signature="e#8169#8953#0" expanded="false" />
+                <element signature="e#9709#10863#0" expanded="false" />
+                <element signature="e#11682#12466#0" expanded="false" />
+                <element signature="e#16980#17011#0" expanded="false" />
+                <element signature="e#17037#23333#0" expanded="false" />
+                <element signature="e#25543#35861#0" expanded="false" />
+                <element signature="e#606072#614493#0" expanded="false" />
+                <element signature="e#615680#631609#0" expanded="false" />
+                <element signature="e#632573#640895#0" expanded="false" />
+                <element signature="e#642054#648877#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init0.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/init0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pc_login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4554">
+              <caret line="251" column="18" lean-forward="true" selection-start-line="251" selection-start-column="18" selection-end-line="251" selection-end-column="18" />
+              <folding>
+                <element signature="e#80#123#0" expanded="true" />
+                <element signature="e#208#1131#0" expanded="false" />
+                <element signature="e#6599#7562#0" expanded="false" />
+                <element signature="e#14534#16172#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getdata.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/getdata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2806">
+              <caret line="123" column="4" lean-forward="false" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case100.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/case100.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="12" column="83" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="83" />
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1598866788250" expanded="true" signature="52:127" ph="select workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="257:331" ph="SELECT workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="257:373" ph="SELECT workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="387:502" ph="SELECT workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="510:565" ph="select ts fr... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="596:667" ph="select workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="687:756" ph="select workt... hse_work_task" />
-                <marker date="1598866788250" expanded="true" signature="774:847" ph="select workt... hse_work_ticket" />
-                <marker date="1598866788250" expanded="true" signature="863:935" ph="SELECT work_... hse_safety_task" />
-                <marker date="1598866788250" expanded="true" signature="960:1026" ph="SELECT jsaid... hse_safety_analysis" />
-                <marker date="1598866788250" expanded="true" signature="1055:1133" ph="SELECT safec... hse_safety_disclosure" />
-                <marker date="1598866788250" expanded="true" signature="1162:1240" ph="SELECT work_... hse_work_appoint" />
+                <element signature="e#711#2582#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -251,12 +326,12 @@
         <option value="$PROJECT_DIR$/init0.py" />
         <option value="$PROJECT_DIR$/case/case0.py" />
         <option value="$PROJECT_DIR$/s11.py" />
-        <option value="$PROJECT_DIR$/mobile.py" />
         <option value="$PROJECT_DIR$/case/caseinfos" />
         <option value="$PROJECT_DIR$/case/case16.py" />
         <option value="$PROJECT_DIR$/tools/sqls.py" />
         <option value="$PROJECT_DIR$/globalpkg/global_var.py" />
         <option value="$PROJECT_DIR$/case/case11.py" />
+        <option value="$PROJECT_DIR$/mobile.py" />
       </list>
     </option>
   </component>
@@ -288,6 +363,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,21 +371,15 @@
               <item name="interface_project_for_changqing" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface_project_for_changqing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="interface_project_for_changqing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interface_project_for_changqing" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../interface_project_for_changling" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../interface_project_for_new" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -337,7 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.s16">
+  <component name="RunManager" selected="Python.mobile">
     <configuration name="init" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,6 +446,44 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="mobile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="interface_project_for_dev" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mobile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="s100" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="interface_project_for_dev" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s100.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="s16" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -395,58 +503,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="s8" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="interface_project_for_dev" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s8.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="singleticket" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="interface_project_for_dev" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/singleticket.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.s16" />
-      <item index="1" class="java.lang.String" itemvalue="Python.s8" />
-      <item index="2" class="java.lang.String" itemvalue="Python.init" />
-      <item index="3" class="java.lang.String" itemvalue="Python.singleticket" />
-      <item index="4" class="java.lang.String" itemvalue="Python.init0" />
+      <item index="1" class="java.lang.String" itemvalue="Python.init" />
+      <item index="2" class="java.lang.String" itemvalue="Python.init0" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mobile" />
+      <item index="4" class="java.lang.String" itemvalue="Python.s100" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.s16" />
-        <item index="1" class="java.lang.String" itemvalue="Python.init0" />
-        <item index="2" class="java.lang.String" itemvalue="Python.init" />
-        <item index="3" class="java.lang.String" itemvalue="Python.singleticket" />
-        <item index="4" class="java.lang.String" itemvalue="Python.s8" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mobile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.s100" />
+        <item index="2" class="java.lang.String" itemvalue="Python.s16" />
+        <item index="3" class="java.lang.String" itemvalue="Python.init0" />
+        <item index="4" class="java.lang.String" itemvalue="Python.init" />
       </list>
     </recent_temporary>
   </component>
@@ -467,22 +537,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38394794" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20824295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14323749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14605543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,67 +601,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/case/case101.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4775">
-          <caret line="200" column="23" lean-forward="false" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/case104.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/mname.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/datas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/getdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="161" column="20" lean-forward="true" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/caseinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htmlreporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug101.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -632,13 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/m_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="28" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -712,45 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s100.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s103.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/s104.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/killer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runners/runner2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -793,23 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9246">
           <caret line="759" column="14" lean-forward="false" selection-start-line="759" selection-start-column="14" selection-end-line="759" selection-end-column="14" />
-          <folding>
-            <element signature="e#103#125#0" expanded="false" />
-            <element signature="e#1302#2518#0" expanded="false" />
-            <element signature="e#3909#4842#0" expanded="false" />
-            <element signature="e#11636#12808#0" expanded="false" />
-            <element signature="e#14076#15191#0" expanded="false" />
-            <element signature="e#15221#18084#0" expanded="false" />
-            <element signature="e#19074#22839#0" expanded="false" />
-            <element signature="e#23595#26262#0" expanded="false" />
-            <element signature="e#26706#30026#0" expanded="false" />
-            <element signature="e#31183#34345#0" expanded="false" />
-            <element signature="e#34799#37961#0" expanded="false" />
-            <element signature="e#38439#41613#0" expanded="false" />
-            <element signature="e#41622#44792#0" expanded="false" />
-            <element signature="e#45251#48394#0" expanded="false" />
-            <element signature="e#48402#51576#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,23 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352521">
-          <caret line="15466" column="20" lean-forward="false" selection-start-line="15466" selection-start-column="20" selection-end-line="15466" selection-end-column="20" />
-          <folding>
-            <element signature="e#35#50#0" expanded="false" />
-            <element signature="e#1603#3474#0" expanded="false" />
-            <element signature="e#5327#5380#0" expanded="false" />
-            <element signature="e#5979#7115#0" expanded="false" />
-            <element signature="e#641540#648363#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,10 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#43#0" expanded="false" />
-            <element signature="e#1632#3503#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,15 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/caseinfos">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,12 +799,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="830">
           <caret line="630" column="28" lean-forward="false" selection-start-line="630" selection-start-column="28" selection-end-line="630" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/sqls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="83" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/runner1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/caseinfos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s103.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case103.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s104.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case104.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case101.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1194">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case102.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/m_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runners/pc_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4554">
+          <caret line="251" column="18" lean-forward="true" selection-start-line="251" selection-start-column="18" selection-end-line="251" selection-end-column="18" />
           <folding>
-            <element signature="e#23#45#0" expanded="false" />
-            <element signature="e#7361#7849#0" expanded="false" />
-            <element signature="e#8311#9461#0" expanded="false" />
-            <element signature="e#11608#14472#0" expanded="false" />
-            <element signature="e#15232#18997#0" expanded="false" />
+            <element signature="e#80#123#0" expanded="true" />
+            <element signature="e#208#1131#0" expanded="false" />
+            <element signature="e#6599#7562#0" expanded="false" />
+            <element signature="e#14534#16172#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/getdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2806">
+          <caret line="123" column="4" lean-forward="false" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -894,93 +934,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s11.py">
+    <entry file="file://$PROJECT_DIR$/s16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="253">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/case16.py">
+    <entry file="file://$PROJECT_DIR$/runners/runner2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="6375" column="36" lean-forward="true" selection-start-line="6375" selection-start-column="36" selection-end-line="6375" selection-end-column="36" />
+        <state relative-caret-position="230">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#673#12002#0" expanded="false" />
-            <element signature="e#12394#35328#0" expanded="false" />
-            <element signature="e#478792#494348#0" expanded="false" />
-            <element signature="e#480183#494345#0" expanded="false" />
-            <element signature="e#494751#501813#0" expanded="false" />
-            <element signature="e#502219#511754#0" expanded="false" />
-            <element signature="e#512157#521608#0" expanded="false" />
-            <element signature="e#522011#533263#0" expanded="false" />
-            <element signature="e#533670#544986#0" expanded="false" />
-            <element signature="e#545393#556752#0" expanded="false" />
-            <element signature="e#557156#565857#0" expanded="false" />
-            <element signature="e#566258#573512#0" expanded="false" />
-            <element signature="e#573915#586678#0" expanded="false" />
-            <element signature="e#587080#599568#0" expanded="false" />
-            <element signature="e#599970#612414#0" expanded="false" />
-            <element signature="e#612819#622320#0" expanded="false" />
-            <element signature="e#622724#633522#0" expanded="false" />
+            <element signature="e#41#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/sqls.py">
+    <entry file="file://$PROJECT_DIR$/s100.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/case100.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="83" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="83" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1598866788250" expanded="true" signature="52:127" ph="select workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="257:331" ph="SELECT workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="257:373" ph="SELECT workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="387:502" ph="SELECT workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="510:565" ph="select ts fr... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="596:667" ph="select workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="687:756" ph="select workt... hse_work_task" />
-            <marker date="1598866788250" expanded="true" signature="774:847" ph="select workt... hse_work_ticket" />
-            <marker date="1598866788250" expanded="true" signature="863:935" ph="SELECT work_... hse_safety_task" />
-            <marker date="1598866788250" expanded="true" signature="960:1026" ph="SELECT jsaid... hse_safety_analysis" />
-            <marker date="1598866788250" expanded="true" signature="1055:1133" ph="SELECT safec... hse_safety_disclosure" />
-            <marker date="1598866788250" expanded="true" signature="1162:1240" ph="SELECT work_... hse_work_appoint" />
+            <element signature="e#711#2582#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalpkg/global_var.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/case11.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1239">
-          <caret line="301" column="20" lean-forward="false" selection-start-line="301" selection-start-column="20" selection-end-line="301" selection-end-column="20" />
+        <state relative-caret-position="1748">
+          <caret line="184" column="31" lean-forward="false" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
             <element signature="e#1898#3264#0" expanded="false" />
             <element signature="e#3899#4003#0" expanded="false" />
             <element signature="e#4412#4530#0" expanded="false" />
-            <element signature="e#5055#5997#0" expanded="false" />
-            <element signature="e#6014#6798#0" expanded="false" />
-            <element signature="e#7566#8053#0" expanded="false" />
-            <element signature="e#8061#8539#0" expanded="false" />
-            <element signature="e#10828#11980#0" expanded="false" />
-            <element signature="e#13652#14433#0" expanded="false" />
+            <element signature="e#5060#5844#0" expanded="false" />
+            <element signature="e#6613#7978#0" expanded="false" />
+            <element signature="e#8407#9559#0" expanded="false" />
+            <element signature="e#9567#10736#0" expanded="false" />
+            <element signature="e#11231#12012#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s16.py">
+    <entry file="file://$PROJECT_DIR$/mobile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="23">
+          <caret line="286" column="33" lean-forward="false" selection-start-line="286" selection-start-column="33" selection-end-line="286" selection-end-column="33" />
+          <folding>
+            <element signature="e#35#50#0" expanded="true" />
+            <element signature="e#1606#3477#0" expanded="false" />
+            <element signature="e#5329#5382#0" expanded="false" />
+            <element signature="e#5985#7121#0" expanded="false" />
+            <element signature="e#8169#8953#0" expanded="false" />
+            <element signature="e#9709#10863#0" expanded="false" />
+            <element signature="e#11682#12466#0" expanded="false" />
+            <element signature="e#16980#17011#0" expanded="false" />
+            <element signature="e#17037#23333#0" expanded="false" />
+            <element signature="e#25543#35861#0" expanded="false" />
+            <element signature="e#606072#614493#0" expanded="false" />
+            <element signature="e#615680#631609#0" expanded="false" />
+            <element signature="e#632573#640895#0" expanded="false" />
+            <element signature="e#642054#648877#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

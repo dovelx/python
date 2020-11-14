@@ -43,7 +43,7 @@ caseinfo['isactive'] = ''
 #ps
 mheaders = m_login.mlogin(1, 1, 1)
 headers = datas.headers
-cookies = pc_login.cookies
+cookies = pc_login.login()
 
 #cases
 caseinfo['id'] = 100
@@ -72,7 +72,7 @@ else:
 #
 insert = data['data']['data']['insert__']
 
-print('获取insertid',sta)
+print('获取insertid',insert)
 
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
@@ -162,7 +162,7 @@ data = json.loads(data)
 # 获取接口返回状态
 sta = data['status']
 if sta == 3200:
-    #print("作业预约成功", sta)
+    print("作业预约成功", sta)
     caseinfo['result'] = "pass"
 else:
     caseinfo['result'] = "Fail"
@@ -222,6 +222,7 @@ else:
 #收集用例执行信息
 testsuitm.append(caseinfo.copy())
 
+#安全
 #安全分析及交底保存
 casename = '安全分析及交底保存'
 caseinfo['id'] = 104
@@ -293,33 +294,42 @@ print ("安全分析步骤添加使用ID:",jsaidxx)
 casename = '安全分析步骤添加'
 caseinfo['id'] = 105
 caseinfo['name'] = casename
-url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
-data = {
-	"tableName": "hse_safety_analysis_step",
-	"qualify_level": "no_qualify",
-	"duty_name": "",
-	"jsaid": jsaidxx,
+#url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidxx,jsaidxx)
+urlfenxi ='http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.6529845051499572&contentType=json&ajax=true&tid=1'
+formdatafenxi = {
+	"tableName": "hse_safety_task",
+	"wf_create_user": 1000,
+	"iscontractor": "0",
+	"analyze_type": "jsa,aqjd",
+	"work_appoint_name": "",
+	"territorialunitid": 2000000003339,
+	"territorialunitname": "运行一部",
+	"workstatus": "draft",
 	"dataStatus": 0,
 	"ver": 1,
-	"created_by": "",
+	"created_by": 1000,
 	"created_dt": now,
-	"updated_by": "",
+	"updated_by": 1000,
 	"updated_dt": now,
 	"df": 0,
 	"tenantid": 1,
 	"ts": "",
-	"step_type": "02",
-	"evaluate_type": "",
-	"risk_level": "02",
-	"remain_risk_accept": "",
-	"risk_value": 0,
-	"risk_harm": "风险及危害123",
-	"gravity": "1",
-	"consequence": "后果123",
-	"accident_possibility": "2",
-	"step_name": "步骤活动123"
+	"projecttype": "",
+	"territorialdeviceid": 2000000003454,
+	"territorialdevicename": "制氢装置",
+	"work_position_id": 2000000002019,
+	"work_position_name": "制氢北区",
+	"workname": name,
+	"workunit": 1688712,
+	"workunitname": "长庆石化分公司",
+	"jsa_menber_username": "系统管理员",
+	"jsa_menber_userids": "1000",
+	"jsa_monitor_name": "系统管理员",
+	"jsa_monitor_userid": 1000,
+	"planendtime": endtime,
+	"planstarttime": starttime
 }
-rs = requests.post(url=url, json=data, headers=headers, cookies=cookies)
+rs = requests.post(url=urlfenxi, json=formdatafenxi, headers=headers, cookies=cookies)
 # 返回值转码
 data = rs.content.decode('utf-8')
 #json格式化

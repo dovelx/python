@@ -141,52 +141,13 @@ formdata ={
 caseinfo['data'] =formdata
 testsuit11.append(caseinfo.copy())
 
+#安全
 #安全分析及交底保存
 casename = '安全分析及交底保存'
 caseinfo['id'] = 4
 caseinfo['name'] = casename
 urlfenxi ='http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.6529845051499572&contentType=json&ajax=true&tid=1'
 #http://192.168.6.27:6030/hse/HSE_SAFETY_TASK_RISK/cardSave?parentEntityId=&parentFuncCode=&topFuncCode=HSE_SAFETY_TASK_RISK&0.4996225807438308&contentType=json&ajax=true&tid=1
-formdatafenxi ={
-	"tableName": "hse_safety_task",
-	"wf_create_user": 1000,
-	"iscontractor": "0",
-	"analyze_type": "jsa,aqjd",
-	"work_appoint_name": name,
-	"territorialunitid": 2000000003339,
-	"territorialunitname": "运行一部",
-	"workstatus": "draft",
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": 1000,
-	"created_dt": now,
-	"updated_by": 1000,
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"projecttype": "rcjx",
-	"territorialdeviceid": 2000000003454,
-	"territorialdevicename": "制氢装置",
-
-	"work_appoint_id": work_appoint_idx,
-	"workcontent": "作业内容123",
-	"workname": name,
-	"worktickettype": "xkz,dh",
-	"worktickettype_name": "作业许可证,动火作业",
-	"workunitname": "长庆石化分公司",
-	"workunit": 1688712,
-	"planstarttime":starttime,
-	"planendtime": endtime,
-	"site": "作业地点123",
-	"equipmentname": "",
-	"work_position_name": "制氢北区",
-	"work_position_id": 2000000002019,
-	"equipmentnumber": "",
-	"equipmentcode": "",
-	"constructionscheme": "",
-	"standardmaintenance": ""
-}
 formdatafenxi = {
 	"tableName": "hse_safety_task",
 	"wf_create_user": 1000,
@@ -234,81 +195,7 @@ caseinfo['id'] = 5
 caseinfo['name'] = casename
 url ='http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=%d&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=%d&topFuncCode=HSE_SAFETY_TASK_RISK&0.8939960513657317&contentType=json&ajax=true&tid=1'%(jsaidx,jsaidx)
 #http://192.168.6.27:6030/hse/HSE_SAFETY_ANALYSIS_STEP_RISK/cardSave?parentEntityId=2000000002440&parentFuncCode=HSE_SAFETY_ANALYSIS_RISK&topEntityId=2000000002440&topFuncCode=HSE_SAFETY_TASK_RISK&0.9662067432963533&contentType=json&ajax=true&tid=1
-data = {
-	"tableName": "hse_safety_analysis_step",
-	"qualify_level": "no_qualify",
-	"duty_name": "",
-	"jsaid": jsaidx,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"step_type": "02",
-	"evaluate_type": "",
-	"risk_level": "02",
-	"remain_risk_accept": "",
-	"risk_value": 0,
-	"risk_harm": "风险及危害123",
-	"gravity": "1",
-	"consequence": "后果123",
-	"accident_possibility": "2",
-	"step_name": "步骤活动123"
-}
-data = {
-	"tableName": "hse_safety_analysis_step",
-	"qualify_level": "no_qualify",
-	"duty_name": "",
-	"jsaid": jsaidx,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"risk_level": "01",
-	"step_type": "01",
-	"evaluate_type": "",
-	"remain_risk_accept": "",
-	"risk_value": 0,
-	"step_name": "步骤活动",
-	"risk_harm": "风险及危害",
-	"consequence": "后果",
-	"gravity": "1",
-	"accident_possibility": "1"
-}
-data = {
-	"tableName": "hse_safety_analysis_step",
-	"qualify_level": "no_qualify",
-	"duty_name": "",
-	"jsaid": jsaidx,
-	"dataStatus": 0,
-	"ver": 1,
-	"created_by": "",
-	"created_dt": now,
-	"updated_by": "",
-	"updated_dt": now,
-	"df": 0,
-	"tenantid": 1,
-	"ts": "",
-	"risk_level": "03",
-	"step_type": "02",
-	"evaluate_type": "",
-	"remain_risk_accept": "",
-	"risk_value": 0,
-	"step_name": "步骤活动1",
-	"risk_harm": "风险及危害",
-	"consequence": "后果",
-	"accident_possibility": "5",
-	"gravity": "4"
-}
+
 data = {
 	"tableName": "hse_safety_analysis_step",
 	"measuredesc": "",
