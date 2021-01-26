@@ -11,7 +11,7 @@ import string
 
 from globalpkg.log import logger
 from globalpkg.mydb import MyDB
-#from globalpkg.mytestlink import TestLink
+from globalpkg.mytestlink import TestLink
 from globalpkg.othertools import OtherTools
 from tools import sqls
 from tools.gethost import pro
@@ -149,10 +149,10 @@ print("table-hse_work_appoint：sql_query_wf_instance",sql_query_wf_instance)
 
 logger.info("===关闭数据库=============")
 testdb_test.close()
-'''
+
 logger.info('正在获取testlink')
 mytestlink = TestLink().get_testlink()
-'''
+
 
 other_tools = OtherTools()
 

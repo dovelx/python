@@ -100,7 +100,7 @@ def login():
     b['Cookie'] = "TENANTCODE=hd; module=passports;JSESSIONID=" + cookies
     #print("b=",b)
 
-    # 访问2-302跳转访问(开始验证部分请求)
+    #访问2-302跳转访问(开始验证部分请求)
    #访问2的header
     headers = {
         "Host": "v3-test-linux-passport.hd-cloud.com",
