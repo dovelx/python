@@ -17,12 +17,12 @@ def mlogin (host,username,password):
 
     eq = sr.json()
 
-
+    print("eq",eq)
     url1 ="http://v3-test-linux-m-passport.hd-cloud.com/m/passport/login/login.json"
     #url1 ="http://192.168.6.27:6030/m/passport/login/login.json"
     USER_NAME = username
-    USER_NAME = "hdtest09"
-    password ="1"
+    USER_NAME = "admin2021"
+    password ="123456"
     loginStoken=eq['data']['loginStoken']
     encryptType=eq['data']['encryptType']
     modulus = eq['data']['pubKeyVO']['modulus']
@@ -46,7 +46,7 @@ def mlogin (host,username,password):
 	"loginStoken": loginStoken,
 	"password": pwd,
 	"tenantid": 2000000000453,
-	"username": "hdtest09"
+	"username": USER_NAME
 }
 
     rs= requests.post(url=url1,json =data,headers = headers)
